@@ -13,7 +13,12 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+                poppins: ['Poppins'],
             },
+            colors: {
+                'pink-main': '#EE4A7B',
+                'blue-main': '#1A2C4C',
+            }
         },
     },
 
