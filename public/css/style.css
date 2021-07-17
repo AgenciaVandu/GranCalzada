@@ -1,0 +1,52 @@
+.bg-grancalzada {
+    background-color: #EE4A7B;
+}
+
+.dropdown-menu {
+    background-color: #EE4A7B !important;
+    border-color: #fff !important;  
+    border-width: 2px;
+}
+
+.dropdown-menu a{
+    color: #fff !important;
+}
+
+ .dropdown-menu  a:hover {
+    color: #fff !important;
+    background-color: #1A2C4C !important;
+}
+
+
+
+.btn-info {
+    background-color: #1A2C4C;
+    border-color: #1A2C4C;
+}
+
+.btn-info:hover {
+    background-color: #16366e;
+    border-color: #1A2C4C;
+}
+
+.fa-whatsapp-square {
+    font-size: 43px;
+    color: #1A2C4C;
+}
+
+.fa-whatsapp-square:hover {
+    color: #16366e;
+}
+
+.hubspot {
+    padding: 10px;
+}
+
+.ubis {
+    color: #fff;
+    font-size: 12px;
+}
+
+footer {
+    background-color: #EE4A7B;
+} 
