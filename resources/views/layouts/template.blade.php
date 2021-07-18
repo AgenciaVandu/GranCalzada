@@ -7,6 +7,12 @@
     <title>Gran Calzada</title>
     <!--Bootstrap 4.6-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!--Font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&amp;display=swap">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,600;0,700;0,900;1,700&display=swap" rel="stylesheet">
 
     <link href="{{asset('css/style.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -24,13 +30,13 @@
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav m-auto">
-            <li class="nav-item active">
+            <li class="nav-item pad active">
               <a class="nav-link" href="#">Inicio <span class="sr-only"></span></a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item pad active">
               <a class="nav-link" href="#">Gran Calzada</a>
             </li>
-            <li class="nav-item dropdown active">
+            <li class="nav-item pad dropdown active">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Desarrollos
               </a>
@@ -40,11 +46,11 @@
                 
               </div>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item pad active">
                 <a class="nav-link" href="#">Galería</a>
             </li>
             
-            <li class="nav-item active">
+            <li class="nav-item pad active">
                 <a class="nav-link" href="#">Blog</a>
             </li>
           </ul>
