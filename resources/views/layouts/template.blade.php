@@ -20,16 +20,16 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-grancalzada fixed-top">
-        <div class="container">
+        <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="{{asset('/img/Logo-GranCalzada.svg') }}" width="160" class="img-fluid" alt="">
+                <img src="{{asset('/img/Logo-GranCalzada.svg') }}" width="190" class="img-fluid" alt="">
             </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav m-auto">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item pad active">
               <a class="nav-link" href="#">Inicio <span class="sr-only"></span></a>
             </li>
@@ -55,19 +55,19 @@
             </li>
           </ul>
           
-          
+          <ul class="navbar-nav">
+            <li class="nav-item pad active">
+                <a class="nav-link" href="#">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </li>
+          </ul>
 
           <form class="form-inline my-2 my-lg-0">
             
             <button class="btn btn-info my-2 my-sm-0" type="submit">Cotiza tu casa</button>
           </form>
-          <ul class="navbar-nav">
-            <li class="nav-item pad active">
-                <a class="nav-link" href="#">
-                    <i class="fab fa-whatsapp-square"></i>
-                </a>
-            </li>
-          </ul>
+          
         </div>
         </div>
       </nav>
