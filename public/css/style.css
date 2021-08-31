@@ -1,0 +1,265 @@
+body {
+    background-color: #1A2C4C;
+}
+
+/*h1-h2...*/
+h1,h2 {
+    color: #EE4A7B;
+    font-family: "Source Serif Pro";
+    font-weight: 600;
+}
+
+h3 {
+    color: #1A2C4C;
+    font-family: "Source Serif Pro";
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 2.3em;
+    color: #1A2C4C;
+}
+
+.lead {
+    font-weight: 600;
+    color: #1A2C4C;
+}
+
+/*Buttons*/
+.btn-primary {
+    background-color: #EE4A7B;
+    border-color: #EE4A7B;
+}
+
+.btn-primary:hover {
+    background-color: #c62454;
+    border-color: #c62454;
+}
+
+.btn-info {
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 0 !important;
+    background-color: #EE4A7B;
+    border-color: #EE4A7B;
+}
+
+.btn-info:hover {
+    background-color: #16366e;
+    border-color: #1A2C4C;
+}
+
+.btn-almada {
+    margin-top: 41px;
+    margin-bottom: 28px;
+}
+.btn-dark {
+    border-radius: 0;
+}
+/*End buttons*/
+
+
+.nav-link {
+    color: #16366e !important;
+    
+}
+
+
+.bg-grancalzada {
+    background-color: #F0EEF4;
+}
+
+.dropdown-menu {
+    background-color: #F0EEF4 !important;
+    
+}
+
+
+
+ .dropdown-menu  a:hover {
+    color: #fff !important;
+    background-color: #EE4A7B!important;
+}
+
+.pad {
+    padding-right: 10px;
+}
+
+header {
+    background-color: #F0EEF4;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+video{
+    width:100%;
+}
+
+.video {
+    padding-top: 80px;
+}
+header h3 {
+    color: #16366e;
+}
+.light {
+    font-size: 28px;
+    font-weight: 200;
+}
+
+hr {
+    height: 3px;
+    width: 50%;
+    background-color: #16366e;
+}
+
+.fa-whatsapp {
+    font-size: 28px;
+    color: #EE4A7B;
+}
+
+.fa-whatsapp:hover {
+    color: #16366e;
+}
+
+.hubspot {
+    padding: 10px;
+}
+
+.ubis {
+    color: #fff;
+    font-size: 12px;
+}
+
+.plantas {
+    position: absolute;
+    top: 50px;
+    right: -230px; 
+}
+
+#introduccion {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.txt-calzada {
+    padding: 65px;
+}
+
+.txt-calzada h2 {
+    font-size: 2.5em;
+}
+
+.txt-calzada p {
+    font-size: 20px;
+}
+
+.space {
+    padding-top: 20px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+#desarrollos {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    background-image: url(/img/patron-index.svg);
+    background-position: center;
+    background-size: cover;
+    background-color: #F0EEF4;
+}
+
+.titular-modelos {
+    line-height: 40px;
+    font-size: 2em;
+}
+
+.conoce {
+    font-weight: 500;
+    line-height: 75px;
+}
+.dos {
+    font-size: 2.5em;
+}
+
+.desarrollos {
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.bg-almada {
+    background-color: #51488B;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+.bg-miraverde {
+    background-color: #215A36;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.2);
+}
+.elemento {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding-top: 12px;
+    font-size: 20px;
+    color: #fff;
+}
+
+#avances-de-obra {
+    background-color:  #F0EEF4;
+}
+
+.altura {
+    min-height: 160px;
+}
+
+
+.comunidad {
+    padding-top: 45px;
+    color: #1A2C4C;
+    font-size: 2.5em;
+    font-weight: 300;
+}
+.gran {
+    font-size: 2em;
+    font-family: "Source Serif Pro";
+    font-weight: 600;
+}
+
+
+
+.detalle {
+    background-image: url(/img/detalles.svg);
+    background-repeat: no-repeat;
+    background-position: 180px 60px;
+    background-size: 120px;
+} @media (max-width:800px) {
+    .detalle {
+        background-position: 30px 20px;
+    }
+}
+
+.avances {
+    margin-top: 80px;
+} @media (max-width:800px) {
+    .avances {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+footer {
+    background-color: #EE4A7B;
+} 
+
+
+
