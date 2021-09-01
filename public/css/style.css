@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Avenir-regular';
+    src: url(/fonts/Avenir/Avenir-regular.otf);
+}
+
+@font-face {
+    font-family: 'Avenir-semibold';
+    src: url(/fonts/Avenir/Avenir-semibold.otf);
+}
+
 body {
     background-color: #1A2C4C;
 }
@@ -29,6 +39,7 @@ h5 {
 .btn-primary {
     background-color: #EE4A7B;
     border-color: #EE4A7B;
+    border-radius: 0 !important;
 }
 
 .btn-primary:hover {
@@ -66,11 +77,11 @@ h5 {
 
 
 .bg-grancalzada {
-    background-color: #F0EEF4;
+    background-color: #e7e7e7;
 }
 
 .dropdown-menu {
-    background-color: #F0EEF4 !important;
+    background-color: #e7e7e7 !important;
     
 }
 
@@ -86,7 +97,7 @@ h5 {
 }
 
 header {
-    background-color: #F0EEF4;
+    background-color: #e7e7e7;
     min-height: 100vh;
     overflow: hidden;
 }
@@ -165,7 +176,7 @@ hr {
     background-image: url(/img/patron-index.svg);
     background-position: center;
     background-size: cover;
-    background-color: #F0EEF4;
+    background-color: #e7e7e7;
 }
 
 .titular-modelos {
@@ -210,7 +221,7 @@ hr {
 }
 
 #avances-de-obra {
-    background-color:  #F0EEF4;
+    background-color:  #e7e7e7;
 }
 
 .altura {
@@ -252,10 +263,38 @@ hr {
     }
 }
 
+/******************** Gran Calzada ******************/
 
+#sgran-calzada {
+    padding-top: 90px;
+    background-color: #e7e7e7;
+}
 
+.espacio {
+    padding: 40px;
+}
 
+.conoce {
+    font-family: 'Avenir-regular';
+    font-size: 2.1em;
+}
 
+.gran-1 {
+    font-family: 'Avenir-semibold';
+}
+
+#conoce-los-desarrollos {
+    background-color: #e7e7e7;
+}
+
+.bt-desarrollos {
+    padding-top: 17px;
+}
+
+.bg-azul{
+    background-color: #16366e;
+    background-position: 0 250px;
+}
 
 footer {
     background-color: #EE4A7B;
