@@ -5,7 +5,7 @@
         <div class="row">
            <div class="col-12">
                 <div class="video mt-2">
-                    <video src="{{asset('/video/1000x500.mp4') }}" muted   preload width="1000" height="auto" autoplay></video>
+                    <video src="{{asset('/video/1000x500.mp4') }}" loop muted   preload width="1000" height="auto" autoplay></video>
                 </div>
            </div>
            <div class="col-12">
