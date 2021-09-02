@@ -17,6 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+Route::get('/conoce-gran-calzada', function () {
+    return view('gran-calzada');
+});
 
 Route::get('/slider', Slider::class);
 
