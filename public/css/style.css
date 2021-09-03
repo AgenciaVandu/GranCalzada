@@ -8,6 +8,11 @@
     src: url(/fonts/Avenir/Avenir-semibold.otf);
 }
 
+@font-face {
+    font-family: 'Avenir-bold';
+    src: url(/fonts/Avenir/Avenir-bold.otf);
+}
+
 body {
     background-color: #1A2C4C;
 }
@@ -231,9 +236,11 @@ hr {
 
 .comunidad {
     padding-top: 45px;
+    padding-left: 60px;
     color: #1A2C4C;
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 300;
+
 }
 .gran {
     font-size: 2em;
@@ -271,10 +278,16 @@ hr {
 }
 
 .espacio {
-    padding: 40px;
+    min-height: 190px;
+    padding-top: 55px;
 }
 
 .conoce {
+    font-family: 'Avenir-regular';
+    font-size: 1em;
+}
+
+.conoce-1 {
     font-family: 'Avenir-regular';
     font-size: 2.1em;
 }
@@ -287,13 +300,29 @@ hr {
     background-color: #e7e7e7;
 }
 
-.bt-desarrollos {
-    padding-top: 17px;
-}
+
 
 .bg-azul{
     background-color: #16366e;
     background-position: 0 250px;
+}
+
+#equipamiento {
+    background-color: #EE4A7B;
+}
+
+.equipamiento-h {
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Avenir-bold';
+}
+
+.que-encontraras {
+    background-color: #e7e7e7;
+}
+
+.t-cercania {
+    color: #16366e;
 }
 
 footer {
