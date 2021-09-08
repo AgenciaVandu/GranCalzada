@@ -1,14 +1,16 @@
 @extends('layouts.template')
 @section('content')
-   <header >
-    <div class="container text-center">
-        <div class="row">
-           <div class="col-12">
-                <div class="video mt-2">
-                    <video src="{{asset('/video/1000x500.mp4') }}" loop muted   preload width="1000" height="auto" autoplay></video>
+    <header>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12">
+                    <div class="video mt-2">
+                        <video src="{{ asset('/video/1000x500.mp4') }}" loop muted preload width="1000" height="auto"
+                            autoplay></video>
+                    </div>
                 </div>
             </div>
-
+        </div>
     </header>
 
     <section id="introduccion">
@@ -35,8 +37,6 @@
             </div>
         </div>
     </section>
-
-
 
     <section id="desarrollos">
         <div class="container">
@@ -147,13 +147,11 @@
                             <div class="col-7 justify-center m-auto">
                                 <p class="elemento">1490 Casas</p>
                             </div>
-
                         </div>
                         <a href="" class="btn btn-secondary mt-4 mb-4">Vive en Almada</a>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
