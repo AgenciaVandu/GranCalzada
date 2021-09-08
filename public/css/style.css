@@ -324,6 +324,121 @@ hr {
 .t-cercania {
     color: #16366e;
 }
+.equipamiento-g {
+    font-size: 20px;
+    color: #16366e;
+    font-family: 'Avenir-bold';
+}
+
+.sp {
+    padding-top: 11px;
+}
+
+.sp-1 {
+    padding-top: 10px;
+}
+.sp-2 {
+    padding-top: 13px;
+}
+
+#master-plan {
+    background-color: #e7e7e7;
+}
+
+.u-almada {
+    position: relative;
+    top: 220px;
+    left: 160px;
+    animation: movimiento-u 6.5s linear infinite;
+}
+
+.u-miraverde {
+    position: relative;
+    right: 600px;
+    top: 60px;
+    animation: movimiento-m 5.5s linear infinite;
+}
+
+#desarrollos-gc {
+    background-color: #e7e7e7;
+}
+
+#respaldo-casitas {
+    background-color: #e7e7e7;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.marco {
+    border: 3px solid rgb(255, 175, 2);
+}
+.aire {
+    padding-right: 170px;
+    padding-left: 170px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+} @media (max-width:700px) {
+    .aire {
+        padding: 30px;
+    }
+}
+.casitas {
+    position: relative;
+    right: 32px;
+}
+
+.titulo-c {
+    position: relative;
+    top: 60px;
+    left: 30px;
+}
+
+p {
+    font-family: 'Avenir-regular';
+}
+
+.casitas-h {
+    font-family: 'Avenir-bold';
+    line-height: 25px;
+    color: #1A2C4C;
+    padding-top: 20px;
+}
+
+.casitas-p {
+    font-family: 'Avenir-regular';
+    font-size: 18px;
+    line-height: 10px !important;
+}
+
+
+
+.respaldo {
+    margin-top: 65px;
+}
+
+
+@keyframes movimiento-u {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes movimiento-m {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
 
 footer {
     background-color: #EE4A7B;
