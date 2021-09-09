@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ConfigurationController;
 use App\Http\Livewire\Slider;
 use Illuminate\Support\Facades\Route;
 
@@ -15,5 +16,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('dashboard');
+});
+
+
+Route::prefix('configurations')->group(function () {
+    Route::get('index', [ConfigurationController::class, 'index']);
 });
