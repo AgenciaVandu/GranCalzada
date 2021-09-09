@@ -73,6 +73,21 @@ h5 {
 .btn-dark {
     border-radius: 0;
 }
+
+.btn-success {
+    background-color: #51488B;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    border-radius: 0 !important;
+}
+
+.btn-success:hover {
+    background-color: #EE4A7B;
+   ;
+}
 /*End buttons*/
 
 
@@ -511,11 +526,101 @@ p {
 }
 
 .p-equipamiento {
-    padding-top: 20px;
-    padding-left: 160px;
-    padding-right: 160px;
+    padding-top: 55px;
+    padding-left: 140px;
+    padding-right: 140px;
+    padding-bottom: 30px;
+} @media (max-width:700px) {
+    .p-equipamiento {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 
+.par-equipamiento {
+    font-family: 'Avenir-bold';
+    color:#C3BBD0;
+}
+
+
+#disfruta-la-vida {
+    background-color: #51488B;
+}
+
+.disfruta-titular {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.disfruta {
+    color: #F8B3A2;
+    font-family: 'Avenir-Regular';
+    
+}
+
+.disfruta-color {
+    color:#C3BBD0;
+    font-size: 1.5em;
+    font-family: 'Avenir-semibold';
+}
+
+#cotiza-tu-casa {
+    background-color:#e7e7e7;
+    padding-bottom: 100px;
+}
+
+.cotiza-color {
+    text-align: center;
+    font-family: 'Avenir-bold';
+    font-size: 2.4em;
+    color: #51488B;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    
+}
+
+.bg-cruzada {
+    background-color: #fff;
+    opacity: 84%;
+    box-shadow: -10px 0px 10px -4px rgba(0, 0, 0, 0.2);
+}
+.t-mod {
+    font-family: 'Avenir-semibold';
+}
+.izq {
+    position: relative;
+    left: 86px;
+}
+.der {
+    position: relative;
+    right: 50px;
+}
+
+.der p {
+    font-size: 12px;
+}
+
+.p-desde {
+    font-size: 20px;
+}
+
+.espacio-bco {
+    margin-bottom: 93px;
+}
+.espacio-bco-1 {
+    margin-bottom: 92px;
+}
+.posicion-cruzada {
+    position: relative;
+    top: 30px;
+    left: 180px;
+} @media (max-width:700px) {
+    .posicion-cruzada {
+        left: auto;
+    }
+}
 /**ANIMACIONES**/
 
 
