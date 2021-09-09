@@ -21,5 +21,6 @@ Route::get('/', function () {
 
 
 Route::prefix('configurations')->group(function () {
-    Route::get('index', [ConfigurationController::class, 'index']);
+    Route::get('index', [ConfigurationController::class, 'index'])->name('configurations.index');
+    Route::get('videos', [ConfigurationController::class, 'videos'])->name('configurations.videos');
 });

@@ -16,18 +16,17 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('index');
 Route::get('/conoce-gran-calzada', function () {
     return view('gran-calzada');
-});
+})->name('gran.calzada');
+
 Route::get('/almada', function () {
-    return view('desarrollos/almada');
+    return view('desarrollos.almada');
 });
 Route::get('/miraverde', function () {
-    return view('desarrollos/miraverde');
+    return view('desarrollos.miraverde');
 });
-
-Route::get('/slider', Slider::class);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

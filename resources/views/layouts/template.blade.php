@@ -46,10 +46,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item pad active">
-                        <a class="nav-link" href="#">Inicio <span class="sr-only"></span></a>
+                        <a class="nav-link" href="{{ route('index') }}">Inicio <span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item pad active">
-                        <a class="nav-link" href="#">Gran Calzada</a>
+                        <a class="nav-link" href="{{ route('gran.calzada') }}">Gran Calzada</a>
                     </li>
                     <li class="nav-item pad dropdown active">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -152,7 +152,7 @@
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
     </script>
 
-    
+
 
 </body>
 

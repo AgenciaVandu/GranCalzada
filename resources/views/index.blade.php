@@ -13,10 +13,6 @@
                         <hr class="mb-5">
                     </div>
                 </div>
-                <div class="col-12">
-                    <h5 class="mt-4"><span class="light">Disfruta la vida</span> EN TU NUEVO HOGAR</h5>
-                    <hr class="mb-5">
-                </div>
             </div>
         </div>
     </header>
