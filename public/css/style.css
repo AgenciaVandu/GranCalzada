@@ -481,6 +481,43 @@ p {
     margin-top: 65px;
 }
 
+#desarrollo-almada {
+    background-color: #e7e7e7;
+}
+
+.sp-top {
+    padding-top: 80px;
+}
+
+.almada-color {
+    background-color: #51488B;
+}
+
+.p-caract {
+    padding-top: 28px;
+    padding-right:130px;
+    padding-left: 130px;
+} @media (max-width:700px) {
+    .p-caract {
+        padding-top: 0px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 10px;
+    }
+}
+
+.perimetro {
+    color: #e7e7e7;
+}
+
+.p-equipamiento {
+    padding-top: 20px;
+    padding-left: 160px;
+    padding-right: 160px;
+}
+
+/**ANIMACIONES**/
+
 
 @keyframes movimiento-u {
     0% {
