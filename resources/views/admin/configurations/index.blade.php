@@ -6,7 +6,7 @@
 
     </x-slot>
 
-    <div class="bg-white">
+    <div class="mt-4">
         @livewire('admin.configurations.navigation')
     </div>
 </x-app-layout>

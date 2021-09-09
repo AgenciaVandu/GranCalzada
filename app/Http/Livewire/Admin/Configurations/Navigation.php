@@ -6,7 +6,7 @@ use Livewire\Component;
 
 class Navigation extends Component
 {
-    public $videos = false, $images = false;
+    public $videos = true, $images = false;
 
 
     public function setNavigation($link)

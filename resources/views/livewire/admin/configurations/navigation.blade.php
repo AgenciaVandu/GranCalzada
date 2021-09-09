@@ -1,6 +1,6 @@
 <div>
     <!-- Navigation Links -->
-    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex pb-12">
+    <div class="hidden space-x-8 sm:-my-px sm:flex bg-white mb-6 py-3 px-4">
         <x-jet-nav-link :active="$videos" wire:click="setNavigation('videos')" class="cursor-pointer">
             {{ __('Videos') }}
         </x-jet-nav-link>
@@ -9,10 +9,10 @@
         </x-jet-nav-link>
     </div>
 
-    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+    <div class="w-full sm:px-6 lg:px-8 mt-6">
         <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
             @if ($videos)
-                mostramos videos
+                @livewire('admin.configurations.video')
             @endif
 
             @if ($images)
