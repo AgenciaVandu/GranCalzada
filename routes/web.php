@@ -20,6 +20,12 @@ Route::get('/', function () {
 Route::get('/conoce-gran-calzada', function () {
     return view('gran-calzada');
 });
+Route::get('/almada', function () {
+    return view('desarrollos/almada');
+});
+Route::get('/miraverde', function () {
+    return view('desarrollos/miraverde');
+});
 
 Route::get('/slider', Slider::class);
 
