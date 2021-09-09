@@ -1,12 +1,16 @@
 @extends('layouts.template')
 @section('content')
-    <header>
+    <header id="index">
         <div class="container text-center">
             <div class="row">
                 <div class="col-12">
                     <div class="video mt-2">
                         <video src="{{ asset('/video/1000x500.mp4') }}" loop muted preload width="1000" height="auto"
                             autoplay></video>
+                    </div>
+                    <div class="col-12">
+                        <h5 class="mt-4"><span class="light">Disfruta la vida</span> EN TU NUEVO HOGAR</h5>
+                        <hr class="mb-5">
                     </div>
                 </div>
             </div>
@@ -42,20 +46,20 @@
         <div class="container">
             <div class="beneficios">
                 <h2 style="text-align: center">¿Qué encontrarás en Gran Calzada?</h2>
-                <div class="row space">
-                    <div class="col-md-6 pt-3 text-center">
+                <div class="row space-1">
+                    <div class="col-6 pt-3 text-center">
                         <img src="{{ asset('/img/amenidades-index/1.png') }}" class="img-fluid" alt="">
                         <h3 class="pt-3">Excelente Ubicación</h3>
                     </div>
-                    <div class="col-md-6 pt-3 text-center">
+                    <div class="col-6 pt-3 text-center">
                         <img src="{{ asset('/img/amenidades-index/2.png') }}" class="img-fluid" alt="">
                         <h3 class="pt-3">Multi-servicios</h3>
                     </div>
-                    <div class="col-md-6 pt-3 text-center">
+                    <div class="col-6 pt-3 text-center">
                         <img src="{{ asset('/img/amenidades-index/3.png') }}" class="img-fluid" alt="">
                         <h3 class="pt-3">8 parques interactivos</h3>
                     </div>
-                    <div class="col-md-6 pt-3 text-center">
+                    <div class="col-6 pt-3 text-center">
                         <img src="{{ asset('/img/amenidades-index/4.png') }}" class="img-fluid" alt="">
                         <h3 class="pt-3">Ciclopista</h3>
                     </div>
@@ -66,7 +70,7 @@
                 ¿En cuál te gustaría vivir?</h2>
 
             <div class="row mt-5 desarrollos">
-                <div class="col-6 text-center">
+                <div class="col-md-6 col-sm-12 text-center">
                     <img src="{{ asset('/img/modelo.png') }}" class="img-fluid" alt="">
                     <div class="bg-almada">
                         <img src="{{ asset('/img/almada.png') }}" alt="Gran Calzada | Ciudad Viva"
@@ -107,7 +111,7 @@
                     </div>
                 </div>
 
-                <div class="col-6 text-center">
+                <div class="col-md-6 col-sm-12 text-center">
                     <img src="{{ asset('/img/modelo.png') }}" class="img-fluid" alt="">
                     <div class="bg-miraverde">
                         <img src="{{ asset('/img/miraverde.png') }}" alt="Gran Calzada | Ciudad Viva"

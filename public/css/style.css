@@ -15,6 +15,7 @@
 
 body {
     background-color: #1A2C4C;
+    
 }
 
 /*h1-h2...*/
@@ -101,10 +102,14 @@ h5 {
     padding-right: 10px;
 }
 
-header {
+#index {
     background-color: #e7e7e7;
     min-height: 100vh;
     overflow: hidden;
+} @media (max-width: 700px) {
+    #index {
+        min-height: 400px;
+    }
 }
 
 video{
@@ -169,10 +174,15 @@ hr {
     font-size: 20px;
 }
 
-.space {
+.space-1 {
     padding-top: 20px;
     padding-left: 120px;
     padding-right: 120px;
+} @media (max-width:700px) {
+    .space-1 {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
 }
 
 #desarrollos {
@@ -200,6 +210,11 @@ hr {
 .desarrollos {
     padding-left: 120px;
     padding-right: 120px;
+} @media (max-width: 600px) {
+    .desarrollos {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 
 .bg-almada {
@@ -241,6 +256,10 @@ hr {
     font-size: 2em;
     font-weight: 300;
 
+} @media (max-width: 700px){
+    .comunidad {
+        padding-left: 0px;
+    }
 }
 .gran {
     font-size: 2em;
@@ -257,7 +276,8 @@ hr {
     background-size: 120px;
 } @media (max-width:800px) {
     .detalle {
-        background-position: 30px 20px;
+        background-size: 60px;
+        background-position: 50px 70px;
     }
 }
 
@@ -277,9 +297,14 @@ hr {
     background-color: #e7e7e7;
 }
 
+.p-gc {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .espacio {
-    min-height: 190px;
-    padding-top: 55px;
+    min-height: 0px;
+   
 }
 
 .conoce {
@@ -307,8 +332,16 @@ hr {
     background-position: 0 250px;
 }
 
-#equipamiento {
-    background-color: #EE4A7B;
+
+.onda-s {
+    background-color: #16366e;
+}
+
+.equipamiento {
+    background-color: #EE4A7b;
+}
+.medalla {
+    padding-top: 40px;
 }
 
 .equipamiento-h {
@@ -316,6 +349,7 @@ hr {
     color: #fff;
     font-family: 'Avenir-bold';
 }
+
 
 .que-encontraras {
     background-color: #e7e7e7;
@@ -350,6 +384,11 @@ hr {
     top: 220px;
     left: 160px;
     animation: movimiento-u 6.5s linear infinite;
+} @media (max-width:700px) {
+    .u-almada {
+        top: 140px;
+        left: 190px;
+    }
 }
 
 .u-miraverde {
@@ -357,10 +396,19 @@ hr {
     right: 600px;
     top: 60px;
     animation: movimiento-m 5.5s linear infinite;
+} @media (max-width:700px) {
+    .u-miraverde {
+        top: -20px;
+        right: 270px;
+    }
 }
 
 #desarrollos-gc {
     background-color: #e7e7e7;
+} @media (max-width:700px) {
+    #desarrollos-gc {
+        padding-top: 30px;
+    }
 }
 
 #respaldo-casitas {
@@ -378,7 +426,7 @@ hr {
     padding-bottom: 50px;
 } @media (max-width:700px) {
     .aire {
-        padding: 30px;
+        padding: 20px;
     }
 }
 .casitas {
@@ -388,8 +436,17 @@ hr {
 
 .titulo-c {
     position: relative;
-    top: 60px;
-    left: 30px;
+    top: 50px;
+    left: 0px;
+    
+} @media (max-width:700px){
+    .titulo-c {
+        top: 0px;
+        left: 0px !important;
+        padding: 0px;
+        
+    }
+    
 }
 
 p {
@@ -398,18 +455,27 @@ p {
 
 .casitas-h {
     font-family: 'Avenir-bold';
-    line-height: 25px;
     color: #1A2C4C;
     padding-top: 20px;
-}
+    line-height: 25px;
+}  
 
 .casitas-p {
     font-family: 'Avenir-regular';
     font-size: 18px;
-    line-height: 10px !important;
+    
+} @media (max-width:700px) {
+    .casitas-p {
+        font-size: 11px;
+        line-height: 16px;
+    }
 }
 
-
+@media (max-width:700px) {
+    .respaldo-h {
+        font-size: 30px;
+    }
+}
 
 .respaldo {
     margin-top: 65px;
