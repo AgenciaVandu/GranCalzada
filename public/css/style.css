@@ -53,15 +53,17 @@ h5 {
     border-color: #c62454;
 }
 
-.btn-info {
+.btn-light {
     padding-left: 50px;
     padding-right: 50px;
     border-radius: 0 !important;
     background-color: #EE4A7B;
     border-color: #EE4A7B;
+    color: #fff;
 }
 
-.btn-info:hover {
+.btn-light:hover {
+    color: #fff;
     background-color: #16366e;
     border-color: #1A2C4C;
 }
@@ -88,6 +90,37 @@ h5 {
     background-color: #EE4A7B;
    ;
 }
+
+.btn-info {
+    background-color: #215A36;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    border-radius: 0 !important;
+}
+
+.btn-info:hover {
+    background-color: #F8B3A2;
+   
+}
+.btn-warning {
+    font-size: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 0 !important;
+    background-color: #EE4A7B;
+    border-color: #EE4A7B;
+    color: #fff;
+}
+
+.btn-warning:hover {
+    color: #fff;
+    background-color: #16366e;
+    border-color: #1A2C4C;
+}
+
 /*End buttons*/
 
 
@@ -557,6 +590,7 @@ p {
 .disfruta {
     color: #F8B3A2;
     font-family: 'Avenir-Regular';
+    font-size: 1.8em;
     
 }
 
@@ -603,7 +637,8 @@ p {
 }
 
 .p-desde {
-    font-size: 20px;
+    font-size: 17px;
+    font-family: 'Avenir-semibold';
 }
 
 .espacio-bco {
@@ -612,15 +647,177 @@ p {
 .espacio-bco-1 {
     margin-bottom: 92px;
 }
-.posicion-cruzada {
-    position: relative;
-    top: 30px;
-    left: 180px;
+
+
+/*Miraverde*/
+
+.mv-color {
+    background-color: #215A36;
+   
+}
+
+.bg-mv {
+    background-image: url(/img/miraverde/fondo-mv.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 432.65px;
 } @media (max-width:700px) {
-    .posicion-cruzada {
+    .bg-mv {
+    background-image: url(/img/miraverde/Intersect.svg);
+    background-repeat: no-repeat;
+    
+    }
+}
+
+#disfruta-la-vida-en-miraverde {
+    background-color: #215A36;
+}
+
+.titular-mv {
+    text-align: center;
+    color: #fff;
+    font-family: 'Avenir-regular';
+   
+}
+
+.gran-mv {
+    font-family: "Source Serif Pro";
+    font-weight: 600;
+    font-size: 1.8em;
+}
+
+.inner-titular {
+    font-size: 1.6em !important;
+}
+
+.entorno-img {
+    background-image: url(/img/miraverde/entorno-render.jpg);
+    min-height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+
+.entorno-p {
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-family: 'Avenir-semibold';
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.entorno-sp {
+    font-family: 'Avenir-regular';
+    
+}
+
+.titular-mv-1 {
+    padding-top: 30px;
+    text-align: center;
+    color: #fff;
+    font-family: "Source Serif Pro";
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.inner-titular-1 {
+    font-family: 'Avenir-bold';
+    font-size: 1.2em !important;
+    color: #F8B3A2;
+}
+
+.izq-mv {
+    position: relative;
+    left: 56px;
+    
+}
+.der-mv {
+    position: relative;
+    right: 30px;
+    color: #215A36
+}
+
+.der-mv p {
+    font-size: 12px;
+}
+
+.t-mod {
+    font-family: 'Avenir-bold';
+    font-size: 22px;
+}
+
+.espacio-bco-mv {
+    margin-bottom: 99px;
+    
+}
+.espacio-bco-mv-1 {
+    margin-bottom: 90px;
+    
+}
+
+.amenidades-r {
+    font-size: 35px;
+    font-family: 'Avenir-bold';
+    text-align: left;
+    color: #215A36;
+    line-height: 38px;
+} @media (max-width:700px) {
+    .amenidades-r {
+        text-align: center;
+    }
+}
+
+.titular-mv-2 {
+    padding-top: 70px;
+    text-align: center;
+    color: #fff;
+    font-family: "Source Serif Pro";
+    font-weight: 600;
+    font-size: 2em;
+}
+
+.inner-titular-2 {
+    font-family: 'Avenir-bold';
+    font-size: 1em !important;
+    color: #215A36;
+}
+
+.amenidades-en-mv {
+   
+    font-size: 18px;
+    color: #215A36;
+    font-family: 'Avenir-regular';
+    
+}@media (max-width: 700px) {
+    .amenidades-en-mv {
+        padding-top: 0px;
+    }
+}
+
+.icon-amenidades-mv {
+    position: relative;
+    left: 190px;
+}@media (max-width: 700px) {
+    .icon-amenidades-mv {
+        left: 80px;
+    }
+}
+.icon-amenidades-mv-1 {
+    position: relative;
+    left: 30px;
+} @media (max-width: 700px) {
+    .icon-amenidades-mv-1 {
         left: auto;
     }
 }
+
+.p-amenidad-mv {
+    position: relative;
+    right: 170px;
+}
+
 /**ANIMACIONES**/
 
 
