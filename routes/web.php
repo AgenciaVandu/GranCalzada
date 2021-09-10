@@ -48,6 +48,10 @@ Route::get('/modelo-almendro', function () {
 Route::get('/modelo-flamboyan-plus', function () {
     return view('desarrollos/modelos-miraverde/flamboyan-plus');
 });
+Route::get('/modelo-bugambilia-plus', function () {
+    return view('desarrollos/modelos-miraverde/bugambilia-plus');
+});
+
 
 
 Route::get('/slider', Slider::class);

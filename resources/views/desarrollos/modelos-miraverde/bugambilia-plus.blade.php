@@ -9,13 +9,13 @@
                 <div id="controles-2" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img src="{{asset('/img/miraverde/modelos/flamboyan-plus/flamboyan-plus.jpg')}}" class="d-block w-100" alt="...">
+                        <img src="{{asset('/img/miraverde/modelos/bugambilia-plus/bugambilia-plus.jpg')}}" class="d-block w-100" alt="...">
                       </div>
                       <div class="carousel-item">
-                        <img src="{{asset('/img/miraverde/modelos/flamboyan-plus/flamboyan-plus.jpg')}}" class="d-block w-100" alt="...">
+                        <img src="{{asset('/img/miraverde/modelos/bugambilia-plus/bugambilia-plus.jpg')}}" class="d-block w-100" alt="...">
                       </div>
                       <div class="carousel-item">
-                        <img src="{{asset('/img/miraverde/modelos/flamboyan-plus/flamboyan-plus.jpg')}}" class="d-block w-100" alt="...">
+                        <img src="{{asset('/img/miraverde/modelos/bugambilia-plus/bugambilia-plus.jpg')}}" class="d-block w-100" alt="...">
                       </div>
                     </div>
                     <a class="carousel-control-prev" href="#controles-2" role="button" data-slide="prev">
@@ -40,7 +40,7 @@
                     <ul>
                         <li class="modelo-li ">Modelo Bugambilia</li>
                             <br>
-                            <li>Construcción: <span>65.73 m<sup>2</sup></span></li>
+                            <li>Construcción: <span>73.69 m<sup>2</sup></span></li>
                             <li>Terreno desde: <span>7 x 17 m</li> 
                             <br>
                             <li><b>Planta Arquitectónica</b></li>
@@ -53,9 +53,10 @@
                             <li>Cochera semitechada</li>
                             <br>
                             <li><b>PLANTA ALTA</b></li>
-                            <li>Recámara principal con área <br> para closet y baño</li>
+                            <li>Recámara principal con área <br> para closet y baño completo</li>
                             <li>Recámara secundaria con área <br> para closet </li>
                             <li>Baño completo</li>
+                            <li>Terraza</li>
                         
                     </ul>
                     <div class="row m-botones botones-modelos">
@@ -70,10 +71,10 @@
                 <div class="col-md-6 col-sm-12 text-center">
                     <div class="row">
                         <div class="col-md-6 col-sm-12">
-                            <img src="{{asset('/img/miraverde/modelos/flamboyan-plus/planta_baja.png')}}" class="img-fluid" alt="">
+                            <img src="{{asset('/img/miraverde/modelos/bugambilia-plus/planta_baja.png')}}" class="img-fluid" alt="">
                         </div>
                         <div class="col-md-6 col-sm-12">
-                            <img src="{{asset('/img/miraverde/modelos/flamboyan-plus/planta_alta.png')}}" class="img-fluid" alt="">
+                            <img src="{{asset('/img/miraverde/modelos/bugambilia-plus/planta_alta.png')}}" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
