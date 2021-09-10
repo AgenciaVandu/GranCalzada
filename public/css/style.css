@@ -265,6 +265,21 @@ hr {
     background-color: #e7e7e7;
 }
 
+.gran-calzada-2 {
+    font-size: 2.8em ;
+}
+.gran-calzada-3 {
+    font-size: 1.4em ;
+}
+.registrada {
+    position: relative;
+    top: -20px;
+    font-size: .4em;
+}
+.signo-1 {
+    font-size: 1.4em;
+}
+
 .titular-modelos {
     line-height: 40px;
     font-size: 2em;
@@ -307,12 +322,19 @@ hr {
     
     
 }
+
+.icon-position {
+    position: relative;
+    left: 30px;
+}
+
 .elemento {
-    display: flex;
-    justify-content: left;
+    position: relative;
+    right: 10px;
+    text-align: left;
     align-items: left;
-    padding-top: 12px;
-    font-size: 20px;
+    padding-top: 25px;
+    font-size: 15px;
     color: #fff;
 }
 
@@ -413,8 +435,19 @@ hr {
     background-color: #16366e;
 }
 
+#equipamiento {
+    background-color: #16366e;
+    
+}
+
 .equipamiento {
-    background-color: #EE4A7b;
+    background-image: url(/img/bg-grancalzada-1.svg);
+    background-size: cover;
+    background-position: center;
+    min-height: 135px;
+}
+.espacio-equipamiento {
+    padding-bottom: 90px;
 }
 .medalla {
     padding-top: 40px;
@@ -426,7 +459,9 @@ hr {
     font-family: 'Avenir-bold';
 }
 
-
+.espacio-que-encontraras {
+    padding-top: 80px;
+}
 .que-encontraras {
     background-color: #e7e7e7;
 }
@@ -466,6 +501,7 @@ hr {
         left: 190px;
     }
 }
+
 
 .u-miraverde {
     position: relative;
@@ -964,6 +1000,16 @@ li {
 .typ-pos {
     position: relative;
     top: 150px;
+}
+
+.espacio-avances {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.avances-h {
+    text-align: center;
+    font-family: 'Avenir-bold';
 }
 
 /**ANIMACIONES**/

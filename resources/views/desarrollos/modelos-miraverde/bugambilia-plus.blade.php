@@ -61,7 +61,7 @@
                     </ul>
                     <div class="row m-botones botones-modelos">
                         <div class="col-md-6 col-sm-12 mt-3">
-                            <a href="" class="btn btn-secondary ">Cotizar modelo</a>
+                            <a href="/lead-bugambilia-plus" class="btn btn-secondary ">Cotizar modelo</a>
                         </div>
                         <div class="col-md-6 col-sm-12 mt-3">
                             <a href="" class="btn btn-secondary ">Ficha técnica</a>

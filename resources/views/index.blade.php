@@ -34,7 +34,7 @@
                             <a href="" class="btn btn-primary btn-block">Descargar brochure</a>
                         </div>
                         <div class="col-md-6 col-sm-12 mt-2">
-                            <a href="" class="btn btn-primary btn-block">Descargar brochure</a>
+                            <a href="/conoce-gran-calzada" class="btn btn-primary btn-block">Conoce Gran Calzada</a>
                         </div>
                     </div>
                 </div>
@@ -45,7 +45,7 @@
     <section id="desarrollos">
         <div class="container">
             <div class="beneficios">
-                <h2 style="text-align: center">¿Qué encontrarás en Gran Calzada?</h2>
+                <h1 class="gran-calzada-2" style="text-align: center"><span class="signo-1">¿</span>Qué encontrarás en <br> <span class="gran-calzada-3">Gran Calzada<span class="registrada">®</span></span><span class="signo-1">? </span></h1>
                 <div class="row space-1">
                     <div class="col-6 pt-3 text-center">
                         <img src="{{ asset('/img/amenidades-index/1.png') }}" class="img-fluid" alt="">
@@ -107,7 +107,7 @@
                                 <p class="elemento">1490 Casas</p>
                             </div>
                         </div>
-                        <a href="" class="btn btn-secondary btn-almada">Vive en Almada</a>
+                        <a href="/almada" class="btn btn-secondary btn-almada">Vive en Almada</a>
                     </div>
                 </div>
 
@@ -152,7 +152,7 @@
                                 <p class="elemento">1490 Casas</p>
                             </div>
                         </div>
-                        <a href="" class="btn btn-secondary mt-4 mb-4">Vive en Almada</a>
+                        <a href="/miraverde" class="btn btn-secondary mt-4 mb-4">Vive en Miraverde</a>
                     </div>
                 </div>
             </div>

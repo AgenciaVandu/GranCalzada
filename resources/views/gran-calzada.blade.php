@@ -64,10 +64,10 @@
         </div>
     </section>
 
-    <section id="equipamiento">
+    <section id="equipamiento" >
         
             <!--Onda-s-->
-            <div class="equipamiento">
+            <div class="equipamiento espacio-equipamiento">
                 <div class="container text-center">
                     <img src="{{ asset('img/icon/medalla.svg') }}" class="medalla" width="70"
                         alt="medalla de equipamiento | Gran Calzada">
@@ -75,7 +75,7 @@
                     <div class="row">
                         <!--slider movil-->
                         <div class="col-md-3">
-                            <img src="{{ asset('img/icon/planta2.svg') }}" width="180"
+                            <img src="{{ asset('img/icon/Electricidad2.svg') }}" width="180"
                                 alt="Equipamiento del desarrollo | Gran Calzada">
                             <h3 class="equipamiento-h pt-2">Electricidad <br>subterránea</h3>
                         </div>
@@ -85,12 +85,12 @@
                             <h3 class="equipamiento-h pt-2">Planta de <br>tratamiento</h3>
                         </div>
                         <div class="col-md-3">
-                            <img src="{{ asset('img/icon/planta2.svg') }}" width="180"
+                            <img src="{{ asset('img/icon/pozo2.svg') }}" width="180"
                                 alt="Equipamiento del desarrollo | Gran Calzada">
                             <h3 class="equipamiento-h pt-2">Pozo de <br>captación</h3>
                         </div>
                         <div class="col-md-3">
-                            <img src="{{ asset('img/icon/planta2.svg') }}" width="180"
+                            <img src="{{ asset('img/icon/drenaje2.svg') }}" width="180"
                                 alt="Equipamiento del desarrollo | Gran Calzada">
                             <h3 class="equipamiento-h pt-2">Drenaje <br>pluvial</h3>
                         </div>
@@ -98,11 +98,10 @@
                     <!--slider movil-->
                 </div>
             </div>
-            <div class="wave">
-            </div>
+            
         
         <!--Onda-i-->
-        <div class="que-encontraras text-center pt-5">
+        <div class="que-encontraras text-center espacio-que-encontraras">
             <div class="container">
                 <h1 class="t-cercania">¿Qué encontrarás?</h1>
                 <div class="row pt-4">
@@ -182,32 +181,32 @@
                                 la cual concentra todos los servicios y amenidades para que tú y tu familia se den un respiro
                                 mientras la recorren para realizar las actividades de su vida diaria.</p>
                             <div class="row">
-                                <div class="col-5 text-right pt-2">
+                                <div class="col-5 icon-position pt-2">
                                     <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
                                 </div>
-                                <div class="col-7 justify-center m-auto">
+                                <div class="col-7 justify-center ">
                                     <p class="elemento">1490 Casas</p>
                                 </div>
-                                <div class="col-5 text-right pt-2">
+                                <div class="col-5 icon-position pt-2">
                                     <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
                                 </div>
-                                <div class="col-7 justify-center m-auto">
-                                    <p class="elemento">1490 Casas</p>
+                                <div class="col-7 justify-center ">
+                                    <p class="elemento">Semi-cerrada</p>
                                 </div>
-                                <div class="col-5 text-right pt-2">
+                                <div class="col-5 icon-position pt-2">
                                     <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
                                 </div>
-                                <div class="col-7 justify-center m-auto">
-                                    <p class="elemento">1490 Casas</p>
+                                <div class="col-7 justify-center ">
+                                    <p class="elemento">5 modelos diferentes</p>
                                 </div>
-                                <div class="col-5 text-right pt-2">
+                                <div class="col-5 icon-position pt-2">
                                     <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
                                 </div>
-                                <div class="col-7 justify-center m-auto">
-                                    <p class="elemento">1490 Casas</p>
+                                <div class="col-7 justify-center ">
+                                    <p class="elemento">Rodeado de servicios</p>
                                 </div>
                             </div>
-                            <a href="" class="btn btn-secondary btn-almada">Vive en Almada</a>
+                            <a href="/almada" class="btn btn-secondary btn-almada">Vive en Almada</a>
                         </div>
                     </div>
     
@@ -248,11 +247,13 @@
                                     <img src="{{ asset('/img/icon/icon-mira.svg') }}" alt="" class="img-fluid"
                                         width="35" style="width: 40">
                                 </div>
-                                <div class="col-7 justify-center m-auto">
+                                <div class="col-7 justify-center mb-4">
                                     <p class="elemento">1490 Casas</p>
                                 </div>
                             </div>
-                            <a href="" class="btn btn-secondary mt-4 mb-4">Vive en Almada</a>
+                           <div class="boton-lead ">
+                            <a href="/miraverde" class="btn btn-secondary mt-4 mb-4">Vive en Miraverde</a>
+                           </div>
                         </div>
                     </div>
                 </div>
