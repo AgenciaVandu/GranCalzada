@@ -42,6 +42,10 @@ Route::get('/modelo-violeta-plus', function () {
     return view('desarrollos/modelos-almada/violeta-plus');
 });
 
+Route::get('/modelo-almendro', function () {
+    return view('desarrollos/modelos-miraverde/almendro');
+});
+
 
 Route::get('/slider', Slider::class);
 

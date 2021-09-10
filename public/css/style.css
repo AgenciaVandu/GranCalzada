@@ -301,6 +301,11 @@ hr {
     padding-bottom: 5px;
     box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.2);
 }
+.bg-miraverde-1 {
+    background-color: #215A36;
+    
+    
+}
 .elemento {
     display: flex;
     justify-content: left;
