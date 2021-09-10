@@ -18,6 +18,7 @@ body {
     
 }
 
+
 /*h1-h2...*/
 h1,h2 {
     color: #EE4A7B;
@@ -53,15 +54,17 @@ h5 {
     border-color: #c62454;
 }
 
-.btn-info {
+.btn-light {
     padding-left: 50px;
     padding-right: 50px;
     border-radius: 0 !important;
     background-color: #EE4A7B;
     border-color: #EE4A7B;
+    color: #fff;
 }
 
-.btn-info:hover {
+.btn-light:hover {
+    color: #fff;
     background-color: #16366e;
     border-color: #1A2C4C;
 }
@@ -73,6 +76,74 @@ h5 {
 .btn-dark {
     border-radius: 0;
 }
+
+.btn-success {
+    background-color: #51488B;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    border-radius: 0 !important;
+}
+
+.btn-success:hover {
+    background-color: #EE4A7B;
+   ;
+}
+
+.btn-info {
+    background-color: #215A36;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    border-radius: 0 !important;
+}
+
+.btn-info:hover {
+    background-color: #F8B3A2;
+   
+}
+.btn-warning {
+    font-size: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 0 !important;
+    background-color: #EE4A7B;
+    border-color: #EE4A7B;
+    color: #fff;
+}
+
+.btn-warning:hover {
+    color: #fff;
+    background-color: #16366e;
+    border-color: #1A2C4C;
+}
+
+.botones-modelos {
+    position: relative;
+    left: 36px;
+    
+} @media (max-width:700px){
+   .botones-modelos {
+    left: auto;
+   }
+}
+
+.btn-secondary {
+    background-color: #F8B3A2;
+    color: #51488B;
+    font-family: 'Avenir-regular';
+    font-size: 14px;
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+}
+.m-recorrido {
+    margin-top: 80px;
+}
+
 /*End buttons*/
 
 
@@ -230,6 +301,11 @@ hr {
     padding-right: 20px;
     padding-bottom: 5px;
     box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.2);
+}
+.bg-miraverde-1 {
+    background-color: #215A36;
+    
+    
 }
 .elemento {
     display: flex;
@@ -511,9 +587,383 @@ p {
 }
 
 .p-equipamiento {
-    padding-top: 20px;
-    padding-left: 160px;
-    padding-right: 160px;
+    padding-top: 55px;
+    padding-left: 140px;
+    padding-right: 140px;
+    padding-bottom: 30px;
+} @media (max-width:700px) {
+    .p-equipamiento {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+.par-equipamiento {
+    font-family: 'Avenir-bold';
+    color:#C3BBD0;
+}
+
+
+#disfruta-la-vida {
+    background-color: #51488B;
+}
+
+.disfruta-titular {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.disfruta {
+    color: #F8B3A2;
+    font-family: 'Avenir-Regular';
+    font-size: 1.8em;
+    
+}
+
+.disfruta-color {
+    color:#C3BBD0;
+    font-size: 1.5em;
+    font-family: 'Avenir-semibold';
+}
+
+#cotiza-tu-casa {
+    background-color:#e7e7e7;
+    padding-bottom: 100px;
+}
+
+.cotiza-color {
+    text-align: center;
+    font-family: 'Avenir-bold';
+    font-size: 2.4em;
+    color: #51488B;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    
+}
+
+.bg-cruzada {
+    background-color: #fff;
+    opacity: 84%;
+    box-shadow: -10px 0px 10px -4px rgba(0, 0, 0, 0.2);
+}
+.t-mod {
+    font-family: 'Avenir-semibold';
+}
+.izq {
+    position: relative;
+    left: 86px;
+}
+.der {
+    position: relative;
+    right: 50px;
+}
+
+.der p {
+    font-size: 12px;
+}
+
+.p-desde {
+    font-size: 17px;
+    font-family: 'Avenir-semibold';
+}
+
+.espacio-bco {
+    margin-bottom: 93px;
+}
+.espacio-bco-1 {
+    margin-bottom: 92px;
+}
+
+
+/*Miraverde*/
+
+.mv-color {
+    background-color: #215A36;
+   
+}
+
+.bg-mv {
+    background-image: url(/img/miraverde/fondo-mv.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 432.65px;
+} @media (max-width:700px) {
+    .bg-mv {
+    background-image: url(/img/miraverde/Intersect.svg);
+    background-repeat: no-repeat;
+    
+    }
+}
+
+#disfruta-la-vida-en-miraverde {
+    background-color: #215A36;
+}
+
+.titular-mv {
+    text-align: center;
+    color: #fff;
+    font-family: 'Avenir-regular';
+   
+}
+
+.gran-mv {
+    font-family: "Source Serif Pro";
+    font-weight: 600;
+    font-size: 1.8em;
+}
+
+.inner-titular {
+    font-size: 1.6em !important;
+}
+
+.entorno-img {
+    background-image: url(/img/miraverde/entorno-render.jpg);
+    min-height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+
+.entorno-p {
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-family: 'Avenir-semibold';
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.entorno-sp {
+    font-family: 'Avenir-regular';
+    
+}
+
+.titular-mv-1 {
+    padding-top: 30px;
+    text-align: center;
+    color: #fff;
+    font-family: "Source Serif Pro";
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.inner-titular-1 {
+    font-family: 'Avenir-bold';
+    font-size: 1.2em !important;
+    color: #F8B3A2;
+}
+
+.izq-mv {
+    position: relative;
+    left: 56px;
+    
+}
+.der-mv {
+    position: relative;
+    right: 30px;
+    color: #215A36
+}
+
+.der-mv p {
+    font-size: 12px;
+}
+
+.t-mod {
+    font-family: 'Avenir-bold';
+    font-size: 22px;
+}
+
+.espacio-bco-mv {
+    margin-bottom: 99px;
+    
+}
+.espacio-bco-mv-1 {
+    margin-bottom: 90px;
+    
+}
+
+.amenidades-r {
+    font-size: 35px;
+    font-family: 'Avenir-bold';
+    text-align: left;
+    color: #215A36;
+    line-height: 38px;
+} @media (max-width:700px) {
+    .amenidades-r {
+        text-align: center;
+    }
+}
+
+.titular-mv-2 {
+    padding-top: 70px;
+    text-align: center;
+    color: #fff;
+    font-family: "Source Serif Pro";
+    font-weight: 600;
+    font-size: 2em;
+}
+
+.inner-titular-2 {
+    font-family: 'Avenir-bold';
+    font-size: 1em !important;
+    color: #215A36;
+}
+
+.amenidades-en-mv {
+   
+    font-size: 18px;
+    color: #215A36;
+    font-family: 'Avenir-regular';
+    
+}@media (max-width: 700px) {
+    .amenidades-en-mv {
+        padding-top: 0px;
+    }
+}
+
+.icon-amenidades-mv {
+    position: relative;
+    left: 190px;
+}@media (max-width: 700px) {
+    .icon-amenidades-mv {
+        left: 80px;
+    }
+}
+.icon-amenidades-mv-1 {
+    position: relative;
+    left: 30px;
+} @media (max-width: 700px) {
+    .icon-amenidades-mv-1 {
+        left: auto;
+    }
+}
+
+.p-amenidad-mv {
+    position: relative;
+    right: 170px;
+}
+
+#cabecera-modelos {
+    padding-top: 100px;
+
+}
+
+/*detalles de  modelos*/
+.plantas-modelos {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+li {
+    list-style: none;
+    color: #fff;
+}
+
+.modelo-li {
+    font-size: 1.8em;
+    color: #fff;
+    font-family: 'Avenir-bold';
+}
+
+.m-botones {
+    margin-top: 40px;
+    margin-bottom: 14px;
+}
+
+.izq-mod {
+    position: relative;
+    left: 96px;
+}
+.der-mod {
+    position: relative;
+    right: 40px;
+}
+.cotiza-color-1 {
+    text-align: center;
+    font-family: 'Avenir-bold';
+    font-size: 2em;
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 20px;
+   
+    
+}
+
+.espacio-bco-2 {
+    padding-bottom: 121px;
+}
+
+.modal-content {
+    border: none;
+
+}
+
+#lead-alm {
+    background-color: #51488B;
+    min-height: 100vh;
+}
+
+
+#lead-mv {
+    background-color: #215A36;
+    min-height: 100vh;
+}
+.fondo-vector {
+    background-image: url(/public/img/miraverde/lead/fondo.svg);
+    background-position: 200px 100px;
+    background-repeat: no-repeat;
+    min-height: 100px;
+
+}
+
+.centro {
+    text-align: left;
+} @media (max-width:700px) {
+    .centro {
+        text-align: center;
+    }
+}
+
+.lead-espacio {
+    padding-top: 40px;
+}
+
+
+.lead-position {
+    position: relative;
+    left: 80px;
+} @media (max-width:700px) {
+    .lead-position {
+        left: auto;
+    }
+}
+
+.f-hubspot {
+    padding-left: 36px;
+}
+
+.bg-gracias {
+    background-image: url(/img/typ.jpg);
+    background-position: center;
+    min-height: 419px;
+}
+
+.lead-espacio-1 {
+    padding-top: 140px;
+}
+
+.typ-h {
+    color: #fff;
+    font-family: 'Avenir-semibold';
+    
+}
+
+.typ-pos {
+    position: relative;
+    top: 150px;
 }
 
 /**ANIMACIONES**/
