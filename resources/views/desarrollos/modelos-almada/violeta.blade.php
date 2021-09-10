@@ -9,13 +9,13 @@
                 <div id="controles-2" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img src="{{asset('/img/almada/modelos/ambar/ambar.jpg')}}" class="d-block w-100" alt="...">
+                        <img src="{{asset('/img/almada/modelos/violeta/violeta.jpg')}}" class="d-block w-100" alt="...">
                       </div>
                       <div class="carousel-item">
-                        <img src="{{asset('/img/almada/modelos/ambar/ambar.jpg')}}" class="d-block w-100" alt="...">
+                        <img src="{{asset('/img/almada/modelos/violeta/violeta.jpg')}}" class="d-block w-100" alt="...">
                       </div>
                       <div class="carousel-item">
-                        <img src="{{asset('/img/almada/modelos/ambar/ambar.jpg')}}" class="d-block w-100" alt="...">
+                        <img src="{{asset('/img/almada/modelos/violeta/violeta.jpg')}}" class="d-block w-100" alt="...">
                       </div>
                     </div>
                     <a class="carousel-control-prev" href="#controles-2" role="button" data-slide="prev">
@@ -38,19 +38,28 @@
                 <div class="row">
                     <div class="col-md-6 col-sm-12">
                         <ul>
-                            <li class="modelo-li pt-2">Modelo Magenta</li>
+                            <li class="modelo-li ">Modelo Magenta</li>
                             <br>
-                            <li>Construcción: <span>52.72 m<sup>2</sup></span></li>
+                            <li>Construcción: <span>62.86 m<sup>2</sup></span></li>
                             <li>Terreno desde: <span>6 x 17 m</li> 
                             <br>
+                            <li>Casa 2 plantas</li>
+                            <li>Amplio Patio</li>
+                            <li>Lista para ampliación</li>
+                            <br>
+
                             <li><b>Planta Arquitectónica</b></li>
 
                             <br>
+                            <li><b>PLANTA BAJA</b></li>
                             <li>Sala / Comedor</li>
-                            <li>Cocina</li>
-                            <li>2 Baño completo</li>
-                            <li>2 Recámaras</li>
-                            <li>Patio trasero</li>
+                            <li>Cocina</li> 
+                            <li>½ baño</li>
+                            <br>
+                            <li><b>PLANTA ALTA</b></li>
+                            <li>Recámara principal con área <br> para closet y terraza</li>
+                            <li>Recámara principal con área <br> para closet </li>
+                            <li>1 Baño completo</li>
                         </ul>
                         <div class="row m-botones botones-modelos">
                             <div class="col-md-6 col-sm-12 mt-3">
@@ -62,7 +71,14 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-12 text-center">
-                        <img src="{{asset('/img/almada/modelos/ambar/planta.png')}}" class="img-fluid" alt="">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <img src="{{asset('/img/almada/modelos/violeta/planta_baja.png')}}" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <img src="{{asset('/img/almada/modelos/violeta/planta_alta.png')}}" class="img-fluid" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="recorrido-modelo m-recorrido">

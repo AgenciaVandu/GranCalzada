@@ -47,7 +47,7 @@
 
                             <br>
                             <li>Sala / Comedor</li>
-                            <li>Conina independiente</li>
+                            <li>Cocina independiente</li>
                             <li>1 Baño completo</li>
                             <li>Recámara principal con área <br> para closet y baño completo</li>
                             <li>Recámara scundaria</li>
