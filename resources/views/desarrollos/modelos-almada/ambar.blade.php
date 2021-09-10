@@ -38,7 +38,7 @@
                 <div class="row">
                     <div class="col-md-6 col-sm-12">
                         <ul>
-                            <li class="modelo-li pt-2">Modelo Magenta</li>
+                            <li class="modelo-li pt-2">Modelo Ambar</li>
                             <br>
                             <li>Construcción: <span>52.72 m<sup>2</sup></span></li>
                             <li>Terreno desde: <span>6 x 17 m</li> 

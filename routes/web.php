@@ -38,6 +38,9 @@ Route::get('/modelo-ambar', function () {
 Route::get('/modelo-violeta', function () {
     return view('desarrollos/modelos-almada/violeta');
 });
+Route::get('/modelo-violeta-plus', function () {
+    return view('desarrollos/modelos-almada/violeta-plus');
+});
 
 
 Route::get('/slider', Slider::class);
