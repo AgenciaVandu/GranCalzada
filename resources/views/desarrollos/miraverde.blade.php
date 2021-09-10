@@ -241,7 +241,7 @@
                         <a href="" class="btn btn-warning">DESCARGAR BROCHURE</a>
                     </div>
                     <div class="col-md-6 col-sm-12 mt-4">
-                        <a href="" class="btn btn-warning">DESCARGAR BROCHURE</a>
+                        <a href="" class="btn btn-warning">CONOCE LOS DESARROLLOS</a>
                     </div>
                 </div>
             </div>

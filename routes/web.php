@@ -96,6 +96,12 @@ Página de agradecimiento
 Route::get('/gracias-por-registrarte', function () {
     return view('desarrollos/typ');
 });
+/*
+Avances de obra
+*/
+Route::get('/avances-de-obra', function () {
+    return view('avances');
+});
 
 
 
@@ -103,8 +109,6 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-/*
-Página de agradecimiento
-*/
+
 
 
