@@ -26,6 +26,16 @@ Route::get('/almada', function () {
 Route::get('/miraverde', function () {
     return view('desarrollos/miraverde');
 });
+Route::get('/modelo-aguamarina', function () {
+    return view('desarrollos/modelos-almada/aguamarina');
+});
+Route::get('/modelo-magenta', function () {
+    return view('desarrollos/modelos-almada/magenta');
+});
+Route::get('/modelo-ambar', function () {
+    return view('desarrollos/modelos-almada/ambar');
+});
+
 
 Route::get('/slider', Slider::class);
 
