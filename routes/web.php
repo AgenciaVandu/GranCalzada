@@ -45,6 +45,9 @@ Route::get('/modelo-violeta-plus', function () {
 Route::get('/modelo-almendro', function () {
     return view('desarrollos/modelos-miraverde/almendro');
 });
+Route::get('/modelo-flamboyan-plus', function () {
+    return view('desarrollos/modelos-miraverde/flamboyan-plus');
+});
 
 
 Route::get('/slider', Slider::class);
