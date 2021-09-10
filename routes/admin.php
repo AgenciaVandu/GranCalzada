@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\VideoController;
 use App\Http\Controllers\ConfigurationController;
 use App\Http\Livewire\Slider;
 use Illuminate\Support\Facades\Route;
@@ -24,3 +25,6 @@ Route::prefix('configurations')->group(function () {
     Route::get('index', [ConfigurationController::class, 'index'])->name('configurations.index');
     Route::get('videos', [ConfigurationController::class, 'videos'])->name('configurations.videos');
 });
+
+
+Route::post('configurations/videos/file', [VideoController::class, 'upload'])->name('admin.configurations.videos');

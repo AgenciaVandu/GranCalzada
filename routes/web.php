@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Livewire\Slider;
+use App\Http\Controllers\LandingController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,9 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-})->name('index');
+Route::get('/', [LandingController::class, 'index'])->name('index');
+
 Route::get('/conoce-gran-calzada', function () {
     return view('gran-calzada');
 })->name('gran.calzada');
