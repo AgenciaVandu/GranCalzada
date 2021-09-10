@@ -9,13 +9,13 @@
                 <div id="controles-2" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img src="{{asset('/img/miraverde/modelos/almendro/almendro.jpg')}}" class="d-block w-100" alt="...">
+                        <img src="{{asset('/img/miraverde/modelos/ceiba-plus/ceiba-plus.jpg')}}" class="d-block w-100" alt="...">
                       </div>
                       <div class="carousel-item">
-                        <img src="{{asset('/img/miraverde/modelos/almendro/almendro.jpg')}}" class="d-block w-100" alt="...">
+                        <img src="{{asset('/img/miraverde/modelos/ceiba-plus/ceiba-plus.jpg')}}" class="d-block w-100" alt="...">
                       </div>
                       <div class="carousel-item">
-                        <img src="{{asset('/img/miraverde/modelos/almendro/almendro.jpg')}}" class="d-block w-100" alt="...">
+                        <img src="{{asset('/img/miraverde/modelos/ceiba-plus/ceiba-plus.jpg')}}" class="d-block w-100" alt="...">
                       </div>
                     </div>
                     <a class="carousel-control-prev" href="#controles-2" role="button" data-slide="prev">
@@ -38,19 +38,26 @@
             <div class="row">
                 <div class="col-md-6 col-sm-12">
                     <ul>
-                        <li class="modelo-li pt-2">Modelo Almendro</li>
-                        <br>
-                        <li>Construcción: <span>42.94 m<sup>2</sup></span></li>
-                        <li>Terreno desde: <span>7 x 17 m</li> <br>
-                        <li><b>Planta Arquitectónica</b></li>
+                        <li class="modelo-li ">Modelo Ceiba Plus</li>
+                            <br>
+                            <li>Construcción: <span>82.25 m2 m<sup>2</sup></span></li>
+                            <li>Terreno desde: <span>7 x 17 m</li> 
+                            <br>
+                            <li><b>Planta Arquitectónica</b></li>
 
-                        <br>
-                        <li>Sala / Comedor</li>
-                        <li>Conina</li>
-                        <li>1 Baño completo</li>
-                        <li>Jardín frontal</li>
-                        <li>2 Recámaras con área <br> para closet</li>
-                        <li>Patio</li>
+                            <br>
+                            <li><b>PLANTA BAJA</b></li>
+                            <li>Sala / Comedor</li>
+                            <li>Cocina independiente</li> 
+                            <li>½ baño</li>
+                            <li>Cochera semitechada</li>
+                            <br>
+                            <li><b>PLANTA ALTA</b></li>
+                            <li>Recámara principal con área <br> para closet y acceso a baño completo</li>
+                            <li>Recámara 1 con área para closet</li>
+                            <li>Recámara 2</li>
+                            <li>Baño completo</li>
+                            
                         
                     </ul>
                     <div class="row m-botones botones-modelos">
@@ -63,7 +70,14 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 text-center">
-                    <img src="{{asset('/img/miraverde/modelos/almendro/planta_baja.png')}}" class="img-fluid" alt="">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <img src="{{asset('/img/miraverde/modelos/ceiba-plus/planta_baja.png')}}" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <img src="{{asset('/img/miraverde/modelos/ceiba-plus/planta_alta.png')}}" class="img-fluid" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="recorrido-modelo m-recorrido">

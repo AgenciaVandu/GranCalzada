@@ -51,6 +51,9 @@ Route::get('/modelo-flamboyan-plus', function () {
 Route::get('/modelo-bugambilia-plus', function () {
     return view('desarrollos/modelos-miraverde/bugambilia-plus');
 });
+Route::get('/modelo-ceiba-plus', function () {
+    return view('desarrollos/modelos-miraverde/ceiba-plus');
+});
 
 
 

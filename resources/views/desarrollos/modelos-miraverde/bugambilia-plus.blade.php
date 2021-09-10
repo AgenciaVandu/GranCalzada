@@ -38,7 +38,7 @@
             <div class="row">
                 <div class="col-md-6 col-sm-12">
                     <ul>
-                        <li class="modelo-li ">Modelo Bugambilia</li>
+                        <li class="modelo-li ">Modelo Bugambilia Plus</li>
                             <br>
                             <li>Construcción: <span>73.69 m<sup>2</sup></span></li>
                             <li>Terreno desde: <span>7 x 17 m</li> 
