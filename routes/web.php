@@ -54,6 +54,10 @@ Route::get('/modelo-bugambilia-plus', function () {
 Route::get('/modelo-ceiba-plus', function () {
     return view('desarrollos/modelos-miraverde/ceiba-plus');
 });
+
+/*
+Ruta de Leads miraverde
+*/
 Route::get('/lead-ceiba-plus', function () {
     return view('desarrollos/modelos-miraverde/conversion/lead-ceiba-plus');
 });
@@ -67,7 +71,24 @@ Route::get('/lead-flamboyan-plus', function () {
     return view('desarrollos/modelos-miraverde/conversion/lead-flamboyan');
 });
 
-
+/*
+Ruta de Leads almada
+*/
+Route::get('/lead-aguamarina', function () {
+    return view('desarrollos/modelos-almada/conversion/lead-aguamarina');
+});
+Route::get('/lead-magenta', function () {
+    return view('desarrollos/modelos-almada/conversion/lead-magenta');
+});
+Route::get('/lead-violeta', function () {
+    return view('desarrollos/modelos-almada/conversion/lead-violeta');
+});
+Route::get('/lead-violeta-plus', function () {
+    return view('desarrollos/modelos-almada/conversion/lead-violeta-plus');
+});
+Route::get('/lead-ambar', function () {
+    return view('desarrollos/modelos-almada/conversion/lead-ambar');
+});
 
 
 Route::get('/slider', Slider::class);
