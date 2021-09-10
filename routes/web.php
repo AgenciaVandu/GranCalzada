@@ -90,9 +90,23 @@ Route::get('/lead-ambar', function () {
     return view('desarrollos/modelos-almada/conversion/lead-ambar');
 });
 
+/*
+Página de agradecimiento
+*/
+Route::get('/gracias-por-registrarte', function () {
+    return view('desarrollos/typ');
+});
+
+
 
 Route::get('/slider', Slider::class);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+/*
+Página de agradecimiento
+*/
+
+
