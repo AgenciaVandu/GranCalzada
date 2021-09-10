@@ -32,6 +32,8 @@
         </div>
    </header>
 
+
+
    <section id="detalles-de-modelo" class="bg-miraverde-1">
     <div class="plantas-modelos">
         <div class="container">

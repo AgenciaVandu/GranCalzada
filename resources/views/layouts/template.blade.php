@@ -114,7 +114,7 @@
                         portalId: "5510950",
                         formId: "4f8b9726-8345-4f16-b902-556d0b33072a"
                         });
-                        </script>
+                </script>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <img src="{{asset('/img/Logo-GranCalzada.svg') }}" alt="">

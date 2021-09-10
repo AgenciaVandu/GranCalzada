@@ -54,6 +54,19 @@ Route::get('/modelo-bugambilia-plus', function () {
 Route::get('/modelo-ceiba-plus', function () {
     return view('desarrollos/modelos-miraverde/ceiba-plus');
 });
+Route::get('/lead-ceiba-plus', function () {
+    return view('desarrollos/modelos-miraverde/conversion/lead-ceiba-plus');
+});
+Route::get('/lead-bugambilia-plus', function () {
+    return view('desarrollos/modelos-miraverde/conversion/lead-bugambilia-plus');
+});
+Route::get('/lead-almendro', function () {
+    return view('desarrollos/modelos-miraverde/conversion/lead-almendro');
+});
+Route::get('/lead-flamboyan-plus', function () {
+    return view('desarrollos/modelos-miraverde/conversion/lead-flamboyan');
+});
+
 
 
 
