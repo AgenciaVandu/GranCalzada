@@ -7,6 +7,9 @@
         <x-jet-nav-link :active="$images" wire:click="setNavigation('images')" class="cursor-pointer">
             {{ __('Imagenes') }}
         </x-jet-nav-link>
+        <x-jet-nav-link :active="$sliders" wire:click="setNavigation('sliders')" class="cursor-pointer">
+            {{ __('Sliders') }}
+        </x-jet-nav-link>
     </div>
 
     <div class="w-full sm:px-6 lg:px-8 mt-6">
@@ -18,6 +21,10 @@
             @if ($images)
                 mostramos imagenes
             @endif
+
+            @if ($sliders)
+            @livewire('admin.configurations.sliders')
+        @endif
         </div>
     </div>
 </div>

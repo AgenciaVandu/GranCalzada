@@ -3,7 +3,7 @@
         <h1 class="text-3xl font-bold ml-4 mb-6 text-center">Administracion de Videos</h1>
         <div class="grid grid-cols-3 gap-4 items-center mb-4">
             <div class="">
-                <h2 class=" text-xl text-gray-700 font-bold mb-2">Sección Index</h2>
+                <h2 class="text-xl text-gray-700 font-bold mb-2">Sección Index</h2>
                 @if ($video_index->first())
                     Vista previa:
                     {{-- <img src="{{ $video_index->temporaryUrl() }}"> --}}
