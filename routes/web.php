@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Livewire\Slider;
+use App\Http\Controllers\LandingController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,17 +14,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', [LandingController::class, 'index'])->name('index');
+
 Route::get('/conoce-gran-calzada', function () {
     return view('gran-calzada');
-});
+})->name('gran.calzada');
+
 Route::get('/almada', function () {
-    return view('desarrollos/almada');
+    return view('desarrollos.almada');
 });
 Route::get('/miraverde', function () {
-    return view('desarrollos/miraverde');
+    return view('desarrollos.miraverde');
 });
 Route::get('/modelo-aguamarina', function () {
     return view('desarrollos/modelos-almada/aguamarina');
@@ -104,8 +104,6 @@ Route::get('/avances-de-obra', function () {
 });
 
 
-
-Route::get('/slider', Slider::class);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

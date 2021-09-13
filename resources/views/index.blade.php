@@ -5,8 +5,13 @@
             <div class="row">
                 <div class="col-12">
                     <div class="video mt-2">
-                        <video src="{{ asset('/video/1000x500.mp4') }}" loop muted preload width="1000" height="auto"
-                            autoplay></video>
+                        @if ($video_index->first())
+                            <video src="{{ Storage::url($video_index->first()->url) }}" loop muted preload width="1000" height="auto"
+                                autoplay></video>
+                        @else
+                            <video src="{{ asset('/video/1000x500.mp4') }}" loop muted preload width="1000" height="auto"
+                                autoplay></video>
+                        @endif
                     </div>
                     <div class="col-12">
                         <h5 class="mt-4"><span class="light">Disfruta la vida</span> EN TU NUEVO HOGAR</h5>

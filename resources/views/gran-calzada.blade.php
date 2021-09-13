@@ -144,15 +144,7 @@
                     <img src="{{ asset('img/gran-calzada/masterplan/logo-ALM.svg') }}" width="140" alt="">
                 </div>
                 <div class="col-8">
-                    <map id="mapMaster" name="mapMaster">
-                        <area shape="poly" alt="" title=""
-                            coords="15,401,588,319,608,272,488,230,467,202,282,156,138,285" href="/miraverde" target="" />
-                        <area
-                            shape="poly" alt="" title=""
-                            coords="611,271,646,203,617,196,640,155,619,148,628,119,583,105,613,68,672,80,674,76,605,60,592,75,440,48,398,53,289,149,469,198,495,226"
-                            href="/almada" target="" />
-                    </map>
-                    <img src="{{ asset('img/gran-calzada/masterplan/Master.svg') }}" class="img-fluid" alt="" usemap="#mapMaster">
+                    <img src="{{ asset('img/gran-calzada/masterplan/Master.svg') }}" class="img-fluid" alt="">
                 </div>
                 <div class="col-2 u-miraverde">
                     <img src="{{ asset('img/gran-calzada/masterplan/logo-MVE.svg') }}" width="140" alt="">
