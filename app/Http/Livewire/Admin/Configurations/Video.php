@@ -23,7 +23,7 @@ class Video extends Component
         $this->validate([
             'index' => 'mimes:mp4,mov,avi,ogg',
         ]);
-        $video = $this->index->store('videos');
+        $video = $this->index->store('resources');
 
         if ($this->video_index->first()) {
             Storage::delete($this->video_index->first()->url);

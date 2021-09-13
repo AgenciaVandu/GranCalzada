@@ -58,7 +58,7 @@
                             Desarrollos
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/almada">Almada</a>
+                            <a class="dropdown-item" href="{{ route('almada.index') }}">Almada</a>
                             <a class="dropdown-item" href="/miraverde">Miraverde</a>
 
                         </div>

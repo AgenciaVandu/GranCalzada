@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AlmadaController;
 use App\Http\Controllers\LandingController;
 use Illuminate\Support\Facades\Route;
 
@@ -20,9 +21,9 @@ Route::get('/conoce-gran-calzada', function () {
     return view('gran-calzada');
 })->name('gran.calzada');
 
-Route::get('/almada', function () {
-    return view('desarrollos.almada');
-});
+Route::get('/almada', [AlmadaController::class, 'index'])->name('almada.index');
+
+
 Route::get('/miraverde', function () {
     return view('desarrollos.miraverde');
 });
@@ -108,7 +109,3 @@ Route::get('/avances-de-obra', function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
-
-
-
-
