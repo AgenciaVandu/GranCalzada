@@ -12,7 +12,8 @@ class AlmadaController extends Controller
     {
         $almada = Development::find(1);
         $header = $almada->sliders->where('section', 'header')->first();
+        $body = $almada->sliders->where('section', 'body')->first();
         $button = $almada->button;
-        return view('desarrollos.almada', compact('almada', 'header', 'button'));
+        return view('desarrollos.almada', compact('almada', 'header', 'body', 'button'));
     }
 }

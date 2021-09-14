@@ -138,15 +138,23 @@
         <div class="carousel">
             <div id="controles" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="{{ asset('/img/almada/cluster.jpg') }}" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="{{ asset('/img/almada/cluster.jpg') }}" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="{{ asset('/img/almada/cluster.jpg') }}" class="d-block w-100" alt="...">
-                    </div>
+                    @isset($body->resources)
+                        @foreach ($body->resources as $resource)
+                            @php
+                                $file = new SplFileInfo($resource->url);
+                                $extension = $file->getExtension();
+                            @endphp
+                            @if ($extension == 'mp4' || $extension == 'mov' || $extension == 'ogg' || $extension == 'avi')
+                                <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
+                                    <video src="{{ Storage::url($resource->url) }}" loop muted preload autoplay></video>
+                                </div>
+                            @else
+                                <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
+                                    <img src="{{ Storage::url($resource->url) }}" class="d-block w-100" alt="...">
+                                </div>
+                            @endif
+                        @endforeach
+                    @endisset
                 </div>
                 <a class="carousel-control-prev" href="#controles" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
