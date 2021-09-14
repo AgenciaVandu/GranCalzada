@@ -4,21 +4,23 @@
         <div class="sp-top">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
-                    @foreach ($slider->resources as $resource)
-                        @php
-                            $file = new SplFileInfo($resource->url);
-                            $extension = $file->getExtension();
-                        @endphp
-                        @if ($extension == 'mp4' || $extension == 'mov' || $extension == 'ogg' || $extension == 'avi')
-                            <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
-                                <video src="{{ Storage::url($resource->url) }}" loop muted preload autoplay></video>
-                            </div>
-                        @else
-                            <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
-                                <img src="{{ Storage::url($resource->url) }}" class="d-block w-100" alt="...">
-                            </div>
-                        @endif
-                    @endforeach
+                    @isset($header->resources)
+                        @foreach ($header->resources as $resource)
+                            @php
+                                $file = new SplFileInfo($resource->url);
+                                $extension = $file->getExtension();
+                            @endphp
+                            @if ($extension == 'mp4' || $extension == 'mov' || $extension == 'ogg' || $extension == 'avi')
+                                <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
+                                    <video src="{{ Storage::url($resource->url) }}" loop muted preload autoplay></video>
+                                </div>
+                            @else
+                                <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
+                                    <img src="{{ Storage::url($resource->url) }}" class="d-block w-100" alt="...">
+                                </div>
+                            @endif
+                        @endforeach
+                    @endisset
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -37,10 +39,10 @@
             <div class="container">
                 <div class="row espacio text-center  p-gc">
                     <div class="col-md-8">
-                        <h3 class="conoce-1">Conoce a detalle <span class="gran-1">LOS DESARROLOS</span></h3>
+                        <h3 class="conoce-1">{{ $button->description }}</h3>
                     </div>
                     <div class="col-md-4 bt-desarrollos">
-                        <a href="#" class="btn btn-primary">DESARROLLOS</a>
+                        <a href="{{ $button->url }}" class="btn btn-primary">{{ $button->text }}</a>
                     </div>
                 </div>
             </div>
@@ -48,10 +50,7 @@
                 <div class="container">
                     <div class="text-center pt-5">
                         <img src="{{ asset('/img/almada/almada.svg') }}" width="150" alt="">
-                        <p style="color: #fff; padding:40px;">almada es un desarrollo tipo cerrada de 1,895 casas (5
-                            diferentes modelos) que se encuentra en la parte sur de Gran Calzada, la cul concentra todos los
-                            servicios y amenidades que las familias necesitan para su vida,ofrece un parque libre y áreas
-                            verdes para actividades recreativas y de diversión.</p>
+                        <p style="color: #fff; padding:40px;">{{ $almada->description }}</p>
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-sm-12 text-center p-caract">

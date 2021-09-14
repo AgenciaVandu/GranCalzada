@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\DevelopmentController;
 use App\Http\Controllers\Admin\VideoController;
 use App\Http\Controllers\ConfigurationController;
 use App\Http\Livewire\Slider;
@@ -20,7 +21,7 @@ Route::get('/', function () {
     return view('dashboard');
 });
 
-
+Route::get('/developments', [DevelopmentController::class, 'index'])->name('developments.index');
 Route::prefix('configurations')->group(function () {
     Route::get('index', [ConfigurationController::class, 'index'])->name('configurations.index');
     Route::get('videos', [ConfigurationController::class, 'videos'])->name('configurations.videos');

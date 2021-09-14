@@ -1,15 +1,14 @@
 <div>
     <div class="px-6 mt-6">
-        <h1 class="text-3xl font-bold ml-4 mb-4">Administración de Sliders</h1>
         {{-- Slider Almada --}}
         <div class="bg-gray-50 shadow-lg mb-4">
             <div class="py-1 px-2 bg-gray-200 rounded rounded-t-lg mb-2">
-                <h2 class="text-xl text-gray-800 font-bold">Slider Amavita</h2>
+                <h2 class="text-xl text-gray-800 font-bold">Slider Cabecera</h2>
             </div>
             <form wire:submit.prevent="uploadAlmada">
                 <div class="flex flex-wrap p-4">
-                    @if ($almada->resources)
-                        @foreach ($almada->resources as $resource)
+                    @isset ($header->resources)
+                        @foreach ($header->resources as $resource)
                             <div class="shadow-md bg-white rounded-lg mx-2 mt-4">
                                 @if ($resource->type == 'video')
                                     <video src="{{ Storage::url($resource->url) }}" loop muted preload autoplay
@@ -51,7 +50,7 @@
                             </div>
 
                         @endforeach
-                    @endif
+                    @endisset
 
                     <div x-data="{ isUploading: false, progress: 0 }" x-on:livewire-upload-start="isUploading = true"
                         x-on:livewire-upload-finish="isUploading = false"
@@ -81,46 +80,6 @@
                     </x-jet-button>
                 </div>
             </form>
-        </div>
-
-        {{-- Slider Miraverde --}}
-        <div class="bg-gray-50 shadow-lg mb-4">
-            <div class="py-1 px-2 bg-gray-200 rounded rounded-t-lg mb-2">
-                <h2 class="text-xl text-gray-800 font-bold">Slider Miravirde</h2>
-            </div>
-            <div class="flex p-4">
-                @isset($miraverde->resources)
-                    @foreach ($miraverde->resources as $resource)
-                        @php
-                            $file = new SplFileInfo($resource->url);
-                            $extension = $file->getExtension();
-                        @endphp
-
-                        <div class="shadow-md bg-white rounded-lg mx-2 ">
-                            @if ($extension == 'mp4' || $extension == 'mov' || $extension == 'ogg' || $extension == 'avi')
-                                <video src="{{ Storage::url($resource->url) }}" loop muted preload autoplay
-                                    class="h-40 w-60"></video>
-                            @else
-                                <img class="h-40 w-60 object-cover" src="{{ Storage::url($resource->url) }}"
-                                    title="{{ Storage::url($resource->url) }}">
-                            @endif
-                            <div class="flex justify-between items-center py-2 mx-2">
-                                <i class="fas fa-film ml-2"></i>
-                                <i class="far fa-image ml-2"></i>
-                                <i class="fas fa-trash cursor-pointer text-gray-800 hover:text-red-600 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-                                    alt="Eliminar"></i>
-                            </div>
-                        </div>
-                    @endforeach
-                @endisset
-                <label
-                    class="w-52 flex flex-col items-center ml-2 px-4 pt-10 bg-white text-gray-700 rounded-lg shadow-lg tracking-wide border border-blue cursor-pointer hover:bg-gray-100 hover:text-green-500">
-                    <i class="far fa-plus-square text-5xl"></i>
-                    <span class="mt-4">Seleccionar archivo(s)</span>
-                    <input type='file' class="hidden" multiple accept="image/*,video/*">
-                </label>
-            </div>
-            <div></div>
         </div>
     </div>
 </div>

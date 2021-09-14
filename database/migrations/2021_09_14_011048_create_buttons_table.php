@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSlidersTable extends Migration
+class CreateButtonsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,11 @@ class CreateSlidersTable extends Migration
      */
     public function up()
     {
-        Schema::create('sliders', function (Blueprint $table) {
+        Schema::create('buttons', function (Blueprint $table) {
             $table->id();
-            $table->string('section');
+            $table->string('url');
+            $table->string('text');
+            $table->text('description');
             $table->unsignedBigInteger('development_id');
             $table->foreign('development_id')->references('id')->on('developments');
             $table->timestamps();
@@ -29,6 +31,6 @@ class CreateSlidersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sliders');
+        Schema::dropIfExists('buttons');
     }
 }

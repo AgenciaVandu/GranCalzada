@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire\Admin\Configurations;
+namespace App\Http\Livewire\Admin\Developments\Almada;
 
 use App\Models\Resource;
 use App\Models\Slider;
@@ -15,11 +15,11 @@ class Sliders extends Component
 
     public $files = [];
     public $count = 0;
+
     public function render()
     {
-        $almada = Slider::where('section', 'almada')->first();
-        $miraverde = Slider::where('section', 'miraverde')->first();
-        return view('livewire.admin.configurations.sliders', compact('almada', 'miraverde'));
+        $header = Slider::where('section', 'header')->first();
+        return view('livewire.admin.developments.almada.sliders', compact('header'));
     }
 
 

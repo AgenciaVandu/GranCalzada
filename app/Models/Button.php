@@ -5,20 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Slider extends Model
+class Button extends Model
 {
     use HasFactory;
 
     protected $guarded = ['id'];
 
-    //Relacion uno a muchos inversa
+    //Relacion uno a uno inversa
     public function development()
     {
         return $this->belongsTo(Development::class);
-    }
-
-    public function resources()
-    {
-        return $this->morphMany(Resource::class, 'resourable');
     }
 }
