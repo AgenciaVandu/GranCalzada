@@ -104,6 +104,17 @@ Route::get('/avances-de-obra', function () {
     return view('avances');
 });
 
+/*
+Ruta del blog
+*/ 
+Route::get('/blog', function () {
+    return view('blog.index');
+});
+
+Route::get('/articulo', function () {
+    return view('blog.article');
+});
+
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
