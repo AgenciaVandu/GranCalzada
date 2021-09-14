@@ -19,6 +19,7 @@ body {
 }
 
 
+
 /*h1-h2...*/
 h1,h2 {
     color: #EE4A7B;
@@ -1010,6 +1011,16 @@ li {
 .avances-h {
     text-align: center;
     font-family: 'Avenir-bold';
+}
+
+.p-blog {
+    padding-top: 130px;
+    padding-bottom: 80px;
+}
+
+.card {
+    background-color: #e7e7e7;
+    border: none;
 }
 
 /**ANIMACIONES**/
