@@ -9,21 +9,23 @@
                 
                 <div class="control-box p-3 main-content">
                     <div class="cabecera-blog">
-                        <img src="{{asset('/img/blog/cabecera-blog.jpg')}}" alt="Cabecera blog" class="img-fluid">
+                        <div class="control-w">
+                            <img src="{{asset('/img/blog/cabecera-blog.jpg')}}" alt="Cabecera blog" class="img-fluid">
+                        </div>
                         <div class="row pt-3">
                             <div class="col-10 compartir">
-                               <h5>Compartir</h5>
+                               <h5>Compartir:</h5>
                             </div>
                             <div class="col-2">
                                 <div class="row">
                                    <div class="redes-sociales pl-2">
-                                    <i class="fab fa-facebook"></i>
+                                    <a href=""><i class="fab fa-facebook-square"></i></a>
                                    </div>
                                     <div class="redes-sociales pl-2">
-                                        <i class="fab fa-facebook"></i>
+                                       <a href=""> <i class="fab fa-twitter"></i></a>
                                     </div>
                                     <div class="redes-sociales pl-2">
-                                        <i class="fab fa-facebook"></i>
+                                        <a href=""><i class="fab fa-whatsapp-square"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -49,12 +51,32 @@
             </div>
             <div class="col-md-4">
                 <div class="control-box p-3">
-                    <h2>Páginas</h2>
+                    <label for="site-search">Buscar en artículos</label>
+                    <input type="search" id="site-search" name="q"
+                    aria-label="BUSCAR" class="btn-block">
                 </div>
-                <div class="control-box p-3 mt-3 sidebar">
-                    <a href="carrinho.html">
-                        <img src="https://www.negocioem21dias.org/wp-content/uploads/2018/01/negocio-em-21-dias-logo-principal-750x400.jpg" class="img-fluid">
-                    </a>
+                <div class="control-box mt-3 sidebar">
+                    <li class="categoria-articulo-h">Categorías</li>
+                    <li class="categoria-articulo mt-2">Todas</li>
+                    <li class="categoria-articulo mt-2">Noticias</li>
+                    <li class="categoria-articulo mt-2">Promociones</li>
+                </div>
+                <div class="control-box p-3 mt-3">
+                   <h4>
+                       <b>POST RECIENTES</b>
+                    </h4>
+                   <div class="card pt-3">
+                        <img src="{{asset ('/img/blog/blog-img.jpg')}}" alt="imagen destacada blog">
+                        <h4 class="pt-3">Titulo de entrada</h4>
+                        <p class="extracto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, nulla facere. Quis placeat, impedit sequi nobis repellendus amet ullam ab. Facere odit commodi maiores error, voluptate sint illo nulla tempora dicta temporibus voluptatibus ad debitis earum</p>
+                        <a href="" class="text-center" ><b>Leer más</b></a>
+                    </div>
+                    <div class="card pt-3">
+                        <img src="{{asset ('/img/blog/blog-img.jpg')}}" alt="imagen destacada blog">
+                        <h4 class="pt-3">Titulo de entrada</h4>
+                        <p class="extracto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, nulla facere. Quis placeat, impedit sequi nobis repellendus amet ullam ab. Facere odit commodi maiores error, voluptate sint illo nulla tempora dicta temporibus voluptatibus ad debitis earum</p>
+                        <a href="" class="text-center" ><b>Leer más</b></a>
+                    </div>
                 </div>
             </div>
         </div>

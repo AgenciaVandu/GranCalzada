@@ -1018,7 +1018,7 @@ li {
 }
 
 .card {
-    background-color: #e7e7e7;
+    background-color: #fff;
     border: none;
 }
 
@@ -1042,6 +1042,18 @@ li {
     font-family: 'Avenir-regular';
 }
 
+.categoria-articulo-h {
+    color: #000;
+    position: relative;
+    left: 15px;
+    font-family: 'Avenir-bold';
+    font-size: 18px;
+}
+.categoria-articulo {
+    color: #000;
+    position: relative;
+    left: 15px;
+}
 
 /* Artiulos */
 
@@ -1056,8 +1068,6 @@ li {
 }
 
 .control-box {
-	
-	
 	background-color: #fff;
 }
 
@@ -1067,11 +1077,11 @@ li {
 	margin: 0;
 }
 
-.control-box .links li {
+.control-box li {
 	margin-bottom: 10px;
 }
 
-.control-box .links li a {
+.control-box li a {
 	color: #aa1212;
 	text-decoration: underline;
 }
@@ -1080,15 +1090,9 @@ li {
 	margin-top: 20px;
 }
 
-.breadcrumb p {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
-	color: #777;
-	font-size: 14px;
-}
-
-.breadcrumb p a {
-	color: #aa1212;
+.control-w {
+    height: 424px;
+    object-fit: cover;
 }
 
 .main-content h6 {
@@ -1121,7 +1125,23 @@ li {
     text-align: right;
     font-family: 'Avenir-bold';
     color: #000;
+    font-size: 10px;
 }
+
+.redes-sociales {
+    font-size: 18px;
+    
+}
+
+a {
+    color: #000;
+}
+
+a:hover {
+    color: #c62454;
+}
+
+
 
 .titular-de-blog {
     font-size: 36px;
