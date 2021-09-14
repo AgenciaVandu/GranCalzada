@@ -110,6 +110,11 @@ Route::get('/blog', function () {
     return view('blog.index');
 });
 
+Route::get('/articulo', function () {
+    return view('blog.article');
+});
+
+
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

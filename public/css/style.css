@@ -1013,8 +1013,7 @@ li {
     font-family: 'Avenir-bold';
 }
 
-.p-blog {
-    padding-top: 130px;
+#entradas {
     padding-bottom: 80px;
 }
 
@@ -1022,6 +1021,113 @@ li {
     background-color: #e7e7e7;
     border: none;
 }
+
+.categorias {
+    font-family: 'Avenir-semibold';
+    color: #EE4A7B;
+}
+
+.categorias-1 {
+    color: #16366e;
+    font-family: 'Avenir-regular';
+}
+
+.blog-titular {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.extracto {
+    text-align: justify;
+    font-family: 'Avenir-regular';
+}
+
+
+/* Artiulos */
+
+
+.content {
+    padding-top: 80px;
+}
+
+.control-box h2 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+.control-box {
+	
+	
+	background-color: #fff;
+}
+
+.control-box .links {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.control-box .links li {
+	margin-bottom: 10px;
+}
+
+.control-box .links li a {
+	color: #aa1212;
+	text-decoration: underline;
+}
+
+.content {
+	margin-top: 20px;
+}
+
+.breadcrumb p {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: #777;
+	font-size: 14px;
+}
+
+.breadcrumb p a {
+	color: #aa1212;
+}
+
+.main-content h6 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 27px;
+	color: #000;
+	margin-bottom: 20px;
+}
+
+.main-content p {
+	font-size: 17px;
+	color: #777;
+	line-height: 29px;
+	margin-bottom: 20px;
+}
+
+.main-content img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: auto;
+}
+
+.main-content h1 {
+	margin-bottom: 20px;
+}
+
+.compartir {
+    text-align: right;
+    font-family: 'Avenir-bold';
+    color: #000;
+}
+
+.titular-de-blog {
+    font-size: 36px;
+    font-family: 'Avenir-bold';
+}
+
 
 /**ANIMACIONES**/
 
