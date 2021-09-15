@@ -205,23 +205,16 @@ hr {
     background-color: #16366e;
 }
 
-.fa-whatsapp {
+.whatsapp {
     font-size: 28px;
     color: #EE4A7B;
 }
 
-.fa-whatsapp:hover {
+.whatsapp:hover {
     color: #16366e;
 }
 
-.hubspot {
-    padding: 10px;
-}
 
-.ubis {
-    color: #fff;
-    font-size: 12px;
-}
 
 .plantas {
     position: absolute;
@@ -1095,15 +1088,10 @@ li {
     object-fit: cover;
 }
 
-.main-content h6 {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 700;
-	font-size: 27px;
-	color: #000;
-	margin-bottom: 20px;
-}
+
 
 .main-content p {
+    font-family: 'Avenir-regular';
 	font-size: 17px;
 	color: #777;
 	line-height: 29px;
@@ -1117,9 +1105,6 @@ li {
 	margin: auto;
 }
 
-.main-content h1 {
-	margin-bottom: 20px;
-}
 
 .compartir {
     text-align: right;
@@ -1176,9 +1161,44 @@ a:hover {
     }
 }
 
+/* Footer */
+
 footer {
     background-color: #EE4A7B;
 } 
+
+.icono {
+    color: #fff;
+    text-align: left;
+    font-size: 24px;
+}
+
+iframe {
+    height: 250px;
+    width: 100%;
+}
+
+
+.hubspot {
+    padding: 10px;
+}
+
+.ubis a,
+.ubis {
+    color: #fff;
+    font-family: 'Avenir-semibold';
+    font-size: 14px;
+
+}
+
+.imagenes-center {
+    text-align: center;
+    padding-top: 70px;   
+} @media (max-width: 700px){
+    .imagenes-center {
+        padding-top: 0;
+    }
+}
 
 
 
