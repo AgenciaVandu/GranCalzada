@@ -74,22 +74,22 @@
                     <h1 style="color: #fff" class="pt-3 pb-4">Equipamiento de primer nivel</h1>
                     <div class="row">
                         <!--slider movil-->
-                        <div class="col-md-3">
+                        <div class="col">
                             <img src="{{ asset('img/icon/Electricidad2.svg') }}" width="180"
                                 alt="Equipamiento del desarrollo | Gran Calzada">
                             <h3 class="equipamiento-h pt-2">Electricidad <br>subterránea</h3>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col">
                             <img src="{{ asset('img/icon/planta2.svg') }}" width="180"
                                 alt="Equipamiento del desarrollo | Gran Calzada">
                             <h3 class="equipamiento-h pt-2">Planta de <br>tratamiento</h3>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col">
                             <img src="{{ asset('img/icon/pozo2.svg') }}" width="180"
                                 alt="Equipamiento del desarrollo | Gran Calzada">
                             <h3 class="equipamiento-h pt-2">Pozo de <br>captación</h3>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col">
                             <img src="{{ asset('img/icon/drenaje2.svg') }}" width="180"
                                 alt="Equipamiento del desarrollo | Gran Calzada">
                             <h3 class="equipamiento-h pt-2">Drenaje <br>pluvial</h3>

@@ -92,7 +92,7 @@
                     <div class="bg-almada">
                         <img src="{{ asset('/img/almada.png') }}" alt="Gran Calzada | Ciudad Viva"
                             class="img-fluid pt-3 pb-3">
-                        <h4 style="color: #fff" class="pb-2">
+                        <h4 style="color: #fff; font-family:'Avenir-regular'" class="pb-2">
                             Desde:<span> $385,000</span>
                         </h4>
                         <p style="color: #fff">Almada® es un desarrollo tipo cerrada que conecta con nuestra Gran Calzada®,
@@ -133,7 +133,7 @@
                     <div class="bg-miraverde">
                         <img src="{{ asset('/img/miraverde.png') }}" alt="Gran Calzada | Ciudad Viva"
                             class="img-fluid pt-3 pb-3">
-                        <h4 style="color: #fff" class="pb-2">
+                        <h4 style="color: #fff; font-family:'Avenir-regular'" class="pb-2">
                             Desde:<span> $385,000</span>
                         </h4>
                         <p style="color: #fff">Almada® es un desarrollo tipo cerrada que conecta con nuestra Gran Calzada®,
@@ -141,34 +141,34 @@
                             mientras la recorren para realizar las actividades de su vida diaria.</p>
                         <div class="row">
                             <div class="col-5 text-right pt-2">
-                                <img src="{{ asset('/img/icon/icon-mira.svg') }}" alt="" class="img-fluid"
+                                <img src="{{ asset('/img/modelos/1.svg') }}" alt="" class="img-fluid"
                                     width="35">
                             </div>
                             <div class="col-7 justify-center m-auto">
                                 <p class="elemento">338 Casas</p>
                             </div>
                             <div class="col-5 text-right pt-2">
-                                <img src="{{ asset('/img/icon/icon-mira.svg') }}" alt="" class="img-fluid"
+                                <img src="{{ asset('/img/modelos/5.svg') }}" alt="" class="img-fluid"
                                     width="35">
                             </div>
                             <div class="col-7 justify-center m-auto">
                                 <p class="elemento">Caseta de acceso</p>
                             </div>
                             <div class="col-5 text-right pt-2">
-                                <img src="{{ asset('/img/icon/icon-mira.svg') }}" alt="" class="img-fluid"
+                                <img src="{{ asset('/img/modelos/4.svg') }}" alt="" class="img-fluid"
                                     width="35" style="width: 40">
                             </div>
                             <div class="col-7 justify-center m-auto">
                                 <p class="elemento">Barda perimetral</p>
                             </div>
                             <div class="col-5 text-right pt-2">
-                                <img src="{{ asset('/img/icon/icon-mira.svg') }}" alt="" class="img-fluid"
+                                <img src="{{ asset('/img/modelos/2.svg') }}" alt="" class="img-fluid"
                                     width="35" style="width: 40">
                             </div>
                             <div class="col-7 justify-center m-auto">
                                 <p class="elemento">Parque central</p>
                             </div>
-                            <div class="col-7 pb-3">
+                            <div class="col-7 pb-1">
                                 
                             </div>
                         </div>
