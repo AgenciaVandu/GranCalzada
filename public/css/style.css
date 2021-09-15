@@ -185,7 +185,11 @@ h5 {
 }
 
 video{
-    width:100%;
+    width:1000px;
+} @media (max-width: 700px) {
+    video {
+        width: 100%;
+    }
 }
 
 .video {
@@ -220,11 +224,6 @@ hr {
     position: absolute;
     top: 50px;
     right: -230px; 
-}
-
-#introduccion {
-    margin-top: 50px;
-    margin-bottom: 50px;
 }
 
 .txt-calzada {
@@ -273,6 +272,8 @@ hr {
 .signo-1 {
     font-size: 1.4em;
 }
+
+
 
 .titular-modelos {
     line-height: 40px;
@@ -417,7 +418,19 @@ hr {
     background-color: #e7e7e7;
 }
 
-
+.bg-azul-index{
+    padding-top: 140px;
+    background-image: url(/img/fondo-1.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    min-height: 450px;
+} @media(max-width:700px) {
+    .bg-azul-index {
+        background-image: url(/img/fondo-1-resp.svg);
+        
+    }
+}
 
 .bg-azul{
     background-color: #16366e;

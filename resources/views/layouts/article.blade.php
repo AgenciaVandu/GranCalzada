@@ -146,7 +146,7 @@
                     </script>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 imagenes-center text-center">
-                    <img src="{{ asset('/img/logos.png') }}" class="img-fluid" alt="">
+                    <img src="{{ asset('/img/logos.svg') }}" class="img-fluid" alt="">
                     
                 </div>
             </div>
