@@ -120,9 +120,11 @@
                         <div class="col-12 mt-4 bt-desarrollos">
                             <a href="#" class="btn btn-primary">DESCARGAR BROCHURE</a>
                         </div>
-                        <div class="col-12 mt-5">
-                            <img src="{{ asset('/img/almada/recorrido.png') }}" class="img-fluid" alt="">
-                        </div>
+                        @if ($video_body->visible)
+                            <div class="col-12 mt-5">
+                                <video src="{{ Storage::url($video_body->resources->first()->url) }}"></video>
+                            </div>
+                        @endif
                     </div>
                 </div>
             </div>
@@ -166,7 +168,6 @@
                 </a>
             </div>
         </div>
-
     </section>
 
     <section id="cotiza-tu-casa">

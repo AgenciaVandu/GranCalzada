@@ -36,6 +36,7 @@
                                 @livewire('admin.developments.almada.description',['dev_almada' => $dev_almada])
                                 @livewire('admin.developments.almada.button',['dev_almada' => $dev_almada])
                                 @livewire('admin.developments.almada.sliders')
+                                @livewire('admin.developments.almada.videos')
                             @endif
                             @if ($models)
                                 models
