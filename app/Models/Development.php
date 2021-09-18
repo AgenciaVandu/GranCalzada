@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Model as ModelsModel;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -13,7 +14,13 @@ class Development extends Model
     //Relacion uno a muchos
     public function sliders()
     {
-        return $this->hasMany(Slider::class);
+        return $this->morphMany(Slider::class, 'slidable');
+    }
+
+    //Relacion uno a muchos
+    public function models()
+    {
+        return $this->hasMany(ModelsModel::class);
     }
     //Relacion uno a uno
     public function button()

@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire\Admin\Developments\Almada;
 
+use App\Models\Development;
 use App\Models\Resource;
 use App\Models\Slider;
 use Illuminate\Support\Facades\Storage;
@@ -16,12 +17,21 @@ class Sliders extends Component
     public $files_1 = [];
     public $files_2 = [];
     public $count = 0;
+    public $dev_almada;
+    public $sliders;
+    public $header, $body;
+    public $listeners = ['render'];
+
+    public function mount()
+    {
+        $this->sliders = $this->dev_almada->sliders;
+        $this->header = $this->sliders->where('section', 'header')->first();
+        $this->body = $this->sliders->where('section', 'body')->first();
+    }
 
     public function render()
     {
-        $header = Slider::where('section', 'header')->first();
-        $body = Slider::where('section', 'body')->first();
-        return view('livewire.admin.developments.almada.sliders', compact('header','body'));
+        return view('livewire.admin.developments.almada.sliders');
     }
 
 
@@ -37,24 +47,25 @@ class Sliders extends Component
             'files_1.*' => 'mimes:mp4,mov,ogg,avi,png,svg,jpg,jpeg',
         ]);
 
-        $almada = Slider::find(1);
+        $header = $this->header;
         foreach ($this->files_1 as $file) {
             $url = $file->store('resources');
             $name = new SplFileInfo($url);
             $extension = $name->getExtension();
             if ($extension == 'mp4' || $extension == 'mov' || $extension == 'ogg' || $extension == 'avi') {
-                $almada->resources()->create([
+                $header->resources()->create([
                     'url' => $url,
                     'type' => 'video'
                 ]);
             } else {
-                $almada->resources()->create([
+                $header->resources()->create([
                     'url' => $url,
                     'type' => 'image'
                 ]);
             }
         }
         $this->reset(['files_1', 'count']);
+        $this->header = Slider::find($header->id);
     }
 
     public function uploadBodySlider()
@@ -63,29 +74,31 @@ class Sliders extends Component
             'files_2.*' => 'mimes:mp4,mov,ogg,avi,png,svg,jpg,jpeg',
         ]);
 
-        $almada = Slider::find(2);
+        $body = $this->body;
         foreach ($this->files_2 as $file) {
             $url = $file->store('resources');
             $name = new SplFileInfo($url);
             $extension = $name->getExtension();
             if ($extension == 'mp4' || $extension == 'mov' || $extension == 'ogg' || $extension == 'avi') {
-                $almada->resources()->create([
+                $body->resources()->create([
                     'url' => $url,
                     'type' => 'video'
                 ]);
             } else {
-                $almada->resources()->create([
+                $body->resources()->create([
                     'url' => $url,
                     'type' => 'image'
                 ]);
             }
         }
         $this->reset(['files_2', 'count']);
+        $this->body = Slider::find($body->id);
     }
 
     public function delete(Resource $resource)
     {
         Storage::delete($resource->url);
         $resource->delete();
+        $this->emit('render');
     }
 }

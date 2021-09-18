@@ -12,13 +12,13 @@ class Slider extends Model
     protected $guarded = ['id'];
 
     //Relacion uno a muchos inversa
-    public function development()
-    {
-        return $this->belongsTo(Development::class);
-    }
-
     public function resources()
     {
         return $this->morphMany(Resource::class, 'resourable');
+    }
+
+    //Relacion morfologica uno a muchos
+    public function slidable(){
+        return $this->morphTo();
     }
 }

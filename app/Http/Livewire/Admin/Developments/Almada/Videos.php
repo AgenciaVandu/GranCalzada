@@ -19,7 +19,9 @@ class Videos extends Component
     public function mount()
     {
         $this->video = Video::where('section', 'almada_body')->first();
-        $this->visible = $this->video->visible;
+        if ($this->video) {
+            $this->visible = $this->video->visible;
+        }
     }
 
     public function updatedfile()

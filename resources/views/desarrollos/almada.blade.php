@@ -1,10 +1,10 @@
 @extends('layouts.template')
 @section('content')
-    <header id="almada-top">
-        <div class="sp-top">
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    @isset($header->resources)
+    @isset($header->resources)
+        <header id="almada-top">
+            <div class="sp-top">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
                         @foreach ($header->resources as $resource)
                             @php
                                 $file = new SplFileInfo($resource->url);
@@ -20,19 +20,19 @@
                                 </div>
                             @endif
                         @endforeach
-                    @endisset
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
-        </div>
-    </header>
+        </header>
+    @endisset
 
     <section id="desarrollo-almada">
         <div class="det-almada">
@@ -120,11 +120,13 @@
                         <div class="col-12 mt-4 bt-desarrollos">
                             <a href="#" class="btn btn-primary">DESCARGAR BROCHURE</a>
                         </div>
-                        @if ($video_body->visible)
-                            <div class="col-12 mt-5">
-                                <video src="{{ Storage::url($video_body->resources->first()->url) }}"></video>
-                            </div>
-                        @endif
+                        @isset($video_body->resources)
+                            @if ($video_body->visible)
+                                <div class="col-12 mt-5">
+                                    <video src="{{ Storage::url($video_body->resources->first()->url) }}"></video>
+                                </div>
+                            @endif
+                        @endisset
                     </div>
                 </div>
             </div>
@@ -137,10 +139,10 @@
                 <h4 class="disfruta">Disfruta la vida <br> <span class="disfruta-color">EN TU NUEVO HOGAR</span></h4>
             </div>
         </div>
-        <div class="carousel">
-            <div id="controles" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    @isset($body->resources)
+        @isset($body->resources)
+            <div class="carousel">
+                <div id="controles" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
                         @foreach ($body->resources as $resource)
                             @php
                                 $file = new SplFileInfo($resource->url);
@@ -156,18 +158,18 @@
                                 </div>
                             @endif
                         @endforeach
-                    @endisset
+                    </div>
+                    <a class="carousel-control-prev" href="#controles" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#controles" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-                <a class="carousel-control-prev" href="#controles" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#controles" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
-        </div>
+        @endisset
     </section>
 
     <section id="cotiza-tu-casa">

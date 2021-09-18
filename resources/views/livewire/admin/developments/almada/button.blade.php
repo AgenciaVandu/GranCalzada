@@ -3,7 +3,7 @@
     <div class="px-6 mt-6" x-data="{open:false}">
         <div class="bg-gray-50 shadow-lg mb-4">
             <div class="py-1 px-2 bg-gray-200 rounded rounded-t-lg mb-2 cursor-pointer hover:bg-gray-100" x-on:click="open=!open">
-                <h2 class="text-xl text-gray-800 font-bold">Seccion botón</h2>
+                <h2 class="text-xl text-gray-800 font-bold">Seccion Botón</h2>
             </div>
             <div class="p-4" x-show="open">
                 <x-jet-label>

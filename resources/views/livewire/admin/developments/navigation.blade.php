@@ -35,11 +35,11 @@
                             @if ($index)
                                 @livewire('admin.developments.almada.description',['dev_almada' => $dev_almada])
                                 @livewire('admin.developments.almada.button',['dev_almada' => $dev_almada])
-                                @livewire('admin.developments.almada.sliders')
+                                @livewire('admin.developments.almada.sliders',['dev_almada' => $dev_almada])
                                 @livewire('admin.developments.almada.videos')
                             @endif
                             @if ($models)
-                                models
+                                @livewire('admin.developments.almada.models', ['development' => $dev_almada])
                             @endif
                             @if ($lots)
                                 lots
