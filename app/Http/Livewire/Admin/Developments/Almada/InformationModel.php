@@ -22,9 +22,8 @@ class InformationModel extends Component
             'name' => $this->name,
             'price' => $this->price
         ]);
-        $this->emit('render');
-
         $this->model = Model::find($model->id);
+        $this->emit('render');
     }
 
     public function render()

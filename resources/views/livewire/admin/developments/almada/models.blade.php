@@ -8,7 +8,7 @@
                     <h2 class="text-xl text-gray-800 font-bold">{{ $item->name }}</h2>
 
                 </div>
-                <div x-show="open" @click.away="open=false">
+                <div x-show="open">
                     {{-- Info Model --}}
                     @livewire('admin.developments.almada.information-model', ['model' => $item],
                     key('information-model'.$item->id))

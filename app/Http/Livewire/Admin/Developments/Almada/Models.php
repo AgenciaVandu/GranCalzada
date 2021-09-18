@@ -17,7 +17,7 @@ class Models extends Component
     public $name, $price;
     public $models;
     public $slider;
-    protected $listeners = ['refresh'];
+    protected $listeners = ['render'];
 
     public function mount(Development $development)
     {

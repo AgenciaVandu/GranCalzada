@@ -13,17 +13,18 @@
         <p class="font-semibold">Lista de caracteristicas</p>
         <ul class="list-disc list-inside mt-2">
             @foreach ($model->features as $item)
-                <li class="text-md text-semibold" x-data="{open:false}">
+                <li class="text-semibold" x-data="{open:false}">
                     <span x-show="!open">{{ $item->name }}</span>
                     <span class="ml-3 mr-1">
                         <x-jet-input type="text" class="py-1 my-1" wire:model="feature.name" x-show="open"
                             @click.away="open=false" />
-                        <i class="fas fa-pen text-sm hover:text-gray-600" x-show="!open"
+                        <i class="fas fa-pen text-xs hover:text-gray-600 cursor-pointer" x-show="!open"
                             wire:click="edit({{ $item }})" x-on:click="open=!open"></i>
                     </span>
                     <span>
-                        <i class="fas fa-trash text-sm hover:text-red-600" x-show="!open"></i>
-                        <x-jet-button class="py-1" x-show="open" wire:click="update({{ $item }})">Actualizar</x-jet-button>
+                        <i class="fas fa-trash text-xs hover:text-red-600 cursor-pointer" x-show="!open"></i>
+                        <x-jet-button class="py-1" x-show="open" wire:click="update({{ $item }})">
+                            Actualizar</x-jet-button>
                     </span>
                 </li>
             @endforeach
