@@ -3,16 +3,11 @@
 namespace App\Http\Livewire\Admin\Developments\Almada;
 
 use App\Models\Development;
-use App\Models\Model;
-use App\Models\Slider;
 use Livewire\Component;
-use Livewire\WithFileUploads;
-use SplFileInfo;
+
 
 class Models extends Component
 {
-
-
     public $development;
     public $name, $price;
     public $models;
