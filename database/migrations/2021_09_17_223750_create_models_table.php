@@ -17,7 +17,7 @@ class CreateModelsTable extends Migration
             $table->id();
             $table->string('name');
             $table->float('price');
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->text('virtual')->nullable();
             $table->boolean('virtual_visible')->default(false);
 
