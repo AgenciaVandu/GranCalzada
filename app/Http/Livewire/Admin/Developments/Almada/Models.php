@@ -9,9 +9,7 @@ use Livewire\Component;
 class Models extends Component
 {
     public $development;
-    public $name, $price;
     public $models;
-    public $slider;
     protected $listeners = ['render'];
 
     public function mount(Development $development)

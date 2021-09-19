@@ -1,6 +1,6 @@
 <div class="bg-white shadow-lg py-1 mb-2 rounded-lg">
     <h2 class="text-gray-600 font-bold text-2xl mx-3 mt-4">Slider cabecera</h2>
-    <form wire:submit.prevent="uploadHeaderSlider({{ $model }})">
+    <form wire:submit.prevent="uploadHeaderSlider({{ $model->id }})">
         <div class="flex flex-wrap p-4">
             @isset($slider->resources)
                 @foreach ($slider->resources as $resource)

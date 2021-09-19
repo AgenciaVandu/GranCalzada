@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Model as ModelsModel;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -18,7 +19,13 @@ class Slider extends Model
     }
 
     //Relacion morfologica uno a muchos
-    public function slidable(){
+    public function slidable()
+    {
         return $this->morphTo();
+    }
+
+    public function model()
+    {
+        return $this->belongsTo(ModelsModel::class);
     }
 }

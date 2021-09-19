@@ -26,4 +26,16 @@ class Model extends ModelEloquent
     {
         return $this->morphMany(Slider::class, 'slidable');
     }
+
+    //Relacion uno a muchos
+    public function image()
+    {
+        return $this->morphMany(Resource::class, 'resourable');
+    }
+
+
+    public function getRouteKeyName()
+    {
+        return 'name';
+    }
 }

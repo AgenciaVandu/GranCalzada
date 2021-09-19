@@ -8,18 +8,11 @@
             <div class="col-12 mt-4">
                 <div id="controles-2" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="{{ asset('/img/almada/modelos/aguamarina/aguamarina.jpg') }}" class="d-block w-100"
-                                alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="{{ asset('/img/almada/modelos/aguamarina/aguamarina.jpg') }}" class="d-block w-100"
-                                alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="{{ asset('/img/almada/modelos/aguamarina/aguamarina.jpg') }}" class="d-block w-100"
-                                alt="...">
-                        </div>
+                        @foreach ($slider as $resource)
+                            <div class="carousel-item active">
+                                <img src="{{ Storage::url($resource->url) }}" class="d-block w-100" alt="...">
+                            </div>
+                        @endforeach
                     </div>
                     <a class="carousel-control-prev" href="#controles-2" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -48,10 +41,7 @@
                             <li><b>Planta Arquitectónica</b></li>
 
                             <br>
-                            <li>Sala / Comedor</li>
-                            <li>Conina</li>
-                            <li>Recámara principal con área <br> para closet y baño completo</li>
-                            <li>Recámara scundaria</li>
+
                         </ul>
                         <div class="row m-botones botones-modelos">
                             <div class="col-md-6 col-sm-12 mt-3">
@@ -83,8 +73,8 @@
                         <div class="col-4 mt-3">
                             <!--Mod 2-->
                             <div class="card bg-cruzada">
-                                <img src="{{ asset('/img/almada/venta-cruzada/aguamarina-03.png') }}" class="img-fluid"
-                                    alt="Modelos disponibles | Gran Calzada">
+                                <img src="{{ asset('/img/almada/venta-cruzada/aguamarina-03.png') }}"
+                                    class="img-fluid" alt="Modelos disponibles | Gran Calzada">
                                 <div class="titulo-cruzada text-center pt-3">
                                     <h2 class="t-mod" style="color: #C90B89;">Magenta</h2>
                                     <p class="p-desde">Desde:

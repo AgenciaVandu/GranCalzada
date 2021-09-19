@@ -13,8 +13,7 @@
                     @livewire('admin.developments.almada.information-model', ['model' => $item],
                     key('information-model'.$item->id))
                     {{-- Slider Model --}}
-                    @livewire('admin.developments.almada.slider-model', ['model' =>
-                    $item],key('slider-model'.$item->id))
+                    @livewire('admin.developments.almada.slider-model', ['model' => $item],key('slider-model'.$item->id))
                     {{-- Features Model --}}
                     @livewire('admin.developments.almada.features', ['model' => $item],key('features'.$item->id))
                 </div>

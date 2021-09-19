@@ -3,7 +3,6 @@
 namespace App\Http\Livewire\Admin\Developments\Almada;
 
 use App\Models\Model;
-use App\Models\Resource;
 use Illuminate\Support\Facades\Storage;
 use Livewire\Component;
 use Livewire\WithFileUploads;
@@ -14,13 +13,14 @@ class InformationModel extends Component
     public $model;
     public $name, $price;
     public $file;
-    public $slider;
+    public $virtual;
 
     public function mount(Model $model)
     {
+        $this->model = $model;
         $this->name = $model->name;
         $this->price = $model->price;
-        $this->slider = $model->resources;
+        $this->virtual = $model->virtual;
     }
 
     public function updatedfile()
@@ -30,28 +30,43 @@ class InformationModel extends Component
         ]);
     }
 
-    public function update(Model $model)
+    public function update($model)
     {
-        $model->update([
-            'name' => $this->name,
-            'price' => $this->price
-        ]);
+        $model = Model::find($model);
+        if (!empty($this->file)) {
+            Storage::delete($model->image);
+            $url = $this->file->store('resources');
+            $model->update([
+                'name' => $this->name,
+                'price' => $this->price,
+                'image' => $url,
+            ]);
+            if ($model->image != null) {
+                $model->image()->update([
+                    'url' => $url,
+                    'type' => 'image',
+                    'resourable_id' => $model->id,
+                    'resourable_type' => 'App\Models\Model',
+                ]);
+            } else {
+                $model->image()->create([
+                    'url' => $url,
+                    'type' => 'image',
+                    'resourable_id' => $model->id,
+                    'resourable_type' => 'App\Models\Model',
 
-        $url = $this->file->store('resources');
-
-        if ($model->resources) {
-            Storage::delete($model->resources->first()->url);
+                ]);
+            }
         } else {
-            Resource::create([
-                'url' => $url,
-                'type' => 'image',
-                'resourable_id' => $this->model->id,
-                'resourable_type' => 'App\Models\Model',
+            $model->update([
+                'name' => $this->name,
+                'price' => $this->price,
             ]);
         }
 
-        $this->model = Model::find($model->id);
+        $this->reset(['file']);
         $this->emit('render');
+        $this->model = Model::find($model->id);
     }
 
     public function render()

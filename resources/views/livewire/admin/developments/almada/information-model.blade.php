@@ -1,20 +1,17 @@
 <div class="bg-white shadow-lg py-1 mb-2 rounded-lg">
     <h2 class="text-gray-600 font-bold text-2xl mx-3 mt-4">Información del modelo</h2>
-    <form wire:submit.prevent='update' class="px-4 text-right">
+    <form wire:submit.prevent='update({{ $model->id }})' class="px-4 text-right">
         <div class="flex flex-wrap p-4">
-            @isset($slider->resources)
-                @foreach ($slider->resources as $resource)
-                    <div class="shadow-md bg-white rounded-lg mx-2 mt-4">
-                        <img class="h-40 w-60 object-cover" src="{{ Storage::url($resource->url) }}"
-                            title="{{ Storage::url($resource->url) }}">
-                        <div class="flex justify-between items-center py-2 mx-2">
-                            <i class="far fa-image ml-2"></i>
-                            <i wire:click="delete({{ $resource }})"
-                                class="fas fa-trash cursor-pointer text-gray-800 hover:text-red-600 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-                                alt="Eliminar"></i>
-                        </div>
+            @isset($model->image)
+                <div class="shadow-md bg-white rounded-lg mx-2 mt-4">
+                    <img class="h-40 w-60 object-cover" src="{{ Storage::url($model->image) }}">
+                    <div class="flex justify-between items-center py-2 mx-2">
+                        <i class="far fa-image ml-2"></i>
+                        <i wire:click="delete({{ $model->image }})"
+                            class="fas fa-trash cursor-pointer text-gray-800 hover:text-red-600 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                            alt="Eliminar"></i>
                     </div>
-                @endforeach
+                </div>
             @endisset
             @if ($file)
                 <div class="shadow-md bg-white rounded-lg mx-2 mt-4">
@@ -60,7 +57,11 @@
             <x-jet-input type="number" hidden class="flex-1 block w-full rounded-none rounded-r-md sm:text-sm"
                 wire:model="price" />
         </div>
-        <x-jet-button type="submit" class="my-2" wire:click="update({{ $model }})">
+        <x-jet-label class="text-left mt-2 mb-2">
+            Recorrido Virtual:
+        </x-jet-label>
+        <textarea rows="7" class="w-full rounded-lg border border-gray-400" wire:model="virtual"></textarea>
+        <x-jet-button type="submit" class="my-2">
             Actualizar
         </x-jet-button>
     </form>

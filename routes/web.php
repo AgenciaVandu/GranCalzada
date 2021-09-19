@@ -21,7 +21,11 @@ Route::get('/conoce-gran-calzada', function () {
     return view('gran-calzada');
 })->name('gran.calzada');
 
-Route::get('/almada', [AlmadaController::class, 'index'])->name('almada.index');
+Route::prefix('almada')->group(function () {
+    Route::get('/', [AlmadaController::class, 'index'])->name('almada.index');
+    Route::get('/modelo/{model}', [AlmadaController::class, 'model'])->name('almada.model');
+});
+
 
 
 Route::get('/miraverde', function () {
@@ -106,7 +110,7 @@ Route::get('/avances-de-obra', function () {
 
 /*
 Ruta del blog
-*/ 
+*/
 Route::get('/blog', function () {
     return view('blog.index');
 });

@@ -23,17 +23,16 @@ class Features extends Component
         $this->feature  = new Feature();
     }
 
-    public function store(Model $model)
+    public function store($model)
     {
-        $rules = [
-            'name' => 'required',
-        ];
+        $model = Model::find($model);
+
         Feature::create([
             'name' => $this->name,
             'model_id' => $model->id
         ]);
 
-        $this->model = Model::find($this->model->id);
+        $this->model = Model::find($model->id);
 
         $this->reset(['name']);
     }

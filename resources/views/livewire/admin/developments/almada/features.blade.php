@@ -1,6 +1,6 @@
 <div class="bg-white shadow-lg py-1 mb-2 rounded-lg">
     <h2 class="text-gray-600 font-bold text-2xl mx-3 mt-4">Caracteristicas</h2>
-    <form wire:submit.prevent='store({{ $model }})' class="px-4">
+    <form wire:submit.prevent='store({{ $model->id }})' class="px-4">
         <x-jet-label>
             Nombre:
         </x-jet-label>
@@ -23,7 +23,7 @@
                     </span>
                     <span>
                         <i class="fas fa-trash text-xs hover:text-red-600 cursor-pointer" x-show="!open"></i>
-                        <x-jet-button class="py-1" x-show="open" wire:click="update({{ $item }})">
+                        <x-jet-button class="py-1" x-show="open" wire:click="update({{ $item->id }})">
                             Actualizar</x-jet-button>
                     </span>
                 </li>

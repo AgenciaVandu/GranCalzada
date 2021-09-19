@@ -3,7 +3,9 @@
 namespace App\Http\Livewire\Admin\Developments\Almada;
 
 use App\Models\Model;
+use App\Models\Resource;
 use App\Models\Slider;
+use Illuminate\Support\Facades\Storage;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 use SplFileInfo;
@@ -28,8 +30,9 @@ class SliderModel extends Component
             'files.*' => 'mimes:mp4,mov,ogg,avi,png,svg,jpg,jpeg',
         ]);
     }
-    public function uploadHeaderSlider(Model $model)
+    public function uploadHeaderSlider($model)
     {
+        $model = Model::find($model);
         $this->validate([
             'files.*' => 'mimes:mp4,mov,ogg,avi,png,svg,jpg,jpeg',
         ]);
@@ -60,6 +63,13 @@ class SliderModel extends Component
         }
         $this->reset(['files']);
         $this->slider = Slider::find($slider->id);
+    }
+
+    public function delete(Resource $resource)
+    {
+        Storage::delete($resource->url);
+        $resource->delete();
+        $this->slider = Slider::find($this->slider->id);
     }
     public function render()
     {
