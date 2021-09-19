@@ -16,6 +16,7 @@ class CreateFeaturesTable extends Migration
         Schema::create('features', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('floor');
             $table->unsignedBigInteger('model_id');
             $table->foreign('model_id')->references('id')->on('models');
             $table->timestamps();

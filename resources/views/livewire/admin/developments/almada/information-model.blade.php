@@ -61,6 +61,12 @@
             Recorrido Virtual:
         </x-jet-label>
         <textarea rows="7" class="w-full rounded-lg border border-gray-400" wire:model="virtual"></textarea>
+
+        <x-jet-label class="text-left mt-2 mb-2">
+            Visible:
+            <input type="checkbox" wire:model="virtual_visible" wire:click="setVisible">
+        </x-jet-label>
+
         <x-jet-button type="submit" class="my-2">
             Actualizar
         </x-jet-button>

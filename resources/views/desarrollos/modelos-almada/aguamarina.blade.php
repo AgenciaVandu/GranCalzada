@@ -8,9 +8,10 @@
             <div class="col-12 mt-4">
                 <div id="controles-2" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
-                        @foreach ($slider as $resource)
-                            <div class="carousel-item active">
-                                <img src="{{ Storage::url($resource->url) }}" class="d-block w-100" alt="...">
+                        @foreach ($slider->resources as $resource)
+                            <div class="carousel-item {{ $loop->first ? 'active' : '' }}"">
+                                                                <img src=" {{ Storage::url($resource->url) }}"
+                                class="d-block w-100" alt="...">
                             </div>
                         @endforeach
                     </div>
@@ -39,7 +40,9 @@
                             <li>Construcción: <span>42.94 m<sup>2</sup></span></li>
                             <li>Terreno desde: <span>5 x 17 m</li> <br>
                             <li><b>Planta Arquitectónica</b></li>
-
+                            @foreach ($features as $feature)
+                                <li>{{ $feature->name }}</li>
+                            @endforeach
                             <br>
 
                         </ul>
@@ -57,9 +60,11 @@
                             alt="">
                     </div>
                 </div>
-                <div class="recorrido-modelo m-recorrido">
-                    <img src="{{ asset('/img/almada/recorrido-modelos.png') }}" class="img-fluid" alt="">
-                </div>
+                @if ($model->virtual != '' && $model->virtual_visible == true)
+                    <div class="recorrido-modelo m-recorrido">
+                        {!! $model->virtual !!}
+                    </div>
+                @endif
 
                 <div class="elige-tu-casa">
                     <div class="col-12">

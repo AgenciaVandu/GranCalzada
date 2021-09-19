@@ -24,8 +24,9 @@ class AlmadaController extends Controller
     {
         switch ($model->id) {
             case '1':
-
-                return view('desarrollos.modelos-almada.aguamarina', compact('model', 'slider'));
+                $slider = $model->sliders->first();
+                $features = $model->features;
+                return view('desarrollos.modelos-almada.aguamarina', compact('model', 'slider', 'features'));
                 break;
             case '2':
                 return view('desarrollos.modelos-almada.magenta', compact('model'));
