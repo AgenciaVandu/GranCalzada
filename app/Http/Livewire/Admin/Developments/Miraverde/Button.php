@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire\Admin\Developments\Almada;
+namespace App\Http\Livewire\Admin\Developments\Miraverde;
 
 use App\Models\Development;
 use Livewire\Component;
@@ -27,6 +27,6 @@ class Button extends Component
 
     public function render()
     {
-        return view('livewire.admin.developments.almada.button');
+        return view('livewire.admin.developments.miraverde.button');
     }
 }

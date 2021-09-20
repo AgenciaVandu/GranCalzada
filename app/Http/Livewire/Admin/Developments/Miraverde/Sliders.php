@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire\Admin\Developments\Almada;
+namespace App\Http\Livewire\Admin\Developments\Miraverde;
 
 use App\Models\Development;
 use App\Models\Resource;
@@ -31,7 +31,7 @@ class Sliders extends Component
 
     public function render()
     {
-        return view('livewire.admin.developments.almada.sliders');
+        return view('livewire.admin.developments.miraverde.sliders');
     }
 
 
