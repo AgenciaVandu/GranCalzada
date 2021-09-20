@@ -69,28 +69,28 @@
             <!--Onda-s-->
             <div class="equipamiento espacio-equipamiento">
                 <div class="container text-center">
-                    <img src="{{ asset('img/icon/medalla.svg') }}" class="medalla" width="70"
+                    <img src="{{ asset('img/icon/medalla.svg') }}" class="medalla" width="40"
                         alt="medalla de equipamiento | Gran Calzada">
-                    <h1 style="color: #fff" class="pt-3 pb-4">Equipamiento de primer nivel</h1>
+                    <h2 style="color: #fff" class="pt-3 pb-5">Equipamiento de primer nivel</h2>
                     <div class="row">
                         <!--slider movil-->
                         <div class="col">
-                            <img src="{{ asset('img/icon/Electricidad2.svg') }}" width="180"
+                            <img src="{{ asset('img/icon/Electricidad2.svg') }}" width="150"
                                 alt="Equipamiento del desarrollo | Gran Calzada">
                             <h3 class="equipamiento-h pt-2">Electricidad <br>subterránea</h3>
                         </div>
                         <div class="col">
-                            <img src="{{ asset('img/icon/planta2.svg') }}" width="180"
+                            <img src="{{ asset('img/icon/planta2.svg') }}" width="150"
                                 alt="Equipamiento del desarrollo | Gran Calzada">
                             <h3 class="equipamiento-h pt-2">Planta de <br>tratamiento</h3>
                         </div>
                         <div class="col">
-                            <img src="{{ asset('img/icon/pozo2.svg') }}" width="180"
+                            <img src="{{ asset('img/icon/pozo2.svg') }}" width="150"
                                 alt="Equipamiento del desarrollo | Gran Calzada">
                             <h3 class="equipamiento-h pt-2">Pozo de <br>captación</h3>
                         </div>
                         <div class="col">
-                            <img src="{{ asset('img/icon/drenaje2.svg') }}" width="180"
+                            <img src="{{ asset('img/icon/drenaje2.svg') }}" width="150"
                                 alt="Equipamiento del desarrollo | Gran Calzada">
                             <h3 class="equipamiento-h pt-2">Drenaje <br>pluvial</h3>
                         </div>
@@ -107,27 +107,27 @@
                 <div class="row pt-4">
                     <!--slider movil-->
                     <div class="col">
-                        <img src="{{ asset('img/gran-calzada/carateristicas/1.svg') }}" width="180"
+                        <img src="{{ asset('img/gran-calzada/carateristicas/1.svg') }}" width="155"
                             alt="Equipamiento del desarrollo | Gran Calzada">
                         <h3 class="equipamiento-g sp ">Escuelas</h3>
                     </div>
                     <div class="col">
-                        <img src="{{ asset('img/gran-calzada/carateristicas/2.svg') }}" width="180"
+                        <img src="{{ asset('img/gran-calzada/carateristicas/2.svg') }}" width="155"
                             alt="Equipamiento del desarrollo | Gran Calzada">
                         <h3 class="equipamiento-g sp-1">Comercios</h3>
                     </div>
                     <div class="col">
-                        <img src="{{ asset('img/gran-calzada/carateristicas/3.svg') }}" width="180"
+                        <img src="{{ asset('img/gran-calzada/carateristicas/3.svg') }}" width="155"
                             alt="Equipamiento del desarrollo | Gran Calzada">
                         <h3 class="equipamiento-g pt-2">Áreas verdes</h3>
                     </div>
                     <div class="col">
-                        <img src="{{ asset('img/gran-calzada/carateristicas/4.svg') }}" width="180"
+                        <img src="{{ asset('img/gran-calzada/carateristicas/4.svg') }}" width="155"
                             alt="Equipamiento del desarrollo | Gran Calzada">
                         <h3 class="equipamiento-g pt-2">Parques <br>interactivos</h3>
                     </div>
                     <div class="col">
-                        <img src="{{ asset('img/gran-calzada/carateristicas/5.svg') }}" width="180"
+                        <img src="{{ asset('img/gran-calzada/carateristicas/5.svg') }}" width="155"
                             alt="Equipamiento del desarrollo | Gran Calzada">
                         <h3 class="equipamiento-g sp-2">Ciclopistas</h3>
                     </div>
@@ -172,7 +172,7 @@
                             <p style="color: #fff">Almada® es un desarrollo tipo cerrada que conecta con nuestra Gran Calzada®,
                                 la cual concentra todos los servicios y amenidades para que tú y tu familia se den un respiro
                                 mientras la recorren para realizar las actividades de su vida diaria.</p>
-                            <div class="row">
+                            <div class="row d-none d-sm-block">
                                 <div class="col-5 icon-position pt-2">
                                     <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
                                 </div>
@@ -213,7 +213,7 @@
                             <p style="color: #fff">Almada® es un desarrollo tipo cerrada que conecta con nuestra Gran Calzada®,
                                 la cual concentra todos los servicios y amenidades para que tú y tu familia se den un respiro
                                 mientras la recorren para realizar las actividades de su vida diaria.</p>
-                            <div class="row">
+                            <div class="row d-none d-sm-block">
                                 <div class="col-5 text-right pt-2">
                                     <img src="{{ asset('/img/icon/icon-mira.svg') }}" alt="" class="img-fluid"
                                         width="35">
