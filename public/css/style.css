@@ -185,7 +185,11 @@ h5 {
 }
 
 video{
-    width:100%;
+    width:1000px;
+} @media (max-width: 700px) {
+    video {
+        width: 100%;
+    }
 }
 
 .video {
@@ -205,33 +209,21 @@ hr {
     background-color: #16366e;
 }
 
-.fa-whatsapp {
+.whatsapp {
     font-size: 28px;
     color: #EE4A7B;
 }
 
-.fa-whatsapp:hover {
+.whatsapp:hover {
     color: #16366e;
 }
 
-.hubspot {
-    padding: 10px;
-}
 
-.ubis {
-    color: #fff;
-    font-size: 12px;
-}
 
 .plantas {
     position: absolute;
     top: 50px;
     right: -230px; 
-}
-
-#introduccion {
-    margin-top: 50px;
-    margin-bottom: 50px;
 }
 
 .txt-calzada {
@@ -281,9 +273,16 @@ hr {
     font-size: 1.4em;
 }
 
+
+
 .titular-modelos {
     line-height: 40px;
     font-size: 2em;
+} @media (max-width:700px) {
+    .titular-modelos {
+        font-size: 1.5em;
+        line-height: 30px;
+    }
 }
 
 .conoce {
@@ -424,7 +423,19 @@ hr {
     background-color: #e7e7e7;
 }
 
-
+.bg-azul-index{
+    padding-top: 140px;
+    background-image: url(/img/fondo-1.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    min-height: 450px;
+} @media(max-width:700px) {
+    .bg-azul-index {
+        background-image: url(/img/fondo-1-resp.svg);
+        
+    }
+}
 
 .bg-azul{
     background-color: #16366e;
@@ -1095,15 +1106,10 @@ li {
     object-fit: cover;
 }
 
-.main-content h6 {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 700;
-	font-size: 27px;
-	color: #000;
-	margin-bottom: 20px;
-}
+
 
 .main-content p {
+    font-family: 'Avenir-regular';
 	font-size: 17px;
 	color: #777;
 	line-height: 29px;
@@ -1117,9 +1123,6 @@ li {
 	margin: auto;
 }
 
-.main-content h1 {
-	margin-bottom: 20px;
-}
 
 .compartir {
     text-align: right;
@@ -1176,9 +1179,44 @@ a:hover {
     }
 }
 
+/* Footer */
+
 footer {
     background-color: #EE4A7B;
 } 
+
+.icono {
+    color: #fff;
+    text-align: left;
+    font-size: 24px;
+}
+
+iframe {
+    height: 250px;
+    width: 100%;
+}
+
+
+.hubspot {
+    padding: 10px;
+}
+
+.ubis a,
+.ubis {
+    color: #fff;
+    font-family: 'Avenir-semibold';
+    font-size: 14px;
+
+}
+
+.imagenes-center {
+    text-align: center;
+    padding-top: 70px;   
+} @media (max-width: 700px){
+    .imagenes-center {
+        padding-top: 0;
+    }
+}
 
 
 

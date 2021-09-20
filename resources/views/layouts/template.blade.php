@@ -71,7 +71,7 @@
                 <ul class="navbar-nav">
                     <li class="nav-item pad active">
                         <a class="nav-link" href="#">
-                            <i class="fab fa-whatsapp"></i>
+                            <i class="whatsapp fab fa-whatsapp"></i>
                         </a>
                     </li>
                 </ul>
@@ -89,37 +89,45 @@
 
     <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="row pt-5">
+                <div class="col-lg-4 col-md-4 col-sm-12 pt-5">
+                    <div class="mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14902.644270028122!2d-89.620674!3d20.966122!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x676469d86fc45aa3!2sGRUPO%20CASITAS%20DESARROLLOS!5e0!3m2!1ses!2smx!4v1631721969182!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6">
-                            <h5 class="ubis">Visita nuestros puntos de venta</h5>
+                            <h5 class="ubis pt-4">Visita nuestros puntos de venta</h5>
                             <ul>
                                 <li class="ubis">C.60 Fte. Japay</li>
                                 <li class="ubis">2da. Calle Nueva </li>
                                 <li class="ubis">C.56 x 61 y 63 </li>
                             </ul>
+                            
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
-                            <h5 class="ubis">Síguenos en nuestras redes sociales:</h5>
+                            <h5 class="ubis pt-4">Síguenos en nuestras redes sociales:</h5>
                             <div class="row">
-                                <div class="col-3">
-                                    <i class="fab fa-whatsapp"></i>
+                                <div class="col-12">
+                                    <p>
+                                        <a href=""> <i class="icono fab fa-facebook-square pr-2"></i>
+                                        </a>
+                                        <a href=""><i class=" icono fab fa-instagram pr-2"></i>
+                                        </a>
+                                        <a href=""><i class=" icono fab fa-linkedin pr-2"></i>
+                                        </a>
+                                        <a href=""><i class=" icono fab fa-whatsapp"></i>
+                                        </a>
+                                    </p>
                                 </div>
-                                <div class="col-3">
-                                    <i class="fab fa-whatsapp"></i>
-                                </div>
-                                <div class="col-3">
-                                    <i class="fab fa-whatsapp"></i>
-                                </div>
-                                <div class="col-3">
-                                    <i class="fab fa-whatsapp"></i>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
+                    <p class="ubis"><a href="">Tel: (999) 999 9999</a><br> 
+                        <span><a href="">whatsapp: (999) 999 9999</a></span>
+                    </p>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 hubspot">
+                <div class="col-lg-5 col-md-5 col-sm-12 hubspot pt-4">
                     <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
                     <script>
                         hbspt.forms.create({
@@ -129,9 +137,9 @@
                         });
                     </script>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <img src="{{ asset('/img/Logo-GranCalzada.svg') }}" alt="">
-                    <img src="{{ asset('/img/casitas.svg') }}" alt="">
+                <div class="col-lg-3 col-md-3 col-sm-12 imagenes-center text-center">
+                    <img src="{{ asset('/img/logos.svg') }}" class="img-fluid" alt="">
+                    
                 </div>
             </div>
         </div>
