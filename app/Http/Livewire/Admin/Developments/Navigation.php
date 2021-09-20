@@ -7,7 +7,7 @@ use Livewire\Component;
 
 class Navigation extends Component
 {
-    public $almada = false, $miraverde = false;
+    public $almada = true, $miraverde = false;
     public $index = false, $models = false, $lots = false;
     public $dev_almada, $dev_miraverde;
 
@@ -23,9 +23,11 @@ class Navigation extends Component
             case 'almada':
                 $this->reset(['almada', 'miraverde']);
                 $this->almada = true;
+                $this->miraverde = false;
                 break;
             case 'miraverde':
                 $this->reset(['almada', 'miraverde']);
+                $this->almada = false;
                 $this->miraverde = true;
                 break;
             case 'index':

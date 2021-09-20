@@ -21,16 +21,12 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    <script src="{{ asset('vendor/mapresponsive/jquery.rwdImageMaps.js') }}"></script>
-    <style>
-        img[usemap] {
-            border: none;
-            height: auto;
-            max-width: 100%;
-            width: auto;
-        }
-
-    </style>
+    <script type="text/javascript" src="{{ asset('vendor/wz_jsgraphics/wz_jsgraphics.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('vendor/mapper/mapper.js') }}"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://raw.githubusercontent.com/stowball/jQuery-rwdImageMaps/master/jquery.rwdImageMaps.min.js">
+    </script>
 </head>
 
 <body>
@@ -160,9 +156,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
     </script>
-
-
-
 </body>
 
 </html>

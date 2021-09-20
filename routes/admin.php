@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\DevelopmentController;
+use App\Http\Controllers\Admin\GaleryController;
 use App\Http\Controllers\Admin\VideoController;
 use App\Http\Controllers\ConfigurationController;
 use App\Http\Livewire\Slider;
@@ -22,10 +23,12 @@ Route::get('/', function () {
 });
 
 Route::get('/developments', [DevelopmentController::class, 'index'])->name('developments.index');
+
 Route::prefix('configurations')->group(function () {
     Route::get('index', [ConfigurationController::class, 'index'])->name('configurations.index');
     Route::get('videos', [ConfigurationController::class, 'videos'])->name('configurations.videos');
 });
 
+Route::get('/galery', [GaleryController::class, 'index'])->name('galery.index');
 
 Route::post('configurations/videos/file', [VideoController::class, 'upload'])->name('admin.configurations.videos');

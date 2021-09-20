@@ -17,9 +17,12 @@
                     </x-jet-nav-link>
                     <x-jet-nav-link href="{{ route('developments.index') }}"
                         :active="request()->routeIs('developments.*')">
-                        {{ __('Developments') }}
+                        {{ __('Desarrollos') }}
                     </x-jet-nav-link>
-
+                    <x-jet-nav-link href="{{ route('galery.index') }}"
+                        :active="request()->routeIs('galery.*')">
+                        {{ __('Galeria') }}
+                    </x-jet-nav-link>
                     <x-jet-nav-link href="{{ route('configurations.index') }}"
                         :active="request()->routeIs('configurations.*')">
                         {{ __('Configuración') }}
@@ -164,6 +167,14 @@
         <div class="pt-2 pb-3 space-y-1">
             <x-jet-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
+            </x-jet-responsive-nav-link>
+            <x-jet-responsive-nav-link href="{{ route('developments.index') }}"
+                :active="request()->routeIs('developments.*')">
+                {{ __('Developments') }}
+            </x-jet-responsive-nav-link>
+            <x-jet-responsive-nav-link href="{{ route('configurations.index') }}"
+                :active="request()->routeIs('configurations.*')">
+                {{ __('Configuración') }}
             </x-jet-responsive-nav-link>
         </div>
 
