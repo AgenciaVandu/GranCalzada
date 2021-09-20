@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AlmadaController;
+use App\Http\Controllers\GaleryController;
 use App\Http\Controllers\LandingController;
 use Illuminate\Support\Facades\Route;
 
@@ -27,29 +28,16 @@ Route::prefix('almada')->group(function () {
     Route::get('/lead/{model}', [AlmadaController::class, 'lead'])->name('almada.lead');
 });
 
-/*
-Ruta de Leads almada
-*/
-Route::get('/lead-aguamarina', function () {
-    return view('desarrollos/modelos-almada/conversion/lead-aguamarina');
-});
-Route::get('/lead-magenta', function () {
-    return view('desarrollos/modelos-almada/conversion/lead-magenta');
-});
-Route::get('/lead-violeta', function () {
-    return view('desarrollos/modelos-almada/conversion/lead-violeta');
-});
-Route::get('/lead-violeta-plus', function () {
-    return view('desarrollos/modelos-almada/conversion/lead-violeta-plus');
-});
-Route::get('/lead-ambar', function () {
-    return view('desarrollos/modelos-almada/conversion/lead-ambar');
-});
+/*Avances de obra*/
+Route::get('/avances-de-obra', [GaleryController::class, 'index'])->name('galeries.index');
+Route::get('/avances-de-obra/', [GaleryController::class, 'index'])->name('galeries.index');
 
 
 Route::get('/miraverde', function () {
     return view('desarrollos.miraverde');
 })->name('miraverde.index');
+
+
 
 Route::get('/modelo-almendro', function () {
     return view('desarrollos/modelos-miraverde/almendro');
@@ -89,11 +77,7 @@ Route::get('/gracias-por-registrarte', function () {
     return view('desarrollos/typ');
 });
 /*
-Avances de obra
-*/
-Route::get('/avances-de-obra', function () {
-    return view('avances');
-});
+
 
 /*
 Ruta del blog
