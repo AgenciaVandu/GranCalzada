@@ -54,13 +54,13 @@
                 class="inline-flex items-center px-3 py-1 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm">
                 $
             </span>
-            <x-jet-input type="number" hidden class="flex-1 block w-full rounded-none rounded-r-md sm:text-sm"
-                wire:model="price" />
+            <input type="number" class="flex-1 block w-full rounded-r border border-gray-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 border-l-0 sm:text-sm"
+                wire:model="price">
         </div>
         <x-jet-label class="text-left mt-2 mb-2">
             Recorrido Virtual:
         </x-jet-label>
-        <textarea rows="7" class="w-full rounded-lg border border-gray-400" wire:model="virtual"></textarea>
+        <textarea rows="7" class="w-full rounded-lg border border-gray-400 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" wire:model="virtual"></textarea>
 
         <x-jet-label class="text-left mt-2 mb-2">
             Visible:

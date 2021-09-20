@@ -12,6 +12,7 @@ class Features extends Component
     public $feature;
     public $edit;
     public $name;
+    public $name2;
 
     protected $rules = [
         'feature.name' => 'required'
@@ -29,12 +30,28 @@ class Features extends Component
 
         Feature::create([
             'name' => $this->name,
+            'floor' => 'down',
             'model_id' => $model->id
         ]);
 
         $this->model = Model::find($model->id);
 
         $this->reset(['name']);
+    }
+
+    public function store2($model)
+    {
+        $model = Model::find($model);
+
+        Feature::create([
+            'name' => $this->name2,
+            'floor' => 'top',
+            'model_id' => $model->id
+        ]);
+
+        $this->model = Model::find($model->id);
+
+        $this->reset(['name2']);
     }
 
     public function edit(Feature $feature)
@@ -50,6 +67,12 @@ class Features extends Component
         ]);
 
         $this->feature = new Feature();
+        $this->model = Model::find($this->model->id);
+    }
+
+    public function delete(Feature $feature)
+    {
+        $feature->delete();
         $this->model = Model::find($this->model->id);
     }
 
