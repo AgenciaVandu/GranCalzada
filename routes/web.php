@@ -49,7 +49,7 @@ Route::get('/lead-ambar', function () {
 
 Route::get('/miraverde', function () {
     return view('desarrollos.miraverde');
-});
+})->name('miraverde.index');
 
 Route::get('/modelo-almendro', function () {
     return view('desarrollos/modelos-miraverde/almendro');
