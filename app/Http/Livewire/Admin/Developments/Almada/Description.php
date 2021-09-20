@@ -2,15 +2,16 @@
 
 namespace App\Http\Livewire\Admin\Developments\Almada;
 
+use App\Models\Development;
 use Livewire\Component;
 
 class Description extends Component
 {
-    public $dev_almada, $description;
+    public $development, $description;
 
-    public function mount()
+    public function mount(Development $development)
     {
-        $this->description = $this->dev_almada->description;
+        $this->description = $development->description;
     }
     public function render()
     {

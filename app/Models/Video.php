@@ -10,4 +10,10 @@ class Video extends Model
     use HasFactory;
 
     protected $guarded = ['id'];
+
+    //Relacion uno a muchos morfologica
+    public function resources()
+    {
+        return $this->morphMany(Resource::class, 'resourable');
+    }
 }

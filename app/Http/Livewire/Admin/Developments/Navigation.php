@@ -40,9 +40,6 @@ class Navigation extends Component
                 $this->reset(['index', 'models', 'lots']);
                 $this->lots = true;
                 break;
-            default:
-                # code...
-                break;
         }
     }
     public function render()

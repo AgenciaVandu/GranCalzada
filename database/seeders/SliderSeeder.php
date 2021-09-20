@@ -16,20 +16,24 @@ class SliderSeeder extends Seeder
     {
         Slider::create([
             'section' => 'header',
-            'development_id' => '1'
+            'slidable_id' => '1',
+            'slidable_type' => 'App\Models\Development'
         ]);
         Slider::create([
             'section' => 'body',
-            'development_id' => '1'
+            'slidable_id' => '1',
+            'slidable_type' => 'App\Models\Development'
         ]);
 
         Slider::create([
             'section' => 'header',
-            'development_id' => '2'
+            'slidable_id' => '2',
+            'slidable_type' => 'App\Models\Development'
         ]);
         Slider::create([
             'section' => 'body',
-            'development_id' => '2'
+            'slidable_id' => '2',
+            'slidable_type' => 'App\Models\Development'
         ]);
     }
 }

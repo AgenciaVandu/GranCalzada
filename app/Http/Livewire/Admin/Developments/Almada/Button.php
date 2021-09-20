@@ -7,13 +7,13 @@ use Livewire\Component;
 
 class Button extends Component
 {
-    public $dev_almada, $url, $text, $description;
+    public $development, $url, $text, $description;
 
-    public function mount(Development $dev_almada)
+    public function mount(Development $development)
     {
-        $this->url = $dev_almada->button->url;
-        $this->text = $dev_almada->button->text;
-        $this->description = $dev_almada->button->description;
+        $this->url = $development->button->url;
+        $this->text = $development->button->text;
+        $this->description = $development->button->description;
     }
 
     public function updateButton()

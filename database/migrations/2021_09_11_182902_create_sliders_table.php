@@ -16,8 +16,8 @@ class CreateSlidersTable extends Migration
         Schema::create('sliders', function (Blueprint $table) {
             $table->id();
             $table->string('section');
-            $table->unsignedBigInteger('development_id');
-            $table->foreign('development_id')->references('id')->on('developments');
+            $table->unsignedBigInteger('slidable_id');
+            $table->string('slidable_type');
             $table->timestamps();
         });
     }

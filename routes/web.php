@@ -21,26 +21,34 @@ Route::get('/conoce-gran-calzada', function () {
     return view('gran-calzada');
 })->name('gran.calzada');
 
-Route::get('/almada', [AlmadaController::class, 'index'])->name('almada.index');
+Route::prefix('almada')->group(function () {
+    Route::get('/', [AlmadaController::class, 'index'])->name('almada.index');
+    Route::get('/modelo/{model}', [AlmadaController::class, 'model'])->name('almada.model');
+    Route::get('/lead/{model}', [AlmadaController::class, 'lead'])->name('almada.lead');
+});
+
+/*
+Ruta de Leads almada
+*/
+Route::get('/lead-aguamarina', function () {
+    return view('desarrollos/modelos-almada/conversion/lead-aguamarina');
+});
+Route::get('/lead-magenta', function () {
+    return view('desarrollos/modelos-almada/conversion/lead-magenta');
+});
+Route::get('/lead-violeta', function () {
+    return view('desarrollos/modelos-almada/conversion/lead-violeta');
+});
+Route::get('/lead-violeta-plus', function () {
+    return view('desarrollos/modelos-almada/conversion/lead-violeta-plus');
+});
+Route::get('/lead-ambar', function () {
+    return view('desarrollos/modelos-almada/conversion/lead-ambar');
+});
 
 
 Route::get('/miraverde', function () {
     return view('desarrollos.miraverde');
-});
-Route::get('/modelo-aguamarina', function () {
-    return view('desarrollos/modelos-almada/aguamarina');
-});
-Route::get('/modelo-magenta', function () {
-    return view('desarrollos/modelos-almada/magenta');
-});
-Route::get('/modelo-ambar', function () {
-    return view('desarrollos/modelos-almada/ambar');
-});
-Route::get('/modelo-violeta', function () {
-    return view('desarrollos/modelos-almada/violeta');
-});
-Route::get('/modelo-violeta-plus', function () {
-    return view('desarrollos/modelos-almada/violeta-plus');
 });
 
 Route::get('/modelo-almendro', function () {
@@ -72,24 +80,7 @@ Route::get('/lead-flamboyan-plus', function () {
     return view('desarrollos/modelos-miraverde/conversion/lead-flamboyan');
 });
 
-/*
-Ruta de Leads almada
-*/
-Route::get('/lead-aguamarina', function () {
-    return view('desarrollos/modelos-almada/conversion/lead-aguamarina');
-});
-Route::get('/lead-magenta', function () {
-    return view('desarrollos/modelos-almada/conversion/lead-magenta');
-});
-Route::get('/lead-violeta', function () {
-    return view('desarrollos/modelos-almada/conversion/lead-violeta');
-});
-Route::get('/lead-violeta-plus', function () {
-    return view('desarrollos/modelos-almada/conversion/lead-violeta-plus');
-});
-Route::get('/lead-ambar', function () {
-    return view('desarrollos/modelos-almada/conversion/lead-ambar');
-});
+
 
 /*
 Página de agradecimiento
@@ -106,7 +97,7 @@ Route::get('/avances-de-obra', function () {
 
 /*
 Ruta del blog
-*/ 
+*/
 Route::get('/blog', function () {
     return view('blog.index');
 });
