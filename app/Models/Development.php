@@ -27,4 +27,9 @@ class Development extends Model
     {
         return $this->hasOne(Button::class);
     }
+
+    public function lots()
+    {
+        return $this->hasManyThrough(Lot::class, ModelsModel::class);
+    }
 }

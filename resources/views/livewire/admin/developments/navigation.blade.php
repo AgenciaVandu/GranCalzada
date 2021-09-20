@@ -42,7 +42,7 @@
                                 @livewire('admin.developments.almada.models', ['development' => $dev_almada])
                             @endif
                             @if ($lots)
-                                lots
+                                @livewire('admin.developments.almada.lots', ['development' => $dev_almada])
                             @endif
                         </div>
                     </div>

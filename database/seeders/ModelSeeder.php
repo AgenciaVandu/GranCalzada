@@ -15,62 +15,56 @@ class ModelSeeder extends Seeder
     public function run()
     {
         Model::create([
-            'name' => 'Model 1',
+            'name' => 'Aguamarina',
             'price' => 0,
             'virtual' => null,
             'development_id' => '1'
         ]);
         Model::create([
-            'name' => 'Model 2',
+            'name' => 'Magenta',
             'price' => 0,
             'virtual' => null,
             'development_id' => '1'
         ]);
         Model::create([
-            'name' => 'Model 3',
+            'name' => 'Ambar',
             'price' => 0,
             'virtual' => null,
             'development_id' => '1'
         ]);
         Model::create([
-            'name' => 'Model 4',
+            'name' => 'Violeta',
             'price' => 0,
             'virtual' => null,
             'development_id' => '1'
         ]);
         Model::create([
-            'name' => 'Model 5',
+            'name' => 'Violeta Plus',
             'price' => 0,
             'virtual' => null,
             'development_id' => '1'
         ]);
 
         Model::create([
-            'name' => 'Model 1',
+            'name' => 'Almendro',
             'price' => 0,
             'virtual' => null,
             'development_id' => '2'
         ]);
         Model::create([
-            'name' => 'Model 2',
+            'name' => 'Flamboyán Plus',
             'price' => 0,
             'virtual' => null,
             'development_id' => '2'
         ]);
         Model::create([
-            'name' => 'Model 3',
+            'name' => 'Bugambilia Plus',
             'price' => 0,
             'virtual' => null,
             'development_id' => '2'
         ]);
         Model::create([
-            'name' => 'Model 4',
-            'price' => 0,
-            'virtual' => null,
-            'development_id' => '2'
-        ]);
-        Model::create([
-            'name' => 'Model 5',
+            'name' => 'Ceiba Plus',
             'price' => 0,
             'virtual' => null,
             'development_id' => '2'

@@ -16,18 +16,23 @@ class Model extends ModelEloquent
         return $this->belongsTo(Development::class);
     }
 
+    //Relacion uno a muchos
     public function features()
     {
         return $this->hasMany(Feature::class);
     }
 
-    //Relacion uno a muchos
+    public function lots()
+    {
+        return $this->hasMany(Lot::class);
+    }
+
+    //Relacion uno a muchos polimorfica
     public function sliders()
     {
         return $this->morphMany(Slider::class, 'slidable');
     }
 
-    //Relacion uno a muchos
     public function image()
     {
         return $this->morphMany(Resource::class, 'resourable');
