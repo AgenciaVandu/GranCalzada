@@ -172,30 +172,32 @@
                             <p style="color: #fff">Almada® es un desarrollo tipo cerrada que conecta con nuestra Gran Calzada®,
                                 la cual concentra todos los servicios y amenidades para que tú y tu familia se den un respiro
                                 mientras la recorren para realizar las actividades de su vida diaria.</p>
-                            <div class="row d-none d-sm-block">
-                                <div class="col-5 icon-position pt-2">
-                                    <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
-                                </div>
-                                <div class="col-7 justify-center ">
-                                    <p class="elemento">1490 Casas</p>
-                                </div>
-                                <div class="col-5 icon-position pt-2">
-                                    <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
-                                </div>
-                                <div class="col-7 justify-center ">
-                                    <p class="elemento">Semi-cerrada</p>
-                                </div>
-                                <div class="col-5 icon-position pt-2">
-                                    <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
-                                </div>
-                                <div class="col-7 justify-center ">
-                                    <p class="elemento">5 modelos diferentes</p>
-                                </div>
-                                <div class="col-5 icon-position pt-2">
-                                    <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
-                                </div>
-                                <div class="col-7 justify-center ">
-                                    <p class="elemento">Rodeado de servicios</p>
+                            <div class="d-none d-sm-block">
+                                <div class="row">
+                                    <div class="col-5 icon-position pt-2">
+                                        <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-7 justify-center ">
+                                        <p class="elemento">1490 Casas</p>
+                                    </div>
+                                    <div class="col-5 icon-position pt-2">
+                                        <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-7 justify-center ">
+                                        <p class="elemento">Semi-cerrada</p>
+                                    </div>
+                                    <div class="col-5 icon-position pt-2">
+                                        <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-7 justify-center ">
+                                        <p class="elemento">5 modelos diferentes</p>
+                                    </div>
+                                    <div class="col-5 icon-position pt-2">
+                                        <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="col-7 justify-center ">
+                                        <p class="elemento">Rodeado de servicios</p>
+                                    </div>
                                 </div>
                             </div>
                             <a href="/almada" class="btn btn-secondary btn-almada">Vive en Almada</a>
@@ -213,34 +215,36 @@
                             <p style="color: #fff">Almada® es un desarrollo tipo cerrada que conecta con nuestra Gran Calzada®,
                                 la cual concentra todos los servicios y amenidades para que tú y tu familia se den un respiro
                                 mientras la recorren para realizar las actividades de su vida diaria.</p>
-                            <div class="row d-none d-sm-block">
-                                <div class="col-5 text-right pt-2">
-                                    <img src="{{ asset('/img/icon/icon-mira.svg') }}" alt="" class="img-fluid"
-                                        width="35">
-                                </div>
-                                <div class="col-7 justify-center m-auto">
-                                    <p class="elemento">1490 Casas</p>
-                                </div>
-                                <div class="col-5 text-right pt-2">
-                                    <img src="{{ asset('/img/icon/icon-mira.svg') }}" alt="" class="img-fluid"
-                                        width="35">
-                                </div>
-                                <div class="col-7 justify-center m-auto">
-                                    <p class="elemento">1490 Casas</p>
-                                </div>
-                                <div class="col-5 text-right pt-2">
-                                    <img src="{{ asset('/img/icon/icon-mira.svg') }}" alt="" class="img-fluid"
-                                        width="35" style="width: 40">
-                                </div>
-                                <div class="col-7 justify-center m-auto">
-                                    <p class="elemento">1490 Casas</p>
-                                </div>
-                                <div class="col-5 text-right pt-2">
-                                    <img src="{{ asset('/img/icon/icon-mira.svg') }}" alt="" class="img-fluid"
-                                        width="35" style="width: 40">
-                                </div>
-                                <div class="col-7 justify-center mb-4">
-                                    <p class="elemento">1490 Casas</p>
+                            <div class="d-none d-sm-block">
+                                <div class="row">
+                                    <div class="col-5 text-right pt-2">
+                                        <img src="{{ asset('/img/icon/icon-mira.svg') }}" alt="" class="img-fluid"
+                                            width="35">
+                                    </div>
+                                    <div class="col-7 justify-center m-auto">
+                                        <p class="elemento">1490 Casas</p>
+                                    </div>
+                                    <div class="col-5 text-right pt-2">
+                                        <img src="{{ asset('/img/icon/icon-mira.svg') }}" alt="" class="img-fluid"
+                                            width="35">
+                                    </div>
+                                    <div class="col-7 justify-center m-auto">
+                                        <p class="elemento">1490 Casas</p>
+                                    </div>
+                                    <div class="col-5 text-right pt-2">
+                                        <img src="{{ asset('/img/icon/icon-mira.svg') }}" alt="" class="img-fluid"
+                                            width="35" style="width: 40">
+                                    </div>
+                                    <div class="col-7 justify-center m-auto">
+                                        <p class="elemento">1490 Casas</p>
+                                    </div>
+                                    <div class="col-5 text-right pt-2">
+                                        <img src="{{ asset('/img/icon/icon-mira.svg') }}" alt="" class="img-fluid"
+                                            width="35" style="width: 40">
+                                    </div>
+                                    <div class="col-7 justify-center mb-4">
+                                        <p class="elemento">1490 Casas</p>
+                                    </div>
                                 </div>
                             </div>
                            <div class="boton-lead ">
