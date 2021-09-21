@@ -482,6 +482,13 @@ hr {
 }
 .espacio-equipamiento {
     padding-bottom: 90px;
+    padding-left: 120px;
+    padding-right: 120px;
+} @media (max-width: 600px) {
+    .espacio-equipamiento {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
 .medalla {
     padding-top: 40px;
@@ -495,6 +502,13 @@ hr {
 
 .espacio-que-encontraras {
     padding-top: 80px;
+    padding-left: 120px;
+    padding-right: 120px;
+} @media (max-width: 600px) {
+    .espacio-que-encontraras {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
 .que-encontraras {
     background-color: #e7e7e7;
@@ -529,7 +543,7 @@ hr {
     top: 220px;
     left: 160px;
     animation: movimiento-u 6.5s linear infinite;
-} @media (max-width:700px) {
+} @media (max-width:600px) {
     .u-almada {
         top: 140px;
         left: 190px;
@@ -542,10 +556,29 @@ hr {
     right: 600px;
     top: 60px;
     animation: movimiento-m 5.5s linear infinite;
-} @media (max-width:700px) {
+} @media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+    and (orientation: portrait) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+    .u-miraverde {
+        right: 440px;
+        top: 30px;
+    }
+} @media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+    and (orientation: landscape) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+    .u-miraverde {
+        right: 480px;
+    }
+
+}
+@media (max-width:700px) {
     .u-miraverde {
         top: -20px;
-        right: 270px;
+        right: 290px;
     }
 }
 
