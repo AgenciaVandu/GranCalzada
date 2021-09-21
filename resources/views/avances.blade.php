@@ -9,7 +9,7 @@
             <div class="row text-center mt-5">
                 @foreach ($galeries as $galery)
                     <div class="col-md-6 col-sm-12 mt-5">
-                        <img src="{{ Storage::url($galery->image) }}" alt="">
+                        <img src="{{ Storage::url($galery->image) }}" class="img-fluid" alt="">
                         <div class="boton-avances mt-4">
                             <a href="{{ route('galeries.show', $galery) }}" class="btn btn-light">Ver avances</a>
                         </div>
