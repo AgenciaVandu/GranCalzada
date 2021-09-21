@@ -63,22 +63,68 @@
                 <div class="text-center" style="position: relative; top: -20px">
                     <img src="{{asset('/img/amarillo.svg')}}" class="img-fluid" width="480" alt="">
                 </div>
-                <div class="row space-1">
-                    <div class="col-6 pt-3 text-center">
-                        <img src="{{ asset('/img/amenidades-index/1.png') }}" class="img-fluid" alt="">
-                        <h3 class="pt-3">Excelente Ubicación</h3>
-                    </div>
-                    <div class="col-6 pt-3 text-center">
-                        <img src="{{ asset('/img/amenidades-index/2.png') }}" class="img-fluid" alt="">
-                        <h3 class="pt-3">Multi-servicios</h3>
-                    </div>
-                    <div class="col-6 pt-3 text-center">
-                        <img src="{{ asset('/img/amenidades-index/3.png') }}" class="img-fluid" alt="">
-                        <h3 class="pt-3">8 parques interactivos</h3>
-                    </div>
-                    <div class="col-6 pt-3 text-center">
-                        <img src="{{ asset('/img/amenidades-index/4.png') }}" class="img-fluid" alt="">
-                        <h3 class="pt-3">Ciclopista</h3>
+
+                <div class="d-md-none">
+                    <div class="carousel_1"> <!--Carousel 1-->
+                        <div class="carousel__contenedor"> <!--Carousel contenedor-->
+                            <button aria-label="anterior" class="carousel__anterior">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <div class="carousel__lista">
+                                <div class="carousel__elemento">
+                                    <div class="col-12 pt-3 text-center">
+                                        <img src="{{ asset('/img/amenidades-index/1.png') }}" class="img-fluid" alt="">
+                                        <h3 class="pt-3">Excelente Ubicación</h3>
+                                    </div>
+                                </div>
+                                <div class="carousel__elemento">
+                                    <div class="col-12 pt-3 text-center">
+                                        <img src="{{ asset('/img/amenidades-index/2.png') }}" class="img-fluid" alt="">
+                                        <h3 class="pt-3">Multi-servicios</h3>
+                                    </div>
+                                </div>
+                                <div class="carousel__elemento">
+                                    <div class="col-12 pt-3 text-center">
+                                        <img src="{{ asset('/img/amenidades-index/3.png') }}" class="img-fluid" alt="">
+                                        <h3 class="pt-3">8 parques interactivos</h3>
+                                    </div>
+                                </div>
+                                <div class="carousel__elemento">
+                                    <div class="col-12 pt-3 text-center">
+                                        <img src="{{ asset('/img/amenidades-index/4.png') }}" class="img-fluid" alt="">
+                                        <h3 class="pt-3">Ciclopista</h3>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                            
+                            <button aria-label="siguiente" class="carousel__siguiente">
+                            <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div role="tabList" class="carousel__indicadores"></div>
+                    </div> <!-- Fint Carousel 1-->
+                </div>
+
+                <div class="d-none .d-md-block d-lg-block">
+                    <div class="row space-1">
+                        <div class="col-6 pt-3 text-center">
+                            <img src="{{ asset('/img/amenidades-index/1.png') }}" class="img-fluid" alt="">
+                            <h3 class="pt-3">Excelente Ubicación</h3>
+                        </div>
+                        <div class="col-6 pt-3 text-center">
+                            <img src="{{ asset('/img/amenidades-index/2.png') }}" class="img-fluid" alt="">
+                            <h3 class="pt-3">Multi-servicios</h3>
+                        </div>
+                        <div class="col-6 pt-3 text-center">
+                            <img src="{{ asset('/img/amenidades-index/3.png') }}" class="img-fluid" alt="">
+                            <h3 class="pt-3">8 parques interactivos</h3>
+                        </div>
+                        <div class="col-6 pt-3 text-center">
+                            <img src="{{ asset('/img/amenidades-index/4.png') }}" class="img-fluid" alt="">
+                            <h3 class="pt-3">Ciclopista</h3>
+                        </div>
                     </div>
                 </div>
             </div>
