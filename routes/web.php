@@ -30,7 +30,7 @@ Route::prefix('almada')->group(function () {
 
 /*Avances de obra*/
 Route::get('/avances-de-obra', [GaleryController::class, 'index'])->name('galeries.index');
-Route::get('/avances-de-obra/', [GaleryController::class, 'index'])->name('galeries.index');
+Route::get('/avances-de-obra/{galery}', [GaleryController::class, 'show'])->name('galeries.show');
 
 
 Route::get('/miraverde', function () {

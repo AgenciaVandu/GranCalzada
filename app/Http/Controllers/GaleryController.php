@@ -12,4 +12,10 @@ class GaleryController extends Controller
         $galeries = Galery::orderBy('id', 'desc')->get();
         return view('avances', compact('galeries'));
     }
+
+
+    public function show(Galery $galery)
+    {
+        return view('galeries.show', compact('galery'));
+    }
 }

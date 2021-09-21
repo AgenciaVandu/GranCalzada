@@ -11,7 +11,7 @@
                     <div class="col-md-6 col-sm-12 mt-5">
                         <img src="{{ Storage::url($galery->image) }}" alt="">
                         <div class="boton-avances mt-4">
-                            <a href="" class="btn btn-light">Ver avances</a>
+                            <a href="{{ route('galeries.show', $galery) }}" class="btn btn-light">Ver avances</a>
                         </div>
                     </div>
                 @endforeach
