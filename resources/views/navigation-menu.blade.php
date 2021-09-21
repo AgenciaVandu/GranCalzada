@@ -22,7 +22,8 @@
                     <x-jet-nav-link href="{{ route('galery.index') }}" :active="request()->routeIs('galery.*')">
                         {{ __('Galeria') }}
                     </x-jet-nav-link>
-                    <x-jet-nav-link href="{{ route('blog.index') }}" :active="request()->routeIs('blog.*')">
+                    <x-jet-nav-link href="{{ route('admin.blog.index') }}"
+                        :active="request()->routeIs('admin.blog.*','posts.*','categories.*')">
                         {{ __('Blog') }}
                     </x-jet-nav-link>
                     <x-jet-nav-link href="{{ route('configurations.index') }}"

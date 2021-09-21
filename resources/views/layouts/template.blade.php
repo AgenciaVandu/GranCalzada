@@ -64,7 +64,7 @@
                     </li>
 
                     <li class="nav-item pad active">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="{{ route('blog.index') }}">Blog</a>
                     </li>
                 </ul>
 
@@ -92,7 +92,9 @@
             <div class="row pt-5">
                 <div class="col-lg-4 col-md-4 col-sm-12 pt-5">
                     <div class="mapa">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14902.644270028122!2d-89.620674!3d20.966122!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x676469d86fc45aa3!2sGRUPO%20CASITAS%20DESARROLLOS!5e0!3m2!1ses!2smx!4v1631721969182!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14902.644270028122!2d-89.620674!3d20.966122!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x676469d86fc45aa3!2sGRUPO%20CASITAS%20DESARROLLOS!5e0!3m2!1ses!2smx!4v1631721969182!5m2!1ses!2smx"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6">
@@ -102,7 +104,7 @@
                                 <li class="ubis">2da. Calle Nueva </li>
                                 <li class="ubis">C.56 x 61 y 63 </li>
                             </ul>
-                            
+
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <h5 class="ubis pt-4">Síguenos en nuestras redes sociales:</h5>
@@ -119,11 +121,11 @@
                                         </a>
                                     </p>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
-                    <p class="ubis"><a href="">Tel: (999) 999 9999</a><br> 
+                    <p class="ubis"><a href="">Tel: (999) 999 9999</a><br>
                         <span><a href="">whatsapp: (999) 999 9999</a></span>
                     </p>
                 </div>
@@ -139,7 +141,7 @@
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 imagenes-center text-center">
                     <img src="{{ asset('/img/logos.svg') }}" class="img-fluid" alt="">
-                    
+
                 </div>
             </div>
         </div>
