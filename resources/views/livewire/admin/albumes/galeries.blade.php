@@ -31,7 +31,7 @@
             </form>
         </div>
     @elseif ($add)
-        <form wire:submit.prevent="uploadPhotos({{ $galery }})">
+        <form wire:submit.prevent="uploadPhotos({{ $galery->id }})">
             <div class="flex flex-wrap p-4">
                 @isset($galery->resources)
                     @foreach ($galery->resources as $resource)
@@ -123,8 +123,8 @@
                         alt="">
                     <p class="font-bold text-xl text-center mt-2 text-gray-700">{{ $galery->name }}</p>
                     <div class="flex justify-between px-3 py-2">
-                        <i class="fas fa-pen cursor-pointer" wire:click="edit({{ $galery }})"></i>
-                        <i class="fas fa-plus cursor-pointer" wire:click="addItems({{ $galery }})"></i>
+                        <i class="fas fa-pen cursor-pointer" wire:click="edit({{ $galery->id }})"></i>
+                        <i class="fas fa-plus cursor-pointer" wire:click="addItems({{ $galery->id }})"></i>
                     </div>
                 </div>
             @endforeach

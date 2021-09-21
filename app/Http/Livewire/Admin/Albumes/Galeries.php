@@ -49,14 +49,16 @@ class Galeries extends Component
         $this->add = false;
     }
 
-    public function addItems(Galery $galery)
+    public function addItems($galery)
     {
+        $galery = Galery::find($galery);
         $this->add = true;
-        $this->galery = $galery;
+        $this->galery = Galery::find($galery->id);
     }
 
-    public function edit(Galery $galery)
+    public function edit($galery)
     {
+        $galery = Galery::find($galery);
         $this->edit = true;
         $this->galery = $galery;
         $this->name = $galery->name;
@@ -79,11 +81,11 @@ class Galeries extends Component
         $this->add = false;
     }
 
-    public function uploadPhotos(Galery $galery)
+    public function uploadPhotos($galery)
     {
         $this->validate();
 
-        $galery = $this->galery;
+        $galery = Galery::find($galery);
         foreach ($this->files as $file) {
             $url = $file->store('resources');
             $name = new SplFileInfo($url);
