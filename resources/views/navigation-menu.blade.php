@@ -19,9 +19,11 @@
                         :active="request()->routeIs('developments.*')">
                         {{ __('Desarrollos') }}
                     </x-jet-nav-link>
-                    <x-jet-nav-link href="{{ route('galery.index') }}"
-                        :active="request()->routeIs('galery.*')">
+                    <x-jet-nav-link href="{{ route('galery.index') }}" :active="request()->routeIs('galery.*')">
                         {{ __('Galeria') }}
+                    </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('blog.index') }}" :active="request()->routeIs('blog.*')">
+                        {{ __('Blog') }}
                     </x-jet-nav-link>
                     <x-jet-nav-link href="{{ route('configurations.index') }}"
                         :active="request()->routeIs('configurations.*')">
