@@ -81,43 +81,43 @@
                 </div>
                  
                 <div class="col-12 disfruta-titular">
-                    <h4 class="disfruta pb-3">Disfruta la vida <br> <span class="disfruta-color">EN TU NUEVO HOGAR</span></h4>
+                    <h4 class="disfruta pb-3">Disfruta la vida <br> 
+                        <span class="disfruta-color">EN TU NUEVO HOGAR</span></h4>
                     <a href="" class="btn btn-primary">DESCARGAR BROCHURE</a>
                 </div>                 
             </div>
             <div class="bg-mv ">
-                <div class="container">
-                    <div class="detalle-mv-1">
+                <div class="detalle-mv-2">
+                    <div class="container ">
                         <h4 class="titular-mv-2">Estas amenidades las encontrarás<br>
                             <span class="inner-titular-2">en cada uno de los clusters:</span>
                        </h4>
-                    </div>
-                    <div class="row pt-4">
+                       <div class="row pt-4">
                         <div class="col-md-6 col-sm-12">
                             <div class="row">
                                 <div class="col-6 icon-amenidades-mv">
                                     <img src="{{asset('/img/miraverde/amenidades/terraza-03.svg')}}" width="43" alt="">
                                 </div>
                                 <div class="col-6">
-                                    <p class="amenidades-en-mv">Terraza semitechada</p>
+                                    <p class="amenidades-en-mv pt-2">Terraza semitechada</p>
                                 </div>
                                 <div class="col-6 icon-amenidades-mv">
                                     <img src="{{asset('/img/miraverde/amenidades/chapoteadero-03.svg')}}" width="43" alt="">
                                 </div>
                                 <div class="col-6">
-                                    <p class="amenidades-en-mv">Chapoteadero</p>
+                                    <p class="amenidades-en-mv pt-2">Chapoteadero</p>
                                 </div>
                                 <div class="col-6 icon-amenidades-mv">
                                     <img src="{{asset('/img/miraverde/amenidades/gimnasio-03.svg')}}" width="43" alt="">
                                 </div>
                                 <div class="col-6">
-                                    <p class="amenidades-en-mv">Gym al aire libre</p>
+                                    <p class="amenidades-en-mv pt-2">Gym al aire libre</p>
                                 </div>
                                 <div class="col-6 icon-amenidades-mv">
                                     <img src="{{asset('/img/miraverde/amenidades/tradicionales.svg')}}" width="43" alt="">
                                 </div>
                                 <div class="col-6">
-                                    <p class="amenidades-en-mv">Área de juegos tradicionales</p>
+                                    <p class="amenidades-en-mv pt-2">Área de juegos tradicionales</p>
                                 </div>
                             </div>
                         </div>
@@ -127,29 +127,31 @@
                                     <img src="{{asset('/img/miraverde/amenidades/balon-03.svg')}}" width="43" alt="">
                                 </div>
                                 <div class="col-6 p-amenidad-mv">
-                                    <p class="amenidades-en-mv">Cancha de usos múltiples</p>
+                                    <p class="amenidades-en-mv-1 pt-2">Cancha de usos múltiples</p>
                                 </div>
                                 <div class="col-6 icon-amenidades-mv-1">
                                     <img src="{{asset('/img/miraverde/amenidades/gradas-03.svg')}}" width="43" alt="">
                                 </div>
                                 <div class="col-6 p-amenidad-mv">
-                                    <p class="amenidades-en-mv">Gradas</p>
+                                    <p class="amenidades-en-mv-1 pt-2">Gradas</p>
                                 </div>
                                 <div class="col-6 icon-amenidades-mv-1">
                                     <img src="{{asset('/img/miraverde/amenidades/area-de-juegos-03.svg')}}" width="43" alt="">
                                 </div>
                                 <div class="col-6 p-amenidad-mv">
-                                    <p class="amenidades-en-mv">Área de juegos infantiles</p>
+                                    <p class="amenidades-en-mv-1 pt-2">Área de juegos infantiles</p>
                                 </div>
                                 <div class="col-6 icon-amenidades-mv-1">
                                     <img src="{{asset('/img/miraverde/amenidades/pista-de-trote-03.svg')}}" width="43" alt="">
                                 </div>
                                 <div class="col-6 p-amenidad-mv">
-                                    <p class="amenidades-en-mv">Pista de Jogging</p>
+                                    <p class="amenidades-en-mv-1 pt-2">Pista de Jogging</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -172,27 +174,27 @@
         <div class="container pt-5"> 
             <div class="row text-center">
                 <div class="col">
-                    <img src="{{asset('/img/miraverde/icon/viviendas.svg')}}" width="50" alt="datos relevantes | Gran Calzada">
+                    <img src="{{asset('/img/miraverde/icon/viviendas.svg')}}" width="40" alt="datos relevantes | Gran Calzada">
                     <p class="entorno-p">338 <br><span class="entorno-sp" style="color: #fff;">Viviendas</span></p>
                 </div>
                 <div class="col">
-                    <img src="{{asset('/img/miraverde/icon/viviendas.svg')}}" width="50" alt="datos relevantes | Gran Calzada">
+                    <img src="{{asset('/img/miraverde/icon/viviendas.svg')}}" width="40" alt="datos relevantes | Gran Calzada">
                     <p class="entorno-p">1 Gran <br><span class="entorno-sp" style="color: #fff;">Parque Central</span></p>
                 </div>
                 <div class="col">
-                    <img src="{{asset('/img/miraverde/icon/viviendas.svg')}}" width="50" alt="datos relevantes | Gran Calzada">
+                    <img src="{{asset('/img/miraverde/icon/viviendas.svg')}}" width="40" alt="datos relevantes | Gran Calzada">
                     <p class="entorno-p">8 <br><span class="entorno-sp" style="color: #fff;">Amenidades</span></p>
                 </div>
                 <div class="col">
-                    <img src="{{asset('/img/miraverde/icon/viviendas.svg')}}" width="50" alt="datos relevantes | Gran Calzada">
+                    <img src="{{asset('/img/miraverde/icon/viviendas.svg')}}" width="40" alt="datos relevantes | Gran Calzada">
                     <p class="entorno-p">Barda <br><span class="entorno-sp" style="color: #fff;">Perimetral</span></p>
                 </div>
                 <div class="col">
-                    <img src="{{asset('/img/miraverde/icon/viviendas.svg')}}" width="50" alt="datos relevantes | Gran Calzada">
+                    <img src="{{asset('/img/miraverde/icon/viviendas.svg')}}" width="40" alt="datos relevantes | Gran Calzada">
                     <p class="entorno-p">1 Caseta <br><span class="entorno-sp" style="color: #fff;">con acceso <br>controlado</span></p>
                 </div>
                 <div class="col">
-                    <img src="{{asset('/img/miraverde/icon/viviendas.svg')}}" width="50" alt="datos relevantes | Gran Calzada">
+                    <img src="{{asset('/img/miraverde/icon/viviendas.svg')}}" width="40" alt="datos relevantes | Gran Calzada">
                     <p class="entorno-p">2 accesos<br><span class="entorno-sp" style="color: #fff;">peatonales</span></p>
                 </div>
             </div>           
@@ -235,15 +237,8 @@
             <div class="col-md-6">
                 <p class="amenidades-r">8 Amenidades <br> para los residentes</p>
             </div>
-            <div class="col-md-6">
-                <div class="row text-center">
-                    <div class="col-md-6 col-sm-12 mt-4">
-                        <a href="" class="btn btn-warning">DESCARGAR BROCHURE</a>
-                    </div>
-                    <div class="col-md-6 col-sm-12 mt-4">
-                        <a href="" class="btn btn-warning">CONOCE LOS DESARROLLOS</a>
-                    </div>
-                </div>
+            <div class="col-md-6 text-center pt-3">
+                <a href="" class="btn btn-warning ">CONOCE LOS DESARROLLOS</a>
             </div>
         </div>
         <div class="col-12">

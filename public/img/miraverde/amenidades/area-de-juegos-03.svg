@@ -1,103 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 24.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 126.64 111.6" style="enable-background:new 0 0 126.64 111.6;" xml:space="preserve">
+	 viewBox="0 0 109.1 111.6" style="enable-background:new 0 0 109.1 111.6;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#E7E7E7;}
-	.st1{fill:#215A36;}
-	.st2{fill:#E14A7B;}
-	.st3{fill:#FFFFFF;}
-	.st4{fill:#0B2650;}
-	.st5{fill:#514880;}
-	.st6{fill:#ECA595;}
-	.st7{fill:#D64A7B;}
-	.st8{fill:#67666A;}
-	.st9{fill:#B9B8C8;}
-	.st10{fill:#B3D3D7;}
-	.st11{fill:#808080;}
-	.st12{fill:#92B137;}
-	.st13{fill:#E8A13D;}
-	.st14{fill:none;stroke:#808080;stroke-width:0.5;stroke-miterlimit:10;}
-	.st15{fill:#00244E;}
-	.st16{fill:#B0CED2;}
-	.st17{fill:#20968F;}
-	.st18{fill:#AAA4C1;}
-	.st19{fill:#997BB6;}
-	.st20{fill:#406F36;}
-	.st21{fill:#99BCC2;}
-	.st22{opacity:0.38;}
-	.st23{fill:#D6537C;}
-	.st24{fill:none;stroke:#9CBC35;stroke-width:2;stroke-miterlimit:10;}
-	.st25{fill:#8FB1B8;}
-	.st26{fill:#417439;}
-	.st27{fill:#E6A18B;}
-	.st28{fill:#434041;}
-	.st29{fill:#8D80AB;}
-	.st30{fill:#2F73A9;}
-	.st31{fill:#C3C2D1;}
-	.st32{fill:#767676;}
-	.st33{fill:#4C4480;}
-	.st34{fill:#407137;}
-	.st35{fill:none;}
-	.st36{fill:#18274D;}
-	.st37{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;}
-	.st38{fill:none;stroke:#FFFFFF;stroke-width:3.2;stroke-miterlimit:10;}
-	.st39{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
-	.st40{clip-path:url(#SVGID_2_);}
-	.st41{clip-path:url(#SVGID_4_);}
-	.st42{clip-path:url(#SVGID_6_);fill:none;stroke:#E9A23D;stroke-width:2.484;stroke-miterlimit:10;}
-	.st43{clip-path:url(#SVGID_8_);fill:#E9A23D;}
-	.st44{clip-path:url(#SVGID_8_);fill:#00244E;}
-	.st45{fill:#C0B8CD;}
-	.st46{opacity:0.3;}
-	.st47{clip-path:url(#SVGID_12_);}
-	.st48{fill:#3D753F;}
-	.st49{fill:#EB983F;}
-	.st50{fill:#9C94B6;}
-	.st51{fill:#EAA596;}
-	.st52{fill:#EDA696;}
-	.st53{fill:#382635;}
-	.st54{clip-path:url(#SVGID_14_);}
-	.st55{clip-path:url(#SVGID_16_);}
-	.st56{clip-path:url(#SVGID_18_);fill:none;stroke:#E9A23D;stroke-width:2.484;stroke-miterlimit:10;}
-	.st57{clip-path:url(#SVGID_20_);fill:#E9A23D;}
-	.st58{clip-path:url(#SVGID_20_);fill:#00244E;}
-	.st59{fill:#ECA796;}
-	.st60{fill:#B6C3BA;}
-	.st61{fill:#EDA897;}
-	.st62{opacity:0.41;fill:#514880;}
-	.st63{opacity:0.32;}
-	.st64{fill:#959594;}
-	.st65{fill:#1E5A2E;}
-	.st66{fill:#573E85;}
-	.st67{fill:none;stroke:#F0CB12;stroke-width:2;stroke-miterlimit:10;}
-	.st68{opacity:0.54;fill:#FFFFFF;}
-	.st69{fill:#E7E5E7;}
-	.st70{clip-path:url(#SVGID_24_);}
-	.st71{fill:#CF9A43;}
-	.st72{fill:#E8E8E8;}
-	.st73{fill:#D74A7B;}
-	.st74{fill:none;stroke:#EB983F;stroke-width:2;stroke-miterlimit:10;}
-	.st75{fill:#F6B8AA;}
-	.st76{fill:#265B33;}
-	.st77{clip-path:url(#SVGID_32_);fill:#265B33;}
-	.st78{fill:#235A36;}
-	.st79{clip-path:url(#SVGID_34_);fill:#F6B8AA;}
-	.st80{clip-path:url(#SVGID_34_);fill:#235A36;}
-	.st81{clip-path:url(#SVGID_36_);fill:#F6B8AA;}
-	.st82{clip-path:url(#SVGID_36_);fill:#235A36;}
+	.st0{fill:#265B33;}
 </style>
 <g>
-	<polygon class="st76" points="6.92,64.21 6.92,67.93 57.3,67.93 88.5,99.34 124.05,99.34 124.05,95.62 90.03,95.62 58.83,64.21 	
-		"/>
-	<path class="st76" d="M109.73,97.48h-3.69v-4.45c0-3.31-2.67-6-5.96-6h-5.39L62.63,54.76c-1.91-1.91-4.44-2.96-7.13-2.96H44.8
-		v14.28h-3.69v-18h14.39c3.68,0,7.13,1.44,9.74,4.06l30.97,31.17h3.85c5.33,0,9.66,4.36,9.66,9.72V97.48z"/>
-	<rect x="36.6" y="66.08" class="st76" width="3.69" height="32.93"/>
-	<rect x="22.02" y="73.05" class="st76" width="16.43" height="3.72"/>
-	<rect x="22.02" y="88.23" class="st76" width="16.43" height="3.73"/>
-	<polygon class="st76" points="54.61,101.15 50.91,101.15 50.91,35.95 29.86,20.76 8.49,36.73 8.49,101.15 4.8,101.15 4.8,34.87 
-		29.82,16.16 54.61,34.04 	"/>
-	<rect x="27.99" y="10.45" class="st76" width="3.69" height="9.61"/>
-	<rect x="6.66" y="33.94" class="st76" width="46.1" height="3.72"/>
+	<polygon class="st0" points="14.2,58.9 14.2,61.7 51.4,61.7 74.4,84.8 100.7,84.8 100.7,82.1 75.5,82.1 52.5,58.9 	"/>
+	<path class="st0" d="M90.1,83.5h-2.7v-3.3c0-2.4-2-4.4-4.4-4.4h-4L55.3,51.9c-1.4-1.4-3.3-2.2-5.3-2.2h-7.9v10.5h-2.7V47h10.6
+		c2.7,0,5.3,1.1,7.2,3l22.9,23h2.8c3.9,0,7.1,3.2,7.1,7.2L90.1,83.5L90.1,83.5z"/>
+	<rect x="36.1" y="60.3" class="st0" width="2.7" height="24.3"/>
+	<rect x="25.4" y="65.4" class="st0" width="12.1" height="2.7"/>
+	<rect x="25.4" y="76.6" class="st0" width="12.1" height="2.8"/>
+	<polygon class="st0" points="49.4,86.2 46.7,86.2 46.7,38.1 31.1,26.8 15.4,38.6 15.4,86.2 12.6,86.2 12.6,37.3 31.1,23.4 
+		49.4,36.6 	"/>
+	<rect x="29.8" y="19.2" class="st0" width="2.7" height="7.1"/>
+	<rect x="14" y="36.6" class="st0" width="34" height="2.7"/>
 </g>
 </svg>

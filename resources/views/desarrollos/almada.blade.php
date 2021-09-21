@@ -188,6 +188,7 @@
             </div>
             <div class="venta-cruzada">
                 <!--Venta cruzada-->
+                
                 <div class="row">
                     @foreach ($almada->models as $model)
                         <div class="col-md-4 col-sm-12 mt-3">
@@ -208,13 +209,13 @@
                                             <h2 class="t-mod" style="color: #C90B89;">{{ $model->name }}</h2>
                                         @break
                                         @case(3)
-                                            <h2 class="t-mod" style="color: #C90B89;">{{ $model->name }}</h2>
+                                            <h2 class="t-mod" style="color: #F69C00;">{{ $model->name }}</h2>
                                         @break
                                         @case(4)
-                                            <h2 class="t-mod" style="color: #4EB3B7;">{{ $model->name }}</h2>
+                                            <h2 class="t-mod" style="color: #682E88;">{{ $model->name }}</h2>
                                         @break
                                         @case(5)
-                                            <h2 class="t-mod" style="color: #C90B89;">{{ $model->name }}</h2>
+                                            <h2 class="t-mod" style="color: #682E88;">{{ $model->name }}</h2>
                                         @break
                                         @default
 

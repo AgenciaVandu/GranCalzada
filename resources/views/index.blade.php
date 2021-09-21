@@ -107,7 +107,7 @@
                     </div> <!-- Fint Carousel 1-->
                 </div>
 
-                <div class="d-none .d-md-block d-lg-block">
+                <div class="d-none d-md-block d-lg-block">
                     <div class="row space-1">
                         <div class="col-6 pt-3 text-center">
                             <img src="{{ asset('/img/amenidades-index/1.png') }}" class="img-fluid" alt="">
@@ -132,93 +132,204 @@
                     class="conoce  pb-2">CONOCE</span><br>nuestros <span class="dos">2</span> desarrollos: <br>
                 ¿En cuál te gustaría vivir?</h2>
 
-            <div class="row mt-5 desarrollos">
-                <div class="col-md-6 col-sm-12 text-center">
-                    <img src="{{ asset('/img/modelo.png') }}" class="img-fluid" alt="">
-                    <div class="bg-almada">
-                        <img src="{{ asset('/img/almada.png') }}" alt="Gran Calzada | Ciudad Viva"
-                            class="img-fluid pt-3 pb-3">
-                        <h4 style="color: #fff; font-family:'Avenir-regular'" class="pb-2">
-                            Desde:<span> $385,000</span>
-                        </h4>
-                        <p style="color: #fff">Almada® es un desarrollo tipo cerrada que conecta con nuestra Gran Calzada®,
-                            la cual concentra todos los servicios y amenidades para que tú y tu familia se den un respiro
-                            mientras la recorren para realizar las actividades de su vida diaria.</p>
-                        <div class="row">
-                            <div class="col-5 text-right pt-2">
-                                <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
-                            </div>
-                            <div class="col-7 justify-center m-auto">
-                                <p class="elemento">1490 Casas</p>
-                            </div>
-                            <div class="col-5 text-right pt-2">
-                                <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
-                            </div>
-                            <div class="col-7 justify-center m-auto">
-                                <p class="elemento">Semi-cerrada</p>
-                            </div>
-                            <div class="col-5 text-right pt-2">
-                                <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
-                            </div>
-                            <div class="col-7 justify-center m-auto">
-                                <p class="elemento">5 modelos diferentes</p>
-                            </div>
-                            <div class="col-5 text-right pt-2">
-                                <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
-                            </div>
-                            <div class="col-7 justify-center m-auto">
-                                <p class="elemento">Rodeado de servicios</p>
-                            </div>
-                        </div>
-                        <a href="/almada" class="btn btn-secondary btn-almada">Vive en Almada</a>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-sm-12 text-center">
-                    <img src="{{ asset('/img/modelo.png') }}" class="img-fluid" alt="">
-                    <div class="bg-miraverde">
-                        <img src="{{ asset('/img/miraverde.png') }}" alt="Gran Calzada | Ciudad Viva"
-                            class="img-fluid pt-3 pb-3">
-                        <h4 style="color: #fff; font-family:'Avenir-regular'" class="pb-2">
-                            Desde:<span> $385,000</span>
-                        </h4>
-                        <p style="color: #fff">Almada® es un desarrollo tipo cerrada que conecta con nuestra Gran Calzada®,
-                            la cual concentra todos los servicios y amenidades para que tú y tu familia se den un respiro
-                            mientras la recorren para realizar las actividades de su vida diaria.</p>
-                        <div class="row">
-                            <div class="col-5 text-right pt-2">
-                                <img src="{{ asset('/img/modelos/1.svg') }}" alt="" class="img-fluid"
-                                    width="35">
-                            </div>
-                            <div class="col-7 justify-center m-auto">
-                                <p class="elemento">338 Casas</p>
-                            </div>
-                            <div class="col-5 text-right pt-2">
-                                <img src="{{ asset('/img/modelos/5.svg') }}" alt="" class="img-fluid"
-                                    width="35">
-                            </div>
-                            <div class="col-7 justify-center m-auto">
-                                <p class="elemento">Caseta de acceso</p>
-                            </div>
-                            <div class="col-5 text-right pt-2">
-                                <img src="{{ asset('/img/modelos/4.svg') }}" alt="" class="img-fluid"
-                                    width="35" style="width: 40">
-                            </div>
-                            <div class="col-7 justify-center m-auto">
-                                <p class="elemento">Barda perimetral</p>
-                            </div>
-                            <div class="col-5 text-right pt-2">
-                                <img src="{{ asset('/img/modelos/2.svg') }}" alt="" class="img-fluid"
-                                    width="35" style="width: 40">
-                            </div>
-                            <div class="col-7 justify-center m-auto">
-                                <p class="elemento">Parque central</p>
-                            </div>
-                            <div class="col-7 pb-1">
+                <div class="d-md-none">
+                    <div class="carousel_1"> <!--Carousel 2-->
+                        <div class="carousel__contenedor"> <!--Carousel contenedor-->
+                            <button aria-label="anterior" class="carousel__anterior">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <div class="carousel__lista1">
+                                <div class="carousel__elemento">
+                                    <div class="pt-3 text-center">
+                                        <div class="col-md-6 col-sm-12 text-center">
+                                            <img src="{{ asset('/img/modelo.png') }}" class="img-fluid" alt="">
+                                            <div class="bg-almada">
+                                                <img src="{{ asset('/img/almada.png') }}" alt="Gran Calzada | Ciudad Viva"
+                                                    class="img-fluid pt-3 pb-3">
+                                                <h4 style="color: #fff; font-family:'Avenir-regular'" class="pb-2">
+                                                    Desde:<span> $385,000</span>
+                                                </h4>
+                                                <p style="color: #fff" class="texto-carousel-1">Almada® es un desarrollo tipo cerrada que conecta con nuestra Gran Calzada®,
+                                                    la cual concentra todos los servicios y amenidades para que tú y tu familia se den un respiro
+                                                    mientras la recorren para realizar las actividades de su vida diaria.</p>
+                                                <div class="row">
+                                                    <div class="col-5 text-right pt-2">
+                                                        <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="col-7 justify-center m-auto">
+                                                        <p class="elemento">1490 Casas</p>
+                                                    </div>
+                                                    <div class="col-5 text-right pt-2">
+                                                        <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="col-7 justify-center m-auto">
+                                                        <p class="elemento">Semi-cerrada</p>
+                                                    </div>
+                                                    <div class="col-5 text-right pt-2">
+                                                        <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="col-7 justify-center m-auto">
+                                                        <p class="elemento">5 modelos diferentes</p>
+                                                    </div>
+                                                    <div class="col-5 text-right pt-2">
+                                                        <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
+                                                    </div>
+                                                    <div class="col-7 justify-center m-auto">
+                                                        <p class="elemento">Rodeado de servicios</p>
+                                                    </div>
+                                                </div>
+                                                <a href="/almada" class="btn btn-secondary btn-almada">Vive en Almada</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel__elemento">
+                                    <div class="col-md-6 col-sm-12 pt-3 text-center">
+                                        <img src="{{ asset('/img/modelo.png') }}" class="img-fluid" alt="">
+                                        <div class="bg-miraverde">
+                                            <img src="{{ asset('/img/miraverde.png') }}" alt="Gran Calzada | Ciudad Viva"
+                                                class="img-fluid pt-3 pb-3">
+                                            <h4 style="color: #fff; font-family:'Avenir-regular'" class="pb-2">
+                                                Desde:<span> $385,000</span>
+                                            </h4>
+                                            <p style="color: #fff" class="texto-carousel-1">Miraverde es una privada habitacional de 2,314 casas (4 diferentes modelos) que se encuentran en la parte norte de la Gran Calzada. Ofrece a sus habitantes un gran parque central que consta de 8 amenidades, espacios seguros a través de su caseta de seguridad, barda perimetral. Un entorno lleno de vegetación que crea un ambiente más fresco. Podrás encontrar un árbol cada 2 casas convirtendolo en un lugar para disfrutar.</p>
+                                            <div class="row">
+                                                <div class="col-5 text-right pt-2">
+                                                    <img src="{{ asset('/img/modelos/1.svg') }}" alt="" class="img-fluid"
+                                                        width="35">
+                                                </div>
+                                                <div class="col-7 justify-center m-auto">
+                                                    <p class="elemento">338 Casas</p>
+                                                </div>
+                                                <div class="col-5 text-right pt-2">
+                                                    <img src="{{ asset('/img/modelos/5.svg') }}" alt="" class="img-fluid"
+                                                        width="35">
+                                                </div>
+                                                <div class="col-7 justify-center m-auto">
+                                                    <p class="elemento">Caseta de acceso</p>
+                                                </div>
+                                                <div class="col-5 text-right pt-2">
+                                                    <img src="{{ asset('/img/modelos/4.svg') }}" alt="" class="img-fluid"
+                                                        width="35" style="width: 40">
+                                                </div>
+                                                <div class="col-7 justify-center m-auto">
+                                                    <p class="elemento">Barda perimetral</p>
+                                                </div>
+                                                <div class="col-5 text-right pt-2">
+                                                    <img src="{{ asset('/img/modelos/2.svg') }}" alt="" class="img-fluid"
+                                                        width="35" style="width: 40">
+                                                </div>
+                                                <div class="col-7 justify-center m-auto">
+                                                    <p class="elemento">Parque central</p>
+                                                </div>
+                                                <div class="col-7 pb-1">
+                                                    
+                                                </div>
+                                            </div>
+                                            <a href="/miraverde" class="btn btn-secondary mt-4 mb-4">Vive en Miraverde</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
                                 
                             </div>
+                            
+                            <button aria-label="siguiente" class="carousel__siguiente">
+                            <i class="fas fa-chevron-right"></i>
+                            </button>
                         </div>
-                        <a href="/miraverde" class="btn btn-secondary mt-4 mb-4">Vive en Miraverde</a>
+                        <div role="tabList" class="carousel__indicadores1"></div>
+                    </div> <!-- Fint Carousel 2-->
+                </div>
+
+            <div class="d-none d-md-block d-lg-block">
+                <div class="row mt-5 desarrollos">
+                    <div class="col-md-6 col-sm-12 text-center">
+                        <img src="{{ asset('/img/modelo.png') }}" class="img-fluid" alt="">
+                        <div class="bg-almada">
+                            <img src="{{ asset('/img/almada.png') }}" alt="Gran Calzada | Ciudad Viva"
+                                class="img-fluid pt-3 pb-3">
+                            <h4 style="color: #fff; font-family:'Avenir-regular'" class="pb-2">
+                                Desde:<span> $385,000</span>
+                            </h4>
+                            <p style="color: #fff" class="espacio-almada-1">Almada® es un desarrollo tipo cerrada que conecta con nuestra Gran Calzada®,
+                                la cual concentra todos los servicios y amenidades para que tú y tu familia se den un respiro
+                                mientras la recorren para realizar las actividades de su vida diaria.</p>
+                            <div class="row">
+                                <div class="col-5 text-right pt-2">
+                                    <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-7 justify-center m-auto">
+                                    <p class="elemento">1490 Casas</p>
+                                </div>
+                                <div class="col-5 text-right pt-2">
+                                    <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-7 justify-center m-auto">
+                                    <p class="elemento">Semi-cerrada</p>
+                                </div>
+                                <div class="col-5 text-right pt-2">
+                                    <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-7 justify-center m-auto">
+                                    <p class="elemento">5 modelos diferentes</p>
+                                </div>
+                                <div class="col-5 text-right pt-2">
+                                    <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-7 justify-center m-auto">
+                                    <p class="elemento">Rodeado de servicios</p>
+                                </div>
+                            </div>
+                            <a href="/almada" class="btn btn-secondary btn-almada">Vive en Almada</a>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-6 col-sm-12 text-center">
+                        <img src="{{ asset('/img/modelo.png') }}" class="img-fluid" alt="">
+                        <div class="bg-miraverde">
+                            <img src="{{ asset('/img/miraverde.png') }}" alt="Gran Calzada | Ciudad Viva"
+                                class="img-fluid pt-3 pb-3">
+                            <h4 style="color: #fff; font-family:'Avenir-regular'" class="pb-2">
+                                Desde:<span> $385,000</span>
+                            </h4>
+                            <p style="color: #fff">Miraverde es una privada habitacional de 2,314 casas (4 diferentes modelos) que se encuentran en la parte norte de la Gran Calzada. Ofrece a sus habitantes un gran parque central que consta de 8 amenidades, espacios seguros a través de su caseta de seguridad y barda perimetral.</p>
+                            <div class="row">
+                                <div class="col-5 text-right pt-2">
+                                    <img src="{{ asset('/img/modelos/1.svg') }}" alt="" class="img-fluid"
+                                        width="35">
+                                </div>
+                                <div class="col-7 justify-center m-auto">
+                                    <p class="elemento">338 Casas</p>
+                                </div>
+                                <div class="col-5 text-right pt-2">
+                                    <img src="{{ asset('/img/modelos/5.svg') }}" alt="" class="img-fluid"
+                                        width="35">
+                                </div>
+                                <div class="col-7 justify-center m-auto">
+                                    <p class="elemento">Caseta de acceso</p>
+                                </div>
+                                <div class="col-5 text-right pt-2">
+                                    <img src="{{ asset('/img/modelos/4.svg') }}" alt="" class="img-fluid"
+                                        width="35" style="width: 40">
+                                </div>
+                                <div class="col-7 justify-center m-auto">
+                                    <p class="elemento">Barda perimetral</p>
+                                </div>
+                                <div class="col-5 text-right pt-2">
+                                    <img src="{{ asset('/img/modelos/2.svg') }}" alt="" class="img-fluid"
+                                        width="35" style="width: 40">
+                                </div>
+                                <div class="col-7 justify-center m-auto">
+                                    <p class="elemento">Parque central</p>
+                                </div>
+                                <div class="col-7 pb-1">
+                                    
+                                </div>
+                            </div>
+                            <a href="/miraverde" class="btn btn-secondary mt-4 mb-4">Vive en Miraverde</a>
+                        </div>
                     </div>
                 </div>
             </div>

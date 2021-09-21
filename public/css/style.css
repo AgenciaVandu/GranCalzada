@@ -238,7 +238,11 @@ hr {
 
 .txt-calzada h2 {
     font-size: 2.5em;
-} 
+} @media (max-width:700px) {
+    .txt-calzada h2 {
+        font-size: 2em;
+    }  
+}
 
 .txt-calzada p {
     font-size: 20px;
@@ -312,10 +316,10 @@ hr {
 .desarrollos {
     padding-left: 120px;
     padding-right: 120px;
-} @media (max-width: 600px) {
+}@media (min-width: 700px) {
     .desarrollos {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -372,6 +376,8 @@ hr {
 
 } @media (max-width: 700px){
     .comunidad {
+        padding-top: 10px;
+        font-size: 1.8em;
         padding-left: 0px;
     }
 }
@@ -391,7 +397,7 @@ hr {
 } @media (max-width:800px) {
     .detalle {
         background-size: 60px;
-        background-position: 50px 70px;
+        background-position: 50px 30px;
     }
 }
 
@@ -476,6 +482,13 @@ hr {
 }
 .espacio-equipamiento {
     padding-bottom: 90px;
+    padding-left: 120px;
+    padding-right: 120px;
+} @media (max-width: 600px) {
+    .espacio-equipamiento {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
 .medalla {
     padding-top: 40px;
@@ -489,6 +502,13 @@ hr {
 
 .espacio-que-encontraras {
     padding-top: 80px;
+    padding-left: 120px;
+    padding-right: 120px;
+} @media (max-width: 600px) {
+    .espacio-que-encontraras {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
 .que-encontraras {
     background-color: #e7e7e7;
@@ -523,7 +543,7 @@ hr {
     top: 220px;
     left: 160px;
     animation: movimiento-u 6.5s linear infinite;
-} @media (max-width:700px) {
+} @media (max-width:600px) {
     .u-almada {
         top: 140px;
         left: 190px;
@@ -536,10 +556,29 @@ hr {
     right: 600px;
     top: 60px;
     animation: movimiento-m 5.5s linear infinite;
-} @media (max-width:700px) {
+} @media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+    and (orientation: portrait) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+    .u-miraverde {
+        right: 440px;
+        top: 30px;
+    }
+} @media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+    and (orientation: landscape) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+    .u-miraverde {
+        right: 480px;
+    }
+
+}
+@media (max-width:700px) {
     .u-miraverde {
         top: -20px;
-        right: 270px;
+        right: 290px;
     }
 }
 
@@ -752,13 +791,15 @@ p {
     background-image: url(/img/miraverde/fondo-mv.svg);
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 432.65px;
-} @media (max-width:700px) {
+    min-height: 462.65px;
+    background-size: cover;
+} @media (max-width:500px) {
     .bg-mv {
     background-image: url(/img/miraverde/Intersect.svg);
     background-repeat: no-repeat;
-    
+    background-size: cover;
     }
+    
 }
 
 #disfruta-la-vida-en-miraverde {
@@ -770,6 +811,10 @@ p {
     color: #fff;
     font-family: 'Avenir-regular';
    
+} @media (max-width:600px) {
+    .titular-mv {
+        font-size: 20px;
+    }
 }
 
 .gran-mv {
@@ -780,7 +825,7 @@ p {
 
 .inner-titular {
     font-size: 1.6em !important;
-}
+} 
 
 .entorno-img {
     background-image: url(/img/miraverde/entorno-render.jpg);
@@ -798,6 +843,10 @@ p {
     color: #fff;
     font-size: 20px;
     line-height: 20px;
+} @media (max-width:600px) {
+    .entorno-p {
+        font-size: 18px;
+    }
 }
 
 .entorno-sp {
@@ -862,7 +911,7 @@ p {
 }
 
 .titular-mv-2 {
-    padding-top: 70px;
+    padding-top: 90px;
     text-align: center;
     color: #fff;
     font-family: "Source Serif Pro";
@@ -877,7 +926,6 @@ p {
 }
 
 .amenidades-en-mv {
-   
     font-size: 18px;
     color: #215A36;
     font-family: 'Avenir-regular';
@@ -885,6 +933,8 @@ p {
 }@media (max-width: 700px) {
     .amenidades-en-mv {
         padding-top: 0px;
+        position: relative;
+        right: 25px;
     }
 }
 
@@ -901,19 +951,48 @@ p {
     left: 30px;
 } @media (max-width: 700px) {
     .icon-amenidades-mv-1 {
-        left: auto;
+        left: 80px;
     }
 }
 
 .p-amenidad-mv {
     position: relative;
     right: 170px;
+    font-size: 18px;
+    color: #215A36;
+    font-family: 'Avenir-regular';
+} @media (max-width:600px) {
+    .p-amenidad-mv {
+        right: 25px;
+    }
 }
 
 #cabecera-modelos {
     padding-top: 100px;
 
 }
+
+.detalle-mv {
+    padding-top: 20px;
+    background-image: url(/img/miraverde/dots-02.svg);
+    background-repeat: no-repeat;
+    background-position: 430px -20px;
+} @media (max-width:600px) {
+    .detalle-mv {
+        padding-top: 65px;
+        background-position: 0 -43px;
+    }
+}
+.detalle-mv-1 {
+    background-image: url(/img/miraverde/entorno.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+} @media(max-width: 600px) {
+    .detalle-mv-1 {
+        background-position: 400px 80px;
+    }
+}
+
 
 /*detalles de  modelos*/
 .plantas-modelos {
@@ -1240,6 +1319,10 @@ iframe {
 .carousel__anterior,
 .carousel__siguiente {
     display: none;
+}
+
+.texto-carousel-1 {
+    text-align: justify;
 }
 
 
