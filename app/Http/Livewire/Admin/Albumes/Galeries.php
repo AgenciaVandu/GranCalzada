@@ -63,7 +63,7 @@ class Galeries extends Component
     }
     public function updateGalery()
     {
-        if (!empty($files)) {
+        if (!empty($this->image)) {
             $url = $this->image->store('resources');
             $this->galery->update([
                 'name' => $this->name,

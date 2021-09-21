@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\DevelopmentController;
 use App\Http\Controllers\Admin\GaleryController;
 use App\Http\Controllers\Admin\VideoController;
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ConfigurationController;
 use App\Http\Livewire\Slider;
 use Illuminate\Support\Facades\Route;
@@ -30,5 +31,6 @@ Route::prefix('configurations')->group(function () {
 });
 
 Route::get('/galery', [GaleryController::class, 'index'])->name('galery.index');
+Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
 
 Route::post('configurations/videos/file', [VideoController::class, 'upload'])->name('admin.configurations.videos');
