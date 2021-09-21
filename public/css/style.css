@@ -238,7 +238,11 @@ hr {
 
 .txt-calzada h2 {
     font-size: 2.5em;
-} 
+} @media (max-width:700px) {
+    .txt-calzada h2 {
+        font-size: 2em;
+    }  
+}
 
 .txt-calzada p {
     font-size: 20px;
@@ -312,10 +316,10 @@ hr {
 .desarrollos {
     padding-left: 120px;
     padding-right: 120px;
-} @media (max-width: 600px) {
+}@media (min-width: 700px) {
     .desarrollos {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -372,6 +376,8 @@ hr {
 
 } @media (max-width: 700px){
     .comunidad {
+        padding-top: 10px;
+        font-size: 1.8em;
         padding-left: 0px;
     }
 }
@@ -391,7 +397,7 @@ hr {
 } @media (max-width:800px) {
     .detalle {
         background-size: 60px;
-        background-position: 50px 70px;
+        background-position: 50px 30px;
     }
 }
 
@@ -1240,6 +1246,10 @@ iframe {
 .carousel__anterior,
 .carousel__siguiente {
     display: none;
+}
+
+.texto-carousel-1 {
+    text-align: justify;
 }
 
 
