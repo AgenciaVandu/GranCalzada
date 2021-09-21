@@ -228,11 +228,17 @@ hr {
 
 .txt-calzada {
     padding: 65px;
+} @media (max-width: 700px) {
+    .txt-calzada {
+        padding: 30px;
+        text-align: justify;
+    }
+    
 }
 
 .txt-calzada h2 {
     font-size: 2.5em;
-}
+} 
 
 .txt-calzada p {
     font-size: 20px;
@@ -240,14 +246,9 @@ hr {
 
 .space-1 {
     padding-top: 20px;
-    padding-left: 120px;
-    padding-right: 120px;
-} @media (max-width:700px) {
-    .space-1 {
-        padding-right: 30px;
-        padding-left: 30px;
-    }
-}
+    padding-left: 170px;
+    padding-right: 170px;
+} 
 
 #desarrollos {
     padding-top: 70px;
@@ -260,7 +261,7 @@ hr {
 
 .gran-calzada-2 {
     font-size: 2.8em ;
-}
+} 
 .gran-calzada-3 {
     font-size: 1.4em ;
 }
@@ -271,6 +272,21 @@ hr {
 }
 .signo-1 {
     font-size: 1.4em;
+} @media (max-width:700px) {
+    .gran-calzada-2 {
+        font-size: 2.1em ;
+    } 
+    .gran-calzada-3 {
+        font-size: 1.4em ;
+    }
+    .registrada {
+        position: relative;
+        top: -20px;
+        font-size: .4em;
+    }
+    .signo-1 {
+        font-size: 1.4em;
+    }
 }
 
 
@@ -1217,6 +1233,16 @@ iframe {
         padding-top: 0;
     }
 }
+
+/*Carousel*/
+
+
+.carousel__anterior,
+.carousel__siguiente {
+    display: none;
+}
+
+
 
 
 
