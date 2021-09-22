@@ -12,10 +12,10 @@
                                     class="img-fluid">
                             </div>
                             <div class="row pt-3">
-                                <div class="col-10 compartir">
+                                <div class="col-md-10 col-sm-12 compartir">
                                     <h5>Compartir:</h5>
                                 </div>
-                                <div class="col-2">
+                                <div class="col-md-2 col-sm-12">
                                     <div class="row">
                                         <div class="redes-sociales pl-2">
                                             <a href=""><i class="fab fa-facebook-square"></i></a>
