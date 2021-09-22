@@ -99,15 +99,15 @@
                 <x-jet-label>
                     Medidas:
                 </x-jet-label>
-                <x-jet-input type="text" wire:model="measures" class="py-1 w-full my-3 " disabled></x-jet-input>
+                <x-jet-input type="text" wire:model="measures" class="py-1 w-full my-3 " ></x-jet-input>
                 <x-jet-label>
                     Area:
                 </x-jet-label>
-                <x-jet-input type="text" wire:model="area" class="py-1 w-full my-3 " disabled></x-jet-input>
+                <x-jet-input type="text" wire:model="area" class="py-1 w-full my-3 " ></x-jet-input>
                 <x-jet-label>
                     Area de construcción:
                 </x-jet-label>
-                <x-jet-input type="text" wire:model="construction_area" class="py-1 w-full my-3 " disabled>
+                <x-jet-input type="text" wire:model="construction_area" class="py-1 w-full my-3 " >
                 </x-jet-input>
                 <x-jet-label>
                     Modelo:

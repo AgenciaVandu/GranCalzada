@@ -19,7 +19,12 @@ class CreateLotsTable extends Migration
             $table->string('measures')->nullable();
             $table->string('area')->nullable();
             $table->string('construction_area')->nullable();
-            $table->longText('coordinates')->nullable();
+            $table->string('x')->nullable();
+            $table->string('y')->nullable();
+            $table->string('class')->nullable();
+            $table->string('width')->nullable();
+            $table->string('height')->nullable();
+            $table->string('clave')->nullable();
 
             $table->unsignedBigInteger('model_id');
             $table->foreign('model_id')->references('id')->on('models');

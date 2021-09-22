@@ -17,7 +17,8 @@ class AlmadaController extends Controller
         $body = $almada->sliders->where('section', 'body')->first();
         $button = $almada->button;
         $video_body = Video::where('section', 'almada_body')->first();
-        return view('desarrollos.almada', compact('almada', 'header', 'body', 'button', 'video_body'));
+        $lots = $almada->lots;
+        return view('desarrollos.almada', compact('almada', 'header', 'body', 'button', 'video_body','lots'));
     }
 
     public function model(Model $model)

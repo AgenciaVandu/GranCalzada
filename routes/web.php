@@ -93,3 +93,7 @@ Route::get('/blog/articulo/{post}', [BlogController::class, 'show'])->name('blog
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+
+
+
