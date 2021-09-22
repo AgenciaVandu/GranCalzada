@@ -99,7 +99,242 @@
                     </div>
                 </div>
                 <div class="venta-cruzada">
-                    <!--Venta cruzada-->
+
+                    <div>
+                        <div class="carousel_1">
+                            <!--Carousel 2-->
+                            <div class="carousel__contenedor">
+                                <!--Carousel contenedor-->
+                                <button aria-label="anterior" class="carousel__anterior">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <div class="carousel__lista2">
+                                    @foreach ($almada->models->except($model->id) as $model)
+                                        <div class="carousel__elemento">
+                                            <div class="col mt-3">
+                                                <div class="card bg-cruzada">
+                                                    @if ($model->image != null)
+                                                        <img src="{{ Storage::url($model->image) }}" class="img-fluid"
+                                                            alt="Modelos disponibles | Gran Calzada">
+                                                    @else
+                                                        <img src="{{ asset('/img/almada/venta-cruzada/aguamarina-03.png') }}"
+                                                            class="img-fluid" alt="Modelos disponibles | Gran Calzada">
+                                                    @endif
+                                                    <div class="titulo-cruzada text-center pt-3">
+                                                        @switch($model->id)
+                                                            @case(1)
+                                                                <h2 class="t-mod" style="color: #4EB3B7;">{{ $model->name }}</h2>
+                                                            @break
+                                                            @case(2)
+                                                                <h2 class="t-mod" style="color: #C90B89;">{{ $model->name }}</h2>
+                                                            @break
+                                                            @case(3)
+                                                                <h2 class="t-mod" style="color: #C90B89;">{{ $model->name }}</h2>
+                                                            @break
+                                                            @case(4)
+                                                                <h2 class="t-mod" style="color: #4EB3B7;">{{ $model->name }}</h2>
+                                                            @break
+                                                            @case(5)
+                                                                <h2 class="t-mod" style="color: #C90B89;">{{ $model->name }}</h2>
+                                                            @break
+                                                            @default
+                
+                                                        @endswitch
+                                                        <p class="p-desde">Desde:
+                                                            <span>${{ number_format($model->price) }}</span>
+                                                        </p>
+                                                    </div>
+                                                    @switch($model->id)
+                                                        @case(1)
+                                                            <div class="row">
+                                                                <!--Amenidades por modelo-->
+                                                                <div class="col-6 izq-mod">
+                                                                    <img src="{{ asset('/img/almada/venta-cruzada/icon/comedor.svg') }}"
+                                                                        width="36" alt="">
+                                                                </div>
+                                                                <div class="col-6 der-mod">
+                                                                    <p>Sala / Comedor <br> / Cocina</p>
+                                                                </div>
+                                                                <div class="col-6 izq-mod">
+                                                                    <img src="{{ asset('/img/almada/venta-cruzada/icon/recamara.svg') }}"
+                                                                        width="32" alt="">
+                                                                </div>
+                                                                <div class="col-6 der-mod pt-1">
+                                                                    <p>2 recámaras</p>
+                                                                </div>
+                                                                <div class="col-6 izq-mod">
+                                                                    <img src="{{ asset('/img/almada/venta-cruzada/icon/bano.svg') }}"
+                                                                        width="32" alt="">
+                                                                </div>
+                                                                <div class="col-6 der-mod pt-3">
+                                                                    <p>1 baño</p>
+                                                                </div>
+                                                                <div class="espacio-bco">
+                                                                </div>
+                                                            </div>
+                                                        @break
+                                                        @case(2)
+                                                            <div class="row">
+                                                                <!--Amenidades por modelo-->
+                                                                <div class="col-6 izq-mod">
+                                                                    <img src="{{ asset('/img/almada/venta-cruzada/icon/comedor.svg') }}"
+                                                                        width="36" alt="">
+                                                                </div>
+                                                                <div class="col-6 der-mod pt-2">
+                                                                    <p>Sala / Comedor </p>
+                                                                </div>
+                                                                <div class="col-6 izq-mod ">
+                                                                    <img src="{{ asset('/img/almada/venta-cruzada/icon/cocina.svg') }}"
+                                                                        width="32" alt="">
+                                                                </div>
+                                                                <div class="col-6 der-mod">
+                                                                    <p>Cocina <br> independiente</p>
+                                                                </div>
+                                                                <div class="col-6 izq-mod">
+                                                                    <img src="{{ asset('/img/almada/venta-cruzada/icon/recamara.svg') }}"
+                                                                        width="32" alt="">
+                                                                </div>
+                                                                <div class="col-6 der-mod pt-1">
+                                                                    <p>2 Recámaras</p>
+                                                                </div>
+                                                                <div class="col-6 izq-mod">
+                                                                    <img src="{{ asset('/img/almada/venta-cruzada/icon/bano.svg') }}"
+                                                                        width="32" alt="">
+                                                                </div>
+                                                                <div class="col-6 der-mod pt-3">
+                                                                    <p>1 baños</p>
+                                                                </div>
+                                                            </div>
+                                                        @break
+                                                        @case(3)
+                                                            <div class="row">
+                                                                <!--Amenidades por modelo-->
+                                                                <div class="col-6 izq-mod">
+                                                                    <img src="{{ asset('/img/almada/venta-cruzada/icon/comedor.svg') }}"
+                                                                        width="36" alt="">
+                                                                </div>
+                                                                <div class="col-6 der-mod pt-2">
+                                                                    <p>Sala / Comedor </p>
+                                                                </div>
+                                                                <div class="col-6 izq-mod ">
+                                                                    <img src="{{ asset('/img/almada/venta-cruzada/icon/cocina.svg') }}"
+                                                                        width="32" alt="">
+                                                                </div>
+                                                                <div class="col-6 der-mod">
+                                                                    <p>Cocina <br> independiente</p>
+                                                                </div>
+                                                                <div class="col-6 izq-mod">
+                                                                    <img src="{{ asset('/img/almada/venta-cruzada/icon/recamara.svg') }}"
+                                                                        width="32" alt="">
+                                                                </div>
+                                                                <div class="col-6 der-mod pt-1">
+                                                                    <p>2 Recámaras</p>
+                                                                </div>
+                                                                <div class="col-6 izq-mod">
+                                                                    <img src="{{ asset('/img/almada/venta-cruzada/icon/bano.svg') }}"
+                                                                        width="32" alt="">
+                                                                </div>
+                                                                <div class="col-6 der-mod pt-3">
+                                                                    <p>1 baños</p>
+                                                                </div>
+                                                            </div>
+                                                        @break
+                                                        @case(4)
+                                                            <div class="row">
+                                                                <!--Amenidades por modelo-->
+                                                                <div class="col-6 izq-mod">
+                                                                    <img src="{{ asset('/img/almada/venta-cruzada/icon/comedor.svg') }}"
+                                                                        width="36" alt="">
+                                                                </div>
+                                                                <div class="col-6 der-mod">
+                                                                    <p>Sala / Comedor <br> / Cocina</p>
+                                                                </div>
+                                                                <div class="col-6 izq-mod ">
+                                                                    <img src="{{ asset('/img/almada/venta-cruzada/icon/cocina.svg') }}"
+                                                                        width="32" alt="">
+                                                                </div>
+                                                                <div class="col-6 der-mod">
+                                                                    <p>Cocina <br> independiente</p>
+                                                                </div>
+                                                                <div class="col-6 izq-mod">
+                                                                    <img src="{{ asset('/img/almada/venta-cruzada/icon/recamara.svg') }}"
+                                                                        width="32" alt="">
+                                                                </div>
+                                                                <div class="col-6 der-mod pt-1">
+                                                                    <p>2 Recámaras</p>
+                                                                </div>
+                                                                <div class="col-6 izq-mod">
+                                                                    <img src="{{ asset('/img/almada/venta-cruzada/icon/bano.svg') }}"
+                                                                        width="32" alt="">
+                                                                </div>
+                                                                <div class="col-6 der-mod pt-3">
+                                                                    <p>1 1/2 baños</p>
+                                                                </div>
+                                                                <div class="col-6 izq-mod pt-2">
+                                                                    <img src="{{ asset('/img/almada/venta-cruzada/icon/terraza.svg') }}"
+                                                                        width="40" alt="">
+                                                                </div>
+                                                                <div class="col-6 der-mod pt-2">
+                                                                    <p>Terraza</p>
+                                                                </div>
+                                                            </div>
+                                                        @break
+                                                        @case(5)
+                                                            <div class="row">
+                                                                <!--Amenidades por modelo-->
+                                                                <div class="col-6 izq-mod">
+                                                                    <img src="{{ asset('/img/almada/venta-cruzada/icon/comedor.svg') }}"
+                                                                        width="36" alt="">
+                                                                </div>
+                                                                <div class="col-6 der-mod">
+                                                                    <p>Sala / Comedor <br> / Cocina</p>
+                                                                </div>
+                                                                <div class="col-6 izq-mod ">
+                                                                    <img src="{{ asset('/img/almada/venta-cruzada/icon/cocina.svg') }}"
+                                                                        width="32" alt="">
+                                                                </div>
+                                                                <div class="col-6 der-mod">
+                                                                    <p>Cocina <br> independiente</p>
+                                                                </div>
+                                                                <div class="col-6 izq-mod">
+                                                                    <img src="{{ asset('/img/almada/venta-cruzada/icon/recamara.svg') }}"
+                                                                        width="32" alt="">
+                                                                </div>
+                                                                <div class="col-6 der-mod pt-1">
+                                                                    <p>2 Recámaras</p>
+                                                                </div>
+                                                                <div class="col-6 izq-mod">
+                                                                    <img src="{{ asset('/img/almada/venta-cruzada/icon/bano.svg') }}"
+                                                                        width="32" alt="">
+                                                                </div>
+                                                                <div class="col-6 der-mod pt-3">
+                                                                    <p>1 1/2 baños</p>
+                                                                </div>
+                                                                <div class="espacio-bco-1">
+                                                                </div>
+                                                            </div>
+                                                        @break
+                                                        @default
+                
+                                                    @endswitch
+                                                    <div class="boton-cotizar mt-2 mb-3 text-center">
+                                                        <a href="{{ route('almada.model', $model) }}" class="btn btn-success">Cotizar</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    @endforeach
+                                </div>
+                                <button aria-label="siguiente" class="carousel__siguiente">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                            <div role="tabList" class="carousel__indicadores2"></div>
+                        </div> <!-- Fint Carousel 2-->
+                    </div>
+
+
+                    {{-- <!--Venta cruzada-->
                     <div class="row">
                         @foreach ($almada->models->except($model->id) as $model)
                             <div class="col-md-4 col-sm-12 mt-3">
@@ -314,7 +549,7 @@
                                 </div>
                             </div>
                         @endforeach
-                    </div>
+                    </div>--}}
                 </div>
             </div>
         </div>
