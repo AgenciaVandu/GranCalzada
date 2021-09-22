@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gran Calzada</title>
-    
+
     <!--Bootstrap 4.6-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -35,6 +35,7 @@
             background-color: #fff;
         }
     </style>
+    @livewireStyles
 </head>
 
 <body class="">
@@ -110,7 +111,7 @@
                                 <li class="ubis">2da. Calle Nueva </li>
                                 <li class="ubis">C.56 x 61 y 63 </li>
                             </ul>
-                            
+
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <h5 class="ubis pt-4">Síguenos en nuestras redes sociales:</h5>
@@ -127,11 +128,11 @@
                                         </a>
                                     </p>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>
-                    <p class="ubis"><a href="">Tel: (999) 999 9999</a><br> 
+                    <p class="ubis"><a href="">Tel: (999) 999 9999</a><br>
                         <span><a href="">whatsapp: (999) 999 9999</a></span>
                     </p>
                 </div>
@@ -147,7 +148,7 @@
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 imagenes-center text-center">
                     <img src="{{ asset('/img/logos.svg') }}" class="img-fluid" alt="">
-                    
+
                 </div>
             </div>
         </div>
@@ -166,7 +167,7 @@
     </script>
 
 
-
+@livewireScripts
 </body>
 
 </html>

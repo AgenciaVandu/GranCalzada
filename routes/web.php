@@ -20,84 +20,35 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [LandingController::class, 'index'])->name('index');
 
-Route::get('/conoce-gran-calzada', function () {
-    return view('gran-calzada');
-})->name('gran.calzada');
-
+Route::get('/conoce-gran-calzada', [LandingController::class, 'grancalzada'])->name('gran.calzada');
+/*Ruta del almada*/
 Route::prefix('almada')->group(function () {
     Route::get('/', [AlmadaController::class, 'index'])->name('almada.index');
     Route::get('/modelo/{model}', [AlmadaController::class, 'model'])->name('almada.model');
     Route::get('/lead/{model}', [AlmadaController::class, 'lead'])->name('almada.lead');
 });
-
-/*Avances de obra*/
-Route::get('/avances-de-obra', [GaleryController::class, 'index'])->name('galeries.index');
-Route::get('/avances-de-obra/{galery}', [GaleryController::class, 'show'])->name('galeries.show');
-
-
+/*Ruta del miraverde*/
 Route::prefix('miraverde')->group(function () {
     Route::get('/', [MiraverdeController::class, 'index'])->name('miraverde.index');
     Route::get('/modelo/{model}', [MiraverdeController::class, 'model'])->name('miraverde.model');
     Route::get('/lead/{model}', [MiraverdeController::class, 'lead'])->name('miraverde.lead');
 });
 
+/*Avances de obra*/
+Route::get('/avances-de-obra', [GaleryController::class, 'index'])->name('galeries.index');
+Route::get('/avances-de-obra/{galery}', [GaleryController::class, 'show'])->name('galeries.show');
 
+/*Ruta del blog*/
+Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
+Route::get('/blog/articulo/{post}', [BlogController::class, 'show'])->name('blog.show');
+Route::get('/blog/{category}', [BlogController::class, 'postCategory'])->name('blog.postCategory');
 
-
-Route::get('/modelo-almendro', function () {
-    return view('desarrollos/modelos-miraverde/almendro');
-});
-Route::get('/modelo-flamboyan-plus', function () {
-    return view('desarrollos/modelos-miraverde/flamboyan-plus');
-});
-Route::get('/modelo-bugambilia-plus', function () {
-    return view('desarrollos/modelos-miraverde/bugambilia-plus');
-});
-Route::get('/modelo-ceiba-plus', function () {
-    return view('desarrollos/modelos-miraverde/ceiba-plus');
-});
-
-/*
-Ruta de Leads miraverde
-*/
-Route::get('/lead-ceiba-plus', function () {
-    return view('desarrollos/modelos-miraverde/conversion/lead-ceiba-plus');
-});
-Route::get('/lead-bugambilia-plus', function () {
-    return view('desarrollos/modelos-miraverde/conversion/lead-bugambilia-plus');
-});
-Route::get('/lead-almendro', function () {
-    return view('desarrollos/modelos-miraverde/conversion/lead-almendro');
-});
-Route::get('/lead-flamboyan-plus', function () {
-    return view('desarrollos/modelos-miraverde/conversion/lead-flamboyan');
-});
-
-
-
-/*
-Página de agradecimiento
-*/
+/*Página de agradecimiento*/
 Route::get('/gracias-por-registrarte', function () {
     return view('desarrollos/typ');
 });
-/*
 
-
-/*
-Ruta del blog
-*/
-Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
-Route::get('/blog/articulo/{post}', [BlogController::class, 'show'])->name('blog.show');
-
-
-
-
-
+/*Validacion de autentificacion para admin*/
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
-
-
-
-

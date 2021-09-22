@@ -13,4 +13,9 @@ class LandingController extends Controller
 
         return view('index', compact('video_index'));
     }
+
+    public function grancalzada()
+    {
+        return view('gran-calzada');
+    }
 }

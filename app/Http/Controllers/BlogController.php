@@ -19,6 +19,13 @@ class BlogController extends Controller
     {
         $categories = Category::all();
         $posts = Post::take(3)->get();
-        return view('blog.article', compact('post', 'categories','posts'));
+        return view('blog.article', compact('post', 'categories', 'posts'));
+    }
+
+    public function postCategory(Category $category)
+    {
+        $categories = Category::all();
+        $posts = Post::where('category_id', $category->id)->get();
+        return view('blog.categories', compact('posts', 'categories'));
     }
 }

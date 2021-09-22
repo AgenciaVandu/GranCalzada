@@ -18,13 +18,16 @@
                                 <div class="col-md-2 col-sm-12">
                                     <div class="row">
                                         <div class="redes-sociales pl-2">
-                                            <a href=""><i class="fab fa-facebook-square"></i></a>
+                                            <a href="https://www.facebook.com/sharer/sharer.php?u={{ url()->full() }}"><i
+                                                    class="fab fa-facebook-square"></i></a>
                                         </div>
                                         <div class="redes-sociales pl-2">
-                                            <a href=""> <i class="fab fa-twitter"></i></a>
+                                            <a href="https://twitter.com/intent/tweet?url={{ url()->full() }}2&text="> <i
+                                                    class="fab fa-twitter"></i></a>
                                         </div>
                                         <div class="redes-sociales pl-2">
-                                            <a href=""><i class="fab fa-whatsapp-square"></i></a>
+                                            <a href="https://api.whatsapp.com/send?text={{ url()->full() }}"><i
+                                                    class="fab fa-whatsapp-square"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -38,11 +41,14 @@
                 <div class="col-md-4">
                     <div class="control-box p-3">
                         <label for="site-search">Buscar en artículos</label>
-                        <input type="search" id="site-search" name="q" aria-label="BUSCAR" class="btn-block">
+                        @livewire('search-posts')
                     </div>
                     <div class="control-box mt-3 sidebar">
                         @foreach ($categories as $category)
-                            <li class="categoria-articulo mt-2">{{ $category->name }}</li>
+                            <a href="{{ route('blog.postCategory', $category) }}">
+                                {{-- Esta clase impide la funcionalidad correcta del buscador .categoria-articulo --}}
+                                <li class="mt-2 categoria-articulo">{{ $category->name }}</li>
+                            </a>
                         @endforeach
                     </div>
                     <div class="control-box p-3 mt-3">

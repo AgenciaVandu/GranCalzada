@@ -27,6 +27,7 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://raw.githubusercontent.com/stowball/jQuery-rwdImageMaps/master/jquery.rwdImageMaps.min.js">
     </script>
+    @livewireStyles
 </head>
 
 <body>
@@ -158,7 +159,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
     </script>
-    <script src="{{asset('js/slides.js')}}"></script>
+    <script src="{{ asset('js/slides.js') }}"></script>
+    @livewireScripts
 </body>
 
 </html>
