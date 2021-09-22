@@ -12,9 +12,11 @@
                     <div class="row">
                         @foreach ($categories as $category)
                             <div class="col-md-4">
-                                <a href="{{ route('blog.postCategory', $category) }}">
-                                    <p class="categorias-1">{{ $category->name }}</p>
-                                </a>
+                                <p class="categorias-1">
+                                    <a href="{{ route('blog.postCategory', $category) }}">
+                                        {{ $category->name }}
+                                    </a>
+                                </p>
                             </div>
                         @endforeach
                     </div>
@@ -24,10 +26,17 @@
                 @foreach ($posts as $post)
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="{{ Storage::url($post->resources->first()->url) }}" alt="imagen destacada blog">
-                            <h4 class="pt-3 text-center">{{ $post->title }}</h4>
-                            <p class="extracto">{!! $post->extract !!}</p>
-                            <a href="{{ route('blog.show', $post) }}" class="btn btn-light">Leer más</a>
+                            <div class="imagen-destacada">
+                                <img src="{{ Storage::url($post->resources->first()->url) }}"
+                                    class="img-fluid imagem-destacada" alt="imagen destacada blog">
+                            </div>
+                            <div class="info-extracto">
+                                <h4 class="pt-3 text-center">{{ $post->title }}</h4>
+                                <p class="extracto">{!! $post->extract !!}</p>
+                                <a href="{{ route('blog.show', $post) }}" class="btn btn-light btn-block mb-4">Leer
+                                    más</a>
+                            </div>
+
                         </div>
                     </div>
                 @endforeach

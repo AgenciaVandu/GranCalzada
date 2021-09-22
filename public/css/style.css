@@ -1148,8 +1148,8 @@ li {
 }
 
 .extracto {
-    text-align: justify;
     font-family: 'Avenir-regular';
+    font-size: 10px;
 }
 
 .categoria-articulo-h {
@@ -1258,6 +1258,11 @@ a:hover {
     font-family: 'Avenir-bold';
 }
 
+.info-extracto {
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
 /**ANIMACIONES**/
 
