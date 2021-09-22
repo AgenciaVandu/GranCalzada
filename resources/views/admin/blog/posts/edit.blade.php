@@ -87,6 +87,7 @@
     </div>
 
     @push('js')
+    <script src="{{ asset('vendor/ckeditor/ckeditor.js') }}"></script>
         <script src="{{ asset('vendor/jQuery-Plugin-stringToSlug-1.3/jquery.stringToSlug.min.js') }}"></script>
         <script>
             $("#title").stringToSlug({
@@ -109,8 +110,14 @@
             }
         </script>
         <script>
-            CKEDITOR.replace('extract');
-            CKEDITOR.replace('body');
+            CKEDITOR.replace('extract', {
+                filebrowserUploadUrl: "{{ route('ckeditor.upload', ['_token' => csrf_token()]) }}",
+                filebrowserUploadMethod: 'form',
+            });
+            CKEDITOR.replace('body', {
+                filebrowserUploadUrl: "{{ route('ckeditor.upload', ['_token' => csrf_token()]) }}",
+                filebrowserUploadMethod: 'form',
+            });
         </script>
     @endpush
 </x-app-layout>
