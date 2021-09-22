@@ -11,15 +11,15 @@
                 <div class="col-3">
                     <div class="row">
                         <div class="col-md-4">
-                            <p class="categorias-1">Todas</p>
+                            <p class="categorias-1"><a href="">Todas</a></p>
 
                         </div>
                         <div class="col-md-4">
-                            <p class="categorias-1">Noticias</p>
+                            <p class="categorias-1"><a href="">Noticias</a></p>
 
                         </div>
                         <div class="col-md-4">
-                            <p class="categorias-1">Promociones</p>
+                            <p class="categorias-1"><a href="">Promociones</a></p>
 
                         </div>
                     </div>
@@ -29,10 +29,15 @@
                 @foreach ($posts as $post)
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="{{ Storage::url($post->resources->first()->url) }}" alt="imagen destacada blog">
+                            <div class="imagen-destacada">
+                                <img src="{{ Storage::url($post->resources->first()->url) }}" class="img-fluid imagem-destacada" alt="imagen destacada blog">
+                            </div>
+                            <div class="info-extracto">
                             <h4 class="pt-3 text-center">{{ $post->title }}</h4>
                             <p class="extracto">{!! $post->extract !!}</p>
-                            <a href="{{ route('blog.show', $post) }}" class="btn btn-light">Leer más</a>
+                            <a href="{{ route('blog.show', $post) }}" class="btn btn-light btn-block mb-4">Leer más</a>
+                            </div>
+                            
                         </div>
                     </div>
                 @endforeach
