@@ -130,6 +130,7 @@ h5 {
 } @media (max-width:700px){
    .botones-modelos {
     left: auto;
+    margin: 30px;
    }
 }
 
@@ -998,6 +999,9 @@ p {
 .plantas-modelos {
     padding-top: 80px;
     padding-bottom: 80px;
+    background-image: url(/img/miraverde/plantas-02.svg);
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 li {
@@ -1014,7 +1018,7 @@ li {
 .m-botones {
     margin-top: 40px;
     margin-bottom: 14px;
-}
+} 
 
 .izq-mod {
     position: relative;

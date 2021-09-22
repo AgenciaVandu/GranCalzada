@@ -67,10 +67,10 @@
                         </ul>
                         <div class="row m-botones botones-modelos">
                             <div class="col-md-6 col-sm-12 mt-3">
-                                <a href="{{ route('almada.lead', $model) }}" class="btn btn-secondary ">Cotizar modelo</a>
+                                <a href="{{ route('almada.lead', $model) }}" class="btn btn-secondary btn-block">Cotizar modelo</a>
                             </div>
                             <div class="col-md-6 col-sm-12 mt-3">
-                                <a href="" class="btn btn-secondary ">Ficha técnica</a>
+                                <a href="" class="btn btn-secondary btn-block">Ficha técnica</a>
                             </div>
                         </div>
                     </div>
