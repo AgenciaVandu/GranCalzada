@@ -52,10 +52,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item pad active">
-                        <a class="nav-link" href="{{ route('index') }}">Inicio <span class="sr-only"></span></a>
+                        <a class="nav-link" href="/">Inicio <span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item pad active">
-                        <a class="nav-link" href="{{ route('gran.calzada') }}">Gran Calzada</a>
+                        <a class="nav-link" href="/conoce-gran-calzada">Gran Calzada</a>
                     </li>
                     <li class="nav-item pad dropdown active">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -63,17 +63,17 @@
                             Desarrollos
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Almada</a>
-                            <a class="dropdown-item" href="#">Miraverde</a>
+                            <a class="dropdown-item" href="{{ route('almada.index') }}">Almada</a>
+                            <a class="dropdown-item" href="/miraverde">Miraverde</a>
 
                         </div>
                     </li>
                     <li class="nav-item pad active">
-                        <a class="nav-link" href="#">Galería</a>
+                        <a class="nav-link" href="/avances-de-obra">Galería</a>
                     </li>
 
                     <li class="nav-item pad active">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="{{ route('blog.index') }}">Blog</a>
                     </li>
                 </ul>
 
