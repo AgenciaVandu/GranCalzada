@@ -24,7 +24,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('dashboard');
 });
-
+Route::post('uploadimage',[PostController::class,'uploadImage'])->name('admin.posts.upload');
+Route::post('images/upload', [PostController::class, 'uploadImages'])->name('ckeditor.upload');
 Route::get('/developments', [DevelopmentController::class, 'index'])->name('developments.index');
 
 Route::prefix('configurations')->group(function () {
