@@ -90,13 +90,59 @@
             </div>
             <div class="venta-cruzada"> <!--Venta cruzada-->
                  
-                <div >
+                <div>
                     <div class="carousel_1"> <!--Carousel 2-->
                         <div class="carousel__contenedor"> <!--Carousel contenedor-->
                             <button aria-label="anterior" class="carousel__anterior">
                                 <i class="fas fa-chevron-left"></i>
                             </button>
                             <div class="carousel__lista2">
+                                <div class="carousel__elemento">
+                                    <div class="col mt-3"> <!--Mod 2-->
+                                        <div class="card bg-cruzada "> 
+                                            <img src="{{asset('/img/almada/venta-cruzada/aguamarina-03.png')}}" class="img-fluid" alt="Modelos disponibles | Gran Calzada">
+                                            <div class="titulo-cruzada text-center pt-3">
+                                                <h2 class="t-mod" style="color: #265B33;">Almendro</h2>
+                                            <p class="p-desde" style="color: #265B33;">Desde: 
+                                                <span>$000.00</span>
+                                            </p>
+                                            </div>
+                                            <div class="row" > <!--Amenidades por modelo-->
+                                                <div class="col-6 izq-mod">
+                                                    <img src="{{asset('/img/miraverde/venta-cruzada/icon/comedor.svg')}}" width="36" alt="">
+                                                </div>
+                                                <div class="col-6 der-mod pt-2">
+                                                    <p>Sala / Comedor </p>
+                                                </div>
+                                                <div class="col-6 izq-mod ">
+                                                    <img src="{{asset('/img/miraverde/venta-cruzada/icon/cocina.svg')}}" width="32" alt="">
+                                                </div>
+                                                <div class="col-6 der-mod">
+                                                    <p>Cocina <br> independiente</p>
+                                                </div>
+                                                <div class="col-6 izq-mod">
+                                                    <img src="{{asset('/img/miraverde/venta-cruzada/icon/recamara.svg')}}" width="32" alt="">
+                                                </div>
+                                                <div class="col-6 der-mod pt-1">
+                                                    <p>2 Recámaras</p>
+                                                </div>
+                                                <div class="col-6 izq-mod">
+                                                    <img src="{{asset('/img/miraverde/venta-cruzada/icon/bano.svg')}}" width="32" alt="">
+                                                </div>
+                                                <div class="col-6 der-mod pt-3">
+                                                    <p>1 baños</p>
+                                                </div>
+                                                <div class="espacio-bco-mv">
+                                                </div> 
+                                            </div>
+                                            <div class="boton-cotizar mt-2 mb-3 text-center">
+                                                <a href="" class="btn btn-info">Cotizar</a>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
                                 <div class="carousel__elemento">
                                     <div class="col mt-3"> <!--Mod 2-->
                                         <div class="card bg-cruzada">
@@ -136,55 +182,6 @@
                                                 </div> 
                                             </div>
                                             <div class="boton-cotizar mt-3 mb-3 text-center">
-                                                <a href="" class="btn btn-info">Cotizar</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="carousel__elemento">
-                                    <div class="col mt-3"> <!--Mod 2-->
-                                        <div class="card bg-cruzada">
-                                            <img src="{{asset('/img/almada/venta-cruzada/aguamarina-03.png')}}" class="img-fluid" alt="Modelos disponibles | Gran Calzada">
-                                            <div class="titulo-cruzada text-center pt-3">
-                                                <h2 class="t-mod" style="color: #265B33;">Bugambilia Plus</h2>
-                                            <p class="p-desde" style="color: #265B33;">Desde: 
-                                                <span>$000.00</span>
-                                            </p>
-                                            </div>
-                                            <div class="row" > <!--Amenidades por modelo-->
-                                                <div class="col-6 izq-mod">
-                                                    <img src="{{asset('/img/miraverde/venta-cruzada/icon/comedor.svg')}}" width="36" alt="">
-                                                </div>
-                                                <div class="col-6 der-mod pt-2">
-                                                    <p>Sala / Comedor </p>
-                                                </div>
-                                                <div class="col-6 izq-mod ">
-                                                    <img src="{{asset('/img/miraverde/venta-cruzada/icon/cocina.svg')}}" width="32" alt="">
-                                                </div>
-                                                <div class="col-6 der-mod">
-                                                    <p>Cocina <br> independiente</p>
-                                                </div>
-                                                <div class="col-6 izq-mod">
-                                                    <img src="{{asset('/img/miraverde/venta-cruzada/icon/recamara.svg')}}" width="32" alt="">
-                                                </div>
-                                                <div class="col-6 der-mod pt-1">
-                                                    <p>2 Recámaras</p>
-                                                </div>
-                                                <div class="col-6 izq-mod">
-                                                    <img src="{{asset('/img/miraverde/venta-cruzada/icon/bano.svg')}}" width="32" alt="">
-                                                </div>
-                                                <div class="col-6 der-mod pt-3">
-                                                    <p>1 baños</p>
-                                                </div>
-                                                <div class="col-6 izq-mod pt-2">
-                                                    <img src="{{asset('/img/miraverde/venta-cruzada/icon/terraza.svg')}}" width="40" alt="">
-                                                </div>
-                                                <div class="col-6 der-mod pt-3">
-                                                    <p>Terraza</p>
-                                                </div>
-                                            </div>
-                                            <div class="boton-cotizar mt-2 mb-3 text-center">
                                                 <a href="" class="btn btn-info">Cotizar</a>
                                             </div>
                                         </div>
