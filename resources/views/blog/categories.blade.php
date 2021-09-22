@@ -44,10 +44,10 @@
                     <div class="col-md-4">
                         <div class="card">
                             <img src="{{ Storage::url($post->resources->first()->url) }}" class="img-fluid imagem-destacada" alt="imagen destacada blog">
-                            <div class="inf-extracto">
+                            <div class="info-extracto">
                                 <h4 class="pt-3 text-center">{{ $post->title }}</h4>
                                 <p class="extracto">{!! $post->extract !!}</p>
-                                <a href="{{ route('blog.show', $post) }}" class="btn btn-light">Leer más</a>
+                                <a href="{{ route('blog.show', $post) }}" class="btn btn-light btn-block mb-3">Leer más</a>
                             </div>
                         </div>
                     </div>

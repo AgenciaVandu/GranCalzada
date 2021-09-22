@@ -185,7 +185,7 @@
                                 </div>
                                 <div class="carousel__elemento">
                                     <div class="col-md-6 col-sm-12 pt-3 text-center">
-                                        <img src="{{ asset('/img/modelo.png') }}" class="img-fluid" alt="">
+                                        <img src="{{ asset('/img/modelo-1.png') }}" class="img-fluid" alt="">
                                         <div class="bg-miraverde">
                                             <img src="{{ asset('/img/miraverde.png') }}" alt="Gran Calzada | Ciudad Viva"
                                                 class="img-fluid pt-3 pb-3">
@@ -287,7 +287,7 @@
                     </div>
     
                     <div class="col-md-6 col-sm-12 text-center">
-                        <img src="{{ asset('/img/modelo.png') }}" class="img-fluid" alt="">
+                        <img src="{{ asset('/img/modelo-1.png') }}" class="img-fluid" alt="">
                         <div class="bg-miraverde">
                             <img src="{{ asset('/img/miraverde.png') }}" alt="Gran Calzada | Ciudad Viva"
                                 class="img-fluid pt-3 pb-3">

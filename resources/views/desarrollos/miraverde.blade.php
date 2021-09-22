@@ -193,35 +193,35 @@
         <div class="container pt-5">
             <div class="row text-center">
                 <div class="col">
-                    <img src="{{ asset('/img/miraverde/icon/viviendas.svg') }}" width="40"
+                    <img src="{{ asset('/img/modelos/1.svg') }}" width="40"
                         alt="datos relevantes | Gran Calzada">
                     <p class="entorno-p">338 <br><span class="entorno-sp" style="color: #fff;">Viviendas</span></p>
                 </div>
                 <div class="col">
-                    <img src="{{ asset('/img/miraverde/icon/viviendas.svg') }}" width="40"
+                    <img src="{{ asset('/img/modelos/2.svg') }}" width="40"
                         alt="datos relevantes | Gran Calzada">
                     <p class="entorno-p">1 Gran <br><span class="entorno-sp" style="color: #fff;">Parque
                             Central</span></p>
                 </div>
                 <div class="col">
-                    <img src="{{ asset('/img/miraverde/icon/viviendas.svg') }}" width="40"
+                    <img src="{{ asset('/img/modelos/3.svg') }}" width="40"
                         alt="datos relevantes | Gran Calzada">
                     <p class="entorno-p">8 <br><span class="entorno-sp" style="color: #fff;">Amenidades</span></p>
                 </div>
                 <div class="col">
-                    <img src="{{ asset('/img/miraverde/icon/viviendas.svg') }}" width="40"
+                    <img src="{{ asset('/img/modelos/4.svg') }}" width="40"
                         alt="datos relevantes | Gran Calzada">
                     <p class="entorno-p">Barda <br><span class="entorno-sp" style="color: #fff;">Perimetral</span>
                     </p>
                 </div>
                 <div class="col">
-                    <img src="{{ asset('/img/miraverde/icon/viviendas.svg') }}" width="40"
+                    <img src="{{ asset('/img/modelos/5.svg') }}" width="40"
                         alt="datos relevantes | Gran Calzada">
                     <p class="entorno-p">1 Caseta <br><span class="entorno-sp" style="color: #fff;">con acceso
                             <br>controlado</span></p>
                 </div>
                 <div class="col">
-                    <img src="{{ asset('/img/miraverde/icon/viviendas.svg') }}" width="40"
+                    <img src="{{ asset('/img/modelos/6.svg') }}" width="40"
                         alt="datos relevantes | Gran Calzada">
                     <p class="entorno-p">2 accesos<br><span class="entorno-sp"
                             style="color: #fff;">peatonales</span></p>
