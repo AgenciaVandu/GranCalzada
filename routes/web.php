@@ -4,6 +4,7 @@ use App\Http\Controllers\AlmadaController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\GaleryController;
 use App\Http\Controllers\LandingController;
+use App\Http\Controllers\MiraverdeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -34,9 +35,12 @@ Route::get('/avances-de-obra', [GaleryController::class, 'index'])->name('galeri
 Route::get('/avances-de-obra/{galery}', [GaleryController::class, 'show'])->name('galeries.show');
 
 
-Route::get('/miraverde', function () {
-    return view('desarrollos.miraverde');
-})->name('miraverde.index');
+Route::prefix('miraverde')->group(function () {
+    Route::get('/', [MiraverdeController::class, 'index'])->name('miraverde.index');
+    Route::get('/modelo/{model}', [MiraverdeController::class, 'model'])->name('miraverde.model');
+    Route::get('/lead/{model}', [MiraverdeController::class, 'lead'])->name('miraverde.lead');
+});
+
 
 
 

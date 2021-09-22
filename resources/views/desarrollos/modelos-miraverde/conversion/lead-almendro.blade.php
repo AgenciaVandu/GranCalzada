@@ -8,12 +8,12 @@
                         <img src="{{asset ('/img/miraverde/miraverde-lead.svg')}}" width="220" alt="">
                     </div>
                     <div class="col-md-6 col-sm-12 pt-3 text-center">
-                        <h3 style="color: #fff">¡Ya casi estrenas casa! 
+                        <h3 style="color: #fff">¡Ya casi estrenas casa!
                             <br>
                         Nosotros te ayudaremos
                         </h3>
                     </div>
-    
+
                     <div class="col-md-6 col-sm-12 lead-espacio">
                         <img src="{{asset('/img/miraverde/lead/almendro.jpg')}}" class="img-fluid" alt="">
                     </div>
@@ -24,15 +24,13 @@
                             <li>Construcción: <span>42.94 m<sup>2</sup></span></li>
                             <li>Terreno desde: <span>7 x 17 m</li> <br>
                             <li><b>Planta Arquitectónica</b></li>
-    
+
                             <br>
-                            <li>Sala / Comedor</li>
-                            <li>Conina</li>
-                            <li>1 Baño completo</li>
-                            <li>Jardín frontal</li>
-                            <li>2 Recámaras con área <br> para closet</li>
-                            <li>Patio</li>
-                            
+                            @foreach ($features as $feature)
+                                @if ($feature->floor == 'down')
+                                    <li>{{ $feature->name }}</li>
+                                @endif
+                            @endforeach
                         </ul>
                         <div class="f-hubspot">
                             <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js">
@@ -46,7 +44,7 @@
                             </script>
                         </div>
                     </div>
-    
+
                 </div>
             </div>
         </div>
