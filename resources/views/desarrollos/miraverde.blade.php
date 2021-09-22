@@ -3279,9 +3279,9 @@
                                                 <p><strong>Area:</strong> {{ $lot->area }}m<sup>2</sup></p>
                                                 <p><strong>Area de construcción:</strong>
                                                     {{ $lot->construction_area }}m<sup>2</sup></p>
-                                                <a href="{{ route('almada.model', $lot->model) }}"
+                                                <a href="{{ route('miraverde.model', $lot->model) }}"
                                                     class="btn btn-primary btn-md d-block mb-2">VER MODELO</a>
-                                                <a href="{{ route('almada.lead', $lot->model) }}"
+                                                <a href="{{ route('miraverde.lead', $lot->model) }}"
                                                     class="btn btn-primary btn-md d-block">COTIZAR</a>
                                             </div>
                                             <div class="col-12 col-md-6">
