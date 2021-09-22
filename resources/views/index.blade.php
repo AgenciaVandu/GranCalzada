@@ -154,25 +154,25 @@
                                                     mientras la recorren para realizar las actividades de su vida diaria.</p>
                                                 <div class="row">
                                                     <div class="col-5 text-right pt-2">
-                                                        <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
+                                                        <img src="{{ asset('/img/icon/1-01.svg') }}" width="45" alt="">
                                                     </div>
                                                     <div class="col-7 justify-center m-auto">
                                                         <p class="elemento">1490 Casas</p>
                                                     </div>
                                                     <div class="col-5 text-right pt-2">
-                                                        <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
+                                                        <img src="{{ asset('/img/icon/2-01.svg') }}" width="45" alt="">
                                                     </div>
                                                     <div class="col-7 justify-center m-auto">
                                                         <p class="elemento">Semi-cerrada</p>
                                                     </div>
                                                     <div class="col-5 text-right pt-2">
-                                                        <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
+                                                        <img src="{{ asset('/img/icon/3-01.svg') }}" width="45" alt="">
                                                     </div>
                                                     <div class="col-7 justify-center m-auto">
                                                         <p class="elemento">5 modelos diferentes</p>
                                                     </div>
                                                     <div class="col-5 text-right pt-2">
-                                                        <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
+                                                        <img src="{{ asset('/img/icon/4-01.svg') }}" width="45" alt="">
                                                     </div>
                                                     <div class="col-7 justify-center m-auto">
                                                         <p class="elemento">Rodeado de servicios</p>
@@ -258,25 +258,25 @@
                                 mientras la recorren para realizar las actividades de su vida diaria.</p>
                             <div class="row">
                                 <div class="col-5 text-right pt-2">
-                                    <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
+                                    <img src="{{ asset('/img/icon/1-01.svg') }}" alt="" width="45">
                                 </div>
                                 <div class="col-7 justify-center m-auto">
                                     <p class="elemento">1490 Casas</p>
                                 </div>
                                 <div class="col-5 text-right pt-2">
-                                    <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
+                                    <img src="{{ asset('/img/icon/2-01.svg') }}" alt="" width="45">
                                 </div>
                                 <div class="col-7 justify-center m-auto">
                                     <p class="elemento">Semi-cerrada</p>
                                 </div>
                                 <div class="col-5 text-right pt-2">
-                                    <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
+                                    <img src="{{ asset('/img/icon/3-01.svg') }}" alt="" width="45">
                                 </div>
                                 <div class="col-7 justify-center m-auto">
                                     <p class="elemento">5 modelos diferentes</p>
                                 </div>
                                 <div class="col-5 text-right pt-2">
-                                    <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
+                                    <img src="{{ asset('/img/icon/4-01.svg') }}" alt="" width="45">
                                 </div>
                                 <div class="col-7 justify-center m-auto">
                                     <p class="elemento">Rodeado de servicios</p>

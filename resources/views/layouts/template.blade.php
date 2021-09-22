@@ -78,8 +78,10 @@
                 </ul>
 
                 <form class="form-inline my-2 my-lg-0">
-
-                    <button class="btn btn-light my-2 my-sm-0" type="submit">Cotiza tu casa</button>
+                    <a href="/conoce-gran-calzada" class="btn btn-light my-2 my-sm-0">
+                        Cotiza tu casa
+                    </a>
+                    
                 </form>
 
             </div>
@@ -87,16 +89,20 @@
     </nav>
 
     <main role="main">
-        <div class="modal" tabindex="-1">
+
+                
+        
+        <!-- Modal 1-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-              <div class="modal-content">
+            <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title">Modal title</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <h4 class="modal-title" id="exampleModalLabel">Agenda una reunión</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
-                  </button>
+                </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body" style="background-color: #16366e">
                     <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
                     <script>
                       hbspt.forms.create({
@@ -105,15 +111,104 @@
                         formId: "dc9cfba4-600b-4430-9bc3-cd95ff13c768"
                     });
                     </script>
-                    
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>
+                
                 </div>
-              </div>
             </div>
-          </div>
+            </div>
+        </div>
+        <!-- Modal 2-->
+        <div class="modal fade" id="modal-brochure" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Descarga nuestro Brochure</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body" style="background-color: #16366e">
+                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+                    <script>
+                      hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5510950",
+                        formId: "dc9cfba4-600b-4430-9bc3-cd95ff13c768"
+                    });
+                    </script>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>
+                
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Modal 3-->
+        <div class="modal fade" id="modal-ficha-a" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Descargar Ficha técnica</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body" style="background-color: #16366e">
+                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+                    <script>
+                    hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5510950",
+                        formId: "9321cad3-e5a5-494e-a903-8e0e8dbe2c6b"
+                    });
+                    </script>
+
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>
+                
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Modal 4-->
+        <div class="modal fade" id="modal-ficha-m" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Descargar Ficha técnica</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body" style="background-color: #16366e">
+                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+                    <script>
+                    hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5510950",
+                        formId: "41010064-efdf-46fd-8936-be8441d795c7"
+                    });
+                    </script>
+
+
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>
+                
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+
+        
     </main>
 
     @yield('content')
