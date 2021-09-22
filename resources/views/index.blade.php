@@ -22,6 +22,24 @@
         </div>
     </header>
 
+    <!-- Modal Promociones-->
+    <div class="modal fade" id="modal-promo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            
+            <div class="modal-body" style="background-color: #fff">
+               <div class="text-center">
+                <img src="{{asset('/img/almada/venta-cruzada/magenta-03.png')}}" class="img-fluid" alt="">
+               </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>
+            
+            </div>
+        </div>
+        </div>
+    </div>
+
     <section >
         <div class="bg-azul-index">
             <div class="container-fluid">
