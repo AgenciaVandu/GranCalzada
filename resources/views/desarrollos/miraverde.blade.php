@@ -274,9 +274,6 @@
                 <h4 class="cotiza-color">¡Cotiza tu Casa!</h4>
             </div>
             <div class="col-12">
-                <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-                <!-- Generator: Adobe Illustrator 24.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-
                 <svg version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 1207.2158 853.73132" xml:space="preserve"
                     sodipodi:docname="miraverde.svg" width="1207.2158" height="853.73132"
                     inkscape:version="1.1 (c68e22c387, 2021-05-23)"
