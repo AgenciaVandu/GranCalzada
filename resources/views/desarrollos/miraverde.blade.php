@@ -261,7 +261,7 @@
     </section>
 
     <section id="cotiza-tu-casa">
-        <div class="container-fluid text-center">
+        <div class="container-fluid">
             <div class="row pt-5">
                 <div class="col-md-6">
                     <p class="amenidades-r">8 Amenidades <br> para los residentes</p>
@@ -274,7 +274,7 @@
                 <h4 class="cotiza-color">¡Cotiza tu Casa!</h4>
             </div>
             <div class="col-12">
-                <svg version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 1207.2158 853.73132" xml:space="preserve"
+                <svg version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 1207.2158 853.73132" xml:space="preserve" class="img-fluid"
                     sodipodi:docname="miraverde.svg" width="1207.2158" height="853.73132"
                     inkscape:version="1.1 (c68e22c387, 2021-05-23)"
                     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -286,7 +286,7 @@
                     <sodipodi:namedview id="namedview3515" pagecolor="#ffffff" bordercolor="#999999" borderopacity="1"
                         inkscape:pageshadow="0" inkscape:pageopacity="0" inkscape:pagecheckerboard="0" showgrid="false"
                         fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0"
-                        inkscape:zoom="4.2346806" inkscape:cx="838.31589" inkscape:cy="571.58975"
+                        inkscape:zoom="6.2346806" inkscape:cx="232.31589" inkscape:cy="571.58975"
                         inkscape:window-width="1920" inkscape:window-height="1001" inkscape:window-x="-9"
                         inkscape:window-y="-9" inkscape:window-maximized="1" inkscape:current-layer="Capa_1" />
                     <style type="text/css" id="style2">
