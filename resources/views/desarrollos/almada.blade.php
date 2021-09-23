@@ -39,7 +39,7 @@
             <div class="container">
                 <div class="row espacio text-center  p-gc">
                     <div class="col-md-8">
-                        <h3 class="conoce-1">{{ $button->description }}</h3>
+                        <h3 class="conoce-1">{!! $button->description !!}</h3>
                     </div>
                     <div class="col-md-4 bt-desarrollos">
                         <a href="{{ $button->url }}" class="btn btn-primary">{{ $button->text }}</a>
@@ -124,7 +124,8 @@
                         @isset($video_body->resources)
                             @if ($video_body->visible)
                                 <div class="col-12 mt-5">
-                                    <video src="{{ Storage::url($video_body->resources->first()->url) }}"></video>
+                                    <video src="{{ Storage::url($video_body->resources->first()->url) }}" loop muted preload width="1000"
+                                        height="auto" autoplay></video>
                                 </div>
                             @endif
                         @endisset

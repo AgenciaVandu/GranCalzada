@@ -4,15 +4,22 @@
         <div class="sp-top">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="{{ asset('/img/miraverde/slider/mv-top-03.jpg') }}" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="{{ asset('/img/miraverde/slider/mv-top-03.jpg') }}" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="{{ asset('/img/miraverde/slider/mv-top-03.jpg') }}" class="d-block w-100" alt="...">
-                    </div>
+                    @foreach ($header->resources as $resource)
+                        @php
+                            $file = new SplFileInfo($resource->url);
+                            $extension = $file->getExtension();
+                        @endphp
+                        @if ($extension == 'mp4' || $extension == 'mov' || $extension == 'ogg' || $extension == 'avi')
+                            <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
+                                <video src="{{ Storage::url($resource->url) }}" loop muted preload autoplay></video>
+                            </div>
+                        @else
+                            <div class="carousel-item active">
+                                <img src="{{ asset('/img/miraverde/slider/mv-top-03.jpg') }}" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        @endif
+                    @endforeach
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -31,10 +38,10 @@
             <div class="container">
                 <div class="row espacio text-center  p-gc">
                     <div class="col-md-8">
-                        <h3 class="conoce-1">Conoce a detalle <span class="gran-1">LOS DESARROLOS</span></h3>
+                        <h3 class="conoce-1">{!! $button->description !!}</h3>
                     </div>
                     <div class="col-md-4 bt-desarrollos">
-                        <a href="#" class="btn btn-primary">DESARROLLOS</a>
+                        <a href="{{ $button->url }}" class="btn btn-primary">{{ $button->text }}</a>
                     </div>
                 </div>
             </div>
@@ -42,13 +49,7 @@
                 <div class="container">
                     <div class="text-center pt-5">
                         <img src="{{ asset('/img/miraverde/mv-logo.svg') }}" width="240" alt="">
-                        <p style="color: #fff; padding:40px;">Miraverde es una privada habitacional de 2,314 casas (4
-                            diferentes modelos) que se encuentran en la parte norte de la Gran Calzada. Ofrece a sus
-                            habitantes un gran parque central que consta de
-                            8 amenidades, espacios seguros a través de su caseta de seguridad, barda perimetral. Un entorno
-                            lleno de vegetación que crea un ambiente más fresco. Podrás encontrar un árbol cada 2 casas
-                            convirtendolo
-                            en un lugar para disfrutar.</p>
+                        <p style="color: #fff; padding:40px;">{{ $miraverde->description }}</p>
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-sm-12 text-center p-caract">
@@ -89,6 +90,14 @@
                             <img src="/img/almada/icon/master-almada.svg" class="img-fluid" alt="">
                         </div>
                     </div>
+                    @isset($video_body->resources)
+                        @if ($video_body->visible)
+                            <div class="col-12 mt-5">
+                                <video src="{{ Storage::url($video_body->resources->first()->url) }}" loop muted preload
+                                    width="1000" height="auto" autoplay></video>
+                            </div>
+                        @endif
+                    @endisset
 
                     <div class="col-12 disfruta-titular">
                         <h4 class="disfruta pb-3">Disfruta la vida <br>
@@ -193,36 +202,30 @@
         <div class="container pt-5">
             <div class="row text-center">
                 <div class="col">
-                    <img src="{{ asset('/img/modelos/1.svg') }}" width="40"
-                        alt="datos relevantes | Gran Calzada">
+                    <img src="{{ asset('/img/modelos/1.svg') }}" width="40" alt="datos relevantes | Gran Calzada">
                     <p class="entorno-p">338 <br><span class="entorno-sp" style="color: #fff;">Viviendas</span></p>
                 </div>
                 <div class="col">
-                    <img src="{{ asset('/img/modelos/2.svg') }}" width="40"
-                        alt="datos relevantes | Gran Calzada">
+                    <img src="{{ asset('/img/modelos/2.svg') }}" width="40" alt="datos relevantes | Gran Calzada">
                     <p class="entorno-p">1 Gran <br><span class="entorno-sp" style="color: #fff;">Parque
                             Central</span></p>
                 </div>
                 <div class="col">
-                    <img src="{{ asset('/img/modelos/3.svg') }}" width="40"
-                        alt="datos relevantes | Gran Calzada">
+                    <img src="{{ asset('/img/modelos/3.svg') }}" width="40" alt="datos relevantes | Gran Calzada">
                     <p class="entorno-p">8 <br><span class="entorno-sp" style="color: #fff;">Amenidades</span></p>
                 </div>
                 <div class="col">
-                    <img src="{{ asset('/img/modelos/4.svg') }}" width="40"
-                        alt="datos relevantes | Gran Calzada">
+                    <img src="{{ asset('/img/modelos/4.svg') }}" width="40" alt="datos relevantes | Gran Calzada">
                     <p class="entorno-p">Barda <br><span class="entorno-sp" style="color: #fff;">Perimetral</span>
                     </p>
                 </div>
                 <div class="col">
-                    <img src="{{ asset('/img/modelos/5.svg') }}" width="40"
-                        alt="datos relevantes | Gran Calzada">
+                    <img src="{{ asset('/img/modelos/5.svg') }}" width="40" alt="datos relevantes | Gran Calzada">
                     <p class="entorno-p">1 Caseta <br><span class="entorno-sp" style="color: #fff;">con acceso
                             <br>controlado</span></p>
                 </div>
                 <div class="col">
-                    <img src="{{ asset('/img/modelos/6.svg') }}" width="40"
-                        alt="datos relevantes | Gran Calzada">
+                    <img src="{{ asset('/img/modelos/6.svg') }}" width="40" alt="datos relevantes | Gran Calzada">
                     <p class="entorno-p">2 accesos<br><span class="entorno-sp"
                             style="color: #fff;">peatonales</span></p>
                 </div>
@@ -237,15 +240,21 @@
 
             <div id="controles" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="{{ asset('/img/almada/cluster.jpg') }}" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="{{ asset('/img/almada/cluster.jpg') }}" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="{{ asset('/img/almada/cluster.jpg') }}" class="d-block w-100" alt="...">
-                    </div>
+                    @foreach ($body->resources as $resource)
+                        @php
+                            $file = new SplFileInfo($resource->url);
+                            $extension = $file->getExtension();
+                        @endphp
+                        @if ($extension == 'mp4' || $extension == 'mov' || $extension == 'ogg' || $extension == 'avi')
+                            <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
+                                <video src="{{ Storage::url($resource->url) }}" loop muted preload autoplay></video>
+                            </div>
+                        @else
+                            <div class="carousel-item active">
+                                <img src="{{ asset('/img/almada/cluster.jpg') }}" class="d-block w-100" alt="...">
+                            </div>
+                        @endif
+                    @endforeach
                 </div>
                 <a class="carousel-control-prev" href="#controles" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -274,8 +283,8 @@
                 <h4 class="cotiza-color">¡Cotiza tu Casa!</h4>
             </div>
             <div class="text-center">
-                <svg version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 1100 700" xml:space="preserve" class="img-fluid"
-                    sodipodi:docname="miraverde.svg" width="1207.2158" height="853.73132"
+                <svg version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 1100 700" xml:space="preserve"
+                    class="img-fluid" sodipodi:docname="miraverde.svg" width="1207.2158" height="853.73132"
                     inkscape:version="1.1 (c68e22c387, 2021-05-23)"
                     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
                     xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg"
