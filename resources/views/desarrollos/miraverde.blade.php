@@ -295,7 +295,7 @@
                 <h4 class="cotiza-color">¡Cotiza tu Casa!</h4>
             </div>
             <div class="text-center">
-                <svg version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 1100 700" xml:space="preserve"
+                <svg version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 1207.2158 853.73132" xml:space="preserve"
                     class="img-fluid" sodipodi:docname="miraverde.svg" width="1207.2158" height="853.73132"
                     inkscape:version="1.1 (c68e22c387, 2021-05-23)"
                     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -687,7 +687,7 @@
                         }
 
                     </style>
-                    {{-- <g id="g20" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
+                    <g id="g20" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
                         <text transform="translate(166.1465,717.6689)" id="text18">
                             <tspan x="0" y="0" class="st0 st1 st2 st3" id="tspan4">E</tspan>
                             <tspan x="24.9" y="0" class="st0 st1 st2" id="tspan6">T</tspan>
@@ -697,10 +697,10 @@
                             <tspan x="124.2" y="0" class="st0 st1 st2 st3" id="tspan14"> </tspan>
                             <tspan x="137.5" y="0" class="st0 st1 st2" id="tspan16">1</tspan>
                         </text>
-                    </g> --}}
-                    {{-- <rect x="308.19739" y="782.84851" class="st4" width="806.20496" height="70.301819"
+                    </g>
+                    <rect x="308.19739" y="782.84851" class="st4" width="806.20496" height="70.301819"
                         id="rect22" style="stroke-width:1.16201" /> --}}
-                    {{-- < text id="text30" x="318.35153" y="808.36267" style="font-size:13.9442px;stroke-width:1.16201">
+                    <text id="text30" x="318.35153" y="808.36267" style="font-size:13.9442px;stroke-width:1.16201">
                         <tspan x="318.35153" y="808.36267" class="st5 st6 st7" id="tspan24"
                             style="stroke-width:1.16201">8</tspan>
                         <tspan x="335.20071" y="804.87665" class="st5 st6 st7" id="tspan26"
@@ -715,10 +715,10 @@
                         <tspan x="330.22998" y="828.6369" class="st5 st6 st8" id="tspan34" style="stroke-width:1.16201">
                             Colores a elegir
                         </tspan>
-                    </text> --}}
-                    {{-- <g id="g40" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
+                    </text>
+                    <g id="g40" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
                         <text transform="translate(543.0186,689.6568)" class="st9 st6 st10" id="text38">Almendro</text>
-                    </g> --}}
+                    </g>
                     <rect x="356.07233" y="249.94911" class="st11" width="74.368866" height="105.74323"
                         id="rect42" style="stroke-width:1.16201" />
                     <g id="g46" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
@@ -1459,7 +1459,7 @@
                             d="m 428.1,246.8 h -2.7 c 0,5.7 -3.6,10.6 -8.7,12.5 l 0.1,-9.5 c 3.2,-1.7 5.3,-5 5.3,-8.9 0,-5.5 -4.5,-10 -10,-10 -8.8,0 -16,7.2 -16,16 0,8.8 7.2,16 16,16 1.2,0 2.3,-0.1 3.4,-0.4 0,0 0.1,0 0.1,0 7.1,-1.7 12.5,-8.1 12.5,-15.7 z m -16,1.3 c -1.1,0 -2,-0.9 -2,-2 0,-1.1 0.9,-2 2,-2 1.1,0 2,0.9 2,2 v 1.7 c -0.7,0.2 -1.4,0.3 -2,0.3 z m -13.3,-1.3 c 0,-7.3 6,-13.3 13.3,-13.3 4,0 7.3,3.3 7.3,7.3 0,2.2 -1,4.2 -2.6,5.5 v -0.2 c 0,0 0,0 0,0 0,0 0,0 0,0 0,-2.6 -2.1,-4.7 -4.7,-4.7 -2.6,0 -4.7,2.1 -4.7,4.7 0,2.6 2.1,4.7 4.7,4.7 0.7,0 1.3,-0.1 1.9,-0.2 l -0.1,9.3 c -0.6,0.1 -1.2,0.1 -1.8,0.1 -7.4,0.1 -13.3,-5.9 -13.3,-13.2 z"
                             id="path1502" />
                     </g>
-                    {{-- <text class="st44 st6 st10" id="text1506" x="850.42206" y="801.3905"
+                    <text class="st44 st6 st10" id="text1506" x="850.42206" y="801.3905"
                         style="stroke-width:1.16201">Bugambilia
                         Plus</text>
                     <text class="st45 st6 st10" id="text1508" x="1031.7242" y="800.22845"
@@ -1469,8 +1469,8 @@
                         Plus</text>
                     <text class="st47 st48 st49" id="text1512" x="952.34045" y="706.11792" style="stroke-width:1.16201">UN
                         DESARROLLO
-                        EN:</text> --}}
-                    {{-- <path class="st50"
+                        EN:</text>
+                    <path class="st50"
                         d="m 926.15618,759.2596 v 0 c 2.5564,4.53186 7.0882,5.92627 11.3877,6.27488 4.9967,0.3486 10.4581,-0.46481 13.9442,-5.22906 1.6268,-2.20783 2.7888,-4.99666 3.6022,-7.9017 1.743,-6.04247 2.2078,-25.33189 -0.3486,-30.79335 -1.2782,-2.67263 -3.1374,-4.64806 -5.1129,-6.15867 -6.5072,-4.76426 -13.8279,-3.83465 -19.8704,1.74302 -4.067,3.83464 -4.8805,8.36649 -5.3453,14.75757 -0.4648,5.22906 -0.6972,22.89166 1.7431,27.30731"
                         id="path1514" style="stroke-width:1.16201" />
                     <path class="st17"
@@ -1537,7 +1537,7 @@
                     <path class="st50"
                         d="m 1109.8705,744.85064 c -0.2324,0.3486 -0.4648,0.581 -0.6972,0.81341 -0.581,0.581 -1.2782,0.8134 -1.9754,0.8134 -0.4648,0 -0.9297,-0.1162 -1.2783,-0.4648 -0.3486,-0.3486 -0.6972,-0.69721 -0.8134,-1.27822 l -0.581,0.46481 c -0.4648,0.46481 -0.9296,0.69721 -1.3944,0.92961 -0.4648,0.2324 -0.9296,0.2324 -1.5106,0.2324 -0.9296,0 -1.6268,-0.3486 -2.324,-0.92961 -0.6972,-0.69721 -0.9296,-1.39441 -0.9296,-2.32402 0,-1.16202 0.581,-2.32403 1.8592,-3.36984 1.0458,-0.92961 2.4402,-1.51062 4.067,-2.09163 l 0.6972,-0.2324 v -1.16201 c 0,-0.69721 -0.2324,-1.27822 -0.6972,-1.74302 -0.2324,-0.23241 -0.581,-0.46481 -1.0458,-0.58101 -0.1162,0 -0.3486,-0.1162 -0.6972,-0.2324 0,0.3486 -0.1162,0.6972 -0.4648,1.16201 -0.4648,0.46481 -0.9296,0.81341 -1.5106,0.81341 -0.4648,0 -0.8134,-0.1162 -1.162,-0.3486 -0.3486,-0.23241 -0.4648,-0.58101 -0.4648,-1.04582 0,-0.4648 0.2324,-0.92961 0.6972,-1.16201 0.4648,-0.2324 1.0458,-0.3486 1.743,-0.3486 1.8592,0 3.2536,0.3486 4.5318,1.16201 1.2783,0.81341 1.9755,1.97542 1.9755,3.48604 v 6.04247 c 0,0.3486 0.1162,0.58101 0.2324,0.81341 0.1162,0.2324 0.3486,0.3486 0.6972,0.3486 0.2324,0 0.4648,-0.1162 0.6972,-0.3486 0,0 0.1162,-0.1162 0.2324,-0.2324 z m -4.8805,-1.16202 v -5.11286 l -0.4648,0.1162 c -0.9296,0.23241 -1.743,0.69721 -2.4402,1.39442 -0.6972,0.69721 -0.9296,1.51062 -0.9296,2.32403 0,0.581 0.2324,1.16201 0.581,1.51062 0.3486,0.4648 0.9296,0.6972 1.5106,0.6972 0.3486,0 0.6972,-0.1162 1.0458,-0.3486 0.2324,-0.2324 0.4648,-0.46481 0.6972,-0.58101"
                         id="path1558" style="stroke-width:1.16201" /> --}}
-                    {{-- <text id="text1568" x="542.88226" y="816.43854" style="font-size:13.9442px;stroke-width:1.16201">
+                    <text id="text1568" x="542.88226" y="816.43854" style="font-size:13.9442px;stroke-width:1.16201">
                         <tspan x="542.88226" y="816.43854" class="st51 st48 st52" id="tspan1560"
                             style="stroke-width:1.16201">C.65.55 m
                         </tspan>
@@ -1549,8 +1549,8 @@
                         <tspan x="542.88226" y="844.3269" class="st51 st48 st52" id="tspan1566"
                             style="stroke-width:1.16201">1 Baño
                         </tspan>
-                    </text> --}}
-                    {{-- <g id="g1580" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
+                    </text>
+                    <g id="g1580" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
                         <text transform="translate(809.1309,703.6068)" id="text1578">
                             <tspan x="0" y="0" class="st51 st48 st52" id="tspan1570">C.73.69 m</tspan>
                             <tspan x="46.099998" y="-3" class="st51 st48 st21" id="tspan1572">2</tspan>
@@ -1573,8 +1573,8 @@
                             <tspan x="0" y="12" class="st51 st48 st52" id="tspan1598">2 Recámaras </tspan>
                             <tspan x="0" y="24" class="st51 st48 st52" id="tspan1600">2 1/2 Baños</tspan>
                         </text>
-                    </g> --}}
-                    <g id="g1832" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
+                    </g>
+                    {{-- <g id="g1832" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
                         <polyline class="st53"
                             points="574.5,525.3 574.5,537.6 569.4,537.6 569.4,544.6 563.4,544.6 563.4,518.4 570.3,518.4 570.3,525.3    574.5,525.3  "
                             id="polyline1606" />
@@ -1881,23 +1881,23 @@
                             <rect x="431.89999" y="373.39999" transform="rotate(90,434.5941,375.914)"
                                 class="st56" width="5.5" height="5.0999999" id="rect1828" />
                         </g>
-                    </g>
-                    <text class="st20 st18 st19" id="text1834" x="454.67615" y="346.38226"
+                    </g> --}}
+                    <text class="st20 st18 st19" id="text1834" x="467.67615" y="346.38226"
                         style="stroke-width:1.16201">1</text>
-                    <text class="st20 st18 st19" id="text1836" x="454.67615" y="330.5015"
+                    <text class="st20 st18 st19" id="text1836" x="467.67615" y="330.5015"
                         style="stroke-width:1.16201">2</text>
-                    <text class="st20 st18 st19" id="text1838" x="454.67676" y="314.62061"
+                    <text class="st20 st18 st19" id="text1838" x="467.67676" y="314.62061"
                         style="stroke-width:1.16201">3</text>
-                    <text class="st20 st18 st19" id="text1840" x="454.67615" y="299.90173"
+                    <text class="st20 st18 st19" id="text1840" x="467.67615" y="299.90173"
                         style="stroke-width:1.16201">4</text>
-                    <text class="st17 st18 st19" id="text1842" x="467.04755" y="330.5015"
+                  {{--   <text class="st17 st18 st19" id="text1842" x="467.04755" y="330.5015"
                         style="stroke-width:1.16201">B+</text>
                     <text class="st17 st18 st19" id="text1844" x="467.04755" y="345.22025"
                         style="stroke-width:1.16201">C+</text>
                     <text class="st17 st18 st19" id="text1846" x="467.04755" y="298.73996"
                         style="stroke-width:1.16201">D+</text>
                     <text class="st17 st18 st19" id="text1848" x="469.36938" y="314.62061"
-                        style="stroke-width:1.16201">A</text>
+                        style="stroke-width:1.16201">A</text> --}}
                     <g id="g1852" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
                         <text transform="translate(487.2796,335.088)" class="st20 st18 st19" id="text1850">58</text>
                     </g>
@@ -1928,7 +1928,7 @@
                     <g id="g1888" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
                         <text transform="translate(487.2796,454.088)" class="st20 st18 st19" id="text1886">49</text>
                     </g>
-                    <text class="st17 st18 st19" id="text1890" x="464.89551" y="389.37677"
+                    {{-- <text class="st17 st18 st19" id="text1890" x="464.89551" y="389.37677"
                         style="stroke-width:1.16201">B+</text>
                     <text class="st17 st18 st19" id="text1892" x="464.75189" y="404.87024"
                         style="stroke-width:1.16201">C+</text>
@@ -1995,12 +1995,12 @@
                     <text class="st17 st18 st19" id="text1954" x="510.03125" y="615.9707"
                         style="stroke-width:1.16201">A</text>
                     <text class="st17 st18 st19" id="text1956" x="466.88184" y="631.07697"
-                        style="stroke-width:1.16201">A</text>
+                        style="stroke-width:1.16201">A</text> --}}
                     <g id="g1960" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
                         <text transform="translate(487.2796,467.4213)" class="st20 st18 st19" id="text1958">48</text>
                     </g>
                     <g id="g1964" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
-                        <text transform="translate(487.2796,480.7547)" class="st59 st18 st19" id="text1962">47</text>
+                        <text transform="translate(487.2796,480.7547)" class="st20 st18 st19" id="text1962">47</text>
                     </g>
                     <g id="g1968" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
                         <text transform="translate(487.2796,494.088)" class="st20 st18 st19" id="text1966">46</text>
@@ -2009,7 +2009,7 @@
                         <text transform="translate(487.2796,507.4214)" class="st20 st18 st19" id="text1970">45</text>
                     </g>
                     <g id="g1976" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
-                        <text transform="translate(487.2796,520.7547)" class="st59 st18 st19" id="text1974">44</text>
+                        <text transform="translate(487.2796,520.7547)" class="st20 st18 st19" id="text1974">44</text>
                     </g>
                     <g id="g1980" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
                         <text transform="translate(487.2796,533.088)" class="st20 st18 st19" id="text1978">43</text>
@@ -2060,7 +2060,7 @@
                         <text transform="translate(501.9466,507.4214)" class="st20 st18 st19" id="text2038">38</text>
                     </g>
                     <g id="g2044" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
-                        <text transform="translate(501.9466,520.7547)" class="st59 st18 st19" id="text2042">39</text>
+                        <text transform="translate(501.9466,520.7547)" class="st20 st18 st19" id="text2042">39</text>
                     </g>
                     <g id="g2048" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
                         <text transform="translate(501.9466,533.088)" class="st20 st18 st19" id="text2046">40</text>
@@ -2078,7 +2078,7 @@
                         <text transform="translate(681.946,528.2271)" class="st20 st18 st19" id="text2062">294</text>
                     </g>
                     <g id="g2068" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
-                        <text transform="translate(669.6125,528.2271)" class="st59 st18 st19" id="text2066">293</text>
+                        <text transform="translate(669.6125,528.2271)" class="st20 st18 st19" id="text2066">293</text>
                     </g>
                     <g id="g2072" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
                         <text transform="translate(656.2795,528.2271)" class="st20 st18 st19" id="text2070">292</text>
@@ -2087,7 +2087,7 @@
                         <text transform="translate(642.946,528.2271)" class="st20 st18 st19" id="text2074">291</text>
                     </g>
                     <g id="g2080" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
-                        <text transform="translate(629.6125,528.2271)" class="st59 st18 st19" id="text2078">290</text>
+                        <text transform="translate(629.6125,528.2271)" class="st20 st18 st19" id="text2078">290</text>
                     </g>
                     <g id="g2084" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
                         <text transform="translate(616.2795,528.2271)" class="st20 st18 st19" id="text2082">289</text>
@@ -2096,7 +2096,7 @@
                         <text transform="translate(602.946,528.2271)" class="st20 st18 st19" id="text2086">288</text>
                     </g>
                     <g id="g2092" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
-                        <text transform="translate(589.6125,528.2271)" class="st59 st18 st19" id="text2090">287</text>
+                        <text transform="translate(589.6125,528.2271)" class="st20 st18 st19" id="text2090">287</text>
                     </g>
                     <g id="g2096" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
                         <text transform="translate(576.2795,528.2271)" class="st20 st18 st19" id="text2094">286</text>
@@ -2107,7 +2107,7 @@
                     <g id="g2104" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
                         <text transform="translate(551.6125,528.088)" class="st20 st18 st19" id="text2102">284</text>
                     </g>
-                    <g id="g2108" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
+                  {{--   <g id="g2108" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
                         <text transform="translate(710.7922,537.8575)" class="st17 st18 st19" id="text2106">C+</text>
                     </g>
                     <g id="g2112" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
@@ -2145,8 +2145,8 @@
                     </g>
                     <g id="g2156" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
                         <text transform="translate(552.9158,537.8575)" class="st17 st18 st19" id="text2154">B+</text>
-                    </g>
-                    {{-- <polyline class="st60"
+                    </g> --}}
+                     <polyline class="st60"
                         points="612.3,724 649.7,724 649.7,697.8 631.3,697.8 631.3,681 612.3,681 612.3,724 "
                         id="polyline2158" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)" />
                     <polyline class="st60"
@@ -2162,8 +2162,8 @@
                         </g>
                     </g>
                     <polyline class="st60" points="914.2,685.3 957.2,685.3 957.2,722.7 914.2,722.7 914.2,685.3 "
-                        id="polyline2170" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)" /> --}}
-                    {{-- <g id="g2174" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
+                        id="polyline2170" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)" />
+                    <g id="g2174" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
                         <text transform="translate(521.2295,706.2578)" class="st17 st6 st10" id="text2172">A</text>
                     </g>
                     <g id="g2178" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
@@ -2174,7 +2174,7 @@
                     </g>
                     <g id="g2186" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
                         <text transform="translate(928.1057,708.2578)" class="st17 st6 st10" id="text2184">C+</text>
-                    </g> --}}
+                    </g>
                     <text transform="rotate(-1.0491783)" class="st62 st63" id="text2188" x="581.89703" y="666.15527"
                         style="stroke-width:1.16198">CALLE 17-F</text>
                     <text transform="rotate(-1.0549071)" class="st62 st63" id="text2190" x="586.13116" y="566.76862"
@@ -3156,13 +3156,13 @@
                         <polyline class="st65"
                             points="550.6,328.2 550.6,325.4 553.5,325.4 553.5,328.2 550.6,328.2  " id="polyline3350" />
                     </g>
-                    {{-- <circle class="st55" cx="361.65002" cy="839.6709" r="6.7396784" id="circle3354"
+                    <circle class="st55" cx="361.65002" cy="839.6709" r="6.7396784" id="circle3354"
                         style="stroke-width:1.16201" />
                     <circle class="st54" cx="403.71487" cy="840.01959" r="6.7396784" id="circle3356"
                         style="stroke-width:1.16201" />
                     <circle class="st53" cx="447.17419" cy="840.01959" r="6.7396784" id="circle3358"
-                        style="stroke-width:1.16201" /> --}}
-                    <g id="g3362" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
+                        style="stroke-width:1.16201" />
+                   {{--  <g id="g3362" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
                         <text transform="translate(424.9182,337.088)" class="st17 st18 st19" id="text3360">C+</text>
                     </g>
                     <g id="g3366" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
@@ -3275,7 +3275,7 @@
                     </g>
                     <g id="g3510" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
                         <text transform="translate(721.4592,582.4214)" class="st17 st18 st19" id="text3508">C+</text>
-                    </g>
+                    </g> --}}
                     <path class="st50"
                         d="m 1117.5398,730.20927 h -0.1162 l -0.1162,-0.11621 -1.162,-1.62681 v 0 c 0,0 0.1162,0 0.2324,-0.11621 0.1162,0 0.2324,-0.1162 0.2324,-0.1162 0.3486,-0.2324 0.4648,-0.4648 0.4648,-0.81341 0,-0.1162 0,-0.2324 0,-0.3486 -0.1162,-0.2324 -0.2324,-0.3486 -0.4648,-0.46481 -0.1162,-0.1162 -0.3486,-0.1162 -0.581,-0.1162 h -0.1162 -1.0459 -0.6972 -0.1162 v 0.1162 0 c 0,0 0.1162,0 0.2324,0 0.1162,0 0.1162,0 0.1162,0 0,0 0,0 0.1162,0.11621 0,0 0,0.1162 0,0.1162 v 2.78883 c 0,0.1162 0,0.1162 -0.1162,0.2324 0,0 -0.1162,0.1162 -0.1162,0.1162 0,0 -0.1162,0 -0.1162,0 h -0.1162 v 0.1162 h 0.1162 c 0.1162,0 0.2324,0 0.3486,0 0.1162,0 0.2324,0 0.3486,0 0.1162,0 0.2325,0 0.3487,0 0.1162,0 0.2324,0 0.3486,0 h 0.1162 v -0.1162 h -0.1162 c 0,0 -0.1162,0 -0.1162,0 0,0 -0.1162,0 -0.1162,-0.1162 0,0 -0.1162,-0.1162 -0.1162,-0.2324 v -3.02124 h 0.1162 c 0,0 0.1162,0 0.1162,0 0,0 0.1162,0 0.2324,0 h 0.1162 c 0,0 0.1162,0 0.2324,0 0.1162,0 0.2324,0.11621 0.3486,0.23241 0.1162,0.1162 0.1162,0.2324 0.1162,0.4648 0,0.23241 -0.1162,0.46481 -0.3486,0.58101 -0.2324,0.1162 -0.4648,0.2324 -0.6972,0.2324 h -0.2324 v 0.1162 l 1.5106,1.85922 h 0.1162 0.3486 0.3486 v 0 z m -4.0671,0.3486 c -0.4648,-0.58101 -0.8134,-1.27821 -0.8134,-2.09162 0,-0.81341 0.2324,-1.51062 0.8134,-2.09163 0.581,-0.581 1.2782,-0.92961 2.2079,-0.92961 0.9296,0 1.743,0.34861 2.324,0.92961 0.4648,0.58101 0.6972,1.27822 0.6972,2.09163 0,0.81341 -0.2324,1.51061 -0.6972,2.09162 -0.581,0.58101 -1.2782,0.92961 -2.324,0.92961 -1.0459,0 -1.6269,-0.2324 -2.2079,-0.92961 m 4.7643,0.2324 c 0.581,-0.581 0.8134,-1.39441 0.8134,-2.32402 0,-0.92961 -0.2324,-1.74302 -0.8134,-2.32403 -0.581,-0.69721 -1.5106,-1.04581 -2.5564,-1.04581 -1.0459,0 -1.8593,0.3486 -2.5565,1.04581 -0.581,0.58101 -0.8134,1.39442 -0.8134,2.32403 0,0.92961 0.2324,1.74302 0.8134,2.32402 0.581,0.69721 1.5106,1.04582 2.5565,1.04582 1.162,0.1162 1.9754,-0.34861 2.5564,-1.04582"
                         id="path3512" style="stroke-width:1.16201" />
