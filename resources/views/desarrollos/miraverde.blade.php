@@ -225,9 +225,9 @@
                             <br>controlado</span></p>
                 </div>
                 <div class="col">
-                    <img src="{{ asset('/img/modelos/6.svg') }}" width="40" alt="datos relevantes | Gran Calzada">
-                    <p class="entorno-p">2 accesos<br><span class="entorno-sp"
-                            style="color: #fff;">peatonales</span></p>
+                    <img src="{{ asset('/img/modelos/6-01.svg') }}" width="40" alt="datos relevantes | Gran Calzada">
+                    <p class="entorno-p">Rodeado<br><span class="entorno-sp"
+                            style="color: #fff;">de servicios</span></p>
                 </div>
             </div>
             <div class="detalle-mv-1">
