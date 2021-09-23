@@ -52,10 +52,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item pad active">
-                        <a class="nav-link" href="{{ route('index') }}">Inicio <span class="sr-only"></span></a>
+                        <a class="nav-link" href="/">Inicio <span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item pad active">
-                        <a class="nav-link" href="{{ route('gran.calzada') }}">Gran Calzada</a>
+                        <a class="nav-link" href="/conoce-gran-calzada">Gran Calzada</a>
                     </li>
                     <li class="nav-item pad dropdown active">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -63,17 +63,17 @@
                             Desarrollos
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Almada</a>
-                            <a class="dropdown-item" href="#">Miraverde</a>
+                            <a class="dropdown-item" href="{{ route('almada.index') }}">Almada</a>
+                            <a class="dropdown-item" href="/miraverde">Miraverde</a>
 
                         </div>
                     </li>
                     <li class="nav-item pad active">
-                        <a class="nav-link" href="#">Galería</a>
+                        <a class="nav-link" href="/avances-de-obra">Galería</a>
                     </li>
 
                     <li class="nav-item pad active">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="{{ route('blog.index') }}">Blog</a>
                     </li>
                 </ul>
 
@@ -87,7 +87,9 @@
 
                 <form class="form-inline my-2 my-lg-0">
 
-                    <button class="btn btn-light my-2 my-sm-0" type="submit">Cotiza tu casa</button>
+                    <a href="/conoce-gran-calzada" class="btn btn-light my-2 my-sm-0">
+                        Cotiza tu casa
+                    </a>
                 </form>
 
             </div>
@@ -139,12 +141,13 @@
                 <div class="col-lg-5 col-md-5 col-sm-12 hubspot pt-4">
                     <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
                     <script>
-                        hbspt.forms.create({
-                            region: "na1",
-                            portalId: "5510950",
-                            formId: "4f8b9726-8345-4f16-b902-556d0b33072a"
-                        });
+                    hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5510950",
+                        formId: "dc9cfba4-600b-4430-9bc3-cd95ff13c768"
+                    });
                     </script>
+
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 imagenes-center text-center">
                     <img src="{{ asset('/img/logos.svg') }}" class="img-fluid" alt="">

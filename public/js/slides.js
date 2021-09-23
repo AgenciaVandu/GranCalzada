@@ -1,3 +1,7 @@
+$(function(){
+  $('#modal-promo').modal()
+});
+
 window.addEventListener('load', function(){
     new Glider(document.querySelector('.carousel__lista'),{
         slidesToShow: 1,

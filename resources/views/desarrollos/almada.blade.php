@@ -118,7 +118,7 @@
                             </div>
                         </div>
                         <div class="col-12 mt-4 bt-desarrollos">
-                            <a href="#" class="btn btn-primary">DESCARGAR BROCHURE</a>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal-brochure">DESCARGAR BROCHURE</a>
                         </div>
                         @isset($video_body->resources)
                             @if ($video_body->visible)

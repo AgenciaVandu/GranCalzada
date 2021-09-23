@@ -22,6 +22,24 @@
         </div>
     </header>
 
+    <!-- Modal Promociones-->
+    <div class="modal fade" id="modal-promo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            
+            <div class="modal-body" style="background-color: #fff">
+               <div class="text-center">
+                <img src="{{asset('/img/almada/venta-cruzada/magenta-03.png')}}" class="img-fluid" alt="">
+               </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>
+            
+            </div>
+        </div>
+        </div>
+    </div>
+
     <section >
         <div class="bg-azul-index">
             <div class="container-fluid">
@@ -154,25 +172,25 @@
                                                     mientras la recorren para realizar las actividades de su vida diaria.</p>
                                                 <div class="row">
                                                     <div class="col-5 text-right pt-2">
-                                                        <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
+                                                        <img src="{{ asset('/img/icon/1-01.svg') }}" width="45" alt="">
                                                     </div>
                                                     <div class="col-7 justify-center m-auto">
                                                         <p class="elemento">1490 Casas</p>
                                                     </div>
                                                     <div class="col-5 text-right pt-2">
-                                                        <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
+                                                        <img src="{{ asset('/img/icon/2-01.svg') }}" width="45" alt="">
                                                     </div>
                                                     <div class="col-7 justify-center m-auto">
                                                         <p class="elemento">Semi-cerrada</p>
                                                     </div>
                                                     <div class="col-5 text-right pt-2">
-                                                        <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
+                                                        <img src="{{ asset('/img/icon/3-01.svg') }}" width="45" alt="">
                                                     </div>
                                                     <div class="col-7 justify-center m-auto">
                                                         <p class="elemento">5 modelos diferentes</p>
                                                     </div>
                                                     <div class="col-5 text-right pt-2">
-                                                        <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
+                                                        <img src="{{ asset('/img/icon/4-01.svg') }}" width="45" alt="">
                                                     </div>
                                                     <div class="col-7 justify-center m-auto">
                                                         <p class="elemento">Rodeado de servicios</p>
@@ -185,7 +203,7 @@
                                 </div>
                                 <div class="carousel__elemento">
                                     <div class="col-md-6 col-sm-12 pt-3 text-center">
-                                        <img src="{{ asset('/img/modelo.png') }}" class="img-fluid" alt="">
+                                        <img src="{{ asset('/img/modelo-1.png') }}" class="img-fluid" alt="">
                                         <div class="bg-miraverde">
                                             <img src="{{ asset('/img/miraverde.png') }}" alt="Gran Calzada | Ciudad Viva"
                                                 class="img-fluid pt-3 pb-3">
@@ -258,25 +276,25 @@
                                 mientras la recorren para realizar las actividades de su vida diaria.</p>
                             <div class="row">
                                 <div class="col-5 text-right pt-2">
-                                    <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
+                                    <img src="{{ asset('/img/icon/1-01.svg') }}" alt="" width="45">
                                 </div>
                                 <div class="col-7 justify-center m-auto">
                                     <p class="elemento">1490 Casas</p>
                                 </div>
                                 <div class="col-5 text-right pt-2">
-                                    <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
+                                    <img src="{{ asset('/img/icon/2-01.svg') }}" alt="" width="45">
                                 </div>
                                 <div class="col-7 justify-center m-auto">
                                     <p class="elemento">Semi-cerrada</p>
                                 </div>
                                 <div class="col-5 text-right pt-2">
-                                    <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
+                                    <img src="{{ asset('/img/icon/3-01.svg') }}" alt="" width="45">
                                 </div>
                                 <div class="col-7 justify-center m-auto">
                                     <p class="elemento">5 modelos diferentes</p>
                                 </div>
                                 <div class="col-5 text-right pt-2">
-                                    <img src="{{ asset('/img/icon/icon.png') }}" alt="" class="img-fluid">
+                                    <img src="{{ asset('/img/icon/4-01.svg') }}" alt="" width="45">
                                 </div>
                                 <div class="col-7 justify-center m-auto">
                                     <p class="elemento">Rodeado de servicios</p>
@@ -287,7 +305,7 @@
                     </div>
     
                     <div class="col-md-6 col-sm-12 text-center">
-                        <img src="{{ asset('/img/modelo.png') }}" class="img-fluid" alt="">
+                        <img src="{{ asset('/img/modelo-1.png') }}" class="img-fluid" alt="">
                         <div class="bg-miraverde">
                             <img src="{{ asset('/img/miraverde.png') }}" alt="Gran Calzada | Ciudad Viva"
                                 class="img-fluid pt-3 pb-3">

@@ -59,7 +59,7 @@
                                     class="btn btn-secondary btn-block">Cotizar modelo</a>
                             </div>
                             <div class="col-md-6 col-sm-12 mt-3">
-                                <a href="" class="btn btn-secondary btn-block">Ficha técnica</a>
+                                <a href="" class="btn btn-secondary btn-block" data-toggle="modal" data-target="#modal-ficha-m">Ficha técnica</a>
                             </div>
                         </div>
                     </div>
