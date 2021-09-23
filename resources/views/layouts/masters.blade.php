@@ -32,7 +32,7 @@
     @livewireStyles
 </head>
 
-<body>
+<body id="botonRegresarContent">
     <nav class="navbar navbar-expand-lg navbar-dark bg-grancalzada fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">

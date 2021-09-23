@@ -2,7 +2,7 @@
 
 
 @section('content')
-    <div class="container-fluid mt-5" id="botonRegresarContent">
+    <div class="container-fluid mt-5">
         <div class="pt-5">
             <svg version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 1062 789"
                 style="enable-background:new 0 0 1062 789;" xml:space="preserve" sodipodi:docname="cluster3.svg"
