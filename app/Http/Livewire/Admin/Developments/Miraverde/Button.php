@@ -18,7 +18,7 @@ class Button extends Component
 
     public function updateButton()
     {
-        $this->dev_almada->button->update([
+        $this->development->button->update([
             'url' => $this->url,
             'text' => $this->text,
             'description' => $this->description,
