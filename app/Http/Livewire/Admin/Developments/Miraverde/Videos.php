@@ -18,7 +18,7 @@ class Videos extends Component
 
     public function mount()
     {
-        $this->video = Video::where('section', 'almada_body')->first();
+        $this->video = Video::where('section', 'miraverde_body')->first();
         if ($this->video) {
             $this->visible = $this->video->visible;
         }
@@ -45,7 +45,7 @@ class Videos extends Component
             ]);
         } else {
             $newVideo = Video::create([
-                'section' => 'almada_body'
+                'section' => 'miraverde_body'
             ]);
             $newVideo->resources()->create([
                 'url' => $video,
@@ -53,7 +53,7 @@ class Videos extends Component
             ]);
         }
         $this->reset(['file']);
-        $this->video = Video::where('section', 'almada_body')->first();
+        $this->video = Video::where('section', 'miraverde_body')->first();
     }
 
     public function setVisible()
