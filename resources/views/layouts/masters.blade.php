@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=3.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gran Calzada</title>
 
@@ -83,17 +83,12 @@
                     <a href="/conoce-gran-calzada" class="btn btn-light my-2 my-sm-0">
                         Cotiza tu casa
                     </a>
-
                 </form>
-
             </div>
         </div>
     </nav>
 
-    <main role="main">
-
-
-
+{{--     <main role="main">
         <!-- Modal 1-->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
@@ -211,7 +206,7 @@
                 </div>
             </div>
         </div>
-    </main>
+    </main> --}}
 
     @yield('content')
 

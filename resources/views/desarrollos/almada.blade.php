@@ -118,7 +118,8 @@
                             </div>
                         </div>
                         <div class="col-12 mt-4 bt-desarrollos">
-                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal-brochure">DESCARGAR BROCHURE</a>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modal-brochure">DESCARGAR
+                                BROCHURE</a>
                         </div>
                         @isset($video_body->resources)
                             @if ($video_body->visible)
@@ -177,7 +178,7 @@
             <div class="col-12">
                 <h4 class="cotiza-color">¡Cotiza tu Casa!</h4>
             </div>
-            <div class="col-12">
+            <div class="d-none d-md-block d-lg-block col-12">
                 <svg version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 1062 789"
                     style="enable-background:new 0 0 1062 789;" xml:space="preserve" sodipodi:docname="cluster3.svg"
                     inkscape:version="1.1 (c68e22c387, 2021-05-23)"
@@ -819,7 +820,7 @@
                         <tspan x="0" y="0" class="st25 st14 st23" id="tspan1342">V</tspan>
                         <tspan x="6.4" y="0" class="st25 st14 st23" id="tspan1344">ioleta</tspan>
                     </text> --}}
-                   {{--  <rect x="537.7" y="726.5" class="st26" width="12.1" height="16.1" id="rect1348" />
+                    {{-- <rect x="537.7" y="726.5" class="st26" width="12.1" height="16.1" id="rect1348" />
                     <text transform="matrix(1 0 0 1 553.4852 738.0801)" class="st26 st14 st23" id="text1350">Ámbar</text>
                     <g id="g1362">
                         <path class="st4"
@@ -899,6 +900,11 @@
                         </div>
                     @endif
                 @endforeach
+            </div>
+            <div class="d-block d-md-none d-lg-none col-12">
+                <a href="{{ route('almada.master') }}">
+                    <img src="{{ asset('img/almada/cluster3.svg') }}" alt="">
+                </a>
             </div>
         </div>
         <section id="cotiza-tu-casa">

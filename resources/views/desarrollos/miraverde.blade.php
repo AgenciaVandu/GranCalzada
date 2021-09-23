@@ -273,7 +273,7 @@
             <div class="col-12">
                 <h4 class="cotiza-color">¡Cotiza tu Casa!</h4>
             </div>
-            <div class="col-12 text-center">
+            <div class="text-center">
                 <svg version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 1100 700" xml:space="preserve" class="img-fluid"
                     sodipodi:docname="miraverde.svg" width="1207.2158" height="853.73132"
                     inkscape:version="1.1 (c68e22c387, 2021-05-23)"

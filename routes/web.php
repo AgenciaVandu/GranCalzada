@@ -26,6 +26,7 @@ Route::prefix('almada')->group(function () {
     Route::get('/', [AlmadaController::class, 'index'])->name('almada.index');
     Route::get('/modelo/{model}', [AlmadaController::class, 'model'])->name('almada.model');
     Route::get('/lead/{model}', [AlmadaController::class, 'lead'])->name('almada.lead');
+    Route::get('/masterplan-mobile', [AlmadaController::class,'master'])->name('almada.master');
 });
 /*Ruta del miraverde*/
 Route::prefix('miraverde')->group(function () {

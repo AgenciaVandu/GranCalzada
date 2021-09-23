@@ -18,7 +18,7 @@ class AlmadaController extends Controller
         $button = $almada->button;
         $video_body = Video::where('section', 'almada_body')->first();
         $lots = $almada->lots;
-        return view('desarrollos.almada', compact('almada', 'header', 'body', 'button', 'video_body','lots'));
+        return view('desarrollos.almada', compact('almada', 'header', 'body', 'button', 'video_body', 'lots'));
     }
 
     public function model(Model $model)
@@ -77,5 +77,12 @@ class AlmadaController extends Controller
                 return view('desarrollos.modelos-almada.conversion.lead-violeta-plus', compact('model', 'features'));
                 break;
         }
+    }
+
+    public function master()
+    {
+        $almada = Development::find(1);
+        $lots = $almada->lots;
+        return view('desarrollos.mastersplan.master-almada', compact('lots'));
     }
 }
