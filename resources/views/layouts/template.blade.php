@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+    <script src="{{asset('js/scrollreveal.js')}}"></script>
     <script type="text/javascript" src="{{ asset('vendor/wz_jsgraphics/wz_jsgraphics.js') }}"></script>
     <script type="text/javascript" src="{{ asset('vendor/mapper/mapper.js') }}"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -275,6 +275,7 @@
     <!-- Start of HubSpot Embed Code -->
     <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5510950.js"></script>
     <!-- End of HubSpot Embed Code -->
+    
 
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -287,7 +288,9 @@
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
     </script>
     <script src="{{ asset('js/slides.js') }}"></script>
+    <script src="{{asset('js/animacion.js')}}">
     @livewireScripts
+
 </body>
 
 </html>
