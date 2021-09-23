@@ -261,9 +261,9 @@
     </section>
 
     <section id="cotiza-tu-casa">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row pt-5">
-                <div class="col-md-6">
+                <div class="col-md-6 text-center">
                     <p class="amenidades-r">8 Amenidades <br> para los residentes</p>
                 </div>
                 <div class="col-md-6 text-center pt-3">
