@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=3.0">
+    <meta id="etiquetaACambiar" name="viewport" content="width=device-width, initial-scale=3.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gran Calzada</title>
 
@@ -88,7 +88,7 @@
         </div>
     </nav>
 
-{{--     <main role="main">
+    {{-- <main role="main">
         <!-- Modal 1-->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
@@ -289,6 +289,8 @@
     <script src="{{ asset('js/slides.js') }}"></script>
     <script src="{{ asset('js/animacion.js') }}"></script>
     @livewireScripts
+
+    @yield('js')
 </body>
 
 </html>

@@ -4,7 +4,8 @@
 @section('content')
     <div class="container-fluid mt-5">
         <div class="pt-5">
-            <svg version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 1062 789" style="enable-background:new 0 0 1062 789;" xml:space="preserve" sodipodi:docname="cluster3.svg"
+            <svg version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 1062 789"
+                style="enable-background:new 0 0 1062 789;" xml:space="preserve" sodipodi:docname="cluster3.svg"
                 inkscape:version="1.1 (c68e22c387, 2021-05-23)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
                 xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg"
                 xmlns:svg="http://www.w3.org/2000/svg" zoom="100.8217562">
@@ -228,7 +229,7 @@
                     id="path42" />
                 <g>
                     @foreach ($lots as $lot)
-                        <a xlink:href="#cotiza-tu-casa"
+                        <a xlink:href="#cotiza-tu-casa" id="botonCambiarContent"
                             xlink:title="{{ $lot->number }} - @switch($lot->status)@case('sold') Vendido @break @case('reservation') Apartado @break @case('available') Disponible @break @endswitch"
                             data-toggle="modal" data-target="#myModal-{{ $lot->id }}">
                             <rect x="{{ $lot->x }}" y="{{ $lot->y }}"
@@ -701,6 +702,29 @@
             @endforeach
         </div>
     </div>
+@endsection
 
 
+@section('js')
+    <script>
+
+
+        var valorAtributoNuevo = "1";
+        var valorAtributoAnterior = "width=device-width, initial-scale=1.0";
+
+        $("#botonCambiarContent").on("click", function() {
+
+            valorAtributoActual = $("#etiquetaACambiar").attr("content");
+
+            if (valorAtributoActual !== valorAtributoNuevo) {
+                $("#etiquetaACambiar").attr("content", valorAtributoNuevo);
+                $("#botonCambiarContent").text(textoNuevo);
+            } else {
+                $("#etiquetaACambiar").attr("content", valorAtributoAnterior);
+                $("#botonCambiarContent").text(textoAnterior);
+            }
+
+        });
+
+    </script>
 @endsection
