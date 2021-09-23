@@ -5,9 +5,9 @@
             <div class="row">
                 <div class="col-12">
                     <div class="video mt-2">
-                        @isset ($video->resources)
-                            <video src="{{ Storage::url($video->resources->first()->url) }}" loop muted preload
-                                width="1000" height="auto" autoplay></video>
+                        @isset($video->resources)
+                            <video src="{{ Storage::url($video->resources->first()->url) }}" loop muted preload width="1000"
+                                height="auto" autoplay></video>
                         @else
                             <video src="{{ asset('/video/1000x500.mp4') }}" loop muted preload width="1000" height="auto"
                                 autoplay></video>
@@ -26,14 +26,13 @@
         <div class="modal-dialog modal-md">
             <div class="modal-content">
                 <div class="modal-body" style="background-color: #fff">
-                    @isset ($modal->resources)
+                    @isset($modal->resources)
                         <div class="text-center">
                             <img src="{{ Storage::url($modal->resources->first()->url) }}" class="img-fluid" alt="">
                         </div>
                     @else
                         <div class="text-center">
-                            <img src="{{ asset('/img/almada/venta-cruzada/magenta-03.png') }}" class="img-fluid"
-                                alt="">
+                            <img src="{{ asset('/img/almada/venta-cruzada/magenta-03.png') }}" class="img-fluid" alt="">
                         </div>
                     @endisset
                 </div>
@@ -171,11 +170,8 @@
                                             <h4 style="color: #fff; font-family:'Avenir-regular'" class="pb-2">
                                                 Desde:<span> $385,000</span>
                                             </h4>
-                                            <p style="color: #fff" class="texto-carousel-1">Almada® es un desarrollo tipo
-                                                cerrada que conecta con nuestra Gran Calzada®,
-                                                la cual concentra todos los servicios y amenidades para que tú y tu familia
-                                                se den un respiro
-                                                mientras la recorren para realizar las actividades de su vida diaria.</p>
+                                            <p style="color: #fff" class="texto-carousel-1">{{ $almada->description }}
+                                            </p>
                                             <div class="row">
                                                 <div class="col-5 text-right pt-2">
                                                     <img src="{{ asset('/img/icon/1-01.svg') }}" width="45" alt="">
@@ -202,7 +198,8 @@
                                                     <p class="elemento">Rodeado de servicios</p>
                                                 </div>
                                             </div>
-                                            <a href="/almada" class="btn btn-secondary btn-almada">Vive en Almada</a>
+                                            <a href="{{ route('almada.index') }}"
+                                                class="btn btn-secondary btn-almada">Vive en Almada</a>
                                         </div>
                                     </div>
                                 </div>
@@ -216,13 +213,8 @@
                                         <h4 style="color: #fff; font-family:'Avenir-regular'" class="pb-2">
                                             Desde:<span> $385,000</span>
                                         </h4>
-                                        <p style="color: #fff" class="texto-carousel-1">Miraverde es una privada
-                                            habitacional de 2,314 casas (4 diferentes modelos) que se encuentran en la parte
-                                            norte de la Gran Calzada. Ofrece a sus habitantes un gran parque central que
-                                            consta de 8 amenidades, espacios seguros a través de su caseta de seguridad,
-                                            barda perimetral. Un entorno lleno de vegetación que crea un ambiente más
-                                            fresco. Podrás encontrar un árbol cada 2 casas convirtendolo en un lugar para
-                                            disfrutar.</p>
+                                        <p style="color: #fff" class="texto-carousel-1">{{ $miraverde->description }}
+                                        </p>
                                         <div class="row">
                                             <div class="col-5 text-right pt-2">
                                                 <img src="{{ asset('/img/modelos/1.svg') }}" alt=""
@@ -256,7 +248,8 @@
 
                                             </div>
                                         </div>
-                                        <a href="/miraverde" class="btn btn-secondary mt-4 mb-4">Vive en Miraverde</a>
+                                        <a href="{{ route('miraverde.index') }}"
+                                            class="btn btn-secondary mt-4 mb-4">Vive en Miraverde</a>
                                     </div>
                                 </div>
                             </div>
@@ -276,13 +269,9 @@
                             <img src="{{ asset('/img/almada.png') }}" alt="Gran Calzada | Ciudad Viva"
                                 class="img-fluid pt-3 pb-3">
                             <h4 style="color: #fff; font-family:'Avenir-regular'" class="pb-2">
-                                Desde:<span> $385,000</span>
+                                Desde:<span> ${{ number_format($desde_almada->first()->price, 2) }}</span>
                             </h4>
-                            <p style="color: #fff" class="espacio-almada-1">Almada® es un desarrollo tipo cerrada que
-                                conecta con nuestra Gran Calzada®,
-                                la cual concentra todos los servicios y amenidades para que tú y tu familia se den un
-                                respiro
-                                mientras la recorren para realizar las actividades de su vida diaria.</p>
+                            <p style="color: #fff" class="espacio-almada-1">{{ $almada->description }}</p>
                             <div class="row">
                                 <div class="col-5 text-right pt-2">
                                     <img src="{{ asset('/img/icon/1-01.svg') }}" alt="" width="45">
@@ -309,7 +298,8 @@
                                     <p class="elemento">Rodeado de servicios</p>
                                 </div>
                             </div>
-                            <a href="/almada" class="btn btn-secondary btn-almada">Vive en Almada</a>
+                            <a href="{{ route('almada.index') }}" class="btn btn-secondary btn-almada">Vive en
+                                Almada</a>
                         </div>
                     </div>
 
@@ -319,12 +309,9 @@
                             <img src="{{ asset('/img/miraverde.png') }}" alt="Gran Calzada | Ciudad Viva"
                                 class="img-fluid pt-3 pb-3">
                             <h4 style="color: #fff; font-family:'Avenir-regular'" class="pb-2">
-                                Desde:<span> $385,000</span>
+                                Desde:<span> ${{ number_format($desde_miraverde->first()->price, 2) }}</span>
                             </h4>
-                            <p style="color: #fff">Miraverde es una privada habitacional de 2,314 casas (4 diferentes
-                                modelos) que se encuentran en la parte norte de la Gran Calzada. Ofrece a sus habitantes un
-                                gran parque central que consta de 8 amenidades, espacios seguros a través de su caseta de
-                                seguridad y barda perimetral.</p>
+                            <p style="color: #fff">{{ $miraverde->description }}</p>
                             <div class="row">
                                 <div class="col-5 text-right pt-2">
                                     <img src="{{ asset('/img/modelos/1.svg') }}" alt="" class="img-fluid"
@@ -358,7 +345,8 @@
 
                                 </div>
                             </div>
-                            <a href="/miraverde" class="btn btn-secondary mt-4 mb-4">Vive en Miraverde</a>
+                            <a href="{{ route('miraverde.index') }}" class="btn btn-secondary mt-4 mb-4">Vive en
+                                Miraverde</a>
                         </div>
                     </div>
                 </div>
@@ -374,13 +362,13 @@
                         <h4 class="comunidad">Una <span class="gran">Gran</span> Comunidad</h4>
                     </div>
                     <div class="col-md-4 avances">
-                        <a href="#" class="btn btn-dark">Avances de obra</a>
+                        <a href="{{ route('galeries.index') }}" class="btn btn-dark">Avances de obra</a>
                     </div>
                 </div>
                 <div class="col-12 pb-5">
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
-                            @isset ($slider->resources)
+                            @isset($slider->resources)
                                 @foreach ($slider->resources as $resource)
                                     <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
                                         <img src=" {{ Storage::url($resource->url) }}" class="d-block w-100" alt="...">
