@@ -18,8 +18,7 @@
                 <x-jet-label>
                     Descripción:
                 </x-jet-label>
-                <textarea class="w-full rounded-md border-gray-300" rows="5" wire:model="description"
-                    wire:loading.attr="disabled"></textarea>
+                <textarea class="w-full rounded-md border-gray-300" rows="5" wire:model="description"></textarea>
                 <div class="flex justify-end items-center pt-2">
                     <x-jet-button class="bg-gray-800 text-white px-2 py-1" wire:click='updateButton'
                         wire:loading.attr="disabled">
