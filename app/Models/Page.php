@@ -16,4 +16,10 @@ class Page extends Model
     {
         return $this->morphMany(Resource::class, 'resourable');
     }
+
+    //Relacion uno a muchos polimorfica
+    public function sliders()
+    {
+        return $this->morphMany(Slider::class, 'slidable');
+    }
 }

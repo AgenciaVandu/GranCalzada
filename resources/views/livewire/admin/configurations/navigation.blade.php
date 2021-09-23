@@ -19,12 +19,12 @@
             @endif
 
             @if ($images)
-                mostramos imagenes
+                @livewire('admin.sliders')
             @endif
 
             @if ($sliders)
-            @livewire('admin.configurations.sliders')
-        @endif
+                @livewire('admin.modal')
+            @endif
         </div>
     </div>
 </div>

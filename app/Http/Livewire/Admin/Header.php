@@ -5,7 +5,6 @@ namespace App\Http\Livewire\Admin;
 use App\Models\Page;
 use Livewire\Component;
 use Livewire\WithFileUploads;
-use SplFileInfo;
 
 class Header extends Component
 {
@@ -26,29 +25,36 @@ class Header extends Component
         ]);
     }
 
-
     public function uploadBodyVideo()
     {
         $this->validate([
             'file.*' => 'mimes:mp4,mov,ogg,avi,png,svg,jpg,jpeg',
         ]);
 
+        if (!$this->video) {
+            $this->video = Page::create([
+                'name' => 'index',
+                'section' => 'header'
+            ]);
+        }
+
         $header = $this->video;
         $url = $this->file->store('resources');
-        $name = new SplFileInfo($url);
-        $extension = $name->getExtension();
-        if ($extension == 'mp4' || $extension == 'mov' || $extension == 'ogg' || $extension == 'avi') {
-            $header->resources()->create([
+
+        if ($header->resources->first()) {
+            $header->resources()->update([
                 'url' => $url,
                 'type' => 'video'
             ]);
         } else {
             $header->resources()->create([
                 'url' => $url,
-                'type' => 'image'
+                'type' => 'video'
             ]);
         }
         $this->reset(['file']);
+
+        $this->video = Page::find($header->id);
     }
     public function render()
     {

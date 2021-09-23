@@ -23,11 +23,11 @@
                                         {{-- <i wire:click="delete({{ $resource }})"
                                             class="fas fa-trash cursor-pointer text-gray-800 hover:text-red-600 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
                                             alt="Eliminar"></i> --}}
-                                        <label>
+                                        {{-- <label>
                                             Visible:
                                             <input type="checkbox" class="mr-2" wire:model="visible"
                                                 wire:click="setVisible">
-                                        </label>
+                                        </label> --}}
                                     </div>
                                 </div>
                             @endforeach

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Page;
 use App\Models\Video;
 use Illuminate\Http\Request;
 
@@ -9,9 +10,11 @@ class LandingController extends Controller
 {
     public function index()
     {
-        $video_index = Video::where('section', '=', 'index')->get();
+        $video = Page::where('name', 'index')->where('section', 'header')->first();
+        $slider = Page::where('name', 'index')->where('section', 'slider')->first();
+        $modal = Page::where('name', 'index')->where('section', 'modal')->first();
 
-        return view('index', compact('video_index'));
+        return view('index', compact('video', 'slider', 'modal'));
     }
 
     public function grancalzada()
