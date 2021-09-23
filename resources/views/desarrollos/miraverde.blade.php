@@ -98,9 +98,9 @@
                     </div>
                     @isset($video_body->resources)
                         @if ($video_body->visible)
-                            <div class="col-12 mt-5">
-                                <video src="{{ Storage::url($video_body->resources->first()->url) }}" loop muted preload
-                                    width="1000" height="auto" autoplay></video>
+                            <div class="col-12 mt-5 text-center">
+                                <video src="{{ Storage::url($video_body->resources->first()->url) }}" loop controls preload
+                                    width="1000" height="auto"></video>
                             </div>
                         @endif
                     @endisset
@@ -3519,7 +3519,7 @@
                             </button>
                         </div>
                         <div role="tabList" class="carousel__indicadores2">
-                            
+
                         </div>
                     </div> <!-- Fint Carousel 2-->
                 </div>
