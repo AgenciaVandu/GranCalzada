@@ -36,6 +36,7 @@
                     </div>
                 @endforeach
             </div>
+            <a href="{{ URL::previous() }}" class="btn btn-light">Regresar</a>
         </div>
     </header>
 @endsection
