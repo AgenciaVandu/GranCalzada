@@ -2,7 +2,7 @@
 
 
 @section('content')
-    <div class="container-fluid mt-5">
+    <div class="container-fluid mt-5" id="botonRegresarContent">
         <div class="pt-5">
             <svg version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 1062 789"
                 style="enable-background:new 0 0 1062 789;" xml:space="preserve" sodipodi:docname="cluster3.svg"
@@ -707,24 +707,17 @@
 
 @section('js')
     <script>
+        $(document).ready(function() {
+            var valorAtributoNuevo = "width=device-width, initial-scale=1.0";
+            var valorAtributoAnterior = "width=device-width, initial-scale=3.0";
 
-
-        var valorAtributoNuevo = "1";
-        var valorAtributoAnterior = "width=device-width, initial-scale=1.0";
-
-        $("#botonCambiarContent").on("click", function() {
-
-            valorAtributoActual = $("#etiquetaACambiar").attr("content");
-
-            if (valorAtributoActual !== valorAtributoNuevo) {
+            $("#botonCambiarContent").on("click", function() {
                 $("#etiquetaACambiar").attr("content", valorAtributoNuevo);
-                $("#botonCambiarContent").text(textoNuevo);
-            } else {
+            });
+
+            $("#botonRegresarContent").on("click", function() {
                 $("#etiquetaACambiar").attr("content", valorAtributoAnterior);
-                $("#botonCambiarContent").text(textoAnterior);
-            }
-
+            });
         });
-
     </script>
 @endsection
