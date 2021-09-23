@@ -243,10 +243,9 @@
             </div>
         </div>
         <div class="carousel pt-5">
-
             <div id="controles" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
-                    @isset($record)
+                    @isset($body->resources)
                         @foreach ($body->resources as $resource)
                             @php
                                 $file = new SplFileInfo($resource->url);
