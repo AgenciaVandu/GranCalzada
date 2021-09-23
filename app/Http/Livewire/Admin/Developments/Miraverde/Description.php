@@ -21,7 +21,7 @@ class Description extends Component
 
     public function updateDescription()
     {
-        $this->dev_almada->update([
+        $this->development->update([
             'description' => $this->description
         ]);
     }
