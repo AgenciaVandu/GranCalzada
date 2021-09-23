@@ -15,7 +15,7 @@
 
 body {
     background-color: #1A2C4C;
-    
+
 }
 
 
@@ -105,7 +105,7 @@ h5 {
 
 .btn-info:hover {
     background-color: #F8B3A2;
-   
+
 }
 .btn-warning {
     font-size: 12px;
@@ -126,7 +126,7 @@ h5 {
 .botones-modelos {
     position: relative;
     left: 36px;
-    
+
 } @media (max-width:700px){
    .botones-modelos {
     left: auto;
@@ -151,7 +151,7 @@ h5 {
 
 .nav-link {
     color: #16366e !important;
-    
+
 }
 
 
@@ -161,7 +161,7 @@ h5 {
 
 .dropdown-menu {
     background-color: #e7e7e7 !important;
-    
+
 }
 
 
@@ -224,7 +224,7 @@ hr {
 .plantas {
     position: absolute;
     top: 50px;
-    right: -230px; 
+    right: -230px;
 }
 
 .txt-calzada {
@@ -234,7 +234,7 @@ hr {
         padding: 30px;
         text-align: justify;
     }
-    
+
 }
 
 .txt-calzada h2 {
@@ -242,7 +242,7 @@ hr {
 } @media (max-width:700px) {
     .txt-calzada h2 {
         font-size: 2em;
-    }  
+    }
 }
 
 .txt-calzada p {
@@ -253,7 +253,7 @@ hr {
     padding-top: 20px;
     padding-left: 170px;
     padding-right: 170px;
-} 
+}
 
 #desarrollos {
     padding-top: 70px;
@@ -266,7 +266,7 @@ hr {
 
 .gran-calzada-2 {
     font-size: 2.8em ;
-} 
+}
 .gran-calzada-3 {
     font-size: 1.4em ;
 }
@@ -280,7 +280,7 @@ hr {
 } @media (max-width:700px) {
     .gran-calzada-2 {
         font-size: 2.1em ;
-    } 
+    }
     .gran-calzada-3 {
         font-size: 1.4em ;
     }
@@ -340,8 +340,8 @@ hr {
 }
 .bg-miraverde-1 {
     background-color: #215A36;
-    
-    
+
+
 }
 
 .icon-position {
@@ -425,7 +425,7 @@ hr {
 
 .espacio {
     min-height: 0px;
-   
+
 }
 
 .conoce {
@@ -456,7 +456,7 @@ hr {
 } @media(max-width:700px) {
     .bg-azul-index {
         background-image: url(/img/fondo-1-resp.svg);
-        
+
     }
 }
 
@@ -472,7 +472,7 @@ hr {
 
 #equipamiento {
     background-color: #16366e;
-    
+
 }
 
 .equipamiento {
@@ -557,19 +557,19 @@ hr {
     right: 600px;
     top: 60px;
     animation: movimiento-m 5.5s linear infinite;
-} @media only screen 
-    and (min-device-width: 768px) 
-    and (max-device-width: 1024px) 
-    and (orientation: portrait) 
+} @media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (orientation: portrait)
     and (-webkit-min-device-pixel-ratio: 1) {
     .u-miraverde {
         right: 440px;
         top: 30px;
     }
-} @media only screen 
-    and (min-device-width: 768px) 
-    and (max-device-width: 1024px) 
-    and (orientation: landscape) 
+} @media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (orientation: landscape)
     and (-webkit-min-device-pixel-ratio: 1) {
     .u-miraverde {
         right: 480px;
@@ -618,15 +618,15 @@ hr {
     position: relative;
     top: 50px;
     left: 0px;
-    
+
 } @media (max-width:700px){
     .titulo-c {
         top: 0px;
         left: 0px !important;
         padding: 0px;
-        
+
     }
-    
+
 }
 
 p {
@@ -638,12 +638,12 @@ p {
     color: #1A2C4C;
     padding-top: 20px;
     line-height: 25px;
-}  
+}
 
 .casitas-p {
     font-family: 'Avenir-regular';
     font-size: 18px;
-    
+
 } @media (max-width:700px) {
     .casitas-p {
         font-size: 11px;
@@ -723,7 +723,7 @@ p {
     color: #F8B3A2;
     font-family: 'Avenir-Regular';
     font-size: 1.8em;
-    
+
 }
 
 .disfruta-color {
@@ -744,7 +744,7 @@ p {
     color: #51488B;
     padding-top: 50px;
     padding-bottom: 40px;
-    
+
 }
 
 .bg-cruzada {
@@ -785,7 +785,7 @@ p {
 
 .mv-color {
     background-color: #215A36;
-   
+
 }
 
 .bg-mv {
@@ -800,7 +800,7 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     }
-    
+
 }
 
 #disfruta-la-vida-en-miraverde {
@@ -811,7 +811,7 @@ p {
     text-align: center;
     color: #fff;
     font-family: 'Avenir-regular';
-   
+
 } @media (max-width:600px) {
     .titular-mv {
         font-size: 20px;
@@ -826,14 +826,14 @@ p {
 
 .inner-titular {
     font-size: 1.6em !important;
-} 
+}
 
 .entorno-img {
     background-image: url(/img/miraverde/entorno-render.jpg);
     min-height: 400px;
     background-position: center;
     background-repeat: no-repeat;
-    
+
 }
 
 
@@ -852,7 +852,7 @@ p {
 
 .entorno-sp {
     font-family: 'Avenir-regular';
-    
+
 }
 
 .titular-mv-1 {
@@ -873,7 +873,7 @@ p {
 .izq-mv {
     position: relative;
     left: 56px;
-    
+
 }
 .der-mv {
     position: relative;
@@ -892,11 +892,11 @@ p {
 
 .espacio-bco-mv {
     margin-bottom: 99px;
-    
+
 }
 .espacio-bco-mv-1 {
     margin-bottom: 90px;
-    
+
 }
 
 .amenidades-r {
@@ -930,7 +930,7 @@ p {
     font-size: 18px;
     color: #215A36;
     font-family: 'Avenir-regular';
-    
+
 }@media (max-width: 700px) {
     .amenidades-en-mv {
         padding-top: 0px;
@@ -1018,7 +1018,7 @@ li {
 .m-botones {
     margin-top: 40px;
     margin-bottom: 14px;
-} 
+}
 
 .izq-mod {
     position: relative;
@@ -1035,8 +1035,8 @@ li {
     color: #fff;
     padding-top: 50px;
     padding-bottom: 20px;
-   
-    
+
+
 }
 
 .espacio-bco-2 {
@@ -1105,7 +1105,7 @@ li {
 .typ-h {
     color: #fff;
     font-family: 'Avenir-semibold';
-    
+
 }
 
 .typ-pos {
@@ -1201,7 +1201,7 @@ li {
 }
 
 .control-w {
-    
+
     object-fit: cover;
 }
 
@@ -1236,7 +1236,7 @@ li {
 
 .redes-sociales {
     font-size: 18px;
-    
+
 } @media (max-width:600px) {
     .redes-sociales {
         margin-left: 10px;
@@ -1295,7 +1295,7 @@ a:hover {
 
 footer {
     background-color: #EE4A7B;
-} 
+}
 
 .icono {
     color: #fff;
@@ -1303,7 +1303,7 @@ footer {
     font-size: 24px;
 }
 
-iframe {
+.iframe {
     height: 250px;
     width: 100%;
 }
@@ -1323,7 +1323,7 @@ iframe {
 
 .imagenes-center {
     text-align: center;
-    padding-top: 70px;   
+    padding-top: 70px;
 } @media (max-width: 700px){
     .imagenes-center {
         padding-top: 0;

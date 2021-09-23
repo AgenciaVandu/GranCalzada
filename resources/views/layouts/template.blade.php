@@ -220,7 +220,7 @@
             <div class="row pt-5">
                 <div class="col-lg-4 col-md-4 col-sm-12 pt-5">
                     <div class="mapa">
-                        <iframe
+                        <iframe class="iframe"
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14902.644270028122!2d-89.620674!3d20.966122!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x676469d86fc45aa3!2sGRUPO%20CASITAS%20DESARROLLOS!5e0!3m2!1ses!2smx!4v1631721969182!5m2!1ses!2smx"
                             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
