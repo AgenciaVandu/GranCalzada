@@ -4,22 +4,28 @@
         <div class="sp-top">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
-                    @foreach ($header->resources as $resource)
-                        @php
-                            $file = new SplFileInfo($resource->url);
-                            $extension = $file->getExtension();
-                        @endphp
-                        @if ($extension == 'mp4' || $extension == 'mov' || $extension == 'ogg' || $extension == 'avi')
-                            <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
-                                <video src="{{ Storage::url($resource->url) }}" loop muted preload autoplay></video>
-                            </div>
-                        @else
-                            <div class="carousel-item active">
-                                <img src="{{ asset('/img/miraverde/slider/mv-top-03.jpg') }}" class="d-block w-100"
-                                    alt="...">
-                            </div>
-                        @endif
-                    @endforeach
+                    @isset($header->resources)
+                        @foreach ($header->resources as $resource)
+                            @php
+                                $file = new SplFileInfo($resource->url);
+                                $extension = $file->getExtension();
+                            @endphp
+                            @if ($extension == 'mp4' || $extension == 'mov' || $extension == 'ogg' || $extension == 'avi')
+                                <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
+                                    <video src="{{ Storage::url($resource->url) }}" loop muted preload autoplay></video>
+                                </div>
+                            @else
+                                <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
+                                    <img src="{{ Storage::url($resource->url) }}" class="d-block w-100" alt="...">
+                                </div>
+                            @endif
+                        @endforeach
+                    @else
+                        <div class="carousel-item active">
+                            <img src="{{ asset('/img/miraverde/slider/mv-top-03.jpg') }}" class="d-block w-100" alt="...">
+                        </div>
+                    @endisset
+
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -226,8 +232,8 @@
                 </div>
                 <div class="col">
                     <img src="{{ asset('/img/modelos/6-01.svg') }}" width="40" alt="datos relevantes | Gran Calzada">
-                    <p class="entorno-p">Rodeado<br><span class="entorno-sp"
-                            style="color: #fff;">de servicios</span></p>
+                    <p class="entorno-p">Rodeado<br><span class="entorno-sp" style="color: #fff;">de
+                            servicios</span></p>
                 </div>
             </div>
             <div class="detalle-mv-1">
@@ -240,21 +246,28 @@
 
             <div id="controles" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
-                    @foreach ($body->resources as $resource)
-                        @php
-                            $file = new SplFileInfo($resource->url);
-                            $extension = $file->getExtension();
-                        @endphp
-                        @if ($extension == 'mp4' || $extension == 'mov' || $extension == 'ogg' || $extension == 'avi')
-                            <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
-                                <video src="{{ Storage::url($resource->url) }}" loop muted preload autoplay></video>
-                            </div>
-                        @else
-                            <div class="carousel-item active">
-                                <img src="{{ asset('/img/almada/cluster.jpg') }}" class="d-block w-100" alt="...">
-                            </div>
-                        @endif
-                    @endforeach
+                    @isset($record)
+                        @foreach ($body->resources as $resource)
+                            @php
+                                $file = new SplFileInfo($resource->url);
+                                $extension = $file->getExtension();
+                            @endphp
+                            @if ($extension == 'mp4' || $extension == 'mov' || $extension == 'ogg' || $extension == 'avi')
+                                <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
+                                    <video src="{{ Storage::url($resource->url) }}" loop muted preload autoplay></video>
+                                </div>
+                            @else
+                                <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
+                                    <img src="{{ Storage::url($resource->url) }}" class="d-block w-100" alt="...">
+                                </div>
+                            @endif
+                        @endforeach
+                    @else
+                        <div class="carousel-item active">
+                            <img src="{{ asset('/img/almada/cluster.jpg') }}" class="d-block w-100" alt="...">
+                        </div>
+                    @endisset
+
                 </div>
                 <a class="carousel-control-prev" href="#controles" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
