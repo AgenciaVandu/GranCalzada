@@ -278,9 +278,7 @@
                 </a>
             </div>
         </div>
-
     </section>
-
     <section id="cotiza-tu-casa">
         <div class="container">
             <div class="row pt-5">
@@ -1890,7 +1888,7 @@
                         style="stroke-width:1.16201">3</text>
                     <text class="st20 st18 st19" id="text1840" x="467.67615" y="299.90173"
                         style="stroke-width:1.16201">4</text>
-                  {{--   <text class="st17 st18 st19" id="text1842" x="467.04755" y="330.5015"
+                    {{-- <text class="st17 st18 st19" id="text1842" x="467.04755" y="330.5015"
                         style="stroke-width:1.16201">B+</text>
                     <text class="st17 st18 st19" id="text1844" x="467.04755" y="345.22025"
                         style="stroke-width:1.16201">C+</text>
@@ -2107,7 +2105,7 @@
                     <g id="g2104" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
                         <text transform="translate(551.6125,528.088)" class="st20 st18 st19" id="text2102">284</text>
                     </g>
-                  {{--   <g id="g2108" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
+                    {{-- <g id="g2108" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
                         <text transform="translate(710.7922,537.8575)" class="st17 st18 st19" id="text2106">C+</text>
                     </g>
                     <g id="g2112" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
@@ -2146,7 +2144,7 @@
                     <g id="g2156" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
                         <text transform="translate(552.9158,537.8575)" class="st17 st18 st19" id="text2154">B+</text>
                     </g> --}}
-                     <polyline class="st60"
+                    <polyline class="st60"
                         points="612.3,724 649.7,724 649.7,697.8 631.3,697.8 631.3,681 612.3,681 612.3,724 "
                         id="polyline2158" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)" />
                     <polyline class="st60"
@@ -3162,7 +3160,7 @@
                         style="stroke-width:1.16201" />
                     <circle class="st53" cx="447.17419" cy="840.01959" r="6.7396784" id="circle3358"
                         style="stroke-width:1.16201" />
-                   {{--  <g id="g3362" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
+                    {{-- <g id="g3362" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
                         <text transform="translate(424.9182,337.088)" class="st17 st18 st19" id="text3360">C+</text>
                     </g>
                     <g id="g3366" transform="matrix(1.1620135,0,0,1.1620135,-88.165417,0)">
@@ -3280,50 +3278,49 @@
                         d="m 1117.5398,730.20927 h -0.1162 l -0.1162,-0.11621 -1.162,-1.62681 v 0 c 0,0 0.1162,0 0.2324,-0.11621 0.1162,0 0.2324,-0.1162 0.2324,-0.1162 0.3486,-0.2324 0.4648,-0.4648 0.4648,-0.81341 0,-0.1162 0,-0.2324 0,-0.3486 -0.1162,-0.2324 -0.2324,-0.3486 -0.4648,-0.46481 -0.1162,-0.1162 -0.3486,-0.1162 -0.581,-0.1162 h -0.1162 -1.0459 -0.6972 -0.1162 v 0.1162 0 c 0,0 0.1162,0 0.2324,0 0.1162,0 0.1162,0 0.1162,0 0,0 0,0 0.1162,0.11621 0,0 0,0.1162 0,0.1162 v 2.78883 c 0,0.1162 0,0.1162 -0.1162,0.2324 0,0 -0.1162,0.1162 -0.1162,0.1162 0,0 -0.1162,0 -0.1162,0 h -0.1162 v 0.1162 h 0.1162 c 0.1162,0 0.2324,0 0.3486,0 0.1162,0 0.2324,0 0.3486,0 0.1162,0 0.2325,0 0.3487,0 0.1162,0 0.2324,0 0.3486,0 h 0.1162 v -0.1162 h -0.1162 c 0,0 -0.1162,0 -0.1162,0 0,0 -0.1162,0 -0.1162,-0.1162 0,0 -0.1162,-0.1162 -0.1162,-0.2324 v -3.02124 h 0.1162 c 0,0 0.1162,0 0.1162,0 0,0 0.1162,0 0.2324,0 h 0.1162 c 0,0 0.1162,0 0.2324,0 0.1162,0 0.2324,0.11621 0.3486,0.23241 0.1162,0.1162 0.1162,0.2324 0.1162,0.4648 0,0.23241 -0.1162,0.46481 -0.3486,0.58101 -0.2324,0.1162 -0.4648,0.2324 -0.6972,0.2324 h -0.2324 v 0.1162 l 1.5106,1.85922 h 0.1162 0.3486 0.3486 v 0 z m -4.0671,0.3486 c -0.4648,-0.58101 -0.8134,-1.27821 -0.8134,-2.09162 0,-0.81341 0.2324,-1.51062 0.8134,-2.09163 0.581,-0.581 1.2782,-0.92961 2.2079,-0.92961 0.9296,0 1.743,0.34861 2.324,0.92961 0.4648,0.58101 0.6972,1.27822 0.6972,2.09163 0,0.81341 -0.2324,1.51061 -0.6972,2.09162 -0.581,0.58101 -1.2782,0.92961 -2.324,0.92961 -1.0459,0 -1.6269,-0.2324 -2.2079,-0.92961 m 4.7643,0.2324 c 0.581,-0.581 0.8134,-1.39441 0.8134,-2.32402 0,-0.92961 -0.2324,-1.74302 -0.8134,-2.32403 -0.581,-0.69721 -1.5106,-1.04581 -2.5564,-1.04581 -1.0459,0 -1.8593,0.3486 -2.5565,1.04581 -0.581,0.58101 -0.8134,1.39442 -0.8134,2.32403 0,0.92961 0.2324,1.74302 0.8134,2.32402 0.581,0.69721 1.5106,1.04582 2.5565,1.04582 1.162,0.1162 1.9754,-0.34861 2.5564,-1.04582"
                         id="path3512" style="stroke-width:1.16201" />
                 </svg>
-
-                @foreach ($lots as $lot)
-                    @if ($lot->status == 'available')
-                        <!-- Modal -->
-                        <div class="modal fade" id="myModal-{{ $lot->id }}" tabindex="-1" role="dialog"
-                            aria-labelledby="myModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title" id="myModalLabel">Lote {{ $lot->number }}</h4>
-                                        <button type="button" class="close" data-dismiss="modal"
-                                            aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="row align-items-center px-3">
-                                            <div class="col-12 col-md-6 text-center">
-                                                <h2>Modelo {{ $lot->model->name }}</h2>
-                                                <p><strong>Area:</strong> {{ $lot->area }}m<sup>2</sup></p>
-                                                <p><strong>Area de construcción:</strong>
-                                                    {{ $lot->construction_area }}m<sup>2</sup></p>
-                                                <a href="{{ route('miraverde.model', $lot->model) }}"
-                                                    class="btn btn-primary btn-md d-block mb-2">VER MODELO</a>
-                                                <a href="{{ route('miraverde.lead', $lot->model) }}"
-                                                    class="btn btn-primary btn-md d-block">COTIZAR</a>
-                                            </div>
-                                            <div class="col-12 col-md-6">
-                                                <img src="{{ Storage::url($lot->model->image) }}"
-                                                    alt="{{ $lot->model->name }}" class="img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                                        {{-- <a href="{{ route('almada.lead', $lot->model) }}"
-                                            class="btn btn-primary">Cotizar</a> --}}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    @endif
-                @endforeach
             </div>
         </div>
     </section>
+    @foreach ($lots as $lot)
+        @if ($lot->status == 'available')
+            <!-- Modal -->
+            <div class="modal fade" id="myModal-{{ $lot->id }}" tabindex="-1" role="dialog"
+                aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">Lote {{ $lot->number }}</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row align-items-center px-3">
+                                <div class="col-12 col-md-6 text-center">
+                                    <h2>Modelo {{ $lot->model->name }}</h2>
+                                    <p><strong>Area:</strong> {{ $lot->area }}m<sup>2</sup></p>
+                                    <p><strong>Area de construcción:</strong>
+                                        {{ $lot->construction_area }}m<sup>2</sup></p>
+                                    <a href="{{ route('miraverde.model', $lot->model) }}"
+                                        class="btn btn-primary btn-md d-block mb-2">VER MODELO</a>
+                                    <a href="{{ route('miraverde.lead', $lot->model) }}"
+                                        class="btn btn-primary btn-md d-block">COTIZAR</a>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <img src="{{ Storage::url($lot->model->image) }}" alt="{{ $lot->model->name }}"
+                                        class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                            {{-- <a href="{{ route('almada.lead', $lot->model) }}"
+                            class="btn btn-primary">Cotizar</a> --}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        @endif
+    @endforeach
     <section id="cotiza-tu-casa">
         <div class="container">
             <div class="elige-tu-casa">
@@ -3521,10 +3518,13 @@
                                 <i class="fas fa-chevron-right"></i>
                             </button>
                         </div>
-                        <div role="tabList" class="carousel__indicadores2"></div>
+                        <div role="tabList" class="carousel__indicadores2">
+                            
+                        </div>
                     </div> <!-- Fint Carousel 2-->
                 </div>
             </div>
+        </div>
     </section>
 
 
