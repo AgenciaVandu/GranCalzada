@@ -47,7 +47,7 @@
         <div class="bg-azul-index">
             <div class="container-fluid">
                 <div class="row over">
-                    <div class="col-lg-6 col-md-6 col-sm-12 mt-5 p-0">
+                    <div class="col-lg-6 col-md-6 col-sm-12 mt-5 p-0 ">
                         <img src="{{ asset('/img/GCAL-1.jpg') }}" class="img-fluid p-0" alt="">
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 txt-calzada">
@@ -80,10 +80,10 @@
                         class="signo-1">?
                     </span>
                 </h1>
-                <div class="text-center" style="position: relative; top: -20px">
+                <div class="text-center linea-amarilla" style="position: relative; top: -20px">
                     <img src="{{ asset('/img/amarillo.svg') }}" class="img-fluid" width="480" alt="">
                 </div>
-                <div class="d-md-none">
+                <div class="d-md-none datos">
                     <div class="carousel_1">
                         <!--Carousel 1-->
                         <div class="carousel__contenedor">
@@ -128,7 +128,7 @@
                         <div role="tabList" class="carousel__indicadores"></div>
                     </div> <!-- Fint Carousel 1-->
                 </div>
-                <div class="d-none d-md-block d-lg-block">
+                <div class="d-none d-md-block d-lg-block datos">
                     <div class="row space-1">
                         <div class="col-6 pt-3 text-center">
                             <img src="{{ asset('/img/amenidades-index/1.png') }}" class="img-fluid" alt="">
@@ -152,7 +152,7 @@
             <h2 class="text-center pt-5 titular-modelos" style="color: #1A2C4C"><span
                     class="conoce  pb-2">CONOCE</span><br>nuestros <span class="dos">2</span> desarrollos: <br>
                 ¿En cuál te gustaría vivir?</h2>
-            <div class="d-md-none">
+            <div class="d-md-none datos">
                 <div class="carousel_1">
                     <!--Carousel 2-->
                     <div class="carousel__contenedor">
@@ -268,7 +268,7 @@
                     <div role="tabList" class="carousel__indicadores1"></div>
                 </div> <!-- Fint Carousel 2-->
             </div>
-            <div class="d-none d-md-block d-lg-block">
+            <div class="d-none d-md-block d-lg-block datos">
                 <div class="row mt-5 desarrollos">
                     <div class="col-md-6 col-sm-12 text-center">
                         <img src="{{ asset('/img/modelo.png') }}" class="img-fluid" alt="">
