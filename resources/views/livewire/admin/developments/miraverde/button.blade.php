@@ -21,8 +21,7 @@
                 <textarea class="w-full rounded-md border-gray-300" rows="5" wire:model="description"
                     wire:loading.attr="disabled"></textarea>
                 <div class="flex justify-end items-center pt-2">
-                    <x-jet-button class="bg-gray-800 text-white px-2 py-1" wire:click='updateButton'
-                        wire:loading.attr="disabled">
+                    <x-jet-button class="bg-gray-800 text-white px-2 py-1" wire:click='updateButton'>
                         Guardar
                     </x-jet-button>
                 </div>
