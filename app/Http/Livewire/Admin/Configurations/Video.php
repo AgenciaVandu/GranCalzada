@@ -25,17 +25,6 @@ class Video extends Component
         ]);
         $video = $this->index->store('resources');
 
-        if ($this->video_index->first()) {
-            Storage::delete($this->video_index->first()->url);
-            $this->video_index->first()->update([
-                'url' =>  $video,
-            ]);
-        } else {
-            ModelsVideo::create([
-                'url' =>  $video,
-                'section' => 'index'
-            ]);
-        }
     }
 
     public function render()

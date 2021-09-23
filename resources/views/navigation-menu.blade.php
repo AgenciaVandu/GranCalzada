@@ -28,7 +28,7 @@
                     </x-jet-nav-link>
                     <x-jet-nav-link href="{{ route('configurations.index') }}"
                         :active="request()->routeIs('configurations.*')">
-                        {{ __('Configuración') }}
+                        {{ __('Pagina Principal') }}
                     </x-jet-nav-link>
                 </div>
             </div>
