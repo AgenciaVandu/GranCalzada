@@ -34,7 +34,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
-<body class="font-sans antialiased">
+<body class="font-sans antialiased relative">
     <x-jet-banner />
 
     <div class="min-h-screen bg-gray-100">
@@ -54,12 +54,12 @@
             {{ $slot }}
         </main>
     </div>
+    <div class="absolute inset-x-0 text-center h-10 bg-transparent">
+        <p class="text-gray-500 text-sm mt-3 bg-transparent">Sistema desarrollado por Agencia Vandu 2021 - Todos los derechos resevados</p>
+    </div>
 
     @stack('modals')
-
     @livewireScripts
-
-
     @stack('js')
 </body>
 

@@ -10,32 +10,19 @@
                 </div>
                 <div class="col-12">
                     <div class="row">
-                        @foreach ($categories as $category)
                         <div class="dropdown mb-4 ml-3">
-                            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Todas
+                            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Todas
                             </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" href="{{ route('blog.postCategory', $category) }}">
-                                {{ $category->name }}
-                            </a>
-                              
-                            </div>
-                        </div>
-
-                            {{--<div class="col">
-                                
-                                <p class="categorias-1">
-                                    <a href="{{ route('blog.postCategory', $category) }}">
+                            @foreach ($categories as $category)
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="{{ route('blog.postCategory', $category) }}">
                                         {{ $category->name }}
                                     </a>
-
-                                    
-                                </p>
-                            </div>--}}
-
-                            
-                        @endforeach
+                                </div>
+                            @endforeach
+                        </div>
                     </div>
                 </div>
             </div>
