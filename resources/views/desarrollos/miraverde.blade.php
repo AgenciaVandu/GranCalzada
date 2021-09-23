@@ -288,7 +288,7 @@
                     <p class="amenidades-r">8 Amenidades <br> para los residentes</p>
                 </div>
                 <div class="col-md-6 text-center pt-3">
-                    <a href="" class="btn btn-warning ">CONOCE LOS DESARROLLOS</a>
+                    <a href="{{ route('gran.calzada') }}" class="btn btn-warning ">CONOCE LOS DESARROLLOS</a>
                 </div>
             </div>
             <div class="col-12">
