@@ -5,13 +5,13 @@
             <div class="row">
                 <div class="col-12">
                     <div class="video mt-2">
-                        @if ($video->resources->first())
+                        @isset ($video->resources)
                             <video src="{{ Storage::url($video->resources->first()->url) }}" loop muted preload
                                 width="1000" height="auto" autoplay></video>
                         @else
                             <video src="{{ asset('/video/1000x500.mp4') }}" loop muted preload width="1000" height="auto"
                                 autoplay></video>
-                        @endif
+                        @endisset
                     </div>
                     <div class="col-12">
                         <h5 class="mt-4"><span class="light">Disfruta la vida</span> EN TU NUEVO HOGAR</h5>
@@ -26,7 +26,7 @@
         <div class="modal-dialog modal-md">
             <div class="modal-content">
                 <div class="modal-body" style="background-color: #fff">
-                    @if ($modal->resources->first())
+                    @isset ($modal->resources)
                         <div class="text-center">
                             <img src="{{ Storage::url($modal->resources->first()->url) }}" class="img-fluid" alt="">
                         </div>
@@ -35,7 +35,7 @@
                             <img src="{{ asset('/img/almada/venta-cruzada/magenta-03.png') }}" class="img-fluid"
                                 alt="">
                         </div>
-                    @endif
+                    @endisset
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>
@@ -380,7 +380,7 @@
                 <div class="col-12 pb-5">
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
-                            @if ($slider->resources->first() != null)
+                            @isset ($slider->resources)
                                 @foreach ($slider->resources as $resource)
                                     <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
                                         <img src=" {{ Storage::url($resource->url) }}" class="d-block w-100" alt="...">
@@ -391,7 +391,7 @@
                                     <img src="{{ asset('/img/avances-de-obra/GCAL-Avances-deObra2.jpg') }}"
                                         class="d-block w-100" alt="avances de obra - Gran Calzada">
                                 </div>
-                            @endif
+                            @endisset
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
