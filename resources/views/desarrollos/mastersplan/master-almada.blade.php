@@ -708,8 +708,8 @@
 @section('js')
     <script>
         $(document).ready(function() {
-            var valorAtributoNuevo = "width=device-width, initial-scale=1.0";
-            var valorAtributoAnterior = "width=device-width, initial-scale=1024";
+            var valorAtributoNuevo = "width=device-width, initial-scale=1024";
+            var valorAtributoAnterior = "width=device-width, initial-scale=1.0";
 
             $("#botonCambiarContent").on("click", function() {
                 $("#etiquetaACambiar").attr("content", valorAtributoNuevo);
