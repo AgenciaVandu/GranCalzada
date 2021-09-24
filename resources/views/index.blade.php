@@ -293,9 +293,11 @@
                         <div class="bg-almada">
                             <img src="{{ asset('/img/almada.png') }}" alt="Gran Calzada | Ciudad Viva"
                                 class="img-fluid pt-3 pb-3">
+                            @isset($desde_almada)
                             <h4 style="color: #fff; font-family:'Avenir-regular'" class="pb-2">
                                 Desde:<span> ${{ number_format($desde_almada->price, 2) }}</span>
                             </h4>
+                            @endisset
                             <p style="color: #fff" class="espacio-almada-1">{{ $almada->description2 }}</p>
                             <div class="row">
                                 <div class="col-5 text-right pt-2">
@@ -333,9 +335,11 @@
                         <div class="bg-miraverde">
                             <img src="{{ asset('/img/miraverde.png') }}" alt="Gran Calzada | Ciudad Viva"
                                 class="img-fluid pt-3 pb-3">
-                            <h4 style="color: #fff; font-family:'Avenir-regular'" class="pb-2">
-                                Desde:<span> ${{ number_format($desde_miraverde->price, 2) }}</span>
-                            </h4>
+                            @isset($desde_miraverde)
+                                <h4 style="color: #fff; font-family:'Avenir-regular'" class="pb-2">
+                                    Desde:<span> ${{ number_format($desde_miraverde->price, 2) }}</span>
+                                </h4>
+                            @endisset
                             <p style="color: #fff">{{ $miraverde->description2 }}</p>
                             <div class="row">
                                 <div class="col-5 text-right pt-2">
