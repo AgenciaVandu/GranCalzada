@@ -15,14 +15,14 @@
                                     <video src="{{ Storage::url($resource->url) }}" loop muted preload autoplay></video>
                                 </div>
                             @else
-                                <div class="carousel-item active">
+                                <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
                                     <img src="{{ Storage::url($resource->url) }}" class="d-block w-100" alt="...">
                                 </div>
                             @endif
                         @endforeach
                     @else
                         <div class="carousel-item active">
-                            <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
+                            <div class="carousel-item active">
                                 <video src="{{ assset('video/video-GC.mp4') }}" loop muted preload autoplay></video>
                             </div>
                         </div>
