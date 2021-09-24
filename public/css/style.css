@@ -175,7 +175,7 @@ h5 {
     padding-right: 10px;
 }
 
-#index {
+/* #index {
     background-color: #e7e7e7;
     min-height: 100vh;
     overflow: hidden;
@@ -185,7 +185,7 @@ h5 {
     }
 }
 
-/* video{
+video{
     object-fit: fill;
 } @media (max-width: 700px) {
     video {
@@ -197,7 +197,7 @@ h5 {
 video {
     height: 100vh;
     width: 100%;
-    object-fit: cover; // use "cover" to avoid distortion
+    object-fit: fill; // use "cover" to avoid distortion
     position: absolute;
     background-color: #e7e7e7;
 }
