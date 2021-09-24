@@ -175,30 +175,17 @@ h5 {
     padding-right: 10px;
 }
 
-/* #index {
+#index {
     background-color: #e7e7e7;
-    min-height: 100vh;
-    overflow: hidden;
-} @media (max-width: 700px) {
-    #index {
-        min-height: 400px;
-    }
 }
 
-video{
-    object-fit: fill;
-} @media (max-width: 700px) {
-    video {
-        width: 100%;
-    }
-} */
 
 
 video {
-    height: 100vh;
+    max-height: 80vh;
     width: 100%;
-    object-fit: fill; // use "cover" to avoid distortion
-    position: absolute;
+    height:auto;
+    object-fit: fill;
     background-color: #e7e7e7;
 }
 
@@ -680,6 +667,10 @@ p {
 
 .almada-color {
     background-color: #51488B;
+}
+
+#almada-top {
+    background-color: #e7e7e7;
 }
 
 .p-caract {

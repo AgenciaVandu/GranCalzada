@@ -39,7 +39,7 @@ window.addEventListener('load', function(){
         arrows: {
             prev: '.carousel__anterior',
             next: '.carousel__siguiente'
-        }, 
+        },
         responsive: [
             {
               // screens greater than >= 775px
@@ -67,7 +67,7 @@ window.addEventListener('load', function(){
   let cont1=document.getElementById('cont1'),
       cont2=document.getElementById('cont2'),
       cont3=document.getElementById('cont3')
-  let cant1=0,cant2=0,cant3=0
+  let cant1=0,cant2=7500,cant3=32000
       tiem=25
 
   let tiempo1= setInterval(() => {

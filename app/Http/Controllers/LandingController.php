@@ -24,6 +24,7 @@ class LandingController extends Controller
 
     public function grancalzada()
     {
-        return view('gran-calzada');
+        $slider = Page::where('name', 'gran_calzada')->where('section', 'header')->first();
+        return view('gran-calzada', compact('slider'));
     }
 }

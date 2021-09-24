@@ -1,23 +1,46 @@
 @extends('layouts.template')
 @section('content')
     <header id="index">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-12">
-                    <div class="video mt-2">
-                        @isset($video->resources)
-                            <video src="{{ Storage::url($video->resources->first()->url) }}" loop muted preload
-                                autoplay></video>
-                        @else
-                            <video src="{{ asset('/video/1000x500.mp4') }}" loop muted preload
-                                autoplay></video>
-                        @endisset
-                    </div>
-                    <div class="col-12">
-                        <h5 class="mt-4"><span class="light">Disfruta la vida</span> EN TU NUEVO HOGAR</h5>
-                        <hr class="mb-5">
-                    </div>
+        <div class="sp-top text-center">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    @isset($video->resources)
+                        @foreach ($video->resources as $resource)
+                            @php
+                                $file = new SplFileInfo($resource->url);
+                                $extension = $file->getExtension();
+                            @endphp
+                            @if ($extension == 'mp4' || $extension == 'mov' || $extension == 'ogg' || $extension == 'avi')
+                                <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
+                                    <video src="{{ Storage::url($resource->url) }}" loop muted preload autoplay></video>
+                                </div>
+                            @else
+                                <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
+                                    <img src="{{ Storage::url($resource->url) }}" class="d-block w-100" alt="...">
+                                </div>
+                            @endif
+                        @endforeach
+                    @else
+                        <div class="carousel-item active">
+                            <img src="{{ Storage::url($resource->url) }}" class="d-block w-100" alt="...">
+                        </div>
+                    @endisset
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-12">
+                <h5 class="mt-4"><span class="light">Disfruta la vida</span> EN TU NUEVO HOGAR
+                </h5>
+                <hr class="mb-5">
             </div>
         </div>
     </header>
