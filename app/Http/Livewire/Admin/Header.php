@@ -59,7 +59,7 @@ class Header extends Component
             }
         }
         $this->reset(['files']);
-        $this->video = Page::find($this->video->id);
+        $this->video = Page::find($header->id);
     }
 
     public function delete(Resource $resource)
