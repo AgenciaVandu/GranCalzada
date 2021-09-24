@@ -14,7 +14,8 @@ class InformationModel extends Component
     public $name, $price;
     public $file;
     public $virtual;
-    public $virtual_visible = false;
+    public $virtual_visible;
+    public $price_visible;
 
     public function mount(Model $model)
     {
@@ -22,6 +23,8 @@ class InformationModel extends Component
         $this->name = $model->name;
         $this->price = $model->price;
         $this->virtual = $model->virtual;
+        $this->virtual_visible = $model->virtual_visible;
+        $this->price_visible = $model->price_visible;
     }
 
     public function updatedfile()
@@ -74,7 +77,8 @@ class InformationModel extends Component
     public function setVisible()
     {
         $this->model->update([
-            'virtual_visible' => $this->virtual_visible
+            'virtual_visible' => $this->virtual_visible,
+            'price_visible' => $this->price_visible
         ]);
     }
 

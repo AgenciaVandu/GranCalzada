@@ -967,9 +967,11 @@
                                                         @default
 
                                                     @endswitch
-                                                    <p class="p-desde">Desde:
-                                                        <span>${{ number_format($model->price) }}</span>
-                                                    </p>
+                                                    @if ($model->price_visible)
+                                                        <p class="p-desde">Desde:
+                                                            <span>${{ number_format($model->price) }}</span>
+                                                        </p>
+                                                    @endif
                                                 </div>
                                                 @switch($model->id)
                                                     @case(1)

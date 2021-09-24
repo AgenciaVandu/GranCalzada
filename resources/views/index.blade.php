@@ -195,7 +195,7 @@
                                             <h4 style="color: #fff; font-family:'Avenir-regular'" class="pb-2">
                                                 Desde:<span> $385,000</span>
                                             </h4>
-                                            <p style="color: #fff" class="texto-carousel-1">{{ $almada->description }}
+                                            <p style="color: #fff" class="texto-carousel-1">{{ $almada->description2 }}
                                             </p>
                                             <div class="row">
                                                 <div class="col-5 text-right pt-2">
@@ -238,7 +238,7 @@
                                         <h4 style="color: #fff; font-family:'Avenir-regular'" class="pb-2">
                                             Desde:<span> $385,000</span>
                                         </h4>
-                                        <p style="color: #fff" class="texto-carousel-1">{{ $miraverde->description }}
+                                        <p style="color: #fff" class="texto-carousel-1">{{ $miraverde->description2 }}
                                         </p>
                                         <div class="row">
                                             <div class="col-5 text-right pt-2">
@@ -294,9 +294,9 @@
                             <img src="{{ asset('/img/almada.png') }}" alt="Gran Calzada | Ciudad Viva"
                                 class="img-fluid pt-3 pb-3">
                             <h4 style="color: #fff; font-family:'Avenir-regular'" class="pb-2">
-                                Desde:<span> ${{ number_format($desde_almada->first()->price, 2) }}</span>
+                                Desde:<span> ${{ number_format($desde_almada->price, 2) }}</span>
                             </h4>
-                            <p style="color: #fff" class="espacio-almada-1">{{ $almada->description }}</p>
+                            <p style="color: #fff" class="espacio-almada-1">{{ $almada->description2 }}</p>
                             <div class="row">
                                 <div class="col-5 text-right pt-2">
                                     <img src="{{ asset('/img/icon/1-01.svg') }}" alt="" width="45">
@@ -334,9 +334,9 @@
                             <img src="{{ asset('/img/miraverde.png') }}" alt="Gran Calzada | Ciudad Viva"
                                 class="img-fluid pt-3 pb-3">
                             <h4 style="color: #fff; font-family:'Avenir-regular'" class="pb-2">
-                                Desde:<span> ${{ number_format($desde_miraverde->first()->price, 2) }}</span>
+                                Desde:<span> ${{ number_format($desde_miraverde->price, 2) }}</span>
                             </h4>
-                            <p style="color: #fff">{{ $miraverde->description }}</p>
+                            <p style="color: #fff">{{ $miraverde->description2 }}</p>
                             <div class="row">
                                 <div class="col-5 text-right pt-2">
                                     <img src="{{ asset('/img/modelos/1.svg') }}" alt="" class="img-fluid"
