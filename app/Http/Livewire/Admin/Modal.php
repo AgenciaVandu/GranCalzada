@@ -12,6 +12,7 @@ class Modal extends Component
     use WithFileUploads;
     public $modal;
     public $file;
+    public $rules = ['file' => 'required'];
 
     public function mount()
     {
@@ -28,7 +29,12 @@ class Modal extends Component
 
     public function update()
     {
+        $this->validate([
+            'file' => 'required|mimes:png,svg,jpg,jpeg',
+        ]);
+
         $image = $this->file->store('resources');
+
         if (!$this->modal) {
             $this->modal = Page::create([
                 'name' => 'index',

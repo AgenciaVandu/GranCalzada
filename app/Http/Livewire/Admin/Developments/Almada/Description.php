@@ -7,11 +7,12 @@ use Livewire\Component;
 
 class Description extends Component
 {
-    public $development, $description;
+    public $development, $description, $description2;
 
     public function mount(Development $development)
     {
         $this->description = $development->description;
+        $this->description2 = $development->description2;
     }
     public function render()
     {
@@ -22,7 +23,8 @@ class Description extends Component
     public function updateDescription()
     {
         $this->development->update([
-            'description' => $this->description
+            'description' => $this->description,
+            'description2' => $this->description2,
         ]);
     }
 }

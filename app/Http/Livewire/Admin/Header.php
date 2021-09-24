@@ -3,13 +3,16 @@
 namespace App\Http\Livewire\Admin;
 
 use App\Models\Page;
+use App\Models\Resource;
+use Illuminate\Support\Facades\Storage;
 use Livewire\Component;
 use Livewire\WithFileUploads;
+use SplFileInfo;
 
 class Header extends Component
 {
     use WithFileUploads;
-    public $file;
+    public $files;
     public $video;
     public $visible;
 
@@ -18,44 +21,56 @@ class Header extends Component
         $this->video = Page::where('section', 'header')->where('name', 'index')->first();
     }
 
-    public function updatedfile()
+    public function updatedFiles()
     {
         $this->validate([
-            'file.*' => 'mimes:mp4,mov,ogg,avi',
+            'files.*' => 'mimes:mp4,mov,ogg,avi,png,svg,jpg,jpeg',
         ]);
     }
-
-    public function uploadBodyVideo()
+    public function uploadHeaderSlider()
     {
         $this->validate([
-            'file.*' => 'mimes:mp4,mov,ogg,avi,png,svg,jpg,jpeg',
+            'files.*' => 'mimes:mp4,mov,ogg,avi,png,svg,jpg,jpeg',
         ]);
 
-        if (!$this->video) {
-            $this->video = Page::create([
-                'name' => 'index',
-                'section' => 'header'
-            ]);
-        }
 
         $header = $this->video;
-        $url = $this->file->store('resources');
 
-        if ($header->resources->first()) {
-            $header->resources()->update([
-                'url' => $url,
-                'type' => 'video'
-            ]);
-        } else {
-            $header->resources()->create([
-                'url' => $url,
-                'type' => 'video'
+        if (!isset($header)) {
+            $header = Page::create([
+                'name' => 'index',
+                'section' => 'header',
             ]);
         }
-        $this->reset(['file']);
-
+        foreach ($this->files as $file) {
+            $url = $file->store('resources');
+            $name = new SplFileInfo($url);
+            $extension = $name->getExtension();
+            if ($extension == 'mp4' || $extension == 'mov' || $extension == 'ogg' || $extension == 'avi') {
+                $header->resources()->create([
+                    'url' => $url,
+                    'type' => 'video'
+                ]);
+            } else {
+                $header->resources()->create([
+                    'url' => $url,
+                    'type' => 'image'
+                ]);
+            }
+        }
+        $this->reset(['files']);
         $this->video = Page::find($header->id);
     }
+
+    public function delete(Resource $resource)
+    {
+        Storage::delete($resource->url);
+        $resource->delete();
+        $this->emit('render');
+        $this->video = Page::find($this->video->id);
+    }
+
+
     public function render()
     {
         return view('livewire.admin.header');

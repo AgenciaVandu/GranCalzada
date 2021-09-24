@@ -3353,9 +3353,11 @@
                                                 <div class="titulo-cruzada text-center pt-3">
                                                     <h2 class="t-mod" style="color: #265B33;">
                                                         {{ $model->name }}</h2>
-                                                    <p class="p-desde" style="color: #265B33;">Desde:
-                                                        <span>${{ number_format($model->price, 2) }}</span>
-                                                    </p>
+                                                    @if ($model->price_visible)
+                                                        <p class="p-desde" style="color: #265B33;">Desde:
+                                                            <span>${{ number_format($model->price, 2) }}</span>
+                                                        </p>
+                                                    @endif
                                                 </div>
                                                 @switch($model->id)
                                                     @case(6)

@@ -177,19 +177,16 @@ h5 {
 
 #index {
     background-color: #e7e7e7;
-    
-} @media (max-width: 700px) {
-    #index {
-        min-height: 330px;
-    }
 }
 
+
+
 video {
-    width:1000px;
-} @media (max-width: 700px) {
-    video {
-        width: 100%;
-    }
+    max-height: 80vh;
+    width: 100%;
+    height:auto;
+    object-fit: fill;
+    background-color: #e7e7e7;
 }
 
 .video {
@@ -670,6 +667,10 @@ p {
 
 .almada-color {
     background-color: #51488B;
+}
+
+#almada-top {
+    background-color: #e7e7e7;
 }
 
 .p-caract {

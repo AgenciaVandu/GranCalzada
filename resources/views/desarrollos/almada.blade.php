@@ -2,7 +2,7 @@
 @section('content')
     @isset($header->resources)
         <header id="almada-top">
-            <div class="sp-top">
+            <div class="sp-top text-center">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         @foreach ($header->resources as $resource)
@@ -967,9 +967,11 @@
                                                         @default
 
                                                     @endswitch
-                                                    <p class="p-desde">Desde:
-                                                        <span>${{ number_format($model->price) }}</span>
-                                                    </p>
+                                                    @if ($model->price_visible)
+                                                        <p class="p-desde">Desde:
+                                                            <span>${{ number_format($model->price) }}</span>
+                                                        </p>
+                                                    @endif
                                                 </div>
                                                 @switch($model->id)
                                                     @case(1)

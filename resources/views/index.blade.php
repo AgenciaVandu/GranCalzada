@@ -1,23 +1,48 @@
 @extends('layouts.template')
 @section('content')
     <header id="index">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-12">
-                    <div class="video mt-2">
-                        @isset($video->resources)
-                            <video src="{{ Storage::url($video->resources->first()->url) }}" loop muted preload width="1000"
-                                height="auto" autoplay></video>
-                        @else
-                            <video src="{{ asset('/video/1000x500.mp4') }}" loop muted preload width="1000" height="auto"
-                                autoplay></video>
-                        @endisset
-                    </div>
-                    <div class="col-12">
-                        <h5 class="mt-4"><span class="light">Disfruta la vida</span> EN TU NUEVO HOGAR</h5>
-                        <hr class="mb-5">
-                    </div>
+        <div class="sp-top text-center">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    @isset($video->resources)
+                        @foreach ($video->resources as $resource)
+                            @php
+                                $file = new SplFileInfo($resource->url);
+                                $extension = $file->getExtension();
+                            @endphp
+                            @if ($extension == 'mp4' || $extension == 'mov' || $extension == 'ogg' || $extension == 'avi')
+                                <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
+                                    <video src="{{ Storage::url($resource->url) }}" loop muted preload autoplay></video>
+                                </div>
+                            @else
+                                <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
+                                    <img src="{{ Storage::url($resource->url) }}" class="d-block w-100" alt="...">
+                                </div>
+                            @endif
+                        @endforeach
+                    @else
+                        <div class="carousel-item active">
+                            <div class="carousel-item active">
+                                <video src="{{ asset('video/video-GC.mp4') }}" loop muted preload autoplay></video>
+                            </div>
+                        </div>
+                    @endisset
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-12">
+                <h5 class="mt-4"><span class="light">Disfruta la vida</span> EN TU NUEVO HOGAR
+                </h5>
+                <hr class="mb-5">
             </div>
         </div>
     </header>
@@ -170,7 +195,7 @@
                                             <h4 style="color: #fff; font-family:'Avenir-regular'" class="pb-2">
                                                 Desde:<span> $385,000</span>
                                             </h4>
-                                            <p style="color: #fff" class="texto-carousel-1">{{ $almada->description }}
+                                            <p style="color: #fff" class="texto-carousel-1">{{ $almada->description2 }}
                                             </p>
                                             <div class="row">
                                                 <div class="col-5 text-right pt-2">
@@ -213,7 +238,7 @@
                                         <h4 style="color: #fff; font-family:'Avenir-regular'" class="pb-2">
                                             Desde:<span> $385,000</span>
                                         </h4>
-                                        <p style="color: #fff" class="texto-carousel-1">{{ $miraverde->description }}
+                                        <p style="color: #fff" class="texto-carousel-1">{{ $miraverde->description2 }}
                                         </p>
                                         <div class="row">
                                             <div class="col-5 text-right pt-2">
@@ -268,10 +293,12 @@
                         <div class="bg-almada">
                             <img src="{{ asset('/img/almada.png') }}" alt="Gran Calzada | Ciudad Viva"
                                 class="img-fluid pt-3 pb-3">
+                            @isset($desde_almada)
                             <h4 style="color: #fff; font-family:'Avenir-regular'" class="pb-2">
-                                Desde:<span> ${{ number_format($desde_almada->first()->price, 2) }}</span>
+                                Desde:<span> ${{ number_format($desde_almada->price, 2) }}</span>
                             </h4>
-                            <p style="color: #fff" class="espacio-almada-1">{{ $almada->description }}</p>
+                            @endisset
+                            <p style="color: #fff" class="espacio-almada-1">{{ $almada->description2 }}</p>
                             <div class="row">
                                 <div class="col-5 text-right pt-2">
                                     <img src="{{ asset('/img/icon/1-01.svg') }}" alt="" width="45">
@@ -308,10 +335,12 @@
                         <div class="bg-miraverde">
                             <img src="{{ asset('/img/miraverde.png') }}" alt="Gran Calzada | Ciudad Viva"
                                 class="img-fluid pt-3 pb-3">
-                            <h4 style="color: #fff; font-family:'Avenir-regular'" class="pb-2">
-                                Desde:<span> ${{ number_format($desde_miraverde->first()->price, 2) }}</span>
-                            </h4>
-                            <p style="color: #fff">{{ $miraverde->description }}</p>
+                            @isset($desde_miraverde)
+                                <h4 style="color: #fff; font-family:'Avenir-regular'" class="pb-2">
+                                    Desde:<span> ${{ number_format($desde_miraverde->price, 2) }}</span>
+                                </h4>
+                            @endisset
+                            <p style="color: #fff">{{ $miraverde->description2 }}</p>
                             <div class="row">
                                 <div class="col-5 text-right pt-2">
                                     <img src="{{ asset('/img/modelos/1.svg') }}" alt="" class="img-fluid"
