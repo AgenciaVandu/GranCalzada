@@ -177,11 +177,10 @@ h5 {
 
 #index {
     background-color: #e7e7e7;
-    min-height: 100vh;
-    overflow: hidden;
+    
 } @media (max-width: 700px) {
     #index {
-        min-height: 400px;
+        min-height: 330px;
     }
 }
 
