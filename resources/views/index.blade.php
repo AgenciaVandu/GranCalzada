@@ -23,7 +23,7 @@
                     @else
                         <div class="carousel-item active">
                             <div class="carousel-item active">
-                                <video src="{{ assset('video/video-GC.mp4') }}" loop muted preload autoplay></video>
+                                <video src="{{ asset('video/video-GC.mp4') }}" loop muted preload autoplay></video>
                             </div>
                         </div>
                     @endisset
