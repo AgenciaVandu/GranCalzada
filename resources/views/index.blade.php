@@ -15,7 +15,7 @@
                                     <video src="{{ Storage::url($resource->url) }}" loop muted preload autoplay></video>
                                 </div>
                             @else
-                                <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
+                                <div class="carousel-item active">
                                     <img src="{{ Storage::url($resource->url) }}" class="d-block w-100" alt="...">
                                 </div>
                             @endif
