@@ -33,7 +33,15 @@ class Header extends Component
             'files.*' => 'mimes:mp4,mov,ogg,avi,png,svg,jpg,jpeg',
         ]);
 
+
         $header = $this->video;
+
+        if (!isset($header)) {
+            $header = Page::create([
+                'name' => 'index',
+                'section' => 'header',
+            ]);
+        }
         foreach ($this->files as $file) {
             $url = $file->store('resources');
             $name = new SplFileInfo($url);
