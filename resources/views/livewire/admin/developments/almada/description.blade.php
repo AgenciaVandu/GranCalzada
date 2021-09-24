@@ -8,11 +8,9 @@
             </div>
             <div class="p-4" x-show="open">
                 <x-jet-label>Descripcion vista desarrollo:</x-jet-label>
-                <textarea class="w-full rounded-md border-gray-300" rows="5" wire:model="description"
-                    wire:loading.attr="disabled"></textarea>
+                <textarea class="w-full rounded-md border-gray-300" rows="5" wire:model="description"></textarea>
                 <x-jet-label>Descripcion de tarjetas index y grancalzada:</x-jet-label>
-                <textarea class="w-full rounded-md border-gray-300" rows="5" wire:model="description2"
-                    wire:loading.attr="disabled"></textarea>
+                <textarea class="w-full rounded-md border-gray-300" rows="5" wire:model="description2"></textarea>
 
                 <div class="flex justify-end items-center pt-2">
                     <x-jet-button class="bg-gray-800 text-white px-2 py-1" wire:click='updateDescription'
