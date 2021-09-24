@@ -2,7 +2,7 @@
 @section('content')
     @isset($header->resources)
         <header id="almada-top">
-            <div class="sp-top">
+            <div class="sp-top text-center">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         @foreach ($header->resources as $resource)

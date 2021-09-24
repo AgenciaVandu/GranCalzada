@@ -6,10 +6,10 @@
                 <div class="col-12">
                     <div class="video mt-2">
                         @isset($video->resources)
-                            <video src="{{ Storage::url($video->resources->first()->url) }}" loop muted preload width="1000"
-                                height="auto" autoplay></video>
+                            <video src="{{ Storage::url($video->resources->first()->url) }}" loop muted preload
+                                autoplay></video>
                         @else
-                            <video src="{{ asset('/video/1000x500.mp4') }}" loop muted preload width="1000" height="auto"
+                            <video src="{{ asset('/video/1000x500.mp4') }}" loop muted preload
                                 autoplay></video>
                         @endisset
                     </div>

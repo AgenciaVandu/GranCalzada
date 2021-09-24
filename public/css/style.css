@@ -186,11 +186,20 @@ h5 {
 }
 
 video{
-    width:1000px;
+    object-fit: fill;
 } @media (max-width: 700px) {
     video {
         width: 100%;
     }
+}
+
+
+video {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover; // use "cover" to avoid distortion
+    position: absolute;
+    background-color: #e7e7e7;
 }
 
 .video {
