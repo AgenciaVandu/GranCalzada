@@ -22,7 +22,9 @@
                         @endforeach
                     @else
                         <div class="carousel-item active">
-                            <img src="" class="d-block w-100" alt="...">
+                            <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
+                                <video src="{{ assset('video/video-GC.mp4') }}" loop muted preload autoplay></video>
+                            </div>
                         </div>
                     @endisset
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
