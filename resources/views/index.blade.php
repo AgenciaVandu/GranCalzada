@@ -22,7 +22,7 @@
                         @endforeach
                     @else
                         <div class="carousel-item active">
-                            <img src="{{ Storage::url($resource->url) }}" class="d-block w-100" alt="...">
+                            <img src="" class="d-block w-100" alt="...">
                         </div>
                     @endisset
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
