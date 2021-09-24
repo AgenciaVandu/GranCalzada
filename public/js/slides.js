@@ -80,7 +80,7 @@ window.addEventListener('load', function(){
       }, '${tiem}' );
 
   let tiempo2= setInterval(() => {
-    cont2.textContent=cant2+=1
+    cont2.textContent=cant2+=4219
 
         if (cant2==8438) {
           clearInterval(tiempo2)
@@ -89,7 +89,7 @@ window.addEventListener('load', function(){
       }, '${tiem}' );
 
   let tiempo3= setInterval(() => {
-    cont3.textContent=cant3+=1
+    cont3.textContent=cant3+=19
 
         if (cant3==32908) {
           clearInterval(tiempo3)
