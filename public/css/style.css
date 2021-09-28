@@ -497,6 +497,68 @@ hr {
     font-family: 'Avenir-bold';
 }
 
+.electricidad {
+    background-image: url(/img/icon/electricidad.svg);
+    min-height: 190px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-out 0.2s;
+}
+
+.electricidad:hover {
+    background-image: url(/img/icon/Electricidad2.svg);
+    min-height: 202px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease 0.2s;
+}
+
+.planta-de-tratamiento {
+    background-image: url(/img/icon/planta-1.svg);
+    min-height: 190px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-out 0.2s;
+}
+
+.planta-de-tratamiento:hover {
+    background-image: url(/img/icon/planta2.svg);
+    min-height: 202px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease 0.2s;
+}
+.pozo {
+    background-image: url(/img/icon/pozo.svg);
+    min-height: 190px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-out 0.2s;
+}
+
+.pozo:hover {
+    background-image: url(/img/icon/pozo2.svg);
+    min-height: 202px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease 0.2s;
+}
+.drenaje {
+    background-image: url(/img/icon/drenaje.svg);
+    min-height: 190px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-out 0.2s;
+}
+
+.drenaje:hover {
+    background-image: url(/img/icon/drenaje2.svg);
+    min-height: 202px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease 0.2s;
+}
+
 .espacio-que-encontraras {
     padding-top: 80px;
     padding-left: 120px;
