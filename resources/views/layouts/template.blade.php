@@ -239,13 +239,17 @@
                             <div class="row">
                                 <div class="col-12">
                                     <p>
-                                        <a href=""> <i class="icono fab fa-facebook-square pr-2"></i>
+                                        <a href=""> 
+                                        <i class="icono fab fa-facebook-square pr-2"></i>
                                         </a>
-                                        <a href=""><i class=" icono fab fa-instagram pr-2"></i>
+                                        <a href="">
+                                            <i class=" icono fab fa-instagram pr-2"></i>
                                         </a>
-                                        <a href=""><i class=" icono fab fa-linkedin pr-2"></i>
+                                        <a href="">
+                                            <i class=" icono fab fa-linkedin pr-2"></i>
                                         </a>
-                                        <a href=""><i class=" icono fab fa-whatsapp"></i>
+                                        <a href="">
+                                            <i class=" icono fab fa-whatsapp"></i>
                                         </a>
                                     </p>
                                 </div>
