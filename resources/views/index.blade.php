@@ -120,28 +120,28 @@
                             <div class="carousel__lista">
                                 <div class="carousel__elemento">
                                     <div class="col-12 pt-3 text-center">
-                                        <img src="{{ asset('/img/amenidades-index/1.png') }}" class="img-fluid"
+                                        <img src="{{ asset('img/icon/conoce-gc/ubicacion1.png') }}" class="img-fluid"
                                             alt="">
                                         <h3 class="pt-3">Excelente Ubicación</h3>
                                     </div>
                                 </div>
                                 <div class="carousel__elemento">
                                     <div class="col-12 pt-3 text-center">
-                                        <img src="{{ asset('/img/amenidades-index/2.png') }}" class="img-fluid"
+                                        <img src="{{ asset('img/icon/conoce-gc/multiservicios1.png') }}" class="img-fluid"
                                             alt="">
                                         <h3 class="pt-3">Multi-servicios</h3>
                                     </div>
                                 </div>
                                 <div class="carousel__elemento">
                                     <div class="col-12 pt-3 text-center">
-                                        <img src="{{ asset('/img/amenidades-index/3.png') }}" class="img-fluid"
+                                        <img src="{{ asset('img/icon/conoce-gc/ocho1.png') }}" class="img-fluid"
                                             alt="">
                                         <h3 class="pt-3">8 parques interactivos</h3>
                                     </div>
                                 </div>
                                 <div class="carousel__elemento">
                                     <div class="col-12 pt-3 text-center">
-                                        <img src="{{ asset('/img/amenidades-index/4.png') }}" class="img-fluid"
+                                        <img src="{{ asset('img/icon/conoce-gc/ciclopista1.png') }}" class="img-fluid"
                                             alt="">
                                         <h3 class="pt-3">Ciclopista</h3>
                                     </div>
@@ -157,19 +157,23 @@
                 <div class="d-none d-md-block d-lg-block datos">
                     <div class="row space-1">
                         <div class="col-6 pt-3 text-center">
-                            <img src="{{ asset('/img/amenidades-index/1.png') }}" class="img-fluid" alt="">
+                            <div class="ubicacion"></div>
+                            {{--<img src="{{ asset('/img/amenidades-index/1.png') }}" class="img-fluid" alt="">--}}
                             <h3 class="pt-3">Excelente Ubicación</h3>
                         </div>
                         <div class="col-6 pt-3 text-center">
-                            <img src="{{ asset('/img/amenidades-index/2.png') }}" class="img-fluid" alt="">
+                            <div class="multiservicios"></div>
+                            {{--<img src="{{ asset('/img/amenidades-index/2.png') }}" class="img-fluid" alt="">--}}
                             <h3 class="pt-3">Multi-servicios</h3>
                         </div>
                         <div class="col-6 pt-3 text-center">
-                            <img src="{{ asset('/img/amenidades-index/3.png') }}" class="img-fluid" alt="">
+                            <div class="ocho"></div>
+                            {{--<img src="{{ asset('/img/amenidades-index/3.png') }}" class="img-fluid" alt="">--}}
                             <h3 class="pt-3">8 parques interactivos</h3>
                         </div>
                         <div class="col-6 pt-3 text-center">
-                            <img src="{{ asset('/img/amenidades-index/4.png') }}" class="img-fluid" alt="">
+                            <div class="ciclopista"></div>
+                            {{--<img src="{{ asset('/img/amenidades-index/4.png') }}" class="img-fluid" alt="">--}}
                             <h3 class="pt-3">Ciclopista</h3>
                         </div>
                     </div>

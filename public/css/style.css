@@ -319,6 +319,62 @@ hr {
         padding-right: 20px;
     }
 }
+.ubicacion {
+    background-image: url(/img/icon/conoce-gc/ubicacion.png);
+    min-height: 229px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-out 0.2s;
+}
+.ubicacion:hover {
+    background-image: url(/img/icon/conoce-gc/ubicacion1.png);
+    min-height: 229px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in 0.2s;
+}
+.multiservicios {
+    background-image: url(/img/icon/conoce-gc/multiservicios.png);
+    min-height: 229px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-out 0.2s;
+}
+.multiservicios:hover {
+    background-image: url(/img/icon/conoce-gc/multiservicios1.png);
+    min-height: 229px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in 0.2s;
+}
+.ciclopista {
+    background-image: url(/img/icon/conoce-gc/ciclopista.png);
+    min-height: 229px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-out 0.2s;
+}
+.ciclopista:hover {
+    background-image: url(/img/icon/conoce-gc/ciclopista1.png);
+    min-height: 229px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in 0.2s;
+}
+.ocho {
+    background-image: url(/img/icon/conoce-gc/ocho.png);
+    min-height: 229px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-out 0.2s;
+}
+.ocho:hover {
+    background-image: url(/img/icon/conoce-gc/ocho1.png);
+    min-height: 229px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in 0.2s;
+}
 
 .bg-almada {
     background-color: #51488B;
