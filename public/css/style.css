@@ -185,7 +185,7 @@ video {
     max-height: 80vh;
     width: 100%;
     height:auto;
-    object-fit: fill;
+   /** object-fit: fill; **/
     background-color: #e7e7e7;
 }
 
@@ -318,6 +318,62 @@ hr {
         padding-left: 20px;
         padding-right: 20px;
     }
+}
+.ubicacion {
+    background-image: url(/img/icon/conoce-gc/ubicacion.png);
+    min-height: 229px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-out 0.2s;
+}
+.ubicacion:hover {
+    background-image: url(/img/icon/conoce-gc/ubicacion1.png);
+    min-height: 229px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in 0.2s;
+}
+.multiservicios {
+    background-image: url(/img/icon/conoce-gc/multiservicios.png);
+    min-height: 229px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-out 0.2s;
+}
+.multiservicios:hover {
+    background-image: url(/img/icon/conoce-gc/multiservicios1.png);
+    min-height: 229px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in 0.2s;
+}
+.ciclopista {
+    background-image: url(/img/icon/conoce-gc/ciclopista.png);
+    min-height: 229px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-out 0.2s;
+}
+.ciclopista:hover {
+    background-image: url(/img/icon/conoce-gc/ciclopista1.png);
+    min-height: 229px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in 0.2s;
+}
+.ocho {
+    background-image: url(/img/icon/conoce-gc/ocho.png);
+    min-height: 229px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-out 0.2s;
+}
+.ocho:hover {
+    background-image: url(/img/icon/conoce-gc/ocho1.png);
+    min-height: 229px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in 0.2s;
 }
 
 .bg-almada {
@@ -495,6 +551,68 @@ hr {
     font-size: 20px;
     color: #fff;
     font-family: 'Avenir-bold';
+}
+
+.electricidad {
+    background-image: url(/img/icon/electricidad.svg);
+    min-height: 190px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-out 0.2s;
+}
+
+.electricidad:hover {
+    background-image: url(/img/icon/Electricidad2.svg);
+    min-height: 202px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease 0.2s;
+}
+
+.planta-de-tratamiento {
+    background-image: url(/img/icon/planta-1.svg);
+    min-height: 190px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-out 0.2s;
+}
+
+.planta-de-tratamiento:hover {
+    background-image: url(/img/icon/planta2.svg);
+    min-height: 202px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease 0.2s;
+}
+.pozo {
+    background-image: url(/img/icon/pozo.svg);
+    min-height: 190px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-out 0.2s;
+}
+
+.pozo:hover {
+    background-image: url(/img/icon/pozo2.svg);
+    min-height: 202px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease 0.2s;
+}
+.drenaje {
+    background-image: url(/img/icon/drenaje.svg);
+    min-height: 190px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-out 0.2s;
+}
+
+.drenaje:hover {
+    background-image: url(/img/icon/drenaje2.svg);
+    min-height: 202px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease 0.2s;
 }
 
 .espacio-que-encontraras {
@@ -1344,5 +1462,16 @@ footer {
 
 
 
+.glider-dot {
+    background: #EE7768;
+    opacity: .2;
+}
+.glider-dot:hover {
+    background: #EE7768;
+    opacity: .5;
+}
 
-
+.glider-dot.active {
+    background: #EE7768;
+    opacity: 1;
+}

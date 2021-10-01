@@ -12,7 +12,7 @@
                             @endphp
                             @if ($extension == 'mp4' || $extension == 'mov' || $extension == 'ogg' || $extension == 'avi')
                                 <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
-                                    <video src="{{ Storage::url($resource->url) }}" loop muted preload autoplay></video>
+                                    <video src="{{ Storage::url($resource->url) }}" class="d-block w-100" loop muted preload autoplay></video>
                                 </div>
                             @else
                                 <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
