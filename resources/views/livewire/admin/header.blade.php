@@ -60,7 +60,7 @@
                                 x-on:livewire-upload-error="isUploading = false"
                                 x-on:livewire-upload-progress="progress = $event.detail.progress">
                                 <label
-                                    class="w-60 flex flex-col items-center ml-2 mt-4 px-4 py-10 bg-white text-gray-700 rounded-l-lg shadow-lg tracking-wide border border-blue cursor-pointer hover:bg-gray-100 hover:text-pink-500">
+                                    class="w-60 flex flex-col items-center ml-2 mt-4 px-4 py-10 bg-white text-gray-700 rounded-l-lg shadow-lg tracking-wide border border-blue cursor-pointer hover:bg-gray-100 hover:text-yellow-500">
                                     <i class="far fa-plus-square text-5xl"></i>
                                     <span class="mt-4">Seleccionar archivo(s)</span>
                                     <input type='file' wire:model="files" class="hidden" multiple
@@ -70,7 +70,7 @@
                                 <div class="text-center py-6 text-white font-bold" x-show="isUploading">
                                     <p>Cargando recursos:</p>
                                     <div max="100" x-bind:value="progress"
-                                        class="h-6 text-white font-bold rounded-lg bg-pink-600" x-bind:text="progress"
+                                        class="h-6 text-white font-bold rounded-lg bg-yellow-600" x-bind:text="progress"
                                         x-text="progress"></div>
                                 </div>
                             </div>
