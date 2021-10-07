@@ -797,7 +797,7 @@
                 </svg>
 
                 {{-- Limite --}}
-               {{--  <svg version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 1200 710"
+                {{-- <svg version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 1200 710"
                     style="enable-background:new 0 0 1200 710;" xml:space="preserve" sodipodi:docname="cluster3.svg"
                     inkscape:version="1.1 (c68e22c387, 2021-05-23)"
                     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
