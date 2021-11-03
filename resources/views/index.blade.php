@@ -74,7 +74,7 @@
             <div class="container-fluid">
                 <div class="row over">
                     <div class="col-lg-6 col-md-6 col-sm-12 mt-5 p-0 ">
-                        <img src="{{ asset('/img/GCAL-1.jpg') }}" class="img-fluid p-0" alt="">
+                        <img src="{{ asset('/img/GCAL-2.png') }}" class="img-fluid p-0" alt="">
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 txt-calzada">
                         <h2 style="text-align: left" class="mb-4">Descubre cómo es vivir en una ciudad totalmente
@@ -194,7 +194,7 @@
                             <div class="carousel__elemento">
                                 <div class="pt-3 text-center">
                                     <div class="col-md-6 col-sm-12 text-center">
-                                        <img src="{{ asset('/img/modelo.png') }}" class="img-fluid" alt="">
+                                        <img src="{{ asset('/img/cabecera-1.jpg') }}" class="img-fluid" alt="">
                                         <div class="bg-almada">
                                             <img src="{{ asset('/img/almada.png') }}" alt="Gran Calzada | Ciudad Viva"
                                                 class="img-fluid pt-3 pb-3">
@@ -237,7 +237,7 @@
                             </div>
                             <div class="carousel__elemento">
                                 <div class="col-md-6 col-sm-12 pt-3 text-center">
-                                    <img src="{{ asset('/img/modelo-1.png') }}" class="img-fluid" alt="">
+                                    <img src="{{ asset('/img/cabecera-2.jpg') }}" class="img-fluid" alt="">
                                     <div class="bg-miraverde">
                                         <img src="{{ asset('/img/miraverde.png') }}" alt="Gran Calzada | Ciudad Viva"
                                             class="img-fluid pt-3 pb-3">
@@ -295,7 +295,7 @@
             <div class="d-none d-md-block d-lg-block datos">
                 <div class="row mt-5 desarrollos">
                     <div class="col-md-6 col-sm-12 text-center">
-                        <img src="{{ asset('/img/modelo.png') }}" class="img-fluid" alt="">
+                        <img src="{{ asset('/img/cabecera-1.jpg') }}" class="img-fluid" alt="">
                         <div class="bg-almada">
                             <img src="{{ asset('/img/almada.png') }}" alt="Gran Calzada | Ciudad Viva"
                                 class="img-fluid pt-3 pb-3">
@@ -337,7 +337,7 @@
                     </div>
 
                     <div class="col-md-6 col-sm-12 text-center">
-                        <img src="{{ asset('/img/modelo-1.png') }}" class="img-fluid" alt="">
+                        <img src="{{ asset('/img/cabecera-2.jpg') }}" class="img-fluid" alt="">
                         <div class="bg-miraverde">
                             <img src="{{ asset('/img/miraverde.png') }}" alt="Gran Calzada | Ciudad Viva"
                                 class="img-fluid pt-3 pb-3">

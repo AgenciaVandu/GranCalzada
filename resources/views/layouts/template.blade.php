@@ -228,6 +228,7 @@
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <h5 class="ubis pt-4">Visita nuestros puntos de venta</h5>
                             <ul>
+                                <li class="ubis">Centro:</li>
                                 <li class="ubis">C.60 Fte. Japay</li>
                                 <li class="ubis">2da. Calle Nueva </li>
                                 <li class="ubis">C.56 x 61 y 63 </li>
@@ -257,8 +258,8 @@
                             </div>
                         </div>
                     </div>
-                    <p class="ubis"><a href="">Tel: (999) 999 9999</a><br>
-                        <span><a href="">whatsapp: (999) 999 9999</a></span>
+                    <p class="ubis"><a href="tel:9999449952">Tel: (999) 944 9952</a><br>
+                        <span><a href="tel:9991696832">whatsapp: (999) 169 6832</a></span>
                     </p>
                 </div>
                 <div class="col-lg-5 col-md-5 col-sm-12 hubspot pt-4">

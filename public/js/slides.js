@@ -73,7 +73,7 @@ window.addEventListener('load', function(){
   let tiempo1= setInterval(() => {
         cont1.textContent=cant1+=1
 
-        if (cant1==19) {
+        if (cant1==20) {
           clearInterval(tiempo1)
         }
 
@@ -82,7 +82,7 @@ window.addEventListener('load', function(){
   let tiempo2= setInterval(() => {
     cont2.textContent=cant2+=1
 
-        if (cant2==8438) {
+        if (cant2==8923) {
           clearInterval(tiempo2)
         }
 
@@ -91,7 +91,7 @@ window.addEventListener('load', function(){
   let tiempo3= setInterval(() => {
     cont3.textContent=cant3+=1
 
-        if (cant3==32908) {
+        if (cant3==34798) {
           clearInterval(tiempo3)
         }
 

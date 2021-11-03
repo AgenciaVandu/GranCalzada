@@ -1757,8 +1757,6 @@
                                                             <div class="col-6 der-mod pt-3">
                                                                 <p>1 1/2 baños</p>
                                                             </div>
-                                                            <div class="espacio-bco-1">
-                                                            </div>
                                                         </div>
                                                     @break
                                                     @default
