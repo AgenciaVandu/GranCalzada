@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Development;
+use App\Models\Link;
 use App\Models\Model;
 use App\Models\Page;
 use App\Models\Video;
@@ -27,6 +28,7 @@ class LandingController extends Controller
     public function grancalzada()
     {
         $slider = Page::where('name', 'gran_calzada')->where('section', 'header')->first();
-        return view('gran-calzada', compact('slider'));
+        $link = Link::first();
+        return view('gran-calzada', compact('slider', 'link'));
     }
 }
