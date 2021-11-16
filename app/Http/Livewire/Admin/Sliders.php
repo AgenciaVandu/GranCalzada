@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire\Admin;
 
+use App\Models\Link;
 use App\Models\Model;
 use App\Models\Page;
 use App\Models\Resource;
@@ -18,11 +19,17 @@ class Sliders extends Component
     public $files2 = [];
     public $slider;
     public $slider2;
+    public $url, $text, $description;
+    public $link;
 
     public function mount()
     {
         $this->slider = Page::where('section', 'slider')->where('name', 'index')->first();
         $this->slider2 = Page::where('section', 'header')->where('name', 'gran_calzada')->first();
+        $this->link = Link::first();
+        $this->text = $this->link->text;
+        $this->url = $this->link->url;
+        $this->description = $this->link->description;
     }
 
     public function updatedFiles()
@@ -107,7 +114,16 @@ class Sliders extends Component
         $resource->delete();
         $this->slider = Page::find($this->slider->id);
         $this->slider2 = Page::find($this->slider2->id);
+    }
 
+
+    public function updateLink()
+    {
+        $this->link->url = $this->url;
+        $this->link->text = $this->text;
+        $this->link->description = $this->description;
+        $this->link->save();
+        $this->link->refresh();
     }
 
     public function render()
