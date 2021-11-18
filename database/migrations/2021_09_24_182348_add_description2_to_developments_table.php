@@ -14,7 +14,7 @@ class AddDescription2ToDevelopmentsTable extends Migration
     public function up()
     {
         Schema::table('developments', function (Blueprint $table) {
-            $table->longText('description2')->after('description');
+            $table->longText('description2')->after('description')->nullable();
         });
     }
 
