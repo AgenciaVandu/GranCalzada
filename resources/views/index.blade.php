@@ -12,7 +12,8 @@
                             @endphp
                             @if ($extension == 'mp4' || $extension == 'mov' || $extension == 'ogg' || $extension == 'avi')
                                 <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
-                                    <video src="{{ Storage::url($resource->url) }}" class="d-block w-100" loop muted preload autoplay></video>
+                                    <video src="{{ Storage::url($resource->url) }}" class="d-block w-100" loop muted preload
+                                        autoplay></video>
                                 </div>
                             @else
                                 <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
@@ -127,8 +128,8 @@
                                 </div>
                                 <div class="carousel__elemento">
                                     <div class="col-12 pt-3 text-center">
-                                        <img src="{{ asset('img/icon/conoce-gc/multiservicios1.png') }}" class="img-fluid"
-                                            alt="">
+                                        <img src="{{ asset('img/icon/conoce-gc/multiservicios1.png') }}"
+                                            class="img-fluid" alt="">
                                         <h3 class="pt-3">Multi-servicios</h3>
                                     </div>
                                 </div>
@@ -141,8 +142,8 @@
                                 </div>
                                 <div class="carousel__elemento">
                                     <div class="col-12 pt-3 text-center">
-                                        <img src="{{ asset('img/icon/conoce-gc/ciclopista1.png') }}" class="img-fluid"
-                                            alt="">
+                                        <img src="{{ asset('img/icon/conoce-gc/ciclopista1.png') }}"
+                                            class="img-fluid" alt="">
                                         <h3 class="pt-3">Ciclopista</h3>
                                     </div>
                                 </div>
@@ -158,22 +159,22 @@
                     <div class="row space-1">
                         <div class="col-6 pt-3 text-center">
                             <div class="ubicacion"></div>
-                            {{--<img src="{{ asset('/img/amenidades-index/1.png') }}" class="img-fluid" alt="">--}}
+                            {{-- <img src="{{ asset('/img/amenidades-index/1.png') }}" class="img-fluid" alt=""> --}}
                             <h3 class="pt-3">Excelente Ubicación</h3>
                         </div>
                         <div class="col-6 pt-3 text-center">
                             <div class="multiservicios"></div>
-                            {{--<img src="{{ asset('/img/amenidades-index/2.png') }}" class="img-fluid" alt="">--}}
+                            {{-- <img src="{{ asset('/img/amenidades-index/2.png') }}" class="img-fluid" alt=""> --}}
                             <h3 class="pt-3">Multi-servicios</h3>
                         </div>
                         <div class="col-6 pt-3 text-center">
                             <div class="ocho"></div>
-                            {{--<img src="{{ asset('/img/amenidades-index/3.png') }}" class="img-fluid" alt="">--}}
+                            {{-- <img src="{{ asset('/img/amenidades-index/3.png') }}" class="img-fluid" alt=""> --}}
                             <h3 class="pt-3">8 parques interactivos</h3>
                         </div>
                         <div class="col-6 pt-3 text-center">
                             <div class="ciclopista"></div>
-                            {{--<img src="{{ asset('/img/amenidades-index/4.png') }}" class="img-fluid" alt="">--}}
+                            {{-- <img src="{{ asset('/img/amenidades-index/4.png') }}" class="img-fluid" alt=""> --}}
                             <h3 class="pt-3">Ciclopista</h3>
                         </div>
                     </div>
@@ -199,7 +200,9 @@
                                             <img src="{{ asset('/img/almada.png') }}" alt="Gran Calzada | Ciudad Viva"
                                                 class="img-fluid pt-3 pb-3">
                                             <h4 style="color: #fff; font-family:'Avenir-regular'" class="pb-2">
-                                                Desde:<span> $385,000</span>
+                                                @isset($desde_almada)
+                                                    Desde:<span> ${{ number_format($desde_almada->price, 2) }}</span>
+                                                @endisset
                                             </h4>
                                             <p style="color: #fff" class="texto-carousel-1">{{ $almada->description2 }}
                                             </p>
@@ -242,7 +245,9 @@
                                         <img src="{{ asset('/img/miraverde.png') }}" alt="Gran Calzada | Ciudad Viva"
                                             class="img-fluid pt-3 pb-3">
                                         <h4 style="color: #fff; font-family:'Avenir-regular'" class="pb-2">
-                                            Desde:<span> $385,000</span>
+                                            @isset($desde_miraverde)
+                                                Desde:<span> ${{ number_format($desde_miraverde->price, 2) }}</span>
+                                            @endisset
                                         </h4>
                                         <p style="color: #fff" class="texto-carousel-1">{{ $miraverde->description2 }}
                                         </p>
@@ -300,9 +305,9 @@
                             <img src="{{ asset('/img/almada.png') }}" alt="Gran Calzada | Ciudad Viva"
                                 class="img-fluid pt-3 pb-3">
                             @isset($desde_almada)
-                            <h4 style="color: #fff; font-family:'Avenir-regular'" class="pb-2">
-                                Desde:<span> ${{ number_format($desde_almada->price, 2) }}</span>
-                            </h4>
+                                <h4 style="color: #fff; font-family:'Avenir-regular'" class="pb-2">
+                                    Desde:<span> ${{ number_format($desde_almada->price, 2) }}</span>
+                                </h4>
                             @endisset
                             <p style="color: #fff" class="espacio-almada-1">{{ $almada->description2 }}</p>
                             <div class="row">

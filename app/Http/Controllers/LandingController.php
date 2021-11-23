@@ -18,9 +18,8 @@ class LandingController extends Controller
         $modal = Page::where('name', 'index')->where('section', 'modal')->first();
         $almada = Development::find(1);
         $miraverde = Development::find(2);
-        $desde_almada = Model::where('price_visible', 1)->where('development_id', $almada->id)->first();
-
-        $desde_miraverde = Model::where('price_visible', 1)->where('development_id', $miraverde->id)->first();
+        $desde_almada = Model::where('price_visible', 1)->where('development_id', $almada->id)->orderBy('price', 'asc')->first();
+        $desde_miraverde = Model::where('price_visible', 1)->where('development_id', $miraverde->id)->orderBy('price', 'asc')->first();
 
         return view('index', compact('video', 'slider', 'modal', 'almada', 'miraverde', 'desde_almada', 'desde_miraverde'));
     }
@@ -29,6 +28,10 @@ class LandingController extends Controller
     {
         $slider = Page::where('name', 'gran_calzada')->where('section', 'header')->first();
         $link = Link::first();
-        return view('gran-calzada', compact('slider', 'link'));
+        $almada = Development::find(1);
+        $miraverde = Development::find(2);
+        $desde_almada = Model::where('price_visible', 1)->where('development_id', $almada->id)->orderBy('price', 'asc')->first();
+        $desde_miraverde = Model::where('price_visible', 1)->where('development_id', $miraverde->id)->orderBy('price', 'asc')->first();
+        return view('gran-calzada', compact('slider', 'link','almada', 'miraverde', 'desde_almada', 'desde_miraverde'));
     }
 }
