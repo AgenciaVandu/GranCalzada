@@ -37,7 +37,7 @@
                 }
                 50% {
                     transform: translateY(15px);
-                    
+
                 }
                 100% {
                     transform: translateY(0);
@@ -489,7 +489,7 @@
 
                     <p class="text-grey-darker text-2xl md:text-3xl font-light mb-8 leading-normal">
                         @yield('message') <br>
-                        <span style="font-size: 1.5rem;">contacte a su proveedor de alojamiento <br> para más información.</span>
+                        <span style="font-size: 1.5rem;">Contacte a su proveedor de alojamiento <br> para más información.</span>
                     </p>
 
                     {{-- <a href="{{ app('router')->has('home') ? route('home') : url('/') }}">
