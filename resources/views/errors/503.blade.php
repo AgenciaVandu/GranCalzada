@@ -5,6 +5,6 @@
 @section('message', __('Servicio no disponible'))
 @section('image')
 <div class="movi">
-    <img src="https://agenciavandu.com/img/Sally.svg" width="900" alt="">
+    <img src="https://agenciavandu.com/img/Sally.svg" width="700" alt="">
 </div>
 @endsection
