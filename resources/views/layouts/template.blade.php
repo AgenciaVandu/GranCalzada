@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gran Calzada</title>
+    <title>Gran Calzada - Ciudad Viva</title>
 
     <!--Bootstrap 4.6-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
@@ -227,12 +227,10 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <h5 class="ubis pt-4">Visita nuestros puntos de venta</h5>
-                            <ul>
-                                <li class="ubis">Centro:</li>
-                                <li class="ubis">C.60 Fte. Japay</li>
-                                <li class="ubis">2da. Calle Nueva </li>
-                                <li class="ubis">C.56 x 61 y 63 </li>
-                            </ul>
+                            <li class="ubis">- Centro:</li>
+                            <li class="ubis">C.60 Fte. Japay</li>
+                            <li class="ubis">- 2da. Calle Nueva </li>
+                            <li class="ubis">C.56 x 61 y 63 </li>
 
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">

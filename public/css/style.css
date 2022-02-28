@@ -658,20 +658,29 @@ hr {
     top: 220px;
     left: 160px;
     animation: movimiento-u 6.5s linear infinite;
-} @media (max-width:600px) {
+}@media (max-width:1190px) {
+    .u-almada {
+        top: 140px;
+        left: 80px;
+    }
+}
+@media (max-width:600px) {
     .u-almada {
         top: 140px;
         left: 190px;
     }
 }
-
-
 .u-miraverde {
     position: relative;
     right: 600px;
     top: 60px;
     animation: movimiento-m 5.5s linear infinite;
-} @media only screen
+} @media (max-width:1190px) {
+    .u-miraverde {
+        right: 440px;
+        top: 30px;
+    }
+}@media only screen
     and (min-device-width: 768px)
     and (max-device-width: 1024px)
     and (orientation: portrait)
@@ -718,7 +727,14 @@ hr {
     padding-left: 170px;
     padding-top: 50px;
     padding-bottom: 50px;
-} @media (max-width:700px) {
+} @media (max-width:1190px) {
+    .aire {
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}@media (max-width:700px) {
     .aire {
         padding: 20px;
     }
@@ -733,14 +749,17 @@ hr {
     top: 50px;
     left: 0px;
 
-} @media (max-width:700px){
+} @media (max-width:991px){
+    .titulo-c {
+        top: 0px;
+        left: -15px;
+    }
+}@media (max-width:700px){
     .titulo-c {
         top: 0px;
         left: 0px !important;
         padding: 0px;
-
     }
-
 }
 
 p {
@@ -1430,13 +1449,14 @@ footer {
 .hubspot {
     padding: 10px;
 }
-
+.ubicaciones-2 li {
+    padding-left: 0;
+}
 .ubis a,
 .ubis {
     color: #fff;
     font-family: 'Avenir-semibold';
     font-size: 14px;
-
 }
 
 .imagenes-center {
