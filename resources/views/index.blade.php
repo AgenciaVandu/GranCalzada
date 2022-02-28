@@ -73,23 +73,50 @@
     <section>
         <div class="bg-azul-index">
             <div class="container-fluid">
-                <div class="row over">
-                    <div class="col-lg-6 col-md-6 col-sm-12 mt-5 p-0 ">
-                        <img src="{{ asset('/img/GCAL-2.png') }}" class="img-fluid p-0" alt="">
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 txt-calzada">
-                        <h2 style="text-align: left" class="mb-4">Descubre cómo es vivir en una ciudad totalmente
-                            planeada</h2>
-                        <p style="color: #fff">Bienvenido a Gran Calzada, es un complejo habitacional con más de 4,000 mil
-                            viviendas distribuidas en 2 desarrollos: Almada y Miraverde conectados por la bella Gran Calzada
-                            que
-                            se convierte en tu eje central de servicios y áreas verdes</p>
-                        <div class="row mt-3 mb-3" style="text-align: left">
-                            <div class="col-md-6 col-sm-12 mt-2">
-                                <a href="" class="btn btn-primary btn-block">Descargar brochure</a>
+                <div class="d-block d-sm-block d-md-block d-lg-none">
+                    <div class="row over pb-5">
+                        <div class="col-lg-6 col-md-12 col-sm-12 ">
+                            <figure class="text-center">
+                                <img src="{{ asset('/img/GCAL-2.png') }}" class="img-fluid" alt="">
+                            </figure>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 pl-3 pr-3 text-center">
+                            <h2  class="mb-4">Descubre cómo es vivir en <br class="d-none d-sm-none d-md-block "> una ciudad totalmente
+                                planeada</h2>
+                            <p style="color: #fff">Bienvenido a Gran Calzada, es un complejo habitacional con más de 4,000 mil
+                                viviendas distribuidas en 2 desarrollos: Almada y Miraverde conectados por la bella Gran Calzada
+                                que
+                                se convierte en tu eje central de servicios y áreas verdes</p>
+                            <div class="row mt-3 mb-3" style="text-align: left">
+                                <div class="col-md-6 col-sm-12 mt-2">
+                                    <a href="" class="btn btn-primary btn-block">Descargar brochure</a>
+                                </div>
+                                <div class="col-md-6 col-sm-12 mt-2">
+                                    <a href="/conoce-gran-calzada" class="btn btn-primary btn-block">Conoce Gran Calzada</a>
+                                </div>
                             </div>
-                            <div class="col-md-6 col-sm-12 mt-2">
-                                <a href="/conoce-gran-calzada" class="btn btn-primary btn-block">Conoce Gran Calzada</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-sm-none d-md-none d-lg-block">
+                    <div class="row over">
+                        <div class="col-lg-6 col-md-12 col-sm-12 mt-5 p-0 ">
+                            <img src="{{ asset('/img/GCAL-2.png') }}" class="img-fluid p-0" alt="">
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 txt-calzada">
+                            <h2 style="text-align: left" class="mb-4">Descubre cómo es vivir en una ciudad totalmente
+                                planeada</h2>
+                            <p style="color: #fff">Bienvenido a Gran Calzada, es un complejo habitacional con más de 4,000 mil
+                                viviendas distribuidas en 2 desarrollos: Almada y Miraverde conectados por la bella Gran Calzada
+                                que
+                                se convierte en tu eje central de servicios y áreas verdes</p>
+                            <div class="row mt-3 mb-3" style="text-align: left">
+                                <div class="col-md-6 col-sm-12 mt-2">
+                                    <a href="" class="btn btn-primary btn-block">Descargar brochure</a>
+                                </div>
+                                <div class="col-md-6 col-sm-12 mt-2">
+                                    <a href="/conoce-gran-calzada" class="btn btn-primary btn-block">Conoce Gran Calzada</a>
+                                </div>
                             </div>
                         </div>
                     </div>
