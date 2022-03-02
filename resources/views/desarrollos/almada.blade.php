@@ -1616,7 +1616,7 @@
                                                             <div class="col-6 der-mod pt-3">
                                                                 <p>1 baño</p>
                                                             </div>
-                                                            <div class="espacio-bco">
+                                                            <div class="espacio-bco-2">
                                                             </div>
                                                         </div>
                                                     @break
@@ -1651,6 +1651,8 @@
                                                             <div class="col-6 der-mod pt-3">
                                                                 <p>1 baños</p>
                                                             </div>
+                                                            <div class="espacio-bco">
+                                                            </div>
                                                         </div>
                                                     @break
                                                     @case(3)
@@ -1670,7 +1672,7 @@
                                                             <div class="col-6 der-mod">
                                                                 <p>Cocina <br> independiente</p>
                                                             </div>
-                                                            <div class="col-6 izq">
+                                                            <div class="col-6 izq-mod">
                                                                 <img src="{{ asset('/img/almada/venta-cruzada/icon/recamara.svg') }}"
                                                                     width="32" alt="">
                                                             </div>
@@ -1683,6 +1685,8 @@
                                                             </div>
                                                             <div class="col-6 der-mod pt-3">
                                                                 <p>1 baños</p>
+                                                            </div>
+                                                            <div class="espacio-bco">
                                                             </div>
                                                         </div>
                                                     @break
@@ -1756,7 +1760,10 @@
                                                             </div>
                                                             <div class="col-6 der-mod pt-3">
                                                                 <p>1 1/2 baños</p>
+                                                                <div class="espacio-bco-3">
+                                                                </div>
                                                             </div>
+                                                            
                                                         </div>
                                                     @break
                                                     @default
