@@ -147,7 +147,7 @@
                                                                 <div class="col-6 der-mod pt-3">
                                                                     <p>1 baño</p>
                                                                 </div>
-                                                                <div class="espacio-bco">
+                                                                <div class="espacio-bco-2">
                                                                 </div>
                                                             </div>
                                                         @break
@@ -180,8 +180,11 @@
                                                                         width="32" alt="">
                                                                 </div>
                                                                 <div class="col-6 der-mod pt-3">
-                                                                    <p>1 baños</p>
+                                                                    <p>1 bañow</p>
+                                                                    <div style="margin-bottom: 80px;">
+                                                                    </div>
                                                                 </div>
+                                                                
                                                             </div>
                                                         @break
                                                         @case(3)
@@ -214,6 +217,8 @@
                                                                 </div>
                                                                 <div class="col-6 der-mod pt-3">
                                                                     <p>1 baños</p>
+                                                                    <div style="margin-bottom: 80px;">
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         @break
@@ -287,8 +292,8 @@
                                                                 </div>
                                                                 <div class="col-6 der-mod pt-3">
                                                                     <p>1 1/2 baños</p>
-                                                                </div>
-                                                                <div class="espacio-bco-1">
+                                                                    <div style="margin-bottom: 65px;">
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         @break

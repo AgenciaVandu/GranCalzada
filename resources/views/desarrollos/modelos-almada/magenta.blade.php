@@ -145,8 +145,8 @@
                                                                 </div>
                                                                 <div class="col-6 der-mod pt-3">
                                                                     <p>1 baño</p>
-                                                                </div>
-                                                                <div class="espacio-bco">
+                                                                    <div style="margin-bottom: 124px;">
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         @break
@@ -178,7 +178,7 @@
                                                                     <img src="{{ asset('/img/almada/venta-cruzada/icon/bano.svg') }}"
                                                                         width="32" alt="">
                                                                 </div>
-                                                                <div class="col-6 der-mod pt-3">
+                                                                <div class="col-6 der-mod pt-3" style="margin-bottom: 123px;">
                                                                     <p>1 baños</p>
                                                                 </div>
                                                             </div>
