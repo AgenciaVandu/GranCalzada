@@ -54,7 +54,7 @@
                         <p style="color: #fff; padding:40px;">{{ $almada->description }}</p>
                     </div>
                     <div class="row">
-                        <div class="col-md-6 col-sm-12 text-center p-caract">
+                        <div class="col-lg-6 col-md-12 col-sm-12 text-center p-caract">
                             <div class="row">
                                 <div class="col-6 pt-3">
                                     <img src="{{ asset('/img/almada/icon/icono-clusters-03.svg') }}" width="80"
@@ -88,7 +88,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-12 text-center">
+                        <div class="col-lg-6 col-md-12 col-sm-12 text-center">
                             <img src="/img/almada/icon/master-almada.svg" class="img-fluid" alt="">
                         </div>
                     </div>

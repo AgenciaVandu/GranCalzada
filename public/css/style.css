@@ -1032,7 +1032,7 @@ p {
 
 }
 .espacio-bco-mv-1 {
-    margin-bottom: 90px;
+    margin-bottom: 80px;
 
 }
 
@@ -1103,6 +1103,10 @@ p {
     .p-amenidad-mv {
         right: 25px;
     }
+}
+
+.es-miraverde {
+    padding-bottom: 10px;
 }
 
 #cabecera-modelos {

@@ -58,7 +58,7 @@
                         <p style="color: #fff; padding:40px;">{{ $miraverde->description }}</p>
                     </div>
                     <div class="row">
-                        <div class="col-md-6 col-sm-12 text-center p-caract">
+                        <div class="col-lg-6 col-md-12 col-sm-12 text-center p-caract">
                             <div class="row">
                                 <div class="col-6 pt-3">
                                     <img src="{{ asset('/img/almada/icon/icono-clusters-03.svg') }}" width="80"
@@ -92,7 +92,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-12 text-center">
+                        <div class="col-lg-6 col-md-12 col-sm-12 text-center">
                             <img src="/img/almada/icon/master-almada.svg" class="img-fluid" alt="">
                         </div>
                     </div>
@@ -118,6 +118,7 @@
                             <h4 class="titular-mv-2">Estas amenidades las encontrarás<br>
                                 <span class="inner-titular-2">en cada uno de los clusters:</span>
                             </h4>
+                           <div class="d-block d-sm-block d-md-none d-lg-block">
                             <div class="row pt-4">
                                 <div class="col-md-6 col-sm-12">
                                     <div class="row">
@@ -184,6 +185,75 @@
                                     </div>
                                 </div>
                             </div>
+                           </div>
+                           <div class="d-none d-sm-none d-md-block d-lg-none">
+                            <div class="row pt-4">
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="row">
+                                        <div class="col-4 text-right m-auto">
+                                            <img src="{{ asset('/img/miraverde/amenidades/terraza-03.svg') }}" width="43"
+                                                alt="">
+                                        </div>
+                                        <div class="col-8">
+                                            <p class=" pt-2">Terraza semitechada</p>
+                                        </div>
+                                        <div class="col-4 text-right m-auto">
+                                            <img src="{{ asset('/img/miraverde/amenidades/chapoteadero-03.svg') }}"
+                                                width="43" alt="">
+                                        </div>
+                                        <div class="col-8">
+                                            <p class="pt-2">Chapoteadero</p>
+                                        </div>
+                                        <div class="col-4 text-right m-auto">
+                                            <img src="{{ asset('/img/miraverde/amenidades/gimnasio-03.svg') }}"
+                                                width="43" alt="">
+                                        </div>
+                                        <div class="col-8">
+                                            <p class="pt-2">Gym al aire libre</p>
+                                        </div>
+                                        <div class="col-4 text-right m-auto">
+                                            <img src="{{ asset('/img/miraverde/amenidades/tradicionales.svg') }}"
+                                                width="43" alt="">
+                                        </div>
+                                        <div class="col-8">
+                                            <p class="pt-2">Área de juegos tradicionales</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="row">
+                                        <div class="col-2 m-auto">
+                                            <img src="{{ asset('/img/miraverde/amenidades/balon-03.svg') }}" width="43"
+                                                alt="">
+                                        </div>
+                                        <div class="col-10 text-left">
+                                            <p class=" pt-2">Cancha de usos <br> múltiples</p>
+                                        </div>
+                                        <div class="col-2 m-auto">
+                                            <img src="{{ asset('/img/miraverde/amenidades/gradas-03.svg') }}" width="43"
+                                                alt="">
+                                        </div>
+                                        <div class="col-10">
+                                            <p class="pt-2">Gradas</p>
+                                        </div>
+                                        <div class="col-2 m-auto">
+                                            <img src="{{ asset('/img/miraverde/amenidades/area-de-juegos-03.svg') }}"
+                                                width="43" alt="">
+                                        </div>
+                                        <div class="col-10">
+                                            <p class="pt-2">Área de juegos infantiles</p>
+                                        </div>
+                                        <div class="col-2 m-auto">
+                                            <img src="{{ asset('/img/miraverde/amenidades/pista-de-trote-03.svg') }}"
+                                                width="43" alt="">
+                                        </div>
+                                        <div class="col-10">
+                                            <p class="pt-2">Pista de Jogging</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           </div>
                         </div>
 
                     </div>
@@ -3458,16 +3528,17 @@
                                                                 <img src="{{ asset('/img/miraverde/venta-cruzada/icon/bano.svg') }}"
                                                                     width="32" alt="">
                                                             </div>
-                                                            <div class="col-6 der-mod pt-3">
+                                                            <div class="col-6 der-mod pt-2">
                                                                 <p>1 baños</p>
                                                             </div>
                                                             <div class="col-6 izq-mod pt-2">
                                                                 <img src="{{ asset('/img/miraverde/venta-cruzada/icon/terraza.svg') }}"
                                                                     width="40" alt="">
                                                             </div>
-                                                            <div class="col-6 der-mod pt-3">
+                                                            <div class="col-6 der-mod pt-2 ">
                                                                 <p>Terraza</p>
                                                             </div>
+                                                            <br>
                                                         </div>
                                                     @break
                                                     @case(9)
@@ -3498,7 +3569,7 @@
                                                                 <img src="{{ asset('/img/miraverde/venta-cruzada/icon/bano.svg') }}"
                                                                     width="32" alt="">
                                                             </div>
-                                                            <div class="col-6 der-mod pt-3">
+                                                            <div class="col-6 der-mod pt-2">
                                                                 <p>1 1/2 baños</p>
                                                             </div>
                                                             <div class="espacio-bco-mv-1">
