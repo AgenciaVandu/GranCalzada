@@ -54,11 +54,11 @@
 
                         </ul>
                         <div class="row m-botones botones-modelos">
-                            <div class="col-md-6 col-sm-12 mt-3">
+                            <div class="col-lg-6 col-md-12 col-sm-12 mt-3">
                                 <a href="{{ route('miraverde.lead', $model) }}"
                                     class="btn btn-secondary btn-block">Cotizar modelo</a>
                             </div>
-                            <div class="col-md-6 col-sm-12 mt-3">
+                            <div class="col-lg-6 col-md-12 col-sm-12 mt-3">
                                 <a href="" class="btn btn-secondary btn-block" data-toggle="modal" data-target="#modal-ficha-m">Ficha técnica</a>
                             </div>
                         </div>
@@ -213,7 +213,7 @@
                                                                     <img src="{{ asset('/img/miraverde/venta-cruzada/icon/terraza.svg') }}"
                                                                         width="40" alt="">
                                                                 </div>
-                                                                <div class="col-6 der-mod pt-3">
+                                                                <div class="col-6 der-mod pt-3"">
                                                                     <p>Terraza</p>
                                                                 </div>
                                                             </div>
