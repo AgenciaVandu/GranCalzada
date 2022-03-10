@@ -52,10 +52,10 @@
                             @endforeach
                         </ul>
                         <div class="row m-botones botones-modelos">
-                            <div class="col-md-6 col-sm-12 mt-3">
+                            <div class="col-lg-6 col-md-12 col-sm-12 mt-3">
                                 <a href="{{ route('almada.lead', $model) }}" class="btn btn-secondary btn-block">Cotizar modelo</a>
                             </div>
-                            <div class="col-md-6 col-sm-12 mt-3">
+                            <div class="col-lg-6 col-md-12 col-sm-12 mt-3">
                                 <a href="" class="btn btn-secondary btn-block" data-toggle="modal" data-target="#modal-ficha-a">Ficha técnica</a>
                             </div>
                         </div>
@@ -145,9 +145,10 @@
                                                                 </div>
                                                                 <div class="col-6 der-mod pt-3">
                                                                     <p>1 baño</p>
+                                                                    <div class="espacio-bco-magenta">
+                                                                    </div>
                                                                 </div>
-                                                                <div class="espacio-bco">
-                                                                </div>
+                                                                
                                                             </div>
                                                         @break
                                                         @case(2)
@@ -179,7 +180,9 @@
                                                                         width="32" alt="">
                                                                 </div>
                                                                 <div class="col-6 der-mod pt-3">
-                                                                    <p>1 baños</p>
+                                                                    <p>1 baño</p>
+                                                                    <div class="espacio-bco-magenta-1">
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         @break
@@ -212,7 +215,9 @@
                                                                         width="32" alt="">
                                                                 </div>
                                                                 <div class="col-6 der-mod pt-3">
-                                                                    <p>1 baños</p>
+                                                                    <p>1 baño</p>
+                                                                    <div class="espacio-bco-magenta-2">
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         @break
@@ -253,6 +258,7 @@
                                                                 </div>
                                                                 <div class="col-6 der-mod pt-2">
                                                                     <p>Terraza</p>
+                                                                  
                                                                 </div>
                                                             </div>
                                                         @break
@@ -286,8 +292,7 @@
                                                                 </div>
                                                                 <div class="col-6 der-mod pt-3">
                                                                     <p>1 1/2 baños</p>
-                                                                </div>
-                                                                <div class="espacio-bco-1">
+                                                                    <div class="espacio-bco-3"></div>
                                                                 </div>
                                                             </div>
                                                         @break
