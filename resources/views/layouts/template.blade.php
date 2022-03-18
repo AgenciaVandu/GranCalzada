@@ -238,13 +238,13 @@
                             <div class="row">
                                 <div class="col-12">
                                     <p>
-                                        <a href=""> 
+                                        <a href="https://www.facebook.com/GrupoCasitas/"> 
                                         <i class="icono fab fa-facebook-square pr-2"></i>
                                         </a>
-                                        <a href="">
+                                        <a href="https://instagram.com/grupocasitas?utm_medium=copy_link">
                                             <i class=" icono fab fa-instagram pr-2"></i>
                                         </a>
-                                        <a href="">
+                                        <a href="https://www.linkedin.com/company/grupo-casitas/">
                                             <i class=" icono fab fa-linkedin pr-2"></i>
                                         </a>
                                         <a href="https://wa.me/message/LSSYY5R2LYLAP1">
