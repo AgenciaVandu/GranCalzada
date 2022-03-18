@@ -73,7 +73,7 @@
 
                 <ul class="navbar-nav">
                     <li class="nav-item pad active">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="https://wa.me/message/LSSYY5R2LYLAP1">
                             <i class="whatsapp fab fa-whatsapp"></i>
                         </a>
                     </li>
@@ -247,7 +247,7 @@
                                         <a href="">
                                             <i class=" icono fab fa-linkedin pr-2"></i>
                                         </a>
-                                        <a href="">
+                                        <a href="https://wa.me/message/LSSYY5R2LYLAP1">
                                             <i class=" icono fab fa-whatsapp"></i>
                                         </a>
                                     </p>
@@ -257,7 +257,7 @@
                         </div>
                     </div>
                     <p class="ubis"><a href="tel:9999449952">Tel: (999) 944 9952</a><br>
-                        <span><a href="tel:9991696832">whatsapp: (999) 169 6832</a></span>
+                        <span><a href="https://wa.me/message/LSSYY5R2LYLAP1">whatsapp: (999) 169 6832</a></span>
                     </p>
                 </div>
                 <div class="col-lg-5 col-md-5 col-sm-12 hubspot pt-4">
