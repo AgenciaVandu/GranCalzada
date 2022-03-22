@@ -70,6 +70,7 @@
             </div>
         </div>
     </div>
+    
     <section>
         <div class="bg-azul-index">
             <div class="container-fluid">
@@ -112,7 +113,7 @@
                                 se convierte en tu eje central de servicios y áreas verdes</p>
                             <div class="row mt-3 mb-3" style="text-align: left">
                                 <div class="col-md-6 col-sm-12 mt-2">
-                                    <a href="" class="btn btn-primary btn-block">Descargar brochure</a>
+                                    <button data-toggle="modal" data-target="#modal-brochure" class="btn btn-primary btn-block">Descargar brochure</button>
                                 </div>
                                 <div class="col-md-6 col-sm-12 mt-2">
                                     <a href="/conoce-gran-calzada" class="btn btn-primary btn-block">Conoce Gran Calzada</a>
