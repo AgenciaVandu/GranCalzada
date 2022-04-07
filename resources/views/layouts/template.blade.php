@@ -227,7 +227,10 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <h5 class="ubis pt-4">Visita nuestros puntos de venta</h5>
-                            <li class="ubis">Calle 56 #514 local 1 y 2 Plaza Caliza <br> Fracc. Gran Calzada <br> CP 97195</li>
+                            <li class="ubis">- Centro: <br>
+                                C.60 Fte. Japay</li>
+                            <li class="ubis">- Calle 56 #514 local 1 y 2 Plaza Caliza <br> Fracc. Gran Calzada <br> CP 97195</li>
+                            
                             
 
                         </div>
