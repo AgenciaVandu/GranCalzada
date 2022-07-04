@@ -99,7 +99,8 @@
 
     @yield('content')
 
-    <footer>
+   {{--  <footer>
+
         <div class="container">
             <div class="row pt-5">
                 <div class="col-lg-4 col-md-4 col-sm-12 pt-5">
@@ -156,8 +157,71 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> --}}
+ <footer>
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-lg-4 col-md-4 col-sm-12 pt-5">
+                    <div class="mapa">
+                        <iframe class="iframe"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14902.644270028122!2d-89.620674!3d20.966122!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x676469d86fc45aa3!2sGRUPO%20CASITAS%20DESARROLLOS!5e0!3m2!1ses!2smx!4v1631721969182!5m2!1ses!2smx"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <h5 class="ubis pt-4">Visita nuestros puntos de venta</h5>
+                            <li class="ubis">- Centro: <br>
+                                C.60 Fte. Japay</li>
+                            <li class="ubis">- Calle 56 #514 local 1 y 2 Plaza Caliza <br> Fracc. Gran Calzada <br> CP 97195</li>
+                            
+                            
 
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <h5 class="ubis pt-4">Síguenos en nuestras redes sociales:</h5>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p>
+                                        <a href="https://www.facebook.com/GrupoCasitas/"> 
+                                        <i class="icono fab fa-facebook-square pr-2"></i>
+                                        </a>
+                                        <a href="https://instagram.com/grupocasitas?utm_medium=copy_link">
+                                            <i class=" icono fab fa-instagram pr-2"></i>
+                                        </a>
+                                        <a href="https://www.linkedin.com/company/grupo-casitas/">
+                                            <i class=" icono fab fa-linkedin pr-2"></i>
+                                        </a>
+                                        <a href="https://wa.me/message/LSSYY5R2LYLAP1">
+                                            <i class=" icono fab fa-whatsapp"></i>
+                                        </a>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <p class="ubis"><a href="tel:9999449952">Tel: (999) 944 9952</a><br>
+                        <span><a href="https://wa.me/message/LSSYY5R2LYLAP1">whatsapp: (999) 169 6832</a></span>
+                    </p>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-12 hubspot pt-4">
+                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+                    <script>
+                        hbspt.forms.create({
+                            region: "na1",
+                            portalId: "5510950",
+                            formId: "dc9cfba4-600b-4430-9bc3-cd95ff13c768"
+                        });
+                    </script>
+
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 imagenes-center text-center">
+                    <img src="{{ asset('/img/logos.svg') }}" class="img-fluid" alt="">
+
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
