@@ -135,14 +135,12 @@
                         </button>
                     </div>
                     <div class="modal-body" style="background-color: #c9dbfa">
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
-                        <script>
-                            hbspt.forms.create({
-                                region: "na1",
-                                portalId: "5510950",
-                                formId: "dc9cfba4-600b-4430-9bc3-cd95ff13c768"
-                            });
-                        </script>
+                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                        <script> hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5510950",
+                        formId: "dc9cfba4-600b-4430-9bc3-cd95ff13c768"
+                        }); </script>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>
@@ -228,9 +226,9 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <h5 class="ubis pt-4">Visita nuestros puntos de venta</h5>
-                            <li class="ubis">- Centro: <br>
-                                C.60 Fte. Japay</li>
-                            <li class="ubis">- Calle 56 #514 local 1 y 2 Plaza Caliza <br> Fracc. Gran Calzada <br> CP 97195</li>
+                            <li class="ubis" style="font-size: 12px">
+                                - Calle 60 #525 por 65 y 67, Centro, 97000 Mérida, Yuc</li>
+                            <li class="ubis" style="font-size: 12px">- Calle 65 #529 por 56 y 58, Centro, 97000 Mérida, Yuc.</li>
                             
                             
 
@@ -263,14 +261,13 @@
                     </p>
                 </div>
                 <div class="col-lg-5 col-md-5 col-sm-12 hubspot pt-4">
-                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
-                    <script>
-                        hbspt.forms.create({
-                            region: "na1",
-                            portalId: "5510950",
-                            formId: "dc9cfba4-600b-4430-9bc3-cd95ff13c768"
-                        });
-                    </script>
+                    <script charset="utf-8" type="text/javascript"
+                    src="//js.hsforms.net/forms/v2.js"></script> <script>
+                    hbspt.forms.create({
+                    region: "na1",
+                    portalId: "5510950",
+                    formId: "4a8c30ee-79f5-4fa5-b2ce-7d54668baeb8"
+                    }); </script>
 
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 imagenes-center text-center">

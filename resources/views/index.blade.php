@@ -78,7 +78,7 @@
                     <div class="row over pb-5">
                         <div class="col-lg-6 col-md-12 col-sm-12 ">
                             <figure class="text-center">
-                                <img src="{{ asset('/img/GCAL-2.png') }}" class="img-fluid" alt="">
+                                <img src="{{ asset('/img/dron.jpg') }}" class="img-fluid" alt="">
                             </figure>
                         </div>
                         <div class="col-lg-6 col-md-12 col-sm-12 pl-3 pr-3 text-center">
@@ -90,7 +90,7 @@
                                 se convierte en tu eje central de servicios y áreas verdes</p>
                             <div class="row mt-3 mb-3" style="text-align: left">
                                 <div class="col-md-6 col-sm-12 mt-2">
-                                    <a href="" class="btn btn-primary btn-block">Descargar brochure</a>
+                                    <button data-toggle="modal" data-target="#modal-brochure" class="btn btn-primary btn-block">Descargar brochure</button>
                                 </div>
                                 <div class="col-md-6 col-sm-12 mt-2">
                                     <a href="/conoce-gran-calzada" class="btn btn-primary btn-block">Conoce Gran Calzada</a>
@@ -101,10 +101,10 @@
                 </div>
                 <div class="d-none d-sm-none d-md-none d-lg-block">
                     <div class="row over">
-                        <div class="col-lg-6 col-md-12 col-sm-12 mt-5 p-0 ">
-                            <img src="{{ asset('/img/GCAL-2.png') }}" class="img-fluid p-0" alt="">
+                        <div class="col-lg-6 col-md-12 col-sm-12 mt-5 mb-5 p-0 ">
+                            <img src="{{ asset('/img/dron.jpg') }}" class="img-fluid p-0" alt="">
                         </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12 txt-calzada">
+                        <div class="col-lg-6 col-md-12 col-sm-12 m-auto txt-calzada">
                             <h2 style="text-align: left" class="mb-4">Descubre cómo es vivir en una ciudad totalmente
                                 planeada</h2>
                             <p style="color: #fff">Bienvenido a Gran Calzada, es un complejo habitacional con más de 4,000 mil
