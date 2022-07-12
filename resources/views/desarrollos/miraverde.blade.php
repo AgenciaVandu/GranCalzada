@@ -109,7 +109,9 @@
                         <h4 class="disfruta pb-3">Disfruta la vida <br>
                             <span class="disfruta-color">EN TU NUEVO HOGAR</span>
                         </h4>
-                        <a href="" class="btn btn-primary">DESCARGAR BROCHURE</a>
+                        <button data-toggle="modal" data-target="#modal-brochure" class="btn btn-primary">DESCARGAR
+                            BROCHURE
+                        </button>
                     </div>
                 </div>
                 <div class="bg-mv ">
