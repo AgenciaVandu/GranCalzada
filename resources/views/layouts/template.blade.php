@@ -36,7 +36,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-grancalzada fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/">
                 <img src="{{ asset('/img/Logo-GranCalzada.svg') }}" width="190" class="img-fluid" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -80,12 +80,10 @@
                     </li>
                 </ul>
 
-                <form class="form-inline my-2 my-lg-0">
-                    <a href="/conoce-gran-calzada" class="btn btn-light my-2 my-sm-0">
-                        Cotiza tu casa
-                    </a>
-
-                </form>
+                <button data-toggle="modal" data-target="#exampleModal" class="btn btn-light my-2 my-sm-0" >Cotiza tu casa</button>
+                {{-- <button data-toggle="modal" data-target="#exampleModal" class="btn btn-light my-2 my-sm-0">
+                    Cotiza tu casa
+                </button> --}}
 
             </div>
         </div>
@@ -101,20 +99,19 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title" id="exampleModalLabel">Agenda una reunión</h4>
+                        <h4 class="modal-title" id="exampleModalLabel">Agenda una llamada</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body" style="background-color: #16366e">
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
-                        <script>
+                    <div class="modal-body">
+                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script> <script>
                             hbspt.forms.create({
-                                region: "na1",
-                                portalId: "5510950",
-                                formId: "dc9cfba4-600b-4430-9bc3-cd95ff13c768"
-                            });
-                        </script>
+                            region: "na1",
+                            portalId: "5510950",
+                            formId: "4a8c30ee-79f5-4fa5-b2ce-7d54668baeb8"
+                            }); </script>
+                             
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>
@@ -150,66 +147,6 @@
             </div>
         </div>
 
-        <!-- Modal 3-->
-        <div class="modal fade" id="modal-ficha-a" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title" id="exampleModalLabel">Descargar Ficha técnica</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body" style="background-color: #c9dbfa">
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
-                        <script>
-                            hbspt.forms.create({
-                                region: "na1",
-                                portalId: "5510950",
-                                formId: "9321cad3-e5a5-494e-a903-8e0e8dbe2c6b"
-                            });
-                        </script>
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal 4-->
-        <div class="modal fade" id="modal-ficha-m" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title" id="exampleModalLabel">Descargar Ficha técnica</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body" style="background-color: #c9dbfa">
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
-                        <script>
-                            hbspt.forms.create({
-                                region: "na1",
-                                portalId: "5510950",
-                                formId: "41010064-efdf-46fd-8936-be8441d795c7"
-                            });
-                        </script>
-
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>
-
-                    </div>
-                </div>
-            </div>
-        </div>
     </main>
 
     @yield('content')

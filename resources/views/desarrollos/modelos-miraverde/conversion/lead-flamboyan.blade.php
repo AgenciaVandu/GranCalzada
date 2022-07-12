@@ -5,7 +5,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-sm-12 pt-3 centro">
-                        <img src="{{ asset('/img/miraverde/miraverde-lead.svg') }}" width="220" alt="">
+                        <a href="/">
+                            <img src="{{asset ('/img/miraverde/miraverde-lead.svg')}}" width="220" alt="">
+                        </a>
                     </div>
                     <div class="col-md-6 col-sm-12 pt-3 text-center">
                         <h3 style="color: #fff">¡Ya casi estrenas casa!

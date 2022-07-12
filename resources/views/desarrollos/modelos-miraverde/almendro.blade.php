@@ -34,7 +34,36 @@
             </div>
         </div>
     </header>
+    <!-- Modal 4-->
+    <div class="modal fade" id="modal-ficha-m" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Descargar Ficha técnica</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" style="background-color: #c9dbfa">
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+                <script>
+                    hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5510950",
+                        formId: "dafaf23c-f78f-455a-9c2e-d0606eb3dab6"
+                    });
+                </script>
 
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>
+
+            </div>
+        </div>
+    </div>
+    </div>
     <section id="detalles-de-modelo" class="bg-miraverde-1">
         <div class="plantas-modelos">
             <div class="container">
