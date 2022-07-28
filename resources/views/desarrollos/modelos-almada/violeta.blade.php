@@ -34,7 +34,7 @@
         </div>
     </header>
     <!-- Modal 3-->
-        <div class="modal fade" id="modal-ficha-v" tabindex="-1" aria-labelledby="exampleModalLabel"
+        <div class="modal fade" id="modal-ficha-a" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -45,13 +45,13 @@
                     </button>
                 </div>
                 <div class="modal-body" style="background-color: #c9dbfa">
-                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                    <script>
-                    hbspt.forms.create({
-                    region: "na1",
-                    portalId: "5510950",
-                    formId: "16f1ae96-4628-4e8e-8c14-d3c2f47a5ab9"
-                    }); </script>
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                <script>
+                hbspt.forms.create({
+                region: "na1",
+                portalId: "5510950",
+                formId: "16f1ae96-4628-4e8e-8c14-d3c2f47a5ab9"
+                }); </script>
 
                 </div>
                 <div class="modal-footer">

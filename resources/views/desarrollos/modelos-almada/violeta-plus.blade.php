@@ -45,13 +45,13 @@ aria-hidden="true">
             </button>
         </div>
         <div class="modal-body" style="background-color: #c9dbfa">
-            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-            <script>
-            hbspt.forms.create({
-            region: "na1",
-            portalId: "5510950",
-            formId: "e6afbe45-6397-470c-ba3c-e09ee58dd2bc"
-            }); </script>
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+        <script>
+        hbspt.forms.create({
+        region: "na1",
+        portalId: "5510950",
+        formId: "e6afbe45-6397-470c-ba3c-e09ee58dd2bc"
+        }); </script>
 
         </div>
         <div class="modal-footer">
@@ -97,7 +97,7 @@ aria-hidden="true">
                                 <a href="{{ route('almada.lead', $model) }}" class="btn btn-secondary btn-block">Cotizar modelo</a>
                             </div>
                             <div class="col-lg-6 col-md-12 col-sm-12 mt-3">
-                                <a href="" class="btn btn-secondary btn-block" data-toggle="modal" data-target="#modal-ficha-a">Ficha técnica</a>
+                                <a href="" class="btn btn-secondary btn-block" data-toggle="modal" data-target="#modal-ficha-vplus">Ficha técnica</a>
                             </div>
                         </div>
                     </div>
