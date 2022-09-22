@@ -48,6 +48,10 @@ Route::get('/blog/{category}', [BlogController::class, 'postCategory'])->name('b
 Route::get('/gracias-por-registrarte', function () {
     return view('desarrollos/typ');
 });
+/*Página de agradecimiento*/
+Route::get('/aviso-de-privacidad', function () {
+    return view('desarrollos/aviso-de-privacidad');
+});
 
 /*Validacion de autentificacion para admin*/
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
