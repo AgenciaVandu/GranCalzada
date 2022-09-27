@@ -266,7 +266,7 @@
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 imagenes-center text-center">
                     <img src="{{ asset('/img/logos.svg') }}" class="img-fluid" alt="">
-
+                    <a href="https://grancalzada.mx/aviso-de-privacidad" style="color: #fff; font-weight:bold;">Aviso de privacidad</a>.
                 </div>
             </div>
         </div>
