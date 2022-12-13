@@ -187,7 +187,7 @@
                                                                         width="32" alt="">
                                                                 </div>
                                                                 <div class="col-6 der-mod">
-                                                                    <p>Cocina <br> independiente</p>
+                                                                    <p>Cocina <br> con barra</p>
                                                                 </div>
                                                                 <div class="col-6 izq-mod">
                                                                     <img src="{{ asset('/img/miraverde/venta-cruzada/icon/recamara.svg') }}"
@@ -201,7 +201,7 @@
                                                                         width="32" alt="">
                                                                 </div>
                                                                 <div class="col-6 der-mod pt-3">
-                                                                    <p>1 baños</p>
+                                                                    <p>2 ½ baños</p>
                                                                 </div>
                                                                 <div class="espacio-bco-mv">
                                                                 </div>
@@ -236,7 +236,7 @@
                                                                         width="32" alt="">
                                                                 </div>
                                                                 <div class="col-6 der-mod pt-3">
-                                                                    <p>1 baños</p>
+                                                                    <p>2 ½ baños</p>
                                                                 </div>
                                                                 <div class="col-6 izq-mod pt-2">
                                                                     <img src="{{ asset('/img/miraverde/venta-cruzada/icon/terraza.svg') }}"
@@ -255,14 +255,14 @@
                                                                         width="36" alt="">
                                                                 </div>
                                                                 <div class="col-6 der-mod">
-                                                                    <p>Sala / Comedor <br> / Cocina</p>
+                                                                    <p>Sala / Comedor </p>
                                                                 </div>
                                                                 <div class="col-6 izq-mod ">
                                                                     <img src="{{ asset('/img/miraverde/venta-cruzada/icon/cocina.svg') }}"
                                                                         width="32" alt="">
                                                                 </div>
                                                                 <div class="col-6 der-mod">
-                                                                    <p>Cocina <br> independiente</p>
+                                                                    <p>Cocina <br> con barra</p>
                                                                 </div>
                                                                 <div class="col-6 izq-mod">
                                                                     <img src="{{ asset('/img/miraverde/venta-cruzada/icon/recamara.svg') }}"
@@ -276,9 +276,9 @@
                                                                         width="32" alt="">
                                                                 </div>
                                                                 <div class="col-6 der-mod pt-3">
-                                                                    <p>1 1/2 baños</p>
+                                                                    <p>2 ½ baños</p>
                                                                 </div>
-                                                                <div class="espacio-bco-mv-1">
+                                                                <div class="espacio-bco-mv-1 pt-3">
                                                                 </div>
                                                             </div>
                                                         @break

@@ -3602,7 +3602,5 @@
         </div>
     </section>
 
-    @push('custom-scripts')
-    <script src="{{ asset('js/contador.js') }}"></script>
-    @endpush
+    
 @endsection
