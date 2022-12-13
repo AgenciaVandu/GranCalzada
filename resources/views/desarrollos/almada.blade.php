@@ -1615,7 +1615,7 @@
                                                                     width="32" alt="">
                                                             </div>
                                                             <div class="col-6 der-mod pt-3">
-                                                                <p>1 baño</p>
+                                                                <p>1 baños</p>
                                                             </div>
                                                             <div class="espacio-bco-2">
                                                             </div>
@@ -1650,7 +1650,7 @@
                                                                     width="32" alt="">
                                                             </div>
                                                             <div class="col-6 der-mod pt-3">
-                                                                <p>1 baños</p>
+                                                                <p>1 baño</p>
                                                             </div>
                                                             <div class="espacio-bco">
                                                             </div>
@@ -1685,7 +1685,7 @@
                                                                     width="32" alt="">
                                                             </div>
                                                             <div class="col-6 der-mod pt-3">
-                                                                <p>1 baños</p>
+                                                                <p>2 baños</p>
                                                             </div>
                                                             <div class="espacio-bco">
                                                             </div>
