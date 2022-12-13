@@ -244,6 +244,7 @@
     </script>
     <script src="{{ asset('js/slides.js') }}"></script>
     <script src="{{ asset('js/animacion.js') }}"></script>
+    @stack('custom-scripts')
     @livewireScripts
 </body>
 

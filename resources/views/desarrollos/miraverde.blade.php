@@ -3482,7 +3482,7 @@
                                                                     width="32" alt="">
                                                             </div>
                                                             <div class="col-6 der-mod">
-                                                                <p>Cocina <br> independiente</p>
+                                                                <p>Cocina <br> con barra</p>
                                                             </div>
                                                             <div class="col-6 izq-mod">
                                                                 <img src="{{ asset('/img/miraverde/venta-cruzada/icon/recamara.svg') }}"
@@ -3496,7 +3496,7 @@
                                                                     width="32" alt="">
                                                             </div>
                                                             <div class="col-6 der-mod pt-3">
-                                                                <p>1 baños</p>
+                                                                <p>2 ½ Baños</p>
                                                             </div>
                                                             <div class="espacio-bco-mv">
                                                             </div>
@@ -3531,7 +3531,7 @@
                                                                     width="32" alt="">
                                                             </div>
                                                             <div class="col-6 der-mod pt-2">
-                                                                <p>1 baños</p>
+                                                                <p>2 ½ Baños</p>
                                                             </div>
                                                             <div class="col-6 izq-mod pt-2">
                                                                 <img src="{{ asset('/img/miraverde/venta-cruzada/icon/terraza.svg') }}"
@@ -3540,7 +3540,7 @@
                                                             <div class="col-6 der-mod pt-2 ">
                                                                 <p>Terraza</p>
                                                             </div>
-                                                            <br>
+                                                            <br class="pt-2">
                                                         </div>
                                                     @break
                                                     @case(9)
@@ -3551,14 +3551,14 @@
                                                                     width="36" alt="">
                                                             </div>
                                                             <div class="col-6 der-mod">
-                                                                <p>Sala / Comedor <br> / Cocina</p>
+                                                                <p>Sala / Comedor</p>
                                                             </div>
                                                             <div class="col-6 izq-mod ">
                                                                 <img src="{{ asset('/img/miraverde/venta-cruzada/icon/cocina.svg') }}"
                                                                     width="32" alt="">
                                                             </div>
                                                             <div class="col-6 der-mod">
-                                                                <p>Cocina <br> independiente</p>
+                                                                <p>Cocina <br> con barra</p>
                                                             </div>
                                                             <div class="col-6 izq-mod">
                                                                 <img src="{{ asset('/img/miraverde/venta-cruzada/icon/recamara.svg') }}"
@@ -3572,9 +3572,9 @@
                                                                     width="32" alt="">
                                                             </div>
                                                             <div class="col-6 der-mod pt-2">
-                                                                <p>1 1/2 baños</p>
+                                                                <p>2 ½ Baños</p>
                                                             </div>
-                                                            <div class="espacio-bco-mv-1">
+                                                            <div class="espacio-bco-mv-1 pt-5">
                                                             </div>
                                                         </div>
                                                     @break
@@ -3602,5 +3602,7 @@
         </div>
     </section>
 
-
+    @push('custom-scripts')
+    <script src="{{ asset('js/contador.js') }}"></script>
+    @endpush
 @endsection
