@@ -284,7 +284,6 @@
                                                                 </div>
                                                                 <div class="col-6 der-mod pt-2">
                                                                     <p>Terraza</p>
-                                                                  
                                                                 </div>
                                                             </div>
                                                         @break
@@ -557,6 +556,8 @@
                             </div>
                         @endforeach
                     </div>--}}
+
+                    
                 </div>
             </div>
         </div>
