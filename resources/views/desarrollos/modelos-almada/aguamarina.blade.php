@@ -205,7 +205,7 @@
                                                                         width="32" alt="">
                                                                 </div>
                                                                 <div class="col-6 der-mod pt-3">
-                                                                    <p>1 bañow</p>
+                                                                    <p>1 baño</p>
                                                                     <div style="margin-bottom: 80px;">
                                                                     </div>
                                                                 </div>
@@ -241,7 +241,7 @@
                                                                         width="32" alt="">
                                                                 </div>
                                                                 <div class="col-6 der-mod pt-3">
-                                                                    <p>1 baños</p>
+                                                                    <p>2 baños</p>
                                                                     <div style="margin-bottom: 80px;">
                                                                     </div>
                                                                 </div>
